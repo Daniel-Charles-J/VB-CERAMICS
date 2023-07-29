@@ -1,34 +1,84 @@
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
-    h1 {font-size:1.14rem;} /*1rem = 16px*/
-    p {font-size: 0.62rem;}  
+  
   }
   
   .nav-item{margin-right:15px;}
    
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-  @media (min-width: 768px) {  
-    h1 {font-size:1.86rem;} /*1rem = 16px*/
-    p {font-size: 0.74rem;}  
+  @media (max-width: 884px) {  
+    .gallery{
+      font-size:50px;
+      font-weight: 200;
+      background-color: aqua;
+      padding: 0 40px 0 40px;
+    }
   }
    
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) { 
-    h1 {font-size:2.55rem;} /*1rem = 16px*/
-    p {font-size: 0.96rem;}
+    
   }
    
   /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {  
-    h1 {font-size:3.19rem;} /*1rem = 16px*/    
-  }
+  /* @media (min-width: 1200px) {  
+    h1 {font-size:3.19rem;}  
+  } */
   
   /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1400px) {  
-    h1 {font-size:4rem;} /*1rem = 16px*/ 
+  /* @media (min-width: 1400px) {  
+    h1 {font-size:4rem;} 
     p {font-size: 1.45rem;}   
-  }
+  } */
   
   .navbar-nav{
       justify-content: center;
    }
+   .nav-pad{
+    padding: 0 40px 0 40px;
+   }
+   .contact-btn{
+     border-radius: 20px;
+     background-color: var(--primary, #181977);
+     color: #FFF;
+     font-family: Schibsted Grotesk;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 600;
+    line-height: 16px; /* 100% */
+   }
+   .main-section{
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-section hr{
+    border-bottom: 1px solid #000;
+  }
+   .gallery{
+    color: #261499;
+    font-family: Unbounded;
+    font-size:155px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .gall-para{
+    color: #000;
+    font-family: Schibsted Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    align-self: stretch;
+  }
+  .container{
+    display: flex;
+    width: 810px;
+    height: 351px;
+    padding: 33.75px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
