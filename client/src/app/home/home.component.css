@@ -1,0 +1,24 @@
+/* body */
+body{padding:60px;}
+
+
+/* Navbar */
+.navbar-brand{color: #000 !important;font-family: Unbounded;font-size: 16px;font-style: normal;font-weight: 600;line-height: 16px; }
+.bg-light {background-color: transparent !important;}
+.nav-link{color:#000!important;display: flex;padding: 8px;justify-content: center;align-items: center;gap: 8px;}
+.nav-link:hover{color:#261499!important}
+
+
+
+/* header */
+#top_header{color: #261499;text-align:left;font-variant-numeric: lining-nums tabular-nums;font-family: Unbounded;font-style: normal;font-weight: 700;line-height: normal;text-transform: uppercase;letter-spacing: 1.5px;}
+
+/* p */
+
+#para{color: #000;font-family: Schibsted Grotesk;font-style: normal;font-weight: 400;}
+
+/* container */
+
+.container-fluid{display: flex;gap: 10px;flex-direction: column;margin: 0px;}
+
+
