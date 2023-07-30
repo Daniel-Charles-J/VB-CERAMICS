@@ -12,13 +12,240 @@ body{padding:60px;}
 
 /* header */
 #top_header{color: #261499;text-align:left;font-variant-numeric: lining-nums tabular-nums;font-family: Unbounded;font-style: normal;font-weight: 700;line-height: normal;text-transform: uppercase;letter-spacing: 1.5px;}
+h2{
+  color: #000;
+font-family: Unbounded;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 150% */
+text-transform: uppercase;
+}
+#header_services{
+color: #261499;
+font-family: Unbounded;
+font-size: 82px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+#header_facility{
+  color:white;
+  font-family: Unbounded;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  }
+
 
 /* p */
 
+#service_para{
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 66%;
+  padding: 16px 0px 0px 0px;
+}
+#facility_para{
+  color: white;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 60%;
+  padding: 16px 0px 0px 0px;
+}
+#contact_para{
+  color: black;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 57%;
+  padding: 16px 0px 0px 0px;
+}
 #para{color: #000;font-family: Schibsted Grotesk;font-style: normal;font-weight: 400;}
+#para_two{color: #333;text-align: center;font-family: Schibsted Grotesk;font-size: 14px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase;}
 
 /* container */
 
-.container-fluid{display: flex;gap: 10px;flex-direction: column;margin: 0px;}
+.container-fluid{display: flex;gap: 10px;flex-direction: column;margin: 0px;justify-content: center;}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+  h1 {font-size:1.14rem;} /*1rem = 16px*/
+  p {font-size: 0.62rem;}  
+}
+
+.nav-item{margin-right:15px;}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  h1 {font-size:1.86rem;} /*1rem = 16px*/
+  p {font-size: 0.74rem;}  
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h1 {font-size:2.55rem;} /*1rem = 16px*/
+  p {font-size: 0.96rem;}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  h1 {font-size:3.19rem;} /*1rem = 16px*/    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {  
+  h1 {font-size:4rem;} /*1rem = 16px*/ 
+  p {font-size: 1.45rem;}   
+}
 
 
+
+/* span{color: #333;text-align: center;font-family: Unbounded;font-size: 20px;font-style: normal;font-weight: 500;line-height: normal;letter-spacing: 0.1px;} */
+
+.flex-items {width:60px;height: 60px;margin: 10px -1px 15px 50px;text-align: center;font-size: 34px;}
+
+.flex4 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #261499;
+  gap: 60px;
+  padding: 60px;
+  justify-content: center;
+}
+
+.flex5 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+.flex_of_5{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap:27px;
+}
+
+.flex-item4 {
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.project1info{
+  width:auto;
+  background-color:white;
+  text-align: center;
+
+}
+
+.card{
+  border-radius:20px;
+}
+
+.column {
+  display: contents; /* the child elements would be grid items */
+  border: 1px solid #C7D6DA;
+  margin: 5px;
+}
+
+.cell,.cell1,.cell2,.cell3 {
+  background: #FFF;
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset;
+  padding: 10px;
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+.cell1,.cell2,.cell3{
+  background: #FAFBFF !important;
+box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset !important;
+}
+
+.flex6 {
+  display: grid; /* grid containers */
+  grid-template-columns: repeat(3, 1fr); /* four columns */
+  grid-template-rows: repeat(24, 1fr); /* four rows */
+  grid-auto-flow: column; /* in column direction */
+  border-radius: 10px;
+  border: 1px solid #C7D6DA;
+}
+.one{
+  background: #C7D6DA;
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+.last{
+  background: #C7D6DA;
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset;
+  text-align: center;
+}
+
+.flex7{
+  background-color: #261499;
+}
+
+.mb-0{
+  display:flex;flex-direction:row;gap:20px;
+}
+
+.flex_of_7{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:27px;
+  padding: 24px 16px 5px 20px;
+  }
+
+  #accordion{
+    padding:20px;
+  }
+
+  #name,#email{
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px !important;
+    background: #EDF1FD !important;
+  }
+
+  #message{
+    border-radius: 8px;
+    background: #EDF1FD;
+    display: flex;
+    height: 140px;
+    width:inherit;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border:none !important;
+  }
+
+  #message_button{
+    width: inherit;
+  background-color: #261499;
+  }
