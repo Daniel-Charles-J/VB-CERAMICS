@@ -20,8 +20,9 @@
   height: 700px;
   position: fixed;
   z-index: 1;
-  left: 40px; 
+  left: 40px;
 }
+
 .side_navbar {
   display: flex;
   width: 100%;
@@ -33,7 +34,7 @@
   border-radius: 20px;
   border: 1px solid rgba(24, 25, 119, 0.10);
   background: #EDF1FD;
-  
+
 }
 
 .nav_section1 {
@@ -71,9 +72,11 @@
   line-height: normal;
   align-self: stretch;
 }
+
 .nav_section2 {
   width: 100%;
 }
+
 .navbar_ul {
   padding-left: 0px;
 }
@@ -108,42 +111,284 @@
   margin-left: 33%;
 }
 
-.main_div {
+.main_section1,
+.main_section2,
+.main_section3,
+.main_section4,
+.main_section5,
+.main_section6,
+.main_section7,
+.main_section8 {
   width: 100%;
   border-radius: 20px;
   border: 1px solid rgba(24, 25, 119, 0.10);
   background: #EDF1FD;
 }
-.main_section1_header {
+
+.main_section1_header,
+.main_section2_header,
+.main_section3_header,
+.main_section4_header,
+.main_section5_header,
+.main_section6_header,
+.main_section7_header,
+.main_section8_header {
   display: flex;
-padding: 20px 0px 0px 20px;
+  padding: 20px 0px 0px 20px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.main_section1_head,
+.main_section2_head,
+.main_section3_head,
+.main_section4_head,
+.main_section5_head,
+.main_section6_head,
+.main_section7_head,
+.main_section8_head {
+  color: #181977;
+  font-family: Unbounded;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  flex: 1 0 0;
+}
+
+.main_section1_content,
+.main_section2_content,
+.main_section5_content,
+.main_section6_content,
+.main_section7_content,
+.main_section8_content {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.main_section1_img,
+.main_section1_img img {
+  width: 100%;
+  border-radius: 20px;
+  align-self: stretch;
+  background: url('../../assets/About_service.jpg'), lightgray -17.891px -372.703px / 108.596% 265.53% no-repeat;
+}
+
+.main_section1_cnt,
+.main_section2_cnt,
+.main_section5_cnt,
+.main_section6_cnt,
+.main_section7_top_cnt,
+.main_section8_cnt {
+  color: #333;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  align-self: stretch;
+}
+
+.main_section2_img,
+.main_section2_img img {
+  width: 100%;
+  border-radius: 20px;
+  align-self: stretch;
+  background: url('../../assets/About_vision.jpg'), lightgray -17.891px -372.703px / 108.596% 265.53% no-repeat;
+}
+
+.main_section3_content,
+.main_section4_content {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.main_section3_cnt,
+.main_section4_cnt {
+  width: 20%;
+}
+
+.main_section3_cnt img,
+.main_section4_cnt img {
+  width: 100%;
+  height: 120px;
+  border-radius: 14px;
+  background: #FFF;
+}
+
+.section3_cnt,
+.section4_cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.section3_cnt .section3_name,
+.section4_cnt .section4_name {
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.section3_cnt .section3_education,
+.section4_cnt .section4_education {
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.main_section5_img,
+.main_section5_img img {
+  width: 100%;
+  border-radius: 20px;
+  align-self: stretch;
+  background: url('../../assets/About_fellowship.png'), lightgray -17.891px -372.703px / 108.596% 265.53% no-repeat;
+}
+
+.section5_images {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.section5_images1 img,
+.section5_images2 img,
+.section5_images3 img {
+  align-self: stretch;
+  border-radius: 14px;
+}
+
+.section5_images1 img {
+  background: url('../../assets/Fellowship_Gallery_1.jpg'), lightgray 50% / cover no-repeat, #FFF;
+}
+
+.section5_images2 img {
+  background: url('../../assets/Fellowship_Gallery_2.png'), lightgray 50% / cover no-repeat, #FFF;
+}
+
+.section5_images3 img {
+  background: url('../../assets/Fellowship_Gallery_3.jpg'), lightgray 50% / cover no-repeat, #FFF;
+}
+
+.main_section6_img,
+.main_section6_img img {
+  width: 100%;
+  border-radius: 20px;
+  align-self: stretch;
+  background: url('../../assets/About_research.png'), lightgray -17.891px -372.703px / 108.596% 265.53% no-repeat;
+}
+
+.main_section6_cnt .research_papers .research_papers_list .list {
+  color: #333;
+  cursor: pointer;
+}
+
+/* .main_section6_cnt .research_papers .research_papers_list .list:visited {
+  color: #c254af
+} */
+
+.main_section6_cnt .research_papers .research_papers_list .list:hover {
+  color: #0000FF
+}
+
+/* .main_section6_cnt .research_papers .research_papers_list .list:active {
+  color: #0000FF
+} */
+
+.main_section7_cnt {
+  display: flex;
+flex-direction: column;
+justify-content: center;
 align-items: flex-start;
-gap: 8px;
+gap: 20px;
 align-self: stretch;
 }
 
-.main_section1_head_profile {
-  color: #181977;
-font-family: Unbounded;
+.main_section6_img,
+.main_section6_img img {
+  width: 100%;
+  border-radius: 20px;
+  align-self: stretch;
+  background: url('../../assets/About_projects.png'), lightgray -17.891px -372.703px / 108.596% 265.53% no-repeat;
+}
+
+.section7_projects {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+}
+
+.research_projects {
+  color: #333;
+font-family: Schibsted Grotesk;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%;
+}
+.research_projects_div{
+  display: flex;
+padding: 20px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 20px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+background: #FFF;
+}
+.research_projects_cnt{
+  color: #333;
+
+/* Para 1 Medium */
+font-family: Schibsted Grotesk;
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
-line-height: 150%;
+line-height: 160%; /* 32px */
 flex: 1 0 0;
 }
 
-.main_section1_content {
-  display: flex;
+.main_section7_img,
+.main_section7_img img {
   width: 100%;
-padding: 20px;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
-align-self: stretch;
+  border-radius: 20px;
+  align-self: stretch;
+  background: url('../../assets/About_projects.png'), lightgray -17.891px -372.703px / 108.596% 265.53% no-repeat;
 }
-
-.main_section1_img, .main_section1_img img {
+.main_section8_img,
+.main_section8_img img {
   width: 100%;
+  border-radius: 20px;
+  align-self: stretch;
+  background: url('../../assets/About_academic.png'), lightgray -17.891px -372.703px / 108.596% 265.53% no-repeat;
 }
-
-
