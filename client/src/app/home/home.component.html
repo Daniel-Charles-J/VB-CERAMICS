@@ -31,7 +31,7 @@
           <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" (click)="scrollToSection('ContactUs')">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -349,7 +349,7 @@
 </div>
 
 <br>
-<div class="flex8">
+<div class="flex8" id="ContactUs">
   <div class="flex_of_5">
     <h1 id="header_services" class="flex-items5">CONTACT US</h1>
     <p class="flex-items5" id="contact_para">Craving a conversation about pottery? Immerse yourself in a vibrant world of hues and surfaces with our amazing ceramic offerings!</p>
