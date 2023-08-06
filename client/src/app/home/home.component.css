@@ -1,5 +1,5 @@
 /* body */
-body{padding:60px;}
+body{}
 
 
 /* Navbar */
@@ -11,7 +11,7 @@ body{padding:60px;}
 
 
 /* header */
-#top_header{color: #261499;text-align:left;font-variant-numeric: lining-nums tabular-nums;font-family: Unbounded;font-style: normal;font-weight: 700;line-height: normal;text-transform: uppercase;letter-spacing: 1.5px;}
+#top_header{color: #261499;text-align:center;font-variant-numeric: lining-nums tabular-nums;font-family: Unbounded;font-style: normal;font-weight: 700;line-height: normal;text-transform: uppercase;letter-spacing: 1.5px;}
 h2{
   color: #000;
 font-family: Unbounded;
@@ -49,7 +49,7 @@ line-height: normal;
   font-weight: 400;
   line-height: 30px;
   width: 66%;
-  padding: 16px 0px 0px 0px;
+  place-self:center;
 }
 #facility_para{
   color: white;
@@ -59,7 +59,7 @@ line-height: normal;
   font-weight: 400;
   line-height: 30px;
   width: 60%;
-  padding: 16px 0px 0px 0px;
+  place-self:center;
 }
 #contact_para{
   color: black;
@@ -69,44 +69,20 @@ line-height: normal;
   font-weight: 400;
   line-height: 30px;
   width: 57%;
-  padding: 16px 0px 0px 0px;
+  place-self:center;
 }
 #para{color: #000;font-family: Schibsted Grotesk;font-style: normal;font-weight: 400;}
 #para_two{color: #333;text-align: center;font-family: Schibsted Grotesk;font-size: 14px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase;}
 
 /* container */
 
-.container-fluid{display: flex;gap: 10px;flex-direction: column;margin: 0px;justify-content: center;}
-
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {  
-  h1 {font-size:1.14rem;} /*1rem = 16px*/
-  p {font-size: 0.62rem;}  
+.container-fluid{padding: 0px;display: flex;gap: 10px;flex-direction: column;margin: 0px;justify-content: center;}
+.container-fluid1{display: flex;gap: 10px;flex-direction: column;margin: 0px;justify-content: center;padding:20px 40px;}
+.responsive {
+  width: 100%;
 }
-
-.nav-item{margin-right:15px;}
- 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-  h1 {font-size:1.86rem;} /*1rem = 16px*/
-  p {font-size: 0.74rem;}  
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  h1 {font-size:2.55rem;} /*1rem = 16px*/
-  p {font-size: 0.96rem;}
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-  h1 {font-size:3.19rem;} /*1rem = 16px*/    
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1400px) {  
-  h1 {font-size:4rem;} /*1rem = 16px*/ 
-  p {font-size: 1.45rem;}   
+.responsive h1 {
+  font-size: 10px !important;
 }
 
 
@@ -124,11 +100,29 @@ line-height: normal;
   justify-content: center;
 }
 
+.flex9 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex10{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px 20px 0px;
+  justify-content: center;
+  flex-direction: row;
+  background: #EDF1FD;
+}
+
 .flex5 {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  
+  padding: 40px;
 }
 .flex_of_5{
 display: flex;
@@ -158,6 +152,38 @@ gap:27px;
 
 .card{
   border-radius:20px;
+}
+
+.card9{
+  border-radius:20px;
+  min-width: 320px;
+  max-width: 340px;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(24, 25, 119, 0.10);
+  background: #132249;
+  color: white;
+}
+
+.card10{
+  min-width: 320px;
+  max-width: 340px;
+  padding: 5px 40px;
+}
+
+.card10 p {
+  font-size: 20px;
+}
+.card10 ul{
+  padding-left:0px;
+}
+
+.card10 li {
+  font-size: 16px;
+  background: url(/assets/images/arrowright.svg) left no-repeat;
+  list-style-type: none;
+  padding-left: 20px;
+
 }
 
 .column {
@@ -190,6 +216,7 @@ box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset !important;
   grid-auto-flow: column; /* in column direction */
   border-radius: 10px;
   border: 1px solid #C7D6DA;
+  margin: 0px 40px;
 }
 .one{
   background: #C7D6DA;
@@ -204,6 +231,13 @@ box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset !important;
 
 .flex7{
   background-color: #261499;
+}
+.flex-items9{
+padding:0px 0px 15px 0px;
+}
+
+.info9{
+height:60%
 }
 
 .mb-0{
@@ -248,4 +282,35 @@ box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset !important;
   #message_button{
     width: inherit;
   background-color: #261499;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #261499;
+    color: white;
+  }
+
+  .cardfooter{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-left: auto;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .flex1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex8{
+    padding: 40px;
+  }
+
+  .form-group , .form-row{
+    padding: 0px;
   }
