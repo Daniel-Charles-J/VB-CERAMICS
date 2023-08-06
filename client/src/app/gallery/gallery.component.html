@@ -45,8 +45,8 @@
 
     <div class="containers">
       <div class="container-1">
-        <div style="width: 45%;"><img class="container-left" src="../../assets/Carousel.png"></div>
-        <div style="width: 45%;" class="container-right">
+        <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div>
+        <div class="container-right">
             <div class="cont-heading">
                 <h3>Gallery <span>01/04</span></h3>
                 <h1>ACCOLADES</h1>
@@ -66,7 +66,7 @@
       </div>
         
       <div class="container-1">
-        <div style="width: 45%;" class="container-right">
+        <div class="container-right">
             <div class="cont-heading">
                 <h3>Gallery <span>02/04</span></h3>
                 <h1>CERTIFICATIONS</h1>
@@ -83,12 +83,12 @@
                 </div>
             </div>
         </div>
-        <div style="width: 45%;"><img class="container-left" src="../../assets/Carousel.png"></div>
+        <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div>
       </div>
 
       <div class="container-1">
-        <div style="width: 45%;"><img class="container-left" src="../../assets/Carousel.png"></div>
-        <div style="width: 45%;" class="container-right">
+        <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div>
+        <div class="container-right">
             <div class="cont-heading">
                 <h3>Gallery <span>03/04</span></h3>
                 <h1>VISITATIONS</h1>
@@ -108,7 +108,7 @@
       </div>
 
       <div class="container-1">
-        <div style="width: 45%;" class="container-right">
+        <div class="container-right">
             <div class="cont-heading">
                 <h3>Gallery <span>04/04</span></h3>
                 <h1>INAUGURATION</h1>
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <div style="width: 45%;"><img class="container-left" src="../../assets/Carousel.png"></div>
+        <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div>
       </div>
     </div>
 </div>
@@ -151,88 +151,61 @@
 </div>
 
 
-<div class="section-4">
-  <div class="Footer">
-    <div class="above-footer">
-      <div class="box-1">
-        <div class="heading">
-          <h2>COMPANY</h2>
-        </div>
-        <div class="logo">
-          <img src="../../assets/gallery-page-img/logo.png" alt="logo">
-        </div>
-        <div class="address">
-          <p>Vb Ceramic Consultants,
-            207, 3rd Link Street, Kottivakkam, 
-            Chennai - 600 041</p>
-        </div>
-      </div>
-
-      <div class="box-2">
-        <div class="heading">
-          <h2>Sitemap</h2>
-        </div>
-        <div *ngFor = "let content of box_2_content" class="nav-title">
-          <img src="../../assets/gallery-page-img/arrow right.svg">
-          <h3>{{content}}</h3>
-        </div>
-      </div>
-
-      <div class="box-3">
-        <div class="heading">
-          <h2>Services</h2>
-        </div>
-        <div *ngFor = "let content of box_3_content" class="nav-title">
-          <img src="../../assets/gallery-page-img/arrow right.svg">
-          <h3>{{content}}</h3>
-        </div>
-        <div class="heading">
-          <h2>Socials</h2>
-        </div>
-        <div class="social_media">
-          <img src="../../assets/gallery-page-img/mdi_linkedin.svg">
-          <img src="../../assets/gallery-page-img/Facebook svg.svg">
-          <img src="../../assets/gallery-page-img/YouTube svg.svg">
-        </div>
-      </div>
-
-      <div class="box-4">
-        <div class="heading">
-          <h2>Support</h2>
-        </div>
-        <div *ngFor = "let content of box_4_content" class="nav-title">
-          <img src="../../assets/gallery-page-img/arrow right.svg">
-          <h3>{{content}}</h3>
-        </div>
-        <div class="heading">
-          <h2>Our groups</h2>
-        </div>
-        <div class="end-logo">
-          <img src="../../assets/gallery-page-img/logo.png" alt="logo">
-          <img src="../../assets/gallery-page-img/hi-temp.png" alt="hi-temp">
-        </div>
-      </div>
+<div class='flex10'>
+  <div class='card10'>
+    <p>COMPANY</p>
+    <img src="./assets/images/image 26.png" alt="">
+    <br>
+    <br>
+    <p style='font-size:16px !important;'>Vb Ceramic Consultants,
+      207, 3rd Link Street, Kottivakkam, 
+      Chennai - 600 041</p>
+  </div>
+  <div class='card10'>
+    <p>SITEMAP</p>
+    <ul>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Services</li>
+      <li>Gallery</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+  <div class='card10'>
+    <p>SERVICES</p>
+    <ul>
+      <li>Raw Materials</li>
+      <li>Material Processing</li>
+      <li>Characterization</li>
+      <li>Heat Treatment Facility</li>
+     
+    </ul>
+    <p>SOCIALS</p>
+    <div style='display: flex;flex-direction:row;gap:20px'>
+      <img src="./assets/images/mdi_linkedin (1).svg" alt="">
+      <img src="./assets/images/YouTube svg.svg" alt="">
+      <img src="./assets/images/Facebook svg.svg" alt="">
     </div>
+  </div>
+  <div class='card10'>
+    <p>SUPPORT</p>
+    <ul>
+      <li>Contact Us</li>
+      <li>Help centre</li>
+      <li>OUR GROUPS</li>
+    </ul>
+    <img src="./assets/images/image 26.png" alt="">
   </div>
 </div>
-<div class="section-5">
-  <div>
-    <p>©VB Ceramic Research Centre. All Rights Reserved.</p>
-  </div>
-  <div class="globals">
-    <div class="first-part">
-      <img src="../../assets/gallery-page-img/mdi_web.svg" alt="web">
-      <p>English</p>
+<footer>
+  <footer>
+    <div class='footer'>
+      <p style='padding: 20px 20px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
+      <div class='cardfooter'>
+        <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p>
+        <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p>
+        <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
+      </div>
     </div>
-    <div class="separator"></div>
-    <div class="first-part">
-      <img src="../../assets/gallery-page-img/material-symbols_currency-rupee.svg" alt="currency">
-      <p>INR</p>
-    </div>
-    <div class="separator"></div>
-    <div class="first-part">
-      <img src="../../assets/gallery-page-img/mdi_clock.svg" alt="clock">
-      <p>Asia (India)</p>
-    </div>
-  </div>
-</div>
+  </footer>
+</footer>
