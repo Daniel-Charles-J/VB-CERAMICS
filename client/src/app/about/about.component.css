@@ -16,7 +16,7 @@
   display: flex;
   padding: 40px 0px;
   align-items: flex-start;
-  width: 30%;
+  width: 25%;
   height: 700px;
   position: fixed;
   z-index: 0.5;
@@ -132,7 +132,7 @@ flex-wrap: wrap;
 .navbar_about_text {
   color: #261499;
   font-family: Unbounded;
-  font-size: 40px;
+  font-size: 50px;
   text-align:justify;
   font-style: normal;
   font-weight: 600;
@@ -174,8 +174,8 @@ flex-wrap: wrap;
 
 .about_section .main {
   display: flex;
-  width: 68%;
-  padding: 40px 0px 0px 0px;
+  width: 73%;
+  padding: 40px 20px 0px 0px;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
@@ -530,3 +530,13 @@ flex: 1 0 0;
   opacity: 1;
   transition: all .2s ease-in-out;
  }
+
+/* 
+  @media (max-width: 700px) {
+  .about_section {
+    flex-direction: column;
+  }
+  .navbar {
+   position: sticky;
+  }
+ } */
