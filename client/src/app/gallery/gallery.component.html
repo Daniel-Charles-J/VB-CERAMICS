@@ -140,12 +140,78 @@
       <img src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
       <img src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
     </div>
-    <div class="below section">
+    <div class="below-section">
       <img src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
       <img src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
       <img src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
       <img src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
       <img src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
+    </div>
+  </div>
+</div>
+
+
+<div class="section-4">
+  <div class="Footer">
+    <div class="above-footer">
+      <div class="box-1">
+        <div class="heading">
+          <h2>COMPANY</h2>
+        </div>
+        <div class="logo">
+          <img src="../../assets/gallery-page-img/logo.png" alt="logo">
+        </div>
+        <div class="address">
+          <p>Vb Ceramic Consultants,
+            207, 3rd Link Street, Kottivakkam, 
+            Chennai - 600 041</p>
+        </div>
+      </div>
+
+      <div class="box-2">
+        <div class="heading">
+          <h2>Sitemap</h2>
+        </div>
+        <div *ngFor = "let content of box_2_content" class="nav-title">
+          <img src="../../assets/gallery-page-img/arrow right.svg">
+          <h3>{{content}}</h3>
+        </div>
+      </div>
+
+      <div class="box-3">
+        <div class="heading">
+          <h2>Services</h2>
+        </div>
+        <div *ngFor = "let content of box_3_content" class="nav-title">
+          <img src="../../assets/gallery-page-img/arrow right.svg">
+          <h3>{{content}}</h3>
+        </div>
+        <div class="heading">
+          <h2>Socials</h2>
+        </div>
+        <div class="social_media">
+          <img src="../../assets/gallery-page-img/mdi_linkedin.svg">
+          <img src="../../assets/gallery-page-img/Facebook svg.svg">
+          <img src="../../assets/gallery-page-img/YouTube svg.svg">
+        </div>
+      </div>
+
+      <div class="box-4">
+        <div class="heading">
+          <h2>Support</h2>
+        </div>
+        <div *ngFor = "let content of box_4_content" class="nav-title">
+          <img src="../../assets/gallery-page-img/arrow right.svg">
+          <h3>{{content}}</h3>
+        </div>
+        <div class="heading">
+          <h2>Our groups</h2>
+        </div>
+        <div class="end-logo">
+          <img src="../../assets/gallery-page-img/logo.png" alt="logo">
+          <img src="../../assets/gallery-page-img/hi-temp.png" alt="hi-temp">
+        </div>
+      </div>
     </div>
   </div>
 </div>

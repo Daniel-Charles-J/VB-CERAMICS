@@ -255,3 +255,82 @@
   align-items: center;
   flex-shrink: 0;
 }
+.above-section img{
+  width: 234px;
+  height: 234px;
+}
+.below-section img{
+  width: 234px;
+  height: 234px;
+}
+
+
+/* Footer Sextion */
+.above-footer{
+  display: flex;
+  padding: 40px 40px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 32px 50px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.heading{
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 250% */
+  text-transform: uppercase;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+.address{
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+.nav-title{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+.nav-title img{
+  width: 8px;
+  height: 24px;
+}
+.nav-item h3{
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+.social_media{
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  align-self: stretch;
+}
+.end-logo{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+.end-logo img{
+  width: 70px;
+  height: 45px;
+}
