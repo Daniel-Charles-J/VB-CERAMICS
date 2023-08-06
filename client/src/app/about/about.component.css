@@ -14,13 +14,13 @@
 
 .sticky-top {
   position: fixed !important;
+  z-index: 0.5 !important;
 }
 
 .navbar {
   padding: 40px 0px;
   width: 25%;
   height: 700px;
-  z-index: 0.5;
   left: 2.5%;
 }
 
@@ -299,7 +299,7 @@
 
 .main_section3_cnt,
 .main_section4_cnt {
-  width: 170px;
+  width: 190px;
 }
 
 .main_section3_cnt img,
@@ -350,7 +350,7 @@
 
 .section5_images {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   align-content: flex-start;
   gap: 20px;
@@ -502,7 +502,7 @@
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 2000;
   /* Sit on top */
   width: 100%;
   /* Full width */
@@ -552,66 +552,6 @@
   transition: all .2s ease-in-out;
 }
 
-
-@media (max-width: 575px) {
-
-  .navbar {
-    height: auto;
-    width: 100%;
-    padding-bottom: 0px;
-  }
-
-  .sticky-top {
-    position: sticky !important;
-  }
-
-  .navbar_ul {
-    display: flex !important;
-    justify-content: space-between;
-  }
-
-  .main {
-    width: 100%;
-    padding: 12px;
-    margin-left: 1%;
-  }
-
-  .section5_images {
-    justify-content: center;
-    border-radius: 10px;
-  }
-  .section5_images1,
-  .section5_images2,
-  .section5_images3{
-    width: 100%;
-    align-self: stretch;
-    display: flex;
-    justify-content: center;
-  }
-
-  .section5_images1 .fellowship_img1,
-.section5_images2 .fellowship_img2,
-.section5_images3 .fellowship_img3 {
- width: 75%;
-}
-}
-
-/* @media (max-width: 920px) {
-  
- }
- @media (max-width: 920px) {
-  
- }
- @media (max-width: 920px) {
-  
- }
- @media (max-width: 850px) {
-  
- } */
-/* @media (max-width: 850px) {
-  
-} */
-
 @media (max-width: 1420px) {
   .navbar_about_text {
     font-size: 50px;
@@ -644,7 +584,9 @@
 }
 
 @media (max-width: 920px) {
-
+  .navbar {
+    height: 650px;
+  }
   .navbar_about_text {
     font-size: 32px !important;
   }
@@ -656,6 +598,16 @@
     width: 20px;
     height: 2.5px;
     margin: 0 0 5.5px 0;
+  }
+
+  .main_section1_cnt,
+  .main_section2_cnt,
+  .main_section5_cnt,
+  .main_section6_cnt,
+  .main_section7_top_cnt,
+  .main_section8_cnt,
+  .research_projects_cnt {
+    font-size: 18px;
   }
 }
 
@@ -669,8 +621,105 @@
     display: none;
   }
   .menu-btn .btn-line {
-    width: 20px;
-    height: 2.5px;
-    margin: 0 0 5.5px 0;
+    width: 18px;
+    height: 1.5px;
+    margin: 0px 0px 6.5px 0;
+  }
+
+  .main_section1_cnt,
+  .main_section2_cnt,
+  .main_section5_cnt,
+  .main_section6_cnt,
+  .main_section7_top_cnt,
+  .main_section8_cnt,
+  .research_projects_cnt {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 760px) {
+  .row {
+    flex-direction: column !important;
+  }
+  .col-sm-3{
+    width: 100%;
+  }
+  .navbar {
+    height: auto;
+    width: 100%;
+    padding-bottom: 0px;
+  }
+
+  .sticky-top {
+    position: sticky !important;
+  }
+
+  .navbar_top_text {
+    font-size: 20px !important;
+  }
+  .navbar_about_text {
+    font-size: 90px !important;
+  }
+  .navbar_ul {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  .navbar_li a svg{
+    display: block;
+  }
+
+  .d-sm-inline {
+    display: none !important;
+  }
+
+  .menu .menu_navbar-nav {
+    
+    gap: 7%;
+  }
+  .main {
+    width: 100%;
+    padding: 12px;
+    margin-left: 1%;
+  }
+
+  .section5_images {
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .section5_images1,
+  .section5_images2,
+  .section5_images3{
+    width: 100%;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section5_images1 .fellowship_img1,
+.section5_images2 .fellowship_img2,
+.section5_images3 .fellowship_img3 {
+ width: 75%;
+}
+
+.main_section1_cnt,
+  .main_section2_cnt,
+  .main_section5_cnt,
+  .main_section6_cnt,
+  .main_section7_top_cnt,
+  .main_section8_cnt,
+  .research_projects_cnt {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar_about_text {
+    font-size: 75px !important;
+  }
+
+  .menu .menu_navbar-nav {
+    width: 70%;
+    gap: 5%;
   }
 }
