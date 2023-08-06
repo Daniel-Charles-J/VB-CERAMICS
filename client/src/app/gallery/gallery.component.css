@@ -334,3 +334,45 @@
   width: 70px;
   height: 45px;
 }
+
+
+
+/* Below navbar */
+.section-5{
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 20px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  background: var(--primary, #181977);
+}
+.section-5 p {
+  color: var(--bg, #FFF);
+  font-family: Schibsted Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 12px;
+  line-height: 150%; /* 27px */  
+}
+.globals{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.first-part{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.first-part p{
+  margin-top: 12px;
+}
+.separator{
+  background: #FFF;
+  width: 1px;
+  height: 41px;
+}
