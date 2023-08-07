@@ -555,19 +555,20 @@
 @media (max-width: 1420px) {
   .navbar_about_text {
     font-size: 50px;
-  } 
+  }
 }
 
 @media (max-width: 1215px) {
   .navbar_about_text {
     font-size: 40px !important;
-  } 
+  }
 }
 
 @media (max-width: 1000px) {
   .navbar_about_text {
     font-size: 35px !important;
-  } 
+  }
+
   .navbar_li a {
     font-size: 18px;
   }
@@ -587,6 +588,7 @@
   .navbar {
     height: 650px;
   }
+
   .navbar_about_text {
     font-size: 32px !important;
   }
@@ -594,6 +596,7 @@
   .navbar_li a {
     font-size: 16px;
   }
+
   .menu-btn .btn-line {
     width: 20px;
     height: 2.5px;
@@ -617,9 +620,10 @@
     font-size: 28px !important;
   }
 
-  .navbar_li a svg{
+  .navbar_li a svg {
     display: none;
   }
+
   .menu-btn .btn-line {
     width: 18px;
     height: 1.5px;
@@ -635,15 +639,21 @@
   .research_projects_cnt {
     font-size: 18px;
   }
+
+  .menu .menu_navbar-nav {
+    gap: 7%;
+  }
 }
 
 @media (max-width: 760px) {
   .row {
     flex-direction: column !important;
   }
-  .col-sm-3{
+
+  .col-sm-3 {
     width: 100%;
   }
+
   .navbar {
     height: auto;
     width: 100%;
@@ -657,15 +667,17 @@
   .navbar_top_text {
     font-size: 20px !important;
   }
+
   .navbar_about_text {
     font-size: 90px !important;
   }
+
   .navbar_ul {
     display: flex !important;
     justify-content: space-between;
   }
 
-  .navbar_li a svg{
+  .navbar_li a svg {
     display: block;
   }
 
@@ -674,9 +686,9 @@
   }
 
   .menu .menu_navbar-nav {
-    
     gap: 7%;
   }
+
   .main {
     width: 100%;
     padding: 12px;
@@ -687,9 +699,10 @@
     justify-content: center;
     border-radius: 10px;
   }
+
   .section5_images1,
   .section5_images2,
-  .section5_images3{
+  .section5_images3 {
     width: 100%;
     align-self: stretch;
     display: flex;
@@ -697,12 +710,12 @@
   }
 
   .section5_images1 .fellowship_img1,
-.section5_images2 .fellowship_img2,
-.section5_images3 .fellowship_img3 {
- width: 75%;
-}
+  .section5_images2 .fellowship_img2,
+  .section5_images3 .fellowship_img3 {
+    width: 75%;
+  }
 
-.main_section1_cnt,
+  .main_section1_cnt,
   .main_section2_cnt,
   .main_section5_cnt,
   .main_section6_cnt,
