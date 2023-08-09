@@ -45,7 +45,31 @@
 
     <div class="containers">
       <div class="container-1">
-        <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div>
+        <!-- <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div> -->
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide container-left" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../../assets/Carousel.png" class="d-block w-100" alt="image">
+            </div>
+            <div class="carousel-item">
+              <img src="../../assets/gallery-page-img/mirror-like.jpeg" class="d-block w-100" alt="work">
+            </div>
+            <div class="carousel-item">
+              <img src="../../assets/gallery-page-img/sky-view.jpeg" class="d-block w-100" alt="mau">
+            </div>
+          </div>
+          <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span  aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a> -->
+        </div>
+
+
         <div class="container-right">
             <div class="cont-heading">
                 <h3>Gallery <span>01/04</span></h3>
@@ -83,11 +107,41 @@
                 </div>
             </div>
         </div>
-        <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div id="preload">
+              <img src="../../assets/gallery-page-img/sky-view.jpeg" alt="">
+              <img src="../../assets/gallery-page-img/mirror-like.jpeg" alt="">
+              <img src="../../assets/Carousel.png" alt="">
+            </div>
+            <div class="carousel-item active">
+              <img class="d-block" src="../../assets/gallery-page-img/sky-view.jpeg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="../../assets/Carousel.png" alt="Third slide">
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="container-1">
-        <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../../assets/gallery-page-img/sky-view.jpeg" alt="Third slide"> <!-- Third image -->
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="Second slide"> <!-- Second image -->
+            </div>
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="../../assets/Carousel.png" alt="First slide"> <!-- First image -->
+            </div>
+          </div>
+        </div>
+        
         <div class="container-right">
             <div class="cont-heading">
                 <h3>Gallery <span>03/04</span></h3>
@@ -202,8 +256,8 @@
     <div class='footer'>
       <p style='padding: 20px 20px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
       <div class='cardfooter'>
-        <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p>
-        <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p>
+        <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p><div class="separator"></div>
+        <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p><div class="separator"></div>
         <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
       </div>
     </div>
