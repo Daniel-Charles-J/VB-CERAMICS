@@ -3,15 +3,16 @@ body{}
 
 
 /* Navbar */
-.navbar-brand{color: #000 !important;font-family: Unbounded;font-size: 16px;font-style: normal;font-weight: 600;line-height: 16px; }
-.bg-light {background-color: transparent !important;}
-.nav-link{color:#000!important;display: flex;padding: 8px;justify-content: center;align-items: center;gap: 8px;}
-.nav-link:hover{color:#261499!important}
+.navbar-brand{padding: 0px 40px 0px 40px;color:white !important;font-family: Unbounded;font-size: 16px;font-style: normal;font-weight: 600;line-height: 16px; }
+.bg-light {background-color: #132249 !important;}
+.nav-link{color:white!important;display: flex;padding: 20px;justify-content: center;align-items: center;gap: 8px;}
+.nav-link:hover{color:grey!important}
+#navbarSupportedContent{padding-right: 40px;}
 
 
 
 /* header */
-#top_header{color: #261499;text-align:center;font-variant-numeric: lining-nums tabular-nums;font-family: Unbounded;font-style: normal;font-weight: 700;line-height: normal;text-transform: uppercase;letter-spacing: 1.5px;}
+#top_header{color: #132249;text-align:center;font-variant-numeric: lining-nums tabular-nums;font-family: Unbounded;font-style: normal;font-weight: 700;line-height: normal;text-transform: uppercase;letter-spacing: 1.5px;}
 h2{
   color: #000;
 font-family: Unbounded;
@@ -22,7 +23,7 @@ line-height: 30px; /* 150% */
 text-transform: uppercase;
 }
 #header_services{
-color: #261499;
+color: #132249;
 font-family: Unbounded;
 font-size: 82px;
 font-style: normal;
@@ -71,13 +72,13 @@ line-height: normal;
   width: 57%;
   place-self:center;
 }
-#para{color: #000;font-family: Schibsted Grotesk;font-style: normal;font-weight: 400;}
-#para_two{color: #333;text-align: center;font-family: Schibsted Grotesk;font-size: 14px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase;}
+#para{font-size: 20px;color: #000;font-family: Schibsted Grotesk;font-style: normal;font-weight: 400;text-align: center;}
+#para_two{color: white;text-align: center;font-family: Schibsted Grotesk;font-size: 14px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase;}
 
 /* container */
 
 .container-fluid{padding: 0px;display: flex;gap: 10px;flex-direction: column;margin: 0px;justify-content: center;}
-.container-fluid1{display: flex;gap: 10px;flex-direction: column;margin: 0px;justify-content: center;padding:20px 40px;}
+.container-fluid1{display: flex;gap: 10px;flex-direction: column;margin: 0px;justify-content: center;}
 .responsive {
   width: 100%;
 }
@@ -89,12 +90,12 @@ line-height: normal;
 
 /* span{color: #333;text-align: center;font-family: Unbounded;font-size: 20px;font-style: normal;font-weight: 500;line-height: normal;letter-spacing: 0.1px;} */
 
-.flex-items {width:60px;height: 60px;margin: 10px -1px 15px 50px;text-align: center;font-size: 34px;}
+.flex-items {width:60px !important;height: 60px;margin: 10px -1px 15px 50px;text-align: center;font-size: 34px;}
 
 .flex4 {
   display: flex;
   flex-wrap: wrap;
-  background-color: #261499;
+  background-color: #132249;
   gap: 60px;
   padding: 60px;
   justify-content: center;
@@ -230,7 +231,7 @@ box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset !important;
 }
 
 .flex7{
-  background-color: #261499;
+  background-color: #132249;
 }
 .flex-items9{
 padding:0px 0px 15px 0px;
@@ -281,13 +282,13 @@ height:60%
 
   #message_button{
     width: inherit;
-  background-color: #261499;
+  background-color: #132249;
   }
 
   .footer{
     display: flex;
     flex-direction: row;
-    background-color: #261499;
+    background-color: #132249;
     color: white;
   }
 
@@ -308,9 +309,47 @@ height:60%
   }
 
   .flex8{
+    background: url(/assets/images/contact_bg.png) center no-repeat;
     padding: 40px;
   }
 
   .form-group , .form-row{
     padding: 0px;
+  }
+
+  h4{
+    color:white;
+  }
+
+  @media screen and (min-width: 1200px) {
+    #top_header {
+      font-size: 3.96rem;
+      letter-spacing: 4.5px;
+    }
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background: url(/assets/images/menu_own.svg) left no-repeat;
+  }
+ 
+  .slide{    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  .college {
+  margin: 30px 10px;
+  color:white;
+  }
+
+  .owl-item {width: 128.906px; margin-right: 10px; background:powderblue; }
+
+  #hr_tag{
+    width: 90%;
+    margin: auto;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
   }

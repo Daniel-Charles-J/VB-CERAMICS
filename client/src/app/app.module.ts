@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -33,7 +33,8 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     AppRoutingModule,
     // TooltipsModule,
-    MatButtonModule, MatTooltipModule
+    MatButtonModule, MatTooltipModule,CarouselModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

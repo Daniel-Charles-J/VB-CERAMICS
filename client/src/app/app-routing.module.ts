@@ -6,6 +6,8 @@ import { ServiceComponent } from './service/service.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { LibraryComponent } from './library/library.component';
 
+
+
 const appRoutes : Routes = [
   {path : '', component : HomeComponent },
   {path : 'about', component : AboutComponent},
@@ -18,4 +20,6 @@ const appRoutes : Routes = [
   imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+
+}
