@@ -4,6 +4,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VBCRC</title>
+  <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+  </script>
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+   </script>
+   <script src="./assets/carousel_slide.js">
+   </script>
 </head>
 
 <body>
@@ -31,7 +39,10 @@
           <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="scrollToSection('ContactUs')">Contact Us</a>
+          <a class="nav-link" style='background-color:white !important; color:#132249 !important;    border-radius: 50px;
+          padding: 6px;
+          margin-top: 15px;
+          margin-left: 5px;' (click)="scrollToSection('ContactUs')">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -43,7 +54,7 @@
   <div class="container-fluid">
     <div class="flex1">
       <h1 id="top_header">DR.VB’s ceramic research Centre </h1>
-      <p id="para">Unleash your inner artist with our state-of-the-art Ceramic Research Centre. Dive into the world of magnificent ceramic creations.</p>
+      <p id="para" >Unleash your inner artist with our state-of-the-art Ceramic Research Centre. Dive into the world of magnificent ceramic creations.</p>
       <br>
     </div>
        
@@ -59,19 +70,48 @@
         </div>
 
         </div>
-          <hr>
-          <p id="para_two">Trusted by Reputed Institutions</p>
-          <div class="flex3" style="text-align:center;">
-            <img class='flex-items'  src="./assets/images/g3010.png" alt=""><span style="margin-left:10px">IIT Madras</span>
-            <img class='flex-items'  src="./assets/images/image-removebg-preview (3) 1.png" alt=""><span style="margin-left:10px">Anna University</span>
-            <img class='flex-items'  src="./assets/images/Group.png" alt=""><span style="margin-left:10px">IIT Kanpur</span>
-            <img class='flex-items'  src="./assets/images/IIT Bombay - png.png" alt=""><span style="margin-left:10px">IIT Bombay</span>
-            <br>
-            <img class='flex-items'  src="./assets/images/IITKGP Foundation - jpeg.png" alt=""><span style="margin-left:10px">IIT Kharagpur</span>
-            <img class='flex-items'  src="./assets/images/SRM University - png.png" alt=""><span style="margin-left:10px">SRM University</span>
-            <img class='flex-items'  src="./assets/images/image-removebg-preview (2) 1.png" alt=""><span style="margin-left:10px">St.Joseph’s Institutions</span>
+          <div style='background-color: #132249;margin-bottom: -11px;'>
+            <hr>
+             <p id="para_two">Trusted by Reputed Institutions</p>
+             <owl-carousel-o  [options]="customOptions">
+              <ng-template  carouselSlide>
+                <div class="slide" style='display:flex;flex-direction:row;'>
+                    <img class='flex-items' src="./assets/images/g3010.png" alt=""><span class='college' style="margin-left:10px">IIT Madras</span>
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+                <div class="slide">
+                  <img class='flex-items'  src="./assets/images/image-removebg-preview (3) 1.png" alt=""><span class='college' style="margin-left:10px">Anna University</span>
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+                <div class="slide">
+                  <img class='flex-items'  src="./assets/images/Group.png" alt=""><span class='college' style="margin-left:10px">IIT Kanpur</span>
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+                <div class="slide">
+                  <img class='flex-items'  src="./assets/images/IIT Bombay - png.png" alt=""><span class='college' style="margin-left:10px">IIT Bombay</span>
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+                <div class="slide">
+                  <img class='flex-items'  src="./assets/images/IITKGP Foundation - jpeg.png" alt=""><span class='college' style="margin-left:10px">IIT Kharagpur</span>
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+                <div class="slide">
+                  <img class='flex-items'  src="./assets/images/SRM University - png.png" alt=""><span class='college' style="margin-left:10px">SRM University</span>
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+                <div class="slide">
+                  <img class='flex-items'  src="./assets/images/image-removebg-preview (2) 1.png" alt=""><span class='college' style="margin-left:10px">St.Joseph’s Institutions</span>
+                </div>
+              </ng-template>
+            </owl-carousel-o>      
+            <hr id="hr_tag" style='color:white'>      
           </div>
-
           <div class="flex4" >
             <div class="card">
             <img class='flex-items4' style="border-radius:20px" src="./assets/images/Frame 110 (1).png" alt="">
@@ -329,6 +369,7 @@
 
 <h1 style='text-align: center;margin-top:20px;font-size:32px'>Trusted by Students and Scientists over India</h1>
 <p style='text-align: center;'>Some of the few reviews that were publicly shared</p>
+
 <div class="flex9" >
   <div class="card9">
   <img class='flex-items9' style="border-radius:20px" src="./assets/images/Frame 11713.png" alt="">
@@ -361,39 +402,7 @@
 
 <br>
 <div class="flex8" id="ContactUs">
-  <div class="flex_of_5">
-    <h1 id="header_services" class="flex-items5">CONTACT US</h1>
-    <p class="flex-items5" id="contact_para">Craving a conversation about pottery? Immerse yourself in a vibrant world of hues and surfaces with our amazing ceramic offerings!</p>
-  </div>
-  <hr>
-  <div style='display:flex;flex-direction:row;gap:20px;flex-wrap: wrap;'>
-    <div style='flex:1 1 60%'>
-      <form >
-        <div class="form-row col-md-12">
-          <div class="form-group col-md-6">
-            <input id="name" type="text" class="form-control"  placeholder="Name">
-          </div>
-          <div class="form-group col-md-6">
-            <input style='margin-left:5px;' id="email" type="email" class="form-control"  placeholder="Email">
-          </div>
-        </div>
-        <div class="form-group col-md-12 ">
-          <textarea name="" id="message" placeholder="Message"></textarea>
-        </div>
-        <div class="form-group col-md-12">
-          <button id="message_button" type="submit" class="btn btn-primary">Message</button>
-        </div>
-      </form>
-    </div>
-
-    <div>
-      <p style="font-size:27px">Linkedin <span style="float:right"><img src="./assets/images/mdi_linkedin.svg" alt=""></span></p>
-      <p style="font-size:27px">Google <span style="float:right"><img src="./assets/images/ri_google-fill.svg" alt=""></span></p>
-      <p style="font-size:27px">Whatsapp <span style="float:right"><img src="./assets/images/ic_baseline-whatsapp.svg" alt=""></span></p>
-      <p style="font-size:27px">9445025461 <span style="float:right"><img src="./assets/images/material-symbols_call.svg" alt=""></span></p>
-      <p style="font-size:27px">7338825555 <span style="float:right"><img src="./assets/images/material-symbols_call.svg" alt=""></span></p>
-    </div>
-  </div>
+ 
 </div>
 
 <br>
