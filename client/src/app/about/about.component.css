@@ -20,7 +20,7 @@
 .navbar {
   padding: 40px 0px;
   width: 25%;
-  height: 700px;
+  height: 100%;
   left: 2.5%;
 }
 
@@ -63,6 +63,10 @@
   font-weight: 600;
   line-height: 16px;
   /* 100% */
+}
+
+.navbar_top_text img {
+  width: 100%;
 }
 
 .menu-btn {
@@ -159,7 +163,7 @@
 
 .navbar_li {
   display: flex;
-  padding: 8px 0px;
+  padding: 2% 0%;
   align-items: center;
   gap: 4px;
   align-self: stretch;
@@ -305,7 +309,7 @@
 .main_section3_cnt img,
 .main_section4_cnt img {
   width: 100%;
-  height: 120px;
+  height: auto;
   border-radius: 14px;
   background: #FFF;
 }
@@ -364,6 +368,8 @@
 .section5_images3 .fellowship_img3 {
   align-self: stretch;
   border-radius: 14px;
+  width: 250px;
+  height: auto;
 }
 
 .section5_images1 .fellowship_img1,
@@ -552,6 +558,65 @@
   transition: all .2s ease-in-out;
 }
 
+.flex10 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px 20px 0px;
+  justify-content: space-around;
+  flex-direction: row;
+  background: #EDF1FD;
+  width: 100%;
+}
+
+.card10 {
+  min-width: 200px;
+  max-width: 340px;
+  padding: 20px 10px;
+}
+
+.card10 p {
+  font-size: 20px;
+}
+
+.card10 ul {
+  padding-left: 0px;
+}
+
+.card10 li {
+  font-size: 16px;
+  background: url(/assets/images/arrowright.svg) left no-repeat;
+  list-style-type: none;
+  padding-left: 20px;
+
+}
+
+footer {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: #261499;
+  color: white;
+}
+
+.cardfooter {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-left: auto;
+  padding: 20px 20px 0px 20px;
+}
+
+.separator {
+  background: #FFF;
+  width: 1px;
+  height: 26px;
+}
+
 @media (max-width: 1420px) {
   .navbar_about_text {
     font-size: 50px;
@@ -559,14 +624,22 @@
 }
 
 @media (max-width: 1215px) {
-  .navbar_about_text {
+  /* .navbar_about_text {
     font-size: 40px !important;
+  } */
+
+  .navbar_top_text img {
+    width: 90%;
   }
 }
 
 @media (max-width: 1000px) {
-  .navbar_about_text {
+  /* .navbar_about_text {
     font-size: 35px !important;
+  } */
+
+  .navbar_top_text img {
+    width: 80%;
   }
 
   .navbar_li a {
@@ -579,6 +652,7 @@
   .main_section6_cnt,
   .main_section7_top_cnt,
   .main_section8_cnt,
+  .research_projects,
   .research_projects_cnt {
     font-size: 18px;
   }
@@ -609,6 +683,7 @@
   .main_section6_cnt,
   .main_section7_top_cnt,
   .main_section8_cnt,
+  .research_projects,
   .research_projects_cnt {
     font-size: 18px;
   }
@@ -616,8 +691,9 @@
 
 @media (max-width: 850px) {
 
-  .navbar_about_text {
-    font-size: 28px !important;
+
+  .navbar_top_text img {
+    width: 70%;
   }
 
   .navbar_li a svg {
@@ -636,8 +712,9 @@
   .main_section6_cnt,
   .main_section7_top_cnt,
   .main_section8_cnt,
+  .research_projects,
   .research_projects_cnt {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   .menu .menu_navbar-nav {
@@ -664,12 +741,12 @@
     position: sticky !important;
   }
 
-  .navbar_top_text {
-    font-size: 20px !important;
-  }
-
   .navbar_about_text {
     font-size: 90px !important;
+  }
+
+  .navbar_top_text img {
+    width: 100%;
   }
 
   .navbar_ul {
@@ -715,14 +792,18 @@
     width: 75%;
   }
 
+  .section5_images .modal {
+    display: none !important;
+  }
   .main_section1_cnt,
   .main_section2_cnt,
   .main_section5_cnt,
   .main_section6_cnt,
   .main_section7_top_cnt,
   .main_section8_cnt,
+  .research_projects,
   .research_projects_cnt {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
@@ -734,5 +815,11 @@
   .menu .menu_navbar-nav {
     width: 70%;
     gap: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar_about_text img{
+    width: 75%;
   }
 }

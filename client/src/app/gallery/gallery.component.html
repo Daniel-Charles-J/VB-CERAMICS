@@ -18,11 +18,11 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid1">
     <div class="row">
-      <div class="col-md-12 nav-pad">
+      <div class="col-md-12 ">
         <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Dr.VB’s Ceramic Research Centre</a>
+          <img src="./assets/images/image 26.png" alt="VBCRC">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,8 +42,8 @@
               <li class="nav-item">
                 <a class="nav-link" [routerLink]='["/service"]'>Services</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link contact-btn" href="#">Contact Us</a>
+              <li class="nav-item contact_us_li">
+                <a class="nav-link" class="contact_us" [routerLink]='["/"]'>Contact Us</a>
               </li>
             </ul>
           </div>
@@ -62,7 +62,28 @@
     </div>
     <hr />
     <div>
-      <img class="hero-image" src="../../assets/Frame 125.png">
+      <owl-carousel-o [options]="customOptions1">
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="hero-image" src="../../assets/Frame 125.png" alt="image">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="hero-image" src="../../assets/gallery-page-img/white_building.jpeg" alt="image">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="hero-image" src="../../assets/gallery-page-img/sky-view.jpeg" alt="image">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="hero-image" src="../../assets/gallery-page-img/seive-like.jpeg" alt="image">
+          </div>
+        </ng-template>
+      </owl-carousel-o>
     </div>
 
     <div class="containers">
@@ -71,7 +92,7 @@
 
         <div id="carouselExampleSlidesOnly" class="container-left">
           <div class="">
-            <owl-carousel-o [options]="customOptions1">
+            <owl-carousel-o [options]="customOptions1_left">
               <ng-template carouselSlide>
                 <div class="slide">
                   <img class="container_image" src="../../assets/Carousel.png" alt="image">
@@ -79,12 +100,17 @@
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide">
-                  <img class="container_image" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="image">
+                  <img class="container_image" src="../../assets/gallery-page-img/Carousel.png" alt="image">
                 </div>
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide">
-                  <img class="container_image" src="../../assets/gallery-page-img/sky-view.jpeg" alt="image">
+                  <img class="container_image" src="../../assets/gallery-page-img/Carousel_1.png" alt="image">
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+                <div class="slide">
+                  <img class="container_image" src="../../assets/gallery-page-img/Carousel_2.png" alt="image">
                 </div>
               </ng-template>
             </owl-carousel-o>
@@ -144,7 +170,7 @@
         </div>
         <div id="carouselExampleSlidesOnly" class="container-left">
           <div class="">
-            <owl-carousel-o [options]="customOptions1">
+            <owl-carousel-o [options]="customOptions1_left">
               <ng-template carouselSlide>
                 <div class="slide">
                   <img class="container_image" src="../../assets/Carousel.png" alt="image">
@@ -152,12 +178,17 @@
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide">
-                  <img class="container_image" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="image">
+                  <img class="container_image" src="../../assets/gallery-page-img/Carousel.png" alt="image">
                 </div>
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide">
-                  <img class="container_image" src="../../assets/gallery-page-img/sky-view.jpeg" alt="image">
+                  <img class="container_image" src="../../assets/gallery-page-img/Carousel_1.png" alt="image">
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+                <div class="slide">
+                  <img class="container_image" src="../../assets/gallery-page-img/Carousel_2.png" alt="image">
                 </div>
               </ng-template>
             </owl-carousel-o>
@@ -166,24 +197,29 @@
       </div>
 
       <div class="container-1">
-          <div class="container-left">
-            <owl-carousel-o [options]="customOptions1">
-              <ng-template carouselSlide>
-                <div class="slide">
-                  <img class="container_image" src="../../assets/Carousel.png" alt="image">
-                </div>
-              </ng-template>
-              <ng-template carouselSlide>
-                <div class="slide">
-                  <img class="container_image" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="image">
-                </div>
-              </ng-template>
-              <ng-template carouselSlide>
-                <div class="slide">
-                  <img class="container_image" src="../../assets/gallery-page-img/sky-view.jpeg" alt="image">
-                </div>
-              </ng-template>
-            </owl-carousel-o>
+        <div class="container-left">
+          <owl-carousel-o [options]="customOptions1_left">
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/Carousel.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel_1.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel_2.png" alt="image">
+              </div>
+            </ng-template>
+          </owl-carousel-o>
         </div>
 
         <div class="container-right">
@@ -229,23 +265,28 @@
           </div>
         </div>
         <div class="container-left">
-              <owl-carousel-o [options]="customOptions1">
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/Carousel.png" alt="image">
-                  </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="image">
-                  </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/gallery-page-img/sky-view.jpeg" alt="image">
-                  </div>
-                </ng-template>
-              </owl-carousel-o>
+          <owl-carousel-o [options]="customOptions1_left">
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/Carousel.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel_1.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel_2.png" alt="image">
+              </div>
+            </ng-template>
+          </owl-carousel-o>
         </div>
       </div>
     </div>
@@ -253,34 +294,34 @@
 
 
   <div class="section-3">
-      <div class="sec3_top">
-        <owl-carousel-o [options]="customOptions">
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
-            </div>
-          </ng-template>
-          <!-- <ng-template carouselSlide>
+    <div class="sec3_top">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
+          </div>
+        </ng-template>
+        <!-- <ng-template carouselSlide>
             <div class="slide">
               <img src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
               <img src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
@@ -289,37 +330,38 @@
               <img src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
             </div>
           </ng-template> -->
-        </owl-carousel-o>
-      </div>
-      <div class="sec3_bottom">
-        <owl-carousel-o [options]="customOptions_left">
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
-            </div>
-          </ng-template>
-        </owl-carousel-o>
-      </div>
+      </owl-carousel-o>
+    </div>
+    <br>
+    <div class="sec3_bottom">
+      <owl-carousel-o [options]="customOptions_left">
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
   </div>
 
 
@@ -364,23 +406,28 @@
       <ul>
         <li>Contact Us</li>
         <li>Help centre</li>
-        <li>OUR GROUPS</li>
       </ul>
-      <img src="./assets/images/image 26.png" alt="">
+      <div>
+        <p>OUR GROUPS</p>
+        <div style="display: flex; gap: 20px">
+          <img src="./assets/images/image 26.png" alt="">
+          <img src="../../assets//gallery-page-img/hi-tech.png" alt="">
+        </div>
+
+      </div>
+
     </div>
   </div>
   <footer>
-    <footer>
-      <div class='footer'>
-        <p style='padding: 20px 20px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
-        <div class='cardfooter'>
-          <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p>
-          <div class="separator"></div>
-          <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p>
-          <div class="separator"></div>
-          <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
-        </div>
+    <div class='footer'>
+      <p style='padding: 20px 20px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
+      <div class='cardfooter'>
+        <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p>
+        <div class="separator"></div>
+        <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p>
+        <div class="separator"></div>
+        <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
       </div>
-    </footer>
+    </div>
   </footer>
 </body>
