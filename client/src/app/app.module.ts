@@ -13,8 +13,6 @@ import { LibraryComponent } from './library/library.component';
 import { TooltipsModule } from '@progress/kendo-angular-tooltip';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import 'hammerjs'; 
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -33,8 +31,6 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     AppRoutingModule,
     TooltipsModule,
-    MatButtonModule,
-    MatTooltipModule,
     CarouselModule
   ],
   providers: [],

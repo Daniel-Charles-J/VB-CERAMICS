@@ -18,7 +18,7 @@
 }
 
 .navbar {
-  padding: 40px 0px;
+  padding: 20px 0px;
   width: 25%;
   height: 100%;
   left: 2.5%;
@@ -141,7 +141,7 @@
 .navbar_about_text {
   color: #132249;
   font-family: Unbounded;
-  font-size: 60px;
+  font-size: 48px;
   text-align: justify;
   font-style: normal;
   font-weight: 600;
@@ -163,7 +163,7 @@
 
 .navbar_li {
   display: flex;
-  padding: 2% 0%;
+  padding: 3% 0%;
   align-items: center;
   gap: 4px;
   align-self: stretch;
@@ -187,7 +187,7 @@
 .main {
   display: flex;
   width: 73%;
-  padding: 40px 12px 0px 0px;
+  padding: 20px 12px 0px 0px;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
@@ -202,8 +202,7 @@
 .main_section5,
 .main_section6,
 .main_section7,
-.main_section8,
-.section9 {
+.main_section8{
   width: 100%;
   border-radius: 20px;
   border: 1px solid rgba(24, 25, 119, 0.10);
@@ -561,15 +560,17 @@
 .flex10 {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px 0px 0px;
   justify-content: space-around;
   flex-direction: row;
   background: #EDF1FD;
   width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(24, 25, 119, 0.10);
 }
 
 .card10 {
-  min-width: 200px;
+  min-width: 320px;
   max-width: 340px;
   padding: 20px 10px;
 }
@@ -590,16 +591,16 @@
 
 }
 
-footer {
-  width: 100%;
-}
-
 .footer {
   display: flex;
   width: 100%;
   flex-direction: row;
   background-color: #132249;
   color: white;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .cardfooter {
@@ -617,26 +618,52 @@ footer {
   height: 26px;
 }
 
+.modalDiv {
+  display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;align-items: center;padding: 20px
+}
+.modalImage {
+  width: 35%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;
+}
+
+.modalImage .img_img {
+  width: 80%;
+}
+.modalImage .uma_img {
+  width: 70%;
+}
+.modalProfile {
+  width: 60%; display: flex; flex-direction: column; gap: 30px;
+}
 @media (max-width: 1420px) {
   .navbar_about_text {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
-@media (max-width: 1215px) {
-  /* .navbar_about_text {
-    font-size: 40px !important;
-  } */
+@media (max-width: 1200px) {
+  .navbar_about_text {
+    font-size: 35px !important;
+  }
 
   .navbar_top_text img {
     width: 90%;
   }
+  .modalImage {
+    width: 50%;
+  }
+
+  .modalImages .uma_img {
+    width: 100%;
+  }
+  .modalProfile {
+    width: 90%;
+  }
 }
 
-@media (max-width: 1000px) {
-  /* .navbar_about_text {
-    font-size: 35px !important;
-  } */
+@media (max-width: 1060px) {
+  .navbar_about_text {
+    font-size: 30px !important;
+  }
 
   .navbar_top_text img {
     width: 80%;
@@ -645,7 +672,10 @@ footer {
   .navbar_li a {
     font-size: 18px;
   }
-
+  .navbar_li {
+    padding: 10px 0%;
+    gap: 7px;
+  }
   .main_section1_cnt,
   .main_section2_cnt,
   .main_section5_cnt,
@@ -658,19 +688,29 @@ footer {
   }
 }
 
-@media (max-width: 920px) {
-  .navbar {
-    height: 650px;
-  }
+@media (max-width: 960px) {
 
   .navbar_about_text {
-    font-size: 32px !important;
+    font-size: 25px !important;
+  }
+
+  .navbar_li a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 920px) {
+  .navbar_about_text {
+    font-size: 22px !important;
   }
 
   .navbar_li a {
     font-size: 16px;
   }
 
+  .navbar_li a svg {
+    display: none;
+  }
   .menu-btn .btn-line {
     width: 20px;
     height: 2.5px;
@@ -694,10 +734,6 @@ footer {
 
   .navbar_top_text img {
     width: 70%;
-  }
-
-  .navbar_li a svg {
-    display: none;
   }
 
   .menu-btn .btn-line {
@@ -805,11 +841,21 @@ footer {
   .research_projects_cnt {
     font-size: 16px !important;
   }
+
+  .modalImage {
+    width: 90%;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 672px) {
   .navbar_about_text {
     font-size: 75px !important;
+  }
+
+}
+@media (max-width: 576px) {
+  .navbar_about_text {
+    font-size: 70px !important;
   }
 
   .menu .menu_navbar-nav {
@@ -820,6 +866,16 @@ footer {
 
 @media (max-width: 500px) {
   .navbar_about_text img{
-    width: 75%;
+    width: 60%;
   }
+  .main_section1_cnt,
+  .main_section2_cnt,
+  .main_section5_cnt,
+  .main_section6_cnt,
+  .main_section7_top_cnt,
+  .main_section8_cnt,
+  .research_projects,
+  .research_projects_cnt {
+    font-size: 14px !important;
+  } 
 }
