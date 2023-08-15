@@ -1,0 +1,115 @@
+.flex_of_5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:27px;
+    padding:0px 40px;
+    }
+
+#header_services{
+        color: #132249;
+        font-family: Unbounded;
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        }
+
+#contact_para{
+            color: black;
+            font-family: Schibsted Grotesk;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            width: 57%;
+            place-self:center;
+          }
+
+#message{
+            border-radius: 8px;
+            background: #EDF1FD;
+            display: flex;
+            height: 140px;
+            width:inherit;
+            padding: 16px;
+            align-items: flex-start;
+            gap: 8px;
+            align-self: stretch;
+            border:none !important;
+          }
+        
+#message_button{
+            width: inherit;
+          background-color: #132249;
+          }
+
+#name,#email{
+            display: flex;
+            padding: 16px;
+            align-items: flex-start;
+            gap: 8px;
+            flex: 1 0 0;
+            border-radius: 8px !important;
+            background: #EDF1FD !important;
+          }
+
+.container-fluid1{display: flex;gap: 10px;flex-direction: column;margin: 0px;justify-content: center;}
+.navbar-brand{padding: 0px 40px 0px 40px;color:white !important;font-family: Unbounded;font-size: 16px;font-style: normal;font-weight: 600;line-height: 16px; }
+.bg-light {background-color: #132249 !important;}
+.nav-link{color:white!important;display: flex;padding: 20px;justify-content: center;align-items: center;gap: 8px;}
+.nav-link:hover{color:grey!important}
+#navbarSupportedContent{padding-right: 40px;}
+
+
+.flex10{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+    flex-direction: row;
+    
+  }
+
+  .card10{
+    min-width: 320px;
+    max-width: 340px;
+    padding: 5px 40px;
+  }
+  
+  .card10 p {
+    font-size: 20px;
+  }
+  .card10 ul{
+    padding-left:0px;
+  }
+  
+  .card10 li {
+    font-size: 16px;
+    background: url(/assets/images/arrowright.svg) left no-repeat;
+    list-style-type: none;
+    padding-left: 20px;
+  
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #132249;
+    color: white;
+  }
+
+  .cardfooter{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-left: auto;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .separator{
+    background: #FFF;
+    width: 1px;
+    height: 26px;
+  }

@@ -1,8 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
+
 .my-tooltip {
   max-width: unset !important;
   white-space: pre-wrap;
   font-size: 8px;
 }
+
+.owl-theme .owl-nav [class*=owl-] {
+  color: #FFF !important;
+  font-size: 14px !important;
+  margin: 5px !important;
+  padding: 6px 7px !important;
+  background: #132249 !important;
+  display: inline-block !important;
+  cursor: pointer !important;
+  border-radius: 40px !important;
+  border: 1px solid #FFF !important;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  text-align: left;
+  position: absolute;
+  bottom: 54%;
+  left: -3%;
+}
+
+.owl-carousel .owl-nav .owl-next{
+  text-align: left;
+  position: absolute;
+  bottom: 41%;
+  left: -3%;
+}
+

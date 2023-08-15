@@ -5,8 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { LibraryComponent } from './library/library.component';
-
-
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes : Routes = [
   {path : '', component : HomeComponent },
@@ -14,6 +13,7 @@ const appRoutes : Routes = [
   {path : 'library', component : LibraryComponent},
   {path : 'gallery', component : GalleryComponent},
   {path : 'service', component : ServiceComponent},
+  {path : 'contact', component : ContactComponent},
 ];
 
 @NgModule({
@@ -21,5 +21,5 @@ const appRoutes : Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { 
-
+  
 }

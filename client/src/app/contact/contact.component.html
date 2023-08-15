@@ -1,1 +1,147 @@
-<h2>Contact Component also working</h2>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid1">
+    <div class="row">
+    <div  class="col-md-12 ">
+    <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <img style='margin-left:35px;padding:5px 0px;width:85px;height:57px' src="./assets/images/vb_logo.png" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink] ='["/about"]'>About Us </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink] ='["/library"]'>Library</a>
+          </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" [routerLink] ='["/gallery"]'>Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style='background-color:white !important; color:#132249 !important;    border-radius: 50px;
+          padding: 6px;
+          margin-top: 15px;
+          margin-left: 5px;'>Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  </div>
+  </div>
+  
+  <div class="flex_of_5">
+      <h1 id="header_services" class="flex-items5">CONTACT US</h1>
+      <p class="flex-items5" id="contact_para">Craving a conversation about pottery? Immerse yourself in a vibrant world of hues and surfaces with our amazing ceramic offerings!</p>
+    </div>
+    <hr>
+    <div style='display:flex;flex-direction:row;gap:20px;flex-wrap: wrap;padding: 0px 40px;'>
+      <div style='flex:1 1 60%'>
+        <form >
+          <div class="form-row col-md-12">
+            <div class="form-group col-md-6">
+              <input id="name" type="text" class="form-control"  placeholder="Name">
+            </div>
+            <div class="form-group col-md-6">
+              <input style='margin-left:5px;' id="email" type="email" class="form-control"  placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group col-md-12 ">
+            <textarea name="" id="message" placeholder="Message"></textarea>
+          </div>
+          <div class="form-group col-md-12">
+            <button id="message_button" type="submit" class="btn btn-primary">Message</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <p style="font-size:27px">Linkedin <span style="float:right"><img src="./assets/images/mdi_linkedin.svg" alt=""></span></p>
+        <p style="font-size:27px">Google <span style="float:right"><img src="./assets/images/ri_google-fill.svg" alt=""></span></p>
+        <p style="font-size:27px">Whatsapp <span style="float:right"><img src="./assets/images/ic_baseline-whatsapp.svg" alt=""></span></p>
+        <p style="font-size:27px">9445025461 <span style="float:right"><img src="./assets/images/material-symbols_call.svg" alt=""></span></p>
+        <p style="font-size:27px">7338825555 <span style="float:right"><img src="./assets/images/material-symbols_call.svg" alt=""></span></p>
+      </div>
+    </div>
+  
+    <div>
+      <div id='map' style='text-align: center;background-color:#132249 ;'>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9772636108155!2d80.24563577478861!3d12.973305987342215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d6ea985eaf3%3A0xca75a4d4faa8d709!2sDr.VB&#39;s%20Ceramic%20Research%20Centre!5e0!3m2!1sen!2sin!4v1692024575895!5m2!1sen!2sin" text-align='center' width="90%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style='margin:30px 0px' ></iframe>
+      </div>
+    </div>  
+
+    <div class='flex10'>
+      <div class='card10'>
+        <p>COMPANY</p>
+        <img src="./assets/images/image 26.png" alt="">
+        <br>
+        <br>
+        <p style='font-size:16px !important;'>Vb Ceramic Consultants,
+          207, 3rd Link Street, Kottivakkam, 
+          Chennai - 600 041</p>
+      </div>
+      <div class='card10'>
+        <p>SITEMAP</p>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Gallery</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class='card10'>
+        <p>SERVICES</p>
+        <ul>
+          <li>Raw Materials</li>
+          <li>Material Processing</li>
+          <li>Characterization</li>
+          <li>Heat Treatment Facility</li>
+         
+        </ul>
+        <p>SOCIALS</p>
+        <div style='display: flex;flex-direction:row;gap:20px'>
+          <img src="./assets/images/mdi_linkedin (1).svg" alt="">
+          <img src="./assets/images/YouTube svg.svg" alt="">
+          <img src="./assets/images/Facebook svg.svg" alt="">
+        </div>
+      </div>
+      <div class='card10'>
+        <p>SUPPORT</p>
+        <ul>
+          <li>Contact Us</li>
+          <li>Help centre</li>
+        </ul>
+        <p>OUR GROUPS</p>
+        <div style='display: flex;flex-direction:row;gap:20px'>
+        <img style='width:60px' src="./assets/images/image 26.png" alt="">
+        <img style='width:60px' src="./assets/gallery-page-img/hi-temp.png" alt="">
+      </div>
+      </div>
+    </div>
+
+  </body>
+  <footer>
+    <div class='footer'>
+      <p style='padding: 20px 30px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
+      <div class='cardfooter'>
+        <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p><div class="separator"></div>
+        <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p><div class="separator"></div>
+        <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
+      </div>
+    </div>
+  </footer>
+
+</html>
+
+
