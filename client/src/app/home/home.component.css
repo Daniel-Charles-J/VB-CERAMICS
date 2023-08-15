@@ -5,7 +5,7 @@ body{}
 /* Navbar */
 .navbar-brand{padding: 0px 40px 0px 40px;color:white !important;font-family: Unbounded;font-size: 16px;font-style: normal;font-weight: 600;line-height: 16px; }
 .bg-light {background-color: #132249 !important;}
-.nav-link{color:white!important;display: flex;padding: 20px;justify-content: center;align-items: center;gap: 8px;}
+.nav-link{color:white!important;display: flex;padding: 20px;justify-content: center;align-items: center;gap: 8px;font-family: Schibsted Grotesk;}
 .nav-link:hover{color:grey!important}
 #navbarSupportedContent{padding-right: 40px;}
 
@@ -25,7 +25,7 @@ text-transform: uppercase;
 #header_services{
 color: #132249;
 font-family: Unbounded;
-font-size: 82px;
+font-size: 70px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -33,7 +33,7 @@ line-height: normal;
 #header_facility{
   color:white;
   font-family: Unbounded;
-  font-size: 82px;
+  font-size: 70px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -72,7 +72,7 @@ line-height: normal;
   width: 57%;
   place-self:center;
 }
-#para{font-size: 20px;color: #000;font-family: Schibsted Grotesk;font-style: normal;font-weight: 400;text-align: center;}
+#para{width: 80%;font-size: 20px;color: #000;font-family: Schibsted Grotesk;font-style: normal;font-weight: 400;text-align: center;}
 #para_two{color: white;text-align: center;font-family: Schibsted Grotesk;font-size: 14px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase;}
 
 /* container */
@@ -155,7 +155,7 @@ gap:27px;
   background-color:white;
   text-align: center;
   font-size: 16px;
-
+  font-family: Unbounded;
 }
 
 .card{
@@ -210,10 +210,11 @@ gap:27px;
   font-weight: 500;
   line-height: normal;
   text-align: left;
+  font-family: Schibsted Grotesk;
 }
 
 .cell1,.cell2,.cell3{
-  background: #FAFBFF !important;
+background: #FAFBFF !important;
 box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset !important;
 }
 
@@ -229,6 +230,7 @@ box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset !important;
 .one{
   background: #C7D6DA;
   box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset;
+  font-family: Unbounded !important;
 }
 
 .last{
@@ -334,7 +336,7 @@ height:60%
 
   @media screen and (min-width: 1200px) {
     #top_header {
-      font-size: 3.96rem;
+      font-size: 3.3rem;
       letter-spacing: 4.5px;
     }
   }
@@ -354,6 +356,7 @@ height:60%
   margin: 10px 0px 20px 0px;
   color:white;
   font-size: 14px;
+  font-family: Unbounded;
   }
 
   .owl-item {width: 128.906px !important; }
@@ -374,8 +377,8 @@ height:60%
     margin: 15px 0px 0px 0px;
     overflow: hidden;
     color: #000;
-    font-family: Unbounded;
-    font-size: 48px;
+    /* font-family: Unbounded;
+    font-size: 48px; */
     font-style: normal;
     font-weight: 600;
     
