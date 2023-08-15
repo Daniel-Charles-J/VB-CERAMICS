@@ -10,7 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { LibraryComponent } from './library/library.component';
-// import { TooltipsModule } from '@progress/kendo-angular-tooltip';
+import { TooltipsModule } from '@progress/kendo-angular-tooltip';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import 'hammerjs'; 
 import {MatTooltipModule} from '@angular/material/tooltip';
@@ -34,7 +34,6 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     // TooltipsModule,
     MatButtonModule,MatTooltipModule,CarouselModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
