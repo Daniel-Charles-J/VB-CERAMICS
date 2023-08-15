@@ -139,7 +139,7 @@
 }
 
 .navbar_about_text {
-  color: #261499;
+  color: #132249;
   font-family: Unbounded;
   font-size: 60px;
   text-align: justify;
@@ -173,7 +173,7 @@
 .navbar_li a {
   display: flex;
   gap: 10px;
-  color: #181977;
+  color: #132249 !important;
   cursor: pointer;
   text-decoration: none;
   font-family: Schibsted Grotesk;
@@ -233,7 +233,7 @@
 .main_section6_head,
 .main_section7_head,
 .main_section8_head {
-  color: #181977;
+  color: #132249;
   font-family: Unbounded;
   font-size: 20px;
   font-style: normal;
@@ -408,7 +408,7 @@
 } */
 
 .main_section6_cnt .research_papers .research_papers_list .list:hover {
-  color: #0000FF
+  color: #132249
 }
 
 /* .main_section6_cnt .research_papers .research_papers_list .list:active {
@@ -532,7 +532,7 @@
 
 /* The Close Button */
 .close {
-  color: #181977;
+  color: #132249;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -598,7 +598,7 @@ footer {
   display: flex;
   width: 100%;
   flex-direction: row;
-  background-color: #261499;
+  background-color: #132249;
   color: white;
 }
 
