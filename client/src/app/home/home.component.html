@@ -321,8 +321,8 @@
           <h2>Advanced Material Synthesis</h2>
           <p>Unleash your Creations</p>
         </div>
-        <button style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          <img src="./assets/images/double arrow_.svg" alt="">
+        <button (click)="changeImage()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <img [src]="images[currentImageIndex]"  alt="">
         </button>
       </h5>
     </div>
@@ -341,8 +341,8 @@
           <h2>Nano Materials</h2>
           <p>Bring Ideas to Life</p>
         </div>
-        <button style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <img src="./assets/images/double arrow_.svg" alt="">
+        <button (click)="changeImage2()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <img [src]="images[currentImageIndex2]"  alt="">
         </button>
       </h5>
     </div>
@@ -361,8 +361,8 @@
           <h2>Sanitaryware as per IS</h2>
           <p>Master Ceramic Sciences</p>
         </div>
-        <button style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <img src="./assets/images/double arrow_.svg" alt="">
+        <button (click)="changeImage3()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <img [src]="images[currentImageIndex3]" alt="">
         </button>
       </h5>
     </div>
@@ -381,8 +381,8 @@
           <h2>Refractories as per IS</h2>
           <p>Master Ceramic Sciences</p>
         </div>
-        <button style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          <img src="./assets/images/double arrow_.svg" alt="">
+        <button (click)="changeImage4()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <img [src]="images[currentImageIndex4]" alt="">
         </button>
       </h5>
     </div>
@@ -401,8 +401,8 @@
           <h2>Ceramic Tiles as per IS</h2>
           <p>Master Ceramic Sciences</p>
         </div>
-        <button style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          <img src="./assets/images/double arrow_.svg" alt="">
+        <button (click)="changeImage5()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <img [src]="images[currentImageIndex5]" alt="">
         </button>
       </h5>
     </div>
@@ -421,8 +421,8 @@
           <h2>Advanced Characterization</h2>
           <p>Master Ceramic Sciences</p>
         </div>
-        <button style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          <img src="./assets/images/double arrow_.svg" alt="">
+        <button (click)="changeImage6()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          <img [src]="images[currentImageIndex6]" src="./assets/images/double arrow_.svg" alt="">
         </button>
       </h5>
     </div>
@@ -435,10 +435,11 @@
 </div>
 </div>
 
-
-<div style='margin-bottom: -11px;padding-left:100px'>
+<div style='padding: 0px 20px;'>
   <h1 style='text-align: center;margin-top:20px;font-size:32px'>Trusted by Students and Scientists over India</h1>
   <p style='text-align: center;'>Some of the few reviews that were publicly shared</p>
+</div>
+<div id='customer' style='margin-bottom: -11px;padding-left:100px'>
    <owl-carousel-o [ngClass]="{ item: true }" [options]="customOptions2" >
     <ng-template  carouselSlide>
       <div class="card9">
@@ -501,14 +502,14 @@
 </div>
 
 <br>
-<div class="flex8">
- <div style='display:flex;flex-direction:row;gap:180px;flex-wrap: wrap;'>
-  <div id="ContactUs">
+
+<div class="flex8" id="ContactUs">
+ <div id='flex_con' style=''>
+  <div id='top_con'>
     <h1 id='head_con'>VBCRC</h1>
     <h1 id='head_con'>Newsletter</h1>
   </div>
-  
-  <div>
+  <div id='sign_con'>
     <p id='con_p'>Sign up and get </p>
     <ul id='ul_con'>
       <li>Information about all our Discounts</li>

@@ -3,7 +3,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import AOS from "aos";
 import { trigger, transition, style, animate } from '@angular/animations';
 import * as $ from 'jquery';
-import 'owl.carousel';
+
 
 
 @Component({
@@ -78,6 +78,35 @@ public customOptions2: OwlOptions = {
   @HostListener('window:scroll', ['$event'])
   onViewportScroll(event: any): void {
     // Handle scrolling logic here if needed
+  }
+  currentImageIndex = 0;
+  currentImageIndex2 = 0;
+  currentImageIndex3 = 0;
+  currentImageIndex4 = 0;
+  currentImageIndex5 = 0;
+  currentImageIndex6 = 0;
+  images = [
+    './assets/images/double arrow_.svg',
+    './assets/images/double_arrow.svg',
+  ];
+
+  changeImage() {
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+  }
+  changeImage2() {
+    this.currentImageIndex2 = (this.currentImageIndex2 + 1) % this.images.length;
+  }
+  changeImage3() {
+    this.currentImageIndex3 = (this.currentImageIndex3 + 1) % this.images.length;
+  }
+  changeImage4() {
+    this.currentImageIndex4 = (this.currentImageIndex4 + 1) % this.images.length;
+  }
+  changeImage5() {
+    this.currentImageIndex5 = (this.currentImageIndex5 + 1) % this.images.length;
+  }
+  changeImage6() {
+    this.currentImageIndex6 = (this.currentImageIndex6 + 1) % this.images.length;
   }
   
 }
