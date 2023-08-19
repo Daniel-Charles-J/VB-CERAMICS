@@ -36,7 +36,7 @@
           <a class="nav-link" style='background-color:white !important; color:#132249 !important;    border-radius: 50px;
           padding: 6px;
           margin-top: 15px;
-          margin-left: 5px;' (click)="scrollToSection('ContactUs')">Contact Us</a>
+          margin-left: 5px;' [routerLink]='["/contact"]'>Contact Us</a>
         </li>
       </ul>
     </div>
@@ -64,29 +64,29 @@
               <div class="carousel-item active">
                 <img class="d-block w-100" src="./assets/images/1.png" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <button id='car_button_1'>Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
-                  <button id='car_button_2'>Contact Us</button>
+                  <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
+                  <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="./assets/images/2.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <button id='car_button_1'>Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
-                  <button id='car_button_2'>Contact Us</button>
+                  <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
+                  <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="./assets/images/3.png" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <button id='car_button_1'>Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
-                  <button id='car_button_2'>Contact Us</button>
+                  <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
+                  <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="./assets/images/5.png" alt="Fourth slide">
                 <div class="carousel-caption d-none d-md-block">
-                  <button id='car_button_1'>Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
-                  <button id='car_button_2'>Contact Us</button>
+                  <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
+                  <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
                 </div>
               </div>
               
@@ -212,7 +212,7 @@
                 </div>
           </div>
           <div #boxElement [@fadeIn] class="flex5">
-            <div class="flex_of_5">
+            <div class="flex_of_5" id="exploreService">
               <h1 id="header_services" class="flex-items5">SERVICES</h1>
               <p class="flex-items5" id="service_para">Our services are transparently priced for optimal customer satisfaction. Check out our selection of high-quality services at affordable rates.</p>
             </div>
@@ -275,7 +275,7 @@
               <div class="cell2">3000</div>
               <div class="cell">5000</div>
               <div class="cell2">6000</div>
-              <div class="cell last">View All <span><img src="./assets/images/Vector.svg" alt=""></span></div>
+              <div class="cell last" [routerLink] ='["/service"]'>View All <span><img src="./assets/images/Vector.svg" alt=""></span></div>
             </div>
           
             <div class="column">
@@ -501,9 +501,9 @@
 </div>
 
 <br>
-<div class="flex8" id="ContactUs">
+<div class="flex8">
  <div style='display:flex;flex-direction:row;gap:180px;flex-wrap: wrap;'>
-  <div>
+  <div id="ContactUs">
     <h1 id='head_con'>VBCRC</h1>
     <h1 id='head_con'>Newsletter</h1>
   </div>
