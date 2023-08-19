@@ -209,6 +209,9 @@
   background: #EDF1FD;
 }
 
+.menu_nav-link{
+  font-size: 20px;
+}
 .main_section1_header,
 .main_section2_header,
 .main_section3_header,
@@ -413,6 +416,10 @@
 /* .main_section6_cnt .research_papers .research_papers_list .list:active {
   color: #0000FF
 } */
+.tooltip-class {
+  width: auto;
+  height: auto;
+}
 
 .main_section7_cnt {
   display: flex;
@@ -676,6 +683,10 @@
     padding: 10px 0%;
     gap: 7px;
   }
+
+  .menu_nav-link{
+    font-size: 18px;
+  }
   .main_section1_cnt,
   .main_section2_cnt,
   .main_section5_cnt,
@@ -716,6 +727,9 @@
     height: 2.5px;
     margin: 0 0 5.5px 0;
   }
+  .menu_nav-link{
+    font-size: 17px !important;
+  }
 
   .main_section1_cnt,
   .main_section2_cnt,
@@ -725,7 +739,7 @@
   .main_section8_cnt,
   .research_projects,
   .research_projects_cnt {
-    font-size: 18px;
+    font-size: 17px !important;
   }
 }
 
@@ -741,6 +755,9 @@
     height: 1.5px;
     margin: 0px 0px 6.5px 0;
   }
+  .menu_nav-link{
+    font-size: 17px !important;
+  }
 
   .main_section1_cnt,
   .main_section2_cnt,
@@ -750,7 +767,7 @@
   .main_section8_cnt,
   .research_projects,
   .research_projects_cnt {
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
 
   .menu .menu_navbar-nav {
@@ -831,6 +848,9 @@
   .section5_images .modal {
     display: none !important;
   }
+  .menu_nav-link{
+    font-size: 16px !important;
+  }
   .main_section1_cnt,
   .main_section2_cnt,
   .main_section5_cnt,
@@ -867,6 +887,9 @@
 @media (max-width: 500px) {
   .navbar_about_text img{
     width: 60%;
+  }
+  .menu_nav-link{
+    font-size: 14px !important;
   }
   .main_section1_cnt,
   .main_section2_cnt,
