@@ -21,7 +21,7 @@ export class GalleryComponent {
   box_4_content : string[] = ['Contact Us','Help centre'];
 
   public customOptions1: OwlOptions = {
-    items: 1.2,
+    items: 1.1,
     loop:true,
     autoplay:true,
     margin: 20,
@@ -30,7 +30,7 @@ export class GalleryComponent {
     autoplayHoverPause:true,
   };
   public customOptions1_left: OwlOptions = {
-    items: 1.2,
+    items: 1.1,
     loop:true,
     autoplay:true,
     margin: 20,
