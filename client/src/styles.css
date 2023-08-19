@@ -34,3 +34,17 @@
   left: -3%;
 }
 
+@media only screen and (max-width: 575px){
+  .owl-carousel .owl-nav .owl-next {
+    text-align: right;
+    position: absolute;
+    bottom: 43%;
+    left: 69%;
+}
+.owl-carousel .owl-nav .owl-prev {
+  text-align: left !important;
+  position: absolute !important;
+  bottom: 43% !important;
+  left: -9% !important;
+}
+}
