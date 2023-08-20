@@ -18,186 +18,80 @@
 </head>
 
 <body>
-  <div style="overflow: hidden;">
-    <div class="container-fluid1">
-      <div class="row">
-        <div class="col-md-12 ">
-          <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="./assets/images/image 26.png" alt="VBCRC">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink]='["/"]'>Home</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" [routerLink]='["/about"]'>About Us </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink]='["/library"]'>Library</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink]='["/service"]'>Services</a>
-                </li>
-                <li class="nav-item contact_us_li">
-                  <a class="nav-link" class="contact_us" [routerLink]='["/contact"]'>Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+  <div style="overflow: hidden">
+   <div class="container-fluid1">
+    <div class="row">
+      <div class="col-md-12 ">
+        <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
+          <img src="./assets/images/image 26.png" alt="VBCRC">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" [routerLink]='["/about"]'>About Us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]='["/library"]'>Library</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]='["/gallery"]'>Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]='["/service"]'>Services</a>
+              </li>
+              <li class="nav-item contact_us_li">
+                <a class="nav-link" class="contact_us" [routerLink]='["/contact"]'>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-  
-    <div class="main-section">
-      <div class="hero">
-        <h1 class="gallery-text">GALLERY</h1>
-        <div class="gall-para">
-          <p>Our services are transparently priced for optimal customer satisfaction. Check out our selection of
-            high-quality services at affordable rates.</p>
-        </div>
+  </div>
+  <div class="main-section"> 
+    <div class="hero">
+      <h1 class="gallery-text">GALLERY</h1>
+      <div class="gall-para">
+        <p>Our services are transparently priced for optimal customer satisfaction. Check out our selection of
+          high-quality services at affordable rates.</p>
       </div>
-      <hr />
-      <div>
-        <owl-carousel-o [options]="customOptions1">
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="hero-image" src="../../assets/Frame 125.png" alt="image">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="hero-image" src="../../assets/gallery-page-img/white_building.jpeg" alt="image">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="hero-image" src="../../assets/gallery-page-img/sky-view.jpeg" alt="image">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="hero-image" src="../../assets/gallery-page-img/seive-like.jpeg" alt="image">
-            </div>
-          </ng-template>
-        </owl-carousel-o>
-      </div>
-  
-      <div class="containers">
-        <div class="container-1">
-          <!-- <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div> -->
-  
-          <div id="carouselExampleSlidesOnly" class="container-left">
-            <div class="">
-              <owl-carousel-o [options]="customOptions1_left">
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/Carousel.png" alt="image">
-                  </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/gallery-page-img/Carousel.png" alt="image">
-                  </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/gallery-page-img/Carousel_1.png" alt="image">
-                  </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/gallery-page-img/Carousel_2.png" alt="image">
-                  </div>
-                </ng-template>
-              </owl-carousel-o>
-            </div>
-            <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span aria-hidden="true"></span>
-              <span class="sr-only"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span  aria-hidden="true"></span>
-              <span class="sr-only"></span>
-            </a> -->
+    </div>
+    <hr />
+    <div>
+      <owl-carousel-o [options]="customOptions_main">
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="hero-image" src="../../assets/Frame 125.png" alt="image">
           </div>
-  
-  
-          <div class="container-right">
-            <div class="cont-heading">
-              <h3>Gallery <span>01/04</span></h3>
-              <h1>ACCOLADES</h1>
-            </div>
-            <div class="btn-content">
-              <div class="btns-container">
-                <button class="btn">Awards</button>
-                <button class="btn">Celebrations</button>
-                <button class="btn">Ceremony</button>
-              </div>
-              <br />
-              <div class="content">
-                <p>VB Ceramic Research Centre shines bright with a collection of accolades, lauded for groundbreaking R&D
-                  and top-tier quality control in Glass, Ceramics, Nano Science, and Material Science. A trailblazer in
-                  innovation, their excellence has garnered numerous prestigious awards, cementing their position as
-                  industry leaders.</p>
-              </div>
-            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="hero-image" src="../../assets/gallery-page-img/white_building.jpeg" alt="image">
           </div>
-        </div>
-  
-        <div class="container-1">
-          <div class="container-right">
-            <div class="cont-heading">
-              <h3>Gallery <span>02/04</span></h3>
-              <h1>CERTIFICATIONS</h1>
-            </div>
-            <div class="btn-content">
-              <div class="btns-container">
-                <button class="btn">Legibility</button>
-                <button class="btn">Validation</button>
-                <button class="btn">Achievements</button>
-              </div>
-              <br />
-              <div class="content">
-                <p>VB Ceramic Research Centre proudly boasts a multitude of certifications, attesting to our unwavering
-                  commitment to excellence. With a steadfast dedication to research and development and rigorous quality
-                  control, the certifications affirm our status as trusted industry pioneers.</p>
-              </div>
-            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="hero-image" src="../../assets/gallery-page-img/sky-view.jpeg" alt="image">
           </div>
-          <div id="carouselExampleSlidesOnly" class="container-left">
-            <div class="">
-              <owl-carousel-o [options]="customOptions1">
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/Carousel.png" alt="image">
-                  </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/gallery-page-img/Carousel.png" alt="image">
-                  </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/gallery-page-img/Carousel_1.png" alt="image">
-                  </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                  <div class="slide">
-                    <img class="container_image" src="../../assets/gallery-page-img/Carousel_2.png" alt="image">
-                  </div>
-                </ng-template>
-              </owl-carousel-o>
-            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="hero-image" src="../../assets/gallery-page-img/seive-like.jpeg" alt="image">
           </div>
-        </div>
-  
-        <div class="container-1">
-          <div class="container-left">
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+
+    <div class="containers">
+      <div class="container-1">
+        <!-- <div class="container-left"><img class="left-image" src="../../assets/Carousel.png"></div> -->
+
+        <div id="carouselExampleSlidesOnly" class="container-left">
+          <div class="">
             <owl-carousel-o [options]="customOptions1_left">
               <ng-template carouselSlide>
                 <div class="slide">
@@ -221,50 +115,61 @@
               </ng-template>
             </owl-carousel-o>
           </div>
-  
-          <div class="container-right">
-            <div class="cont-heading">
-              <h3>Gallery <span>03/04</span></h3>
-              <h1>VISITATIONS</h1>
+          <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span  aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a> -->
+        </div>
+
+
+        <div class="container-right">
+          <div class="cont-heading">
+            <h3>Gallery <span>01/04</span></h3>
+            <h1>ACCOLADES</h1>
+          </div>
+          <div class="btn-content">
+            <div class="btns-container">
+              <button class="btn">Awards</button>
+              <button class="btn">Celebrations</button>
+              <button class="btn">Ceremony</button>
             </div>
-            <div class="btn-content">
-              <div class="btns-container">
-                <button class="btn">Scientists</button>
-                <button class="btn">Research</button>
-                <button class="btn">Laboratory</button>
-              </div>
-              <br />
-              <div class="content">
-                <p>VB Ceramic Research Centre, a magnet for knowledge seekers, has welcomed countless visits from esteemed
-                  scientists worldwide. Our expertise attracts a diverse community of researchers, fostering a dynamic
-                  exchange of ideas and advancements in the field.</p>
-              </div>
+            <br />
+            <div class="content">
+              <p>VB Ceramic Research Centre shines bright with a collection of accolades, lauded for groundbreaking R&D
+                and top-tier quality control in Glass, Ceramics, Nano Science, and Material Science. A trailblazer in
+                innovation, their excellence has garnered numerous prestigious awards, cementing their position as
+                industry leaders.</p>
             </div>
           </div>
         </div>
-  
-        <div class="container-1">
-          <div class="container-right">
-            <div class="cont-heading">
-              <h3>Gallery <span>04/04</span></h3>
-              <h1>INAUGURATION</h1>
+      </div>
+
+      <div class="container-1">
+        <div class="container-right">
+          <div class="cont-heading">
+            <h3>Gallery <span>02/04</span></h3>
+            <h1>CERTIFICATIONS</h1>
+          </div>
+          <div class="btn-content">
+            <div class="btns-container">
+              <button class="btn">Legibility</button>
+              <button class="btn">Validation</button>
+              <button class="btn">Achievements</button>
             </div>
-            <div class="btn-content">
-              <div class="btns-container">
-                <button class="btn">Function</button>
-                <button class="btn">R&D</button>
-                <button class="btn">Innovation</button>
-              </div>
-              <br />
-              <div class="content">
-                <p>In a momentous inaugural event of VB Ceramic Research Centre, Eminent scientists, industry leaders, and
-                  visionaries graced the occasion, celebrating a new chapter of innovation and scientific excellence. The
-                  gathering marked the beginning of a promising journey towards shaping the future of advanced materials
-                  technology.</p>
-              </div>
+            <br />
+            <div class="content">
+              <p>VB Ceramic Research Centre proudly boasts a multitude of certifications, attesting to our unwavering
+                commitment to excellence. With a steadfast dedication to research and development and rigorous quality
+                control, the certifications affirm our status as trusted industry pioneers.</p>
             </div>
           </div>
-          <div class="container-left">
+        </div>
+        <div id="carouselExampleSlidesOnly" class="container-left">
+          <div class="">
             <owl-carousel-o [options]="customOptions1">
               <ng-template carouselSlide>
                 <div class="slide">
@@ -290,149 +195,241 @@
           </div>
         </div>
       </div>
-    </div>
-  
-  
-    <div class="section-3">
-      <div class="sec3_top">
-        <owl-carousel-o [options]="customOptions">
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
-            </div>
-          </ng-template>
-          <!-- <ng-template carouselSlide>
+
+      <div class="container-1">
+        <div class="container-left">
+          <owl-carousel-o [options]="customOptions1_left">
+            <ng-template carouselSlide>
               <div class="slide">
-                <img src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
-                <img src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
-                <img src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
-                <img src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
-                <img src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
+                <img class="container_image" src="../../assets/Carousel.png" alt="image">
               </div>
-            </ng-template> -->
-        </owl-carousel-o>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel_1.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel_2.png" alt="image">
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+
+        <div class="container-right">
+          <div class="cont-heading">
+            <h3>Gallery <span>03/04</span></h3>
+            <h1>VISITATIONS</h1>
+          </div>
+          <div class="btn-content">
+            <div class="btns-container">
+              <button class="btn">Scientists</button>
+              <button class="btn">Research</button>
+              <button class="btn">Laboratory</button>
+            </div>
+            <br />
+            <div class="content">
+              <p>VB Ceramic Research Centre, a magnet for knowledge seekers, has welcomed countless visits from esteemed
+                scientists worldwide. Our expertise attracts a diverse community of researchers, fostering a dynamic
+                exchange of ideas and advancements in the field.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <br>
-      <div class="sec3_bottom">
-        <owl-carousel-o [options]="customOptions_left">
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
+
+      <div class="container-1">
+        <div class="container-right">
+          <div class="cont-heading">
+            <h3>Gallery <span>04/04</span></h3>
+            <h1>INAUGURATION</h1>
+          </div>
+          <div class="btn-content">
+            <div class="btns-container">
+              <button class="btn">Function</button>
+              <button class="btn">R&D</button>
+              <button class="btn">Innovation</button>
             </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
+            <br />
+            <div class="content">
+              <p>In a momentous inaugural event of VB Ceramic Research Centre, Eminent scientists, industry leaders, and
+                visionaries graced the occasion, celebrating a new chapter of innovation and scientific excellence. The
+                gathering marked the beginning of a promising journey towards shaping the future of advanced materials
+                technology.</p>
             </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
-            </div>
-          </ng-template>
-          <ng-template carouselSlide>
-            <div class="slide">
-              <img class="slide_img" src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
-            </div>
-          </ng-template>
-        </owl-carousel-o>
+          </div>
+        </div>
+        <div class="container-left">
+          <owl-carousel-o [options]="customOptions1">
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/Carousel.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel_1.png" alt="image">
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="slide">
+                <img class="container_image" src="../../assets/gallery-page-img/Carousel_2.png" alt="image">
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
       </div>
     </div>
-  
-  
-    <div class='flex10'>
-      <div class='card10'>
-        <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
-        <img src="./assets/images/image 26.png" alt="">
-        <br>
-        <br>
-        <p style='font-size:16px !important;'>Vb Ceramic Consultants,
-          207, 3rd Link Street, Kottivakkam,
-          Chennai - 600 041</p>
-      </div>
-      <div class='card10'>
-        <p style="font-weight:500; margin-bottom: 10px;">SITEMAP</p>
+  </div>
+  <div class="section-3">
+    <div class="sec3_top">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
+          </div>
+        </ng-template>
+        <!-- <ng-template carouselSlide>
+            <div class="slide">
+              <img src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
+              <img src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
+              <img src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
+              <img src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
+              <img src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
+            </div>
+          </ng-template> -->
+      </owl-carousel-o>
+    </div>
+    <br>
+    <div class="sec3_bottom">
+      <owl-carousel-o [options]="customOptions_left">
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/mirror-like.jpeg" alt="mirror">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/white_building.jpeg" alt="white_building">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/seive-like.jpeg" alt="seive">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/white-big.jpeg" alt="white_big">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img class="slide_img" src="../../assets/gallery-page-img/sky-view.jpeg" alt="sky-view">
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+  </div>
+  <div class='flex10'>
+    <div class='card10'>
+      <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
+      <img src="./assets/images/image 26.png" alt="">
+      <br>
+      <br>
+      <p style='font-size:16px !important;'>Vb Ceramic Consultants,
+        207, 3rd Link Street, Kottivakkam,
+        Chennai - 600 041</p>
+    </div>
+    <div class='card10'>
+      <p style="font-weight:500; margin-bottom: 10px;">SITEMAP</p>
+      <ul style="display: flex; flex-direction: column; gap: 8px;">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Gallery</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class='card10'>
+      <div>
+        <p style="font-weight:500; margin-bottom: 10px;">SERVICES</p>
         <ul style="display: flex; flex-direction: column; gap: 8px;">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Gallery</li>
-          <li>Contact Us</li>
+          <li>Raw Materials</li>
+          <li>Material Processing</li>
+          <li>Characterization</li>
+          <li>Heat Treatment Facility</li>
+
         </ul>
       </div>
-      <div class='card10'>
-        <div>
-          <p style="font-weight:500; margin-bottom: 10px;">SERVICES</p>
-          <ul style="display: flex; flex-direction: column; gap: 8px;">
-            <li>Raw Materials</li>
-            <li>Material Processing</li>
-            <li>Characterization</li>
-            <li>Heat Treatment Facility</li>
-  
-          </ul>
-        </div>
-        <div style="margin-top: 20px;">
-          <p style="font-weight:500; margin-bottom: 10px;">SOCIALS</p>
-          <div style='display: flex;flex-direction:row;gap:20px'>
-            <img src="./assets/images/mdi_linkedin (1).svg" alt="">
-            <img src="./assets/images/YouTube svg.svg" alt="">
-            <img src="./assets/images/Facebook svg.svg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class='card10'>
-        <div>
-          <p style="font-weight:500; margin-bottom: 10px;">SUPPORT</p>
-          <ul style="display: flex; flex-direction: column; gap: 8px;">
-            <li>Contact Us</li>
-            <li>Help centre</li>
-          </ul>
-        </div>
-        <div style="margin-top: 20px;">
-          <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
-          <div style="display: flex; gap: 20px">
-            <img src="./assets/images/image 26.png" alt="">
-            <img src="../../assets//gallery-page-img/hi-tech.png" alt="">
-          </div>
+      <div style="margin-top: 20px;">
+        <p style="font-weight:500; margin-bottom: 10px;">SOCIALS</p>
+        <div style='display: flex;flex-direction:row;gap:20px'>
+          <img src="./assets/images/mdi_linkedin (1).svg" alt="">
+          <img src="./assets/images/YouTube svg.svg" alt="">
+          <img src="./assets/images/Facebook svg.svg" alt="">
         </div>
       </div>
     </div>
-    <footer>
-      <div class='footer'>
-        <p style='padding: 20px 20px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
-        <div class='cardfooter'>
-          <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p>
-          <div class="separator"></div>
-          <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p>
-          <div class="separator"></div>
-          <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
+    <div class='card10'>
+      <div>
+        <p style="font-weight:500; margin-bottom: 10px;">SUPPORT</p>
+        <ul style="display: flex; flex-direction: column; gap: 8px;">
+          <li>Contact Us</li>
+          <li>Help centre</li>
+        </ul>
+      </div>
+      <div style="margin-top: 20px;">
+        <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
+        <div style="display: flex; gap: 20px">
+          <img src="./assets/images/image 26.png" alt="">
+          <img src="../../assets//gallery-page-img/hi-tech.png" alt="">
         </div>
       </div>
-    </footer>
+    </div>
   </div>
+  <footer>
+    <div class='footer'>
+      <p style='padding: 20px 20px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
+      <div class='cardfooter'>
+        <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p>
+        <div class="separator"></div>
+        <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p>
+        <div class="separator"></div>
+        <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
+      </div>
+    </div>
+  </footer> 
+  </div>
+  
 </body>
