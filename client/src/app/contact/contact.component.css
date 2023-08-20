@@ -124,3 +124,22 @@
       text-align: center;
     }
   }
+  @media only screen and (max-width: 600px) {
+    #contact_flex{
+      flex-direction: column !important;
+      gap:0px !important;
+    }
+    #header_services{
+      font-size:40px;
+      text-align: center;
+    }
+    #contact_para{
+      font-size: 20px;
+      text-align: center;
+      width: auto;
+    }
+  }
+  .col-md-12{
+    padding:0px;
+  }
+

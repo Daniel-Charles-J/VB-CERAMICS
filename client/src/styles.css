@@ -52,3 +52,6 @@
 @media only screen and (max-width: 500px){
 #customer{padding-left: 60px !important;}
 }
+@media only screen and (max-width: 425px){
+  #customer{padding-left: 35px !important;}
+  }
