@@ -350,7 +350,9 @@ height:60%
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+.form-section{
+  overflow: hidden;
+}
 
   .college {
   margin: 10px 0px 20px 0px;
@@ -605,6 +607,17 @@ margin-left:15px;
   }
   #header_facility{
     text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact_us_li {  
+    width: 30%;
+  }
+  .nav-item-contact{
+      display: flex;
+      justify-content: center;
+      width: 100%;
   }
 }
 
