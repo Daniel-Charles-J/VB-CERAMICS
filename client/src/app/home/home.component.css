@@ -550,44 +550,9 @@ margin-left:15px;
   flex-wrap: wrap;
 }
 
-/* media queries for contact */
-@media only screen and (max-width: 600px) {
-  #flex_con {
-  flex-direction: column;
-  align-items: unset;
-  }
-}
-
 #top_con,#sign_con,#action_con{
   flex:auto !important;
 }
-
-@media only screen and (max-width: 1003px){
-  #top_con,#sign_con,#action_con{
-    flex:1 0 0 !important;
-  }
-}
-@media only screen and (max-width:1003px) and (min-width: 601px)  {
-  #con_input {
-  width:70%;
-  }
-  #top_con,#sign_con,#action_con{
-    flex:auto !important;
-  }
-  #action_con{
-    width:100%;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  #facility_para,#service_para{
-    flex:auto;
-  }
-  #header_facility{
-    text-align: center;
-  }
-}
-
 @media only screen and (max-width: 1150px) {
   .carousel-caption {
     position: absolute;
@@ -616,6 +581,43 @@ margin-left:15px;
 }
 }
 
+@media only screen and (max-width: 1003px){
+  #top_con,#sign_con,#action_con{
+    flex:1 0 0 !important;
+  }
+}
+@media only screen and (max-width:1003px) and (min-width: 601px)  {
+  #con_input {
+  width:70%;
+  }
+  #top_con,#sign_con,#action_con{
+    flex:auto !important;
+  }
+  #action_con{
+    width:100%;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  #facility_para,#service_para{
+    flex:auto;
+  }
+  #header_facility{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cardfooter{
+    display: none;
+  }
+  .footer{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .carousel-control-next, .carousel-control-prev{
     bottom:0px;
@@ -631,12 +633,12 @@ margin-left:15px;
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .cardfooter{
-    display: none;
-  }
-  .footer{
-    flex-direction: column-reverse;
-    text-align: center;
+/* media queries for contact */
+@media only screen and (max-width: 600px) {
+  #flex_con {
+  flex-direction: column;
+  align-items: unset;
   }
 }
+
+
