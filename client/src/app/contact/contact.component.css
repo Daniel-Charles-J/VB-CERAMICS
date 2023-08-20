@@ -3,16 +3,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap:27px;
-    padding:0px 40px;
+    padding:0px 32px;
     }
 
 #header_services{
         color: #132249;
         font-family: Unbounded;
-        font-size: 82px;
+        font-size: 68px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        flex:1 0 ;
         }
 
 #contact_para{
@@ -112,4 +113,14 @@
     background: #FFF;
     width: 1px;
     height: 26px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .cardfooter{
+      display: none;
+    }
+    .footer{
+      flex-direction: column-reverse;
+      text-align: center;
+    }
   }
