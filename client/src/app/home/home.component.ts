@@ -35,6 +35,26 @@ public customOptions: OwlOptions = {
   autoplayTimeout:1000,
   dots: false,
   autoplayHoverPause:false,
+  responsive: {
+    0:{
+      items: 1
+    },
+    480:{
+      items: 2
+    },
+    650:{
+      items: 3
+    },
+    850:{
+      items: 4
+    },
+    1000:{
+      items: 5
+    },
+    1250:{
+      items: 7
+    }
+}
 };
 
 public customOptions2: OwlOptions = {
@@ -46,6 +66,18 @@ public customOptions2: OwlOptions = {
   autoplayHoverPause:true,
   nav: true,
   navText: ["<img src='./assets/images/arrow_cc.svg'>","<img src='./assets/images/arrow_c.svg'>"],
+
+  responsive: {
+    0:{
+      items: 1
+    },
+    750:{
+      items: 2
+    },
+    1150:{
+      items: 3
+    }
+}
   };
 
   ngOnInit(): void
