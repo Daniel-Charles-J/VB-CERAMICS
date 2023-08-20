@@ -646,10 +646,77 @@ margin-left:15px;
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .carousel-control-next, .carousel-control-prev{
+    display: none !important;
+  }
+  .carousel-control-prev-icon,.carousel-control-next-icon{
+    display: none !important;
+  }
+  #top_header{
+    font-size: 18px;
+  }
+  #para{
+    font-size: 14px;
+  }
+  .flex_of_5{
+    flex-direction: column;
+    gap:0px;
+  }
+  #header_services{
+    font-size:40px;
+    text-align: center;
+  }
+  #header_facility {
+    font-size:40px;
+    text-align: center;
+}
+  .flex_of_7{
+  flex-direction: column;
+    gap:5px;
+}
+#facility_para, #service_para {
+  flex: auto;
+  text-align: center;
+}
+.last{
+  padding-top: 49px;
+}
+}
+
 /* media queries for contact */
 @media only screen and (max-width: 600px) {
   #flex_con {
   flex-direction: column;
   align-items: unset;
   }
+  #head_img{
+    margin-left: 15px !important;
+  }
 }
+<<<<<<< HEAD
+=======
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  height: 100%;
+}
+
+/* media queries for contact */
+@media only screen and (max-width: 450px) {
+  #con_button{
+    margin-left: 5px;
+
+  }
+  #con_input{
+    width: 10% ;
+  }
+  #footer_p{
+    font-size: 13px;
+  }
+  
+}
+
+
+
+
+>>>>>>> 6ed7036 (changes)
