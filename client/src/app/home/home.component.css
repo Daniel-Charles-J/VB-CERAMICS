@@ -608,6 +608,17 @@ margin-left:15px;
   }
 }
 
+@media (max-width: 992px) {
+  .contact_us_li {  
+    width: 30%;
+  }
+  .nav-item-contact{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .cardfooter{
     display: none;
