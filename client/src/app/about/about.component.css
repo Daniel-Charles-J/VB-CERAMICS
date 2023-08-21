@@ -194,6 +194,14 @@
   margin-left: 28%;
 }
 
+.fixed {
+  width: 100%;
+  height: 20px;
+  position: fixed;
+   top: 0;
+   right: 0;
+   background-color: white;
+}
 .menu,
 .main_section1,
 .main_section2,
@@ -211,6 +219,13 @@
 
 .menu_nav-link{
   font-size: 20px;
+}
+
+.li-hover:hover{
+  border-radius: 20px;
+border: 1px solid rgba(24, 25, 119, 0.10);
+background: #cdd9fa;
+  padding: 4px 8px;
 }
 .main_section1_header,
 .main_section2_header,
@@ -535,6 +550,13 @@
   left: 25%;
   width: 50%;
 }
+.modal-content1 {
+  padding: 20px;
+  border: 1px solid #888;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+}
 
 /* The Close Button */
 .close {
@@ -567,12 +589,12 @@
 .flex10 {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0px 0px 0px;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   background: #EDF1FD;
   width: 100%;
   border-radius: 20px;
+  padding: 20px 10%;
   border: 1px solid rgba(24, 25, 119, 0.10);
 }
 
@@ -640,6 +662,15 @@
 }
 .modalProfile {
   width: 60%; display: flex; flex-direction: column; gap: 30px;
+}
+.modal_top {
+  width: 60%; padding: 2%;top: 10%; left: 25%;
+}
+.modal_top2 {
+  width: 50%; padding: 2%;top: 20%; left: 25%;
+}
+.modal_img1, .modal_img2, .modal_img3 {
+  height: 400px;
 }
 @media (max-width: 1420px) {
   .navbar_about_text {
@@ -796,6 +827,7 @@
 
   .navbar_about_text {
     font-size: 90px !important;
+    text-align: center;
   }
 
   .navbar_top_text img {
@@ -865,13 +897,21 @@
   .modalImage {
     width: 90%;
   }
+  .modalImage .img_img {
+    width: 75%;
+  }
 }
 
 @media (max-width: 672px) {
   .navbar_about_text {
     font-size: 75px !important;
   }
-
+  .modal_top {
+    width: 70%; left: 15%;
+  }
+  .modal_top2 {
+    width: 60%; left: 20%;
+  }
 }
 @media (max-width: 576px) {
   .navbar_about_text {
@@ -900,5 +940,71 @@
   .research_projects,
   .research_projects_cnt {
     font-size: 14px !important;
-  } 
+  }
+  .navbar_about_text {
+    font-size: 60px !important;
+  }
+}
+
+@media (max-width: 530px) { 
+  .navbar_about_text {
+    font-size: 60px !important;
+  }
+}
+@media (max-width: 500px) {
+  .navbar_about_text img{
+    width: 60%;
+  }
+  .menu_nav-link{
+    font-size: 14px !important;
+  }
+  .main_section1_cnt,
+  .main_section2_cnt,
+  .main_section5_cnt,
+  .main_section6_cnt,
+  .main_section7_top_cnt,
+  .main_section8_cnt,
+  .research_projects,
+  .research_projects_cnt {
+    font-size: 14px !important;
+  }
+  .navbar_about_text {
+    font-size: 50px !important;
+  }
+
+  .navbar_ul {
+    gap: 2% !important;
+  }
+
+  .navbar_li a {
+    padding: 2px !important;
+  }
+
+  .navbar_li a svg {
+    width: 20px;
+  }
+  .modal_top {
+    width: 80%; top: 3%; left: 10%;
+  }
+  .modal_top2 {
+    width: 70%; top: 3%; left: 15%;
+  }
+}
+
+@media (max-width: 420px) { 
+  .navbar_about_text {
+    font-size: 45px !important;
+  }
+  .menu_cnt {
+    justify-content: center !important;
+  }
+  .menu_navbar-nav {
+    gap: 10% !important;
+  }
+}
+
+@media (max-width: 360px) { 
+  .navbar_about_text {
+    font-size: 40px !important;
+  }
 }
