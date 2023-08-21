@@ -118,21 +118,22 @@
       </div>
     </aside>
     <main class="col overflow-auto main">
+      <div class="fixed"></div>
       <section class="menu">
         <div class="menu_cnt">
           <ul class="menu_navbar-nav">
             <li class="menu_nav-item">
-              <a class="menu_nav-link" [routerLink]='["/"]'>Home</a>
+              <a class="menu_nav-link li-hover" [routerLink]='["/"]'>Home</a>
             </li>
             <li class="menu_nav-item">
-              <a class="menu_nav-link" [routerLink]='["/library"]'>Library</a>
+              <a class="menu_nav-link li-hover" [routerLink]='["/library"]'>Library</a>
             </li>
 
             <li class="menu_nav-item">
-              <a class="menu_nav-link" [routerLink]='["/gallery"]'>Gallery</a>
+              <a class="menu_nav-link li-hover" [routerLink]='["/gallery"]'>Gallery</a>
             </li>
             <li class="menu_nav-item">
-              <a class="menu_nav-link" [routerLink]='["/service"]'>Services</a>
+              <a class="menu_nav-link li-hover" [routerLink]='["/service"]'>Services</a>
             </li>
           </ul>
           <button style="background-color: #132249; border-radius: 20px;
@@ -252,7 +253,7 @@
               <div class="section4_education">Managing Director</div>
             </div>
             <div id="panelModal_1" class="modal">
-              <div class="modal-content" style="width: 60%; padding: 2%;top: 10%; left: 25%">
+              <div class="modal-content modal_top">
                 <div class="close" style="float: right" (click)="close('panelModal_1')">&times;</div>
                 <div
                   class="modalDiv">
@@ -298,7 +299,7 @@
               <div class="section4_education">M.Tech, Ph.D, F.I.I</div>
             </div>
             <div id="panelModal_2" class="modal">
-              <div class="modal-content" style="width: 60%; padding: 2%;top: 10%; left: 25%">
+              <div class="modal-content modal_top">
                 <div class="close" style="float: right" (click)="close('panelModal_2')">&times;</div>
                 <div
                   class="modalDiv">
@@ -329,7 +330,7 @@
                     </div>
                     <div>
                       <span style="font-weight: bold;">Portfolio : </span>
-                      <a
+                      <a style="word-wrap: break-word;word-break: break-word;"
                         href="https://www.cecri.res.in/Profile.aspx?empcode=40132&seltab=profile&submenuheader=0&Fullurl=">https://www.cecri.res.in/Profile.aspx?empcode=40132&seltab=profile&submenuheader=0&Fullurl=</a>
                     </div>
                   </div>
@@ -344,7 +345,7 @@
               <div class="section4_education">B.Sc., M.Sc., Ph.D.</div>
             </div>
             <div id="panelModal_3" class="modal">
-              <div class="modal-content" style="width: 60%; padding: 2%;top: 10%; left: 25%">
+              <div class="modal-content modal_top">
                 <div class="close" style="float: right" (click)="close('panelModal_3')">&times;</div>
                 <div
                   class="modalDiv">
@@ -370,7 +371,7 @@
                     <div><span style="font-weight: bold;">Books edited : </span>1</div>
                     <div>
                       <span style="font-weight: bold;">Portfolio : </span>
-                      <a
+                      <a style="word-wrap: break-word;word-break: break-word;"
                         href="https://www.cecri.res.in/Profile?empcode=40166&seltab=profile&submenuheader=0">https://www.cecri.res.in/Profile?empcode=40166&seltab=profile&submenuheader=0</a>
                     </div>
                   </div>
@@ -385,7 +386,7 @@
               <div class="section4_education">M.Tech, Ph.D, F.I.I</div>
             </div>
             <div id="panelModal_4" class="modal">
-              <div class="modal-content" style="width: 60%; padding: 2%;top: 10%; left: 25%">
+              <div class="modal-content modal_top">
                 <div class="close" style="float: right" (click)="close('panelModal_4')">&times;</div>
                 <div
                   class="modalDiv">
@@ -422,7 +423,7 @@
                     </div>
                     <div>
                       <span style="font-weight: bold;">Portfolio : </span>
-                      <a
+                      <a style="word-wrap: break-word;word-break: break-word;"
                         href="https://www.researchgate.net/profile/Venkataraman-Sekkar">https://www.researchgate.net/profile/Venkataraman-Sekkar</a>
                     </div>
                   </div>
@@ -438,7 +439,7 @@
               <div class="section4_education">CGCRI Kolkata</div>
             </div>
             <div id="panelModal_5" class="modal">
-              <div class="modal-content" style="width: 50%; padding: 2%;top: 30%; left: 25%">
+              <div class="modal-content modal_top2">
                 <div class="close" style="float: right" (click)="close('panelModal_5')">&times;</div>
                 <div
                   class="modalDiv">
@@ -492,30 +493,30 @@
           </div>
           <div class="section5_images">
             <div class="section5_images1" id="section5_images1">
-              <img src="../../assets/Fellowship_Gallery.png" id="fellowship_img" class="fellowship_img1"
+              <img src="../../assets/Fellowship_Gallery1.png" id="fellowship_img" class="fellowship_img1"
                 (click)="open('myModal1')" />
               <div id="myModal1" class="modal">
-                <div class="modal-content">
+                <div class="modal-content modal-content1">
                   <span class="close" (click)="close('myModal1')">&times;</span>
-                  <img src="../../assets/Fellowship_Gallery.png" class="modal_img1" />
+                  <img src="../../assets/Fellowship_Gallery1.png" class="modal_img1" />
                 </div>
               </div>
             </div>
             <div class="section5_images2">
-              <img src="../../assets/Fellowship_Gallery_2.png" class="fellowship_img2" (click)="open('myModal2')" />
+              <img src="../../assets/Fellowship_Gallery2.png" class="fellowship_img2" (click)="open('myModal2')" />
               <div id="myModal2" class="modal">
-                <div class="modal-content">
+                <div class="modal-content modal-content1">
                   <span class="close" (click)="close('myModal2')">&times;</span>
-                  <img src="../../assets/Fellowship_Gallery_2.png" class="modal_img2" />
+                  <img src="../../assets/Fellowship_Gallery2.png" class="modal_img2" />
                 </div>
               </div>
             </div>
             <div class="section5_images3">
-              <img src="../../assets/Fellowship_Gallery_3.png" class="fellowship_img3" (click)="open('myModal3')" />
-              <div id="myModal3" class="modal">
-                <div class="modal-content">
+              <img src="../../assets/Fellowship_Gallery3.png" class="fellowship_img3" (click)="open('myModal3')" />
+              <div id="myModal3" class="modal" style="top: 20">
+                <div class="modal-content modal-content1">
                   <span class="close" (click)="close('myModal3')">&times;</span>
-                  <img src="../../assets/Fellowship_Gallery_3.jpg" class="modal_img3" />
+                  <img src="../../assets/Fellowship_Gallery3.png" class="modal_img3" />
                 </div>
               </div>
             </div>
@@ -665,59 +666,62 @@
           </div>
         </div>
       </section>
-      <div class='flex10'>
-        <div class='card10'>
-          <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
-          <img src="./assets/images/image 26.png" alt="">
-          <br>
-          <br>
-          <p style='font-size:16px !important;'>Vb Ceramic Consultants,
-            207, 3rd Link Street, Kottivakkam,
-            Chennai - 600 041</p>
-        </div>
-        <div class='card10'>
-          <p style="font-weight:500; margin-bottom: 10px;">SITEMAP</p>
-          <ul style="display: flex; flex-direction: column; gap: 8px;">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Gallery</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <div class='card10'>
-          <div>
-            <p style="font-weight:500; margin-bottom: 10px;">SERVICES</p>
+      <div>
+        <div class='flex10' style="border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;">
+          <div class='card10'>
+            <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
+            <img src="./assets/images/image 26.png" alt="">
+            <br>
+            <br>
+            <p style='font-size:16px !important;'>Vb Ceramic Consultants,
+              207, 3rd Link Street, Kottivakkam,
+              Chennai - 600 041</p>
+          </div>
+          <div class='card10'>
+            <p style="font-weight:500; margin-bottom: 10px;">SITEMAP</p>
             <ul style="display: flex; flex-direction: column; gap: 8px;">
-              <li>Raw Materials</li>
-              <li>Material Processing</li>
-              <li>Characterization</li>
-              <li>Heat Treatment Facility</li>
-
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Gallery</li>
+              <li>Contact Us</li>
             </ul>
           </div>
-          <div style="margin-top: 20px;">
-            <p style="font-weight:500; margin-bottom: 10px;">SOCIALS</p>
-            <div style='display: flex;flex-direction:row;gap:20px'>
-              <img src="./assets/images/mdi_linkedin (1).svg" alt="">
-              <img src="./assets/images/YouTube svg.svg" alt="">
-              <img src="./assets/images/Facebook svg.svg" alt="">
+          <div class='card10'>
+            <div>
+              <p style="font-weight:500; margin-bottom: 10px;">SERVICES</p>
+              <ul style="display: flex; flex-direction: column; gap: 8px;">
+                <li>Raw Materials</li>
+                <li>Material Processing</li>
+                <li>Characterization</li>
+                <li>Heat Treatment Facility</li>
+  
+              </ul>
+            </div>
+            <div style="margin-top: 20px;">
+              <p style="font-weight:500; margin-bottom: 10px;">SOCIALS</p>
+              <div style='display: flex;flex-direction:row;gap:20px'>
+                <img src="./assets/images/mdi_linkedin (1).svg" alt="">
+                <img src="./assets/images/YouTube svg.svg" alt="">
+                <img src="./assets/images/Facebook svg.svg" alt="">
+              </div>
             </div>
           </div>
-        </div>
-        <div class='card10'>
-          <div>
-            <p style="font-weight:500; margin-bottom: 10px;">SUPPORT</p>
-            <ul style="display: flex; flex-direction: column; gap: 8px;">
-              <li>Contact Us</li>
-              <li>Help centre</li>
-            </ul>
-          </div>
-          <div style="margin-top: 20px;">
-            <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
-            <div style="display: flex; gap: 20px">
-              <img src="./assets/images/image 26.png" alt="">
-              <img src="../../assets//gallery-page-img/hi-tech.png" alt="">
+          <div class='card10'>
+            <div>
+              <p style="font-weight:500; margin-bottom: 10px;">SUPPORT</p>
+              <ul style="display: flex; flex-direction: column; gap: 8px;">
+                <li>Contact Us</li>
+                <li>Help centre</li>
+              </ul>
+            </div>
+            <div style="margin-top: 20px;">
+              <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
+              <div style="display: flex; gap: 20px">
+                <img src="../../assets/vbcc.png" alt="" style="width: 100px;">
+                <img src="../../assets//gallery-page-img/hi-tech.png" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -725,6 +729,7 @@
           <p style='padding: 20px 20px 20px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
         </div>
       </div>
+      
       <section class="section9">
         <div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
           <button type="button" class="btn active" data-toggle="button" aria-pressed="true" (click)="scrollToTop()">
