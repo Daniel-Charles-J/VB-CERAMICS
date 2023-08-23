@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./library.component.css']
 })
 export class LibraryComponent {
-
+  libraryPage(){
+  console.log("event triggered");
+}
 }
