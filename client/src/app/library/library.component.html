@@ -1,62 +1,69 @@
-<body>
-    <div style="overflow: hidden">
-     <div class="container-fluid1">
-      <div class="row">
-        <div class="col-md-12 ">
-          <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="./assets/images/image 26.png" alt="VBCRC">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink]='["/"]'>Home</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" [routerLink]='["/about"]'>About Us </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink]='["/library"]'>Library</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink]='["/service"]'>Services</a>
-                </li>
-                <li class="nav-item contact_us_li">
-                  <a class="nav-link" class="contact_us" [routerLink]='["/contact"]'>Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
+
+<div *ngIf="!isChildRoute">
+  <h2>Parent Component</h2>
+  <div style="overflow: hidden">
+    <div class="container-fluid1">
+     <div class="row">
+       <div class="col-md-12 ">
+         <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
+           <img src="./assets/images/image 26.png" alt="VBCRC">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                 <a class="nav-link" [routerLink]='["/"]'>Home</a>
+               </li>
+               <li class="nav-item active">
+                 <a class="nav-link" [routerLink]='["/about"]'>About Us </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" [routerLink]='["/library"]'>Library</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" [routerLink]='["/service"]'>Services</a>
+               </li>
+               <li class="nav-item contact_us_li">
+                 <a class="nav-link" class="contact_us" [routerLink]='["/contact"]'>Contact Us</a>
+               </li>
+             </ul>
+           </div>
+         </nav>
+       </div>
+     </div>
+   </div>
 
 
 
-    <div class="main-section"> 
-      <div class="hero">
-        <h1 class="gallery-text">LIBRARY</h1>
-        <div class="gall-para">
-          <p>Our services are transparently priced for optimal customer satisfaction. Check out our selection of
-            high-quality services at affordable rates.</p>
-        </div>
-      </div>
-    </div>
+   <div class="main-section"> 
+     <div class="hero">
+       <h1 class="gallery-text">LIBRARY</h1>
+       <div class="gall-para">
+         <p>Our services are transparently priced for optimal customer satisfaction. Check out our selection of
+           high-quality services at affordable rates.</p>
+       </div>
+     </div>
+   </div>
 
 
-    <div class="containers-section">
-        <div class="container_1 container" (click)="libraryPage()"></div>
-        <hr>
-        <div class="container_2 container" (click)="libraryPage()"></div>
-        <hr>
-        <div class="container_3 container" (click)="libraryPage()"></div>
-        <hr>
-        <div class="container_4 container" (click)="libraryPage()"></div>
-        <hr>
-        <div class="container_5 container" (click)="libraryPage()"></div>
-        <hr>
-        <div class="container_6 container" (click)="libraryPage()"></div>
-    </div>
+   <div class="containers-section">
+       <div class="container_1 container"  (click)="libraryPage()" [routerLink] ='["./libraryOne"]'></div>
+       <hr>
+       <!-- <div class="container_2 container" (click)="libraryPage()"></div>
+       <hr>
+       <div class="container_3 container" (click)="libraryPage()"></div>
+       <hr>
+       <div class="container_4 container" (click)="libraryPage()"></div>
+       <hr>
+       <div class="container_5 container" (click)="libraryPage()"></div>
+       <hr>
+       <div class="container_6 container" (click)="libraryPage()"></div> -->
+   </div>
 </div>
+  <!-- Parent component-specific content -->
+</div>
+
+<router-outlet></router-outlet>
+

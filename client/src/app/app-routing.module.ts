@@ -6,11 +6,14 @@ import { ServiceComponent } from './service/service.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { LibraryComponent } from './library/library.component';
 import { ContactComponent } from './contact/contact.component';
+import { LibraryOneComponent } from './sub-library/library-one/library-one.component';
 
 const appRoutes : Routes = [
   {path : '', component : HomeComponent },
   {path : 'about', component : AboutComponent},
-  {path : 'library', component : LibraryComponent},
+  {path : 'library', component : LibraryComponent,children :[{
+    path : 'libraryOne', component : LibraryOneComponent
+  }]},
   {path : 'gallery', component : GalleryComponent},
   {path : 'service', component : ServiceComponent},
   {path : 'contact', component : ContactComponent},
