@@ -15,30 +15,13 @@ export class LibraryComponent implements OnInit{
   public childActive : any;
 
   ngOnInit() {
-
-    const fullUrl = this.location.path();
-     
-    this.router.navigate(['library'])
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      this.childActive = !!this.route.firstChild;
-      console.log(this.childActive);
-    });
-      //this.router.navigate(['library']),
-    //  const segments = fullUrl.split("/"); // Split the URL by "/"
-    //  const id = segments[segments.length - 1]; // Get the last segment
-    //  console.log(id)
-    //  if(id =="3"){
-    
-    //  }
-
-    //  const fullUrl1 = window.location.href;
-    // console.log(fullUrl1);
-     
-    //console.log("method triggered");
-     //this.childActive = false;
-     
+    //this.router.navigate(['library'])
+    // this.router.events.pipe(
+    //   filter(event => event instanceof NavigationEnd)
+    // ).subscribe(() => {
+    //   this.childActive = !!this.route.firstChild;
+    //   console.log(this.childActive);
+    // });
   }
 
   library = [
