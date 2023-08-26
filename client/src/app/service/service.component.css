@@ -1,0 +1,131 @@
+.bg-light {
+    background-color: #132249 !important;
+  }
+  
+  .nav-link {
+    color: white !important;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .nav-link:hover {
+    color: grey !important
+  }
+  
+  #navbarSupportedContent {
+    padding-right: 40px;
+  }
+  
+  
+  
+  /* header */
+  #top_header {
+    color: #132249;
+    text-align: center;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: Unbounded;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  h2 {
+    color: #000;
+    font-family: Unbounded;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    /* 150% */
+    text-transform: uppercase;
+  }
+  
+  .container-fluid1 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+  }
+  
+  .responsive {
+    width: 100%;
+  }
+  
+  .responsive h1 {
+    font-size: 10px !important;
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background: url(/assets/images/menu_own.svg) left no-repeat;
+  }
+  
+  .contact_us_li {
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  
+  .contact_us {
+    background-color: white !important;
+    color: #132249 !important;
+    border-radius: 50px;
+    padding: 6px 15px;
+    text-decoration: none;
+  }
+  
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  .hero {
+    padding: 20px 10px 20px 20px;
+    display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  }
+  
+  
+  /* Gallery text section */
+  
+  .gallery-text {
+    color: #132249;
+    width: 35%;
+    font-family: Unbounded;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .gall-para {
+    color: #000;
+    width: 60%;
+    margin-top: 15px;
+    font-family: Schibsted Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+
+
+
+
+
+.container{
+    height: auto;
+    width: 200px;
+    background-color:aquamarine ;
+}
+.containers-section{
+    display: flex;
+}

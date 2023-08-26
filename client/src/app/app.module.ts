@@ -13,7 +13,8 @@ import { LibraryComponent } from './library/library.component';
 import { TooltipsModule } from '@progress/kendo-angular-tooltip';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import 'hammerjs';
-import { LibraryOneComponent } from './sub-library/library-one/library-one.component'; 
+import { LibraryOneComponent } from './sub-library/library-one/library-one.component';
+import { ServicesComponent } from './sub-service/services/services.component'; 
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { LibraryOneComponent } from './sub-library/library-one/library-one.compo
     GalleryComponent,
     LibraryComponent,
     LibraryOneComponent,
+    ServicesComponent,
     
   ],
   imports: [

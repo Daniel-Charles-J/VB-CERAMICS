@@ -7,6 +7,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { LibraryComponent } from './library/library.component';
 import { ContactComponent } from './contact/contact.component';
 import { LibraryOneComponent } from './sub-library/library-one/library-one.component';
+import { ServicesComponent } from './sub-service/services/services.component';
 
 const appRoutes : Routes = [
   {path : '', component : HomeComponent },
@@ -18,6 +19,7 @@ const appRoutes : Routes = [
   // }]},
   {path : 'gallery', component : GalleryComponent},
   {path : 'service', component : ServiceComponent},
+  {path : 'service/:service-id', component : ServicesComponent},
   {path : 'contact', component : ContactComponent},
 ];
 
