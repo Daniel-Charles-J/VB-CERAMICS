@@ -10,18 +10,18 @@ import { filter } from 'rxjs/operators';
 export class LibraryComponent implements OnInit{
   isChildRoute = false;
   constructor(private router: Router, private route: ActivatedRoute) {}
-  
+  public childActive : any;
   ngOnInit(): void {
     console.log("method triggered");
-
-    // this.router.events.pipe(
-    //   filter(event => event instanceof NavigationEnd)
-    // ).subscribe(() => {
-    //   this.isChildRoute = !!this.route.firstChild;
-    // });
+     //this.childActive = false;
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.childActive = !!this.route.firstChild;
+    });
   }
 
-  childActive = false;
+  //childActive = false;
   library = [
     {
       library_id: 1,
@@ -52,9 +52,6 @@ export class LibraryComponent implements OnInit{
 
   showChild() {
     this.childActive = true;
-
-    // this.library_id = e;
-    // console.log(this.library_id);
   }
 
 
