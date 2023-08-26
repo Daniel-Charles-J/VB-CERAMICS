@@ -1,5 +1,5 @@
 
-<div *ngIf="!isChildRoute">
+<div *ngIf="!childActive">
   <h2>Parent Component</h2>
   <div style="overflow: hidden">
     <div class="container-fluid1">
@@ -49,21 +49,16 @@
 
 
    <div class="containers-section">
-       <div class="container_1 container"  (click)="libraryPage()" [routerLink] ='["./libraryOne"]'></div>
-       <hr>
-       <!-- <div class="container_2 container" (click)="libraryPage()"></div>
-       <hr>
-       <div class="container_3 container" (click)="libraryPage()"></div>
-       <hr>
-       <div class="container_4 container" (click)="libraryPage()"></div>
-       <hr>
-       <div class="container_5 container" (click)="libraryPage()"></div>
-       <hr>
-       <div class="container_6 container" (click)="libraryPage()"></div> -->
+       <div class="container_1 container"  
+        [routerLink] ='["/library",library.library_id]'
+        *ngFor="let library of library"
+        (click)="showChild()">
+        {{ library.library_id }}
+       </div>
    </div>
 </div>
-  <!-- Parent component-specific content -->
+
 </div>
 
-<router-outlet></router-outlet>
+<router-outlet *ngIf="childActive"></router-outlet>
 
