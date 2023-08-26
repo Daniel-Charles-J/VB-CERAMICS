@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-library',
@@ -8,20 +9,38 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./library.component.css']
 })
 export class LibraryComponent implements OnInit{
+  
   isChildRoute = false;
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(private router: Router, private route: ActivatedRoute, private location: Location) {}
   public childActive : any;
-  ngOnInit(): void {
-    console.log("method triggered");
-     //this.childActive = false;
+
+  ngOnInit() {
+
+    const fullUrl = this.location.path();
+     
+    this.router.navigate(['library'])
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe(() => {
       this.childActive = !!this.route.firstChild;
+      console.log(this.childActive);
     });
+      //this.router.navigate(['library']),
+    //  const segments = fullUrl.split("/"); // Split the URL by "/"
+    //  const id = segments[segments.length - 1]; // Get the last segment
+    //  console.log(id)
+    //  if(id =="3"){
+    
+    //  }
+
+    //  const fullUrl1 = window.location.href;
+    // console.log(fullUrl1);
+     
+    //console.log("method triggered");
+     //this.childActive = false;
+     
   }
 
-  //childActive = false;
   library = [
     {
       library_id: 1,
@@ -43,25 +62,5 @@ export class LibraryComponent implements OnInit{
       library_id: 5,
       name: 'Chris'
     },
-    {
-      library_id: 6,
-      name: 'Chris'
-    }
   ];
-  
-
-  showChild() {
-    this.childActive = true;
-  }
-
-
-  libraryPage(){
-  console.log("event triggered");
-  this.router.events.pipe(
-    filter(event => event instanceof NavigationEnd)
-  ).subscribe(() => {
-    this.isChildRoute = !!this.route.firstChild;
-  });
-
-}
 }

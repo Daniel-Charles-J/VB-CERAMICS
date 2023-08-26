@@ -47,12 +47,10 @@
      </div>
    </div>
 
-
    <div class="containers-section">
        <div class="container_1 container"  
         [routerLink] ='["/library",library.library_id]'
-        *ngFor="let library of library"
-        (click)="showChild()">
+        *ngFor="let library of library">
         {{ library.library_id }}
        </div>
    </div>
