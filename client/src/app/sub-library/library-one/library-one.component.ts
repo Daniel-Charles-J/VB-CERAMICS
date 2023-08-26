@@ -8,8 +8,12 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./library-one.component.css']
 })
 export class LibraryOneComponent {
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     console.log("sub triggered");
+  }
+  goBack() {
+    this.router.navigate(['/library']);
   }
 }

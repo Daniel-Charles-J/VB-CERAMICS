@@ -3,3 +3,6 @@
     width: 200px;
     background-color:aquamarine ;
 }
+.containers-section{
+    display: flex;
+}
