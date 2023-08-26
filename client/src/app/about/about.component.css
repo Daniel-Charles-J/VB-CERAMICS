@@ -190,7 +190,7 @@
   padding: 20px 12px 0px 0px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 12px;
   margin-left: 28%;
 }
 
@@ -617,9 +617,21 @@ background: #cdd9fa;
   background: url(/assets/images/arrowright.svg) left no-repeat;
   list-style-type: none;
   padding-left: 20px;
-
+  cursor: pointer;
+  transition: all .2s ease-out;
 }
 
+.card10 li:hover {
+ font-size: 18px;
+}
+
+.footer_img {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.footer_img:hover {
+  transform: scale(1.1);
+ }
 .footer {
   display: flex;
   width: 100%;
@@ -718,6 +730,10 @@ background: #cdd9fa;
   .menu_nav-link{
     font-size: 18px;
   }
+  .main {
+  gap: 10px;
+}
+
   .main_section1_cnt,
   .main_section2_cnt,
   .main_section5_cnt,
