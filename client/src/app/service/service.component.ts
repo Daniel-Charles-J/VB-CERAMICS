@@ -18,6 +18,7 @@ export class ServiceComponent {
       service_id: 1,
       header : 'Sophisticated Instruments',
       heading : 'X-Ray Diffraction (XRD)',
+      img: '../../assets/service1.jpg',
       description : 'It is a non-destructive method for analysing matters ranging from liquids to crystals.',
       students : '₹750 - Students',
       industries : '₹1500 - Industries',
