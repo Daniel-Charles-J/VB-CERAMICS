@@ -69,30 +69,107 @@
     </div>
     <div class="containers-section">
       <div class="container_1 container" [routerLink] ='["/service",service.service_id]' *ngFor="let service of filteredList.filteredData">
-        <div class="service_container">
+        <div class="service_img">
           <img src={{service.img}}/>
         </div>
-        <div class="service_header">
-          {{service.header}}
-        </div>
-        <div class="service_heading">
-          {{service.heading}}
-        </div>
-        <div class="service_description">
-          {{service.description}}
-        </div>
-        <div class="service_students">
-          {{service.students}}
-        </div>
-        <div class="service_industries">
-          {{service.industries}} 
-        </div>
-        <div class="service_btn">
-          <button class="btn1"><span>Read More</span></button>
-          <button class="btn2"><span>Contact Us</span></button>
+        <div class="service_container">
+          <div class="service_top">
+            <div class="service_header">
+              {{service.header}}
+            </div> 
+            <div class="service_heading">
+              {{service.heading}}
+            </div>
+            <div class="service_description">
+              {{service.description}}
+            </div>
+          </div>
+          <div class="service_bottom">
+            <div class="service_bottom_cnt">
+              <div class="service_students">
+                {{service.students}}
+              </div>
+              <div class="service_industries">
+                {{service.industries}} 
+              </div>
+            </div>
+            <div class="service_btn">
+              <button class="btn1"><span>Read More</span></button>
+              <button class="btn2"><span>Contact Us</span></button>
+            </div>   
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class='flex10'>
+    <div class='card10'>
+      <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
+      <img src="./assets/images/image 26.png" alt="" class="footer_img">
+      <br>
+      <br>
+      <p style='font-size:16px !important;'>Vb Ceramic Consultants,
+        207, 3rd Link Street, Kottivakkam,
+        Chennai - 600 041</p>
+    </div>
+    <div class='card10'>
+      <p style="font-weight:500; margin-bottom: 10px;">SITEMAP</p>
+      <ul style="display: flex; flex-direction: column; gap: 8px;">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Gallery</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class='card10'>
+      <div>
+        <p style="font-weight:500; margin-bottom: 10px;">SERVICES</p>
+        <ul style="display: flex; flex-direction: column; gap: 8px;">
+          <li>Raw Materials</li>
+          <li>Material Processing</li>
+          <li>Characterization</li>
+          <li>Heat Treatment Facility</li>
+
+        </ul>
+      </div>
+      <div style="margin-top: 20px;">
+        <p style="font-weight:500; margin-bottom: 10px;">SOCIALS</p>
+        <div style='display: flex;flex-direction:row;gap:20px'>
+          <img src="./assets/images/mdi_linkedin (1).svg" alt="" class="footer_img">
+          <img src="./assets/images/YouTube svg.svg" alt="" class="footer_img">
+          <img src="./assets/images/Facebook svg.svg" alt="" class="footer_img">
+        </div>
+      </div>
+    </div>
+    <div class='card10'>
+      <div>
+        <p style="font-weight:500; margin-bottom: 10px;">SUPPORT</p>
+        <ul style="display: flex; flex-direction: column; gap: 8px;">
+          <li>Contact Us</li>
+          <li>Help centre</li>
+        </ul>
+      </div>
+      <div style="margin-top: 20px;">
+        <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
+        <div style="display: flex; gap: 20px">
+          <img src="../../assets/vbcc.png" alt="" style="width: 100px;" class="footer_img">
+          <img src="../../assets//gallery-page-img/hi-tech.png" alt="" class="footer_img">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class='footer'>
+      <p style='padding: 20px 20px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
+      <div class='cardfooter'>
+        <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p>
+        <div class="separator"></div>
+        <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p>
+        <div class="separator"></div>
+        <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
+      </div>
+    </div>
+  </footer>
 </div>
 <router-outlet></router-outlet>
