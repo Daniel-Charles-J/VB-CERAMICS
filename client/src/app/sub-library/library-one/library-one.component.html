@@ -1,7 +1,198 @@
-<p>library-one works!</p>
-<button class="btn btn-primary"  [routerLink] ='["/library"]'> Back</button>
-<h1>{{heading}}</h1>
-<h2>{{image}}</h2>
-<h4>{{subHeading}}</h4>
-<p>{{description}}</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='form-section' style='overflow: hidden;'>
+        
+        <div class="container-fluid1">
+          <div class="row">
+          <div  class="col-md-12 ">
+          <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
+          <img id='head_img' style='margin-left:35px;padding:5px 0px;width:85px;height:57px' src="./assets/images/vb_logo.png" alt="">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" [routerLink] ='["/about"]'>About Us </a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink] ='["/library"]'>Library</a>
+                </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" [routerLink] ='["/gallery"]'>Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
+              </li>
+              <li class="nav-item nav-item-contact">
+                <a class="nav-link" style='background-color:white !important; color:#132249 !important;    border-radius: 50px;
+                padding: 6px;
+                margin-top: 15px;
+                margin-left: 5px;' [routerLink]='["/contact"]'>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      </div>
+      </div>
 
+      <div class="flex1">
+        <div class="flex_of_1">
+          <h1 id="header_article" class="flex-items1">ARTICLES</h1>
+          <p class="flex-items1" id="article_para">Welcome to our world of mind-blowing research findings. Be prepared to embark on an exhilarating adventure through the realm of our Research!</p>
+        </div>
+      </div>
+      <hr id='hr_tag'>
+      <div>
+          <div class='flex_article'>
+            <h1 class='top_heading_1'>{{heading}}</h1>
+            <img class='articleimg' src={{img}} alt="">
+            <h1 class='top_heading_2'>{{subHeading}}</h1>
+            <p class='top_para'>{{desc1}}</p>
+            <ul class='headul'>
+                <li>{{point1}}</li>
+                <li>{{point2}}</li>
+                <li>{{point3}}</li>
+                <li>{{point4}}</li>
+                <li>{{point5}}</li>
+                <li>{{point6}}</li>
+                <li>{{point7}}</li>
+                <li>{{point8}}</li>
+                <li>{{point9}}</li>
+                <li>{{point11}}</li>
+            </ul>
+            <p class='summary'>{{summary}}</p>
+
+            <!-- <div>
+                <h1 class='top_heading_1'>{{heading}}</h1>
+                <img class='articleimg' src={{img}} alt="">
+                <h1 class='top_heading_2'>{{subHeading}}</h1>
+                <p class='top_para'>{{desc1}}</p>
+                <h1 class='top_heading_3'>{{subHeading2}}</h1>
+                <p class='top_para'>{{desc2}}</p>
+                <h1 class='top_heading_4'>{{subHeading3}}</h1>
+                <p class='top_para'>{{desc3}}</p>
+            </div> -->
+          </div>
+      </div>
+
+      <div class="flex_e">
+        <div class="flex_of_e">
+          <h1 id="header_article2"  class="flex-items1">Explore Articles</h1>
+        </div>
+      </div>
+      <div class='flex_explore'>
+        <div style='flex:1'>
+            <img  class='exploreimg' src="./assets/images/article1.jpeg" alt="">
+            <p class='epara'>  Agate and It’s Importance</p>
+        </div>
+        <div style='flex:1'> 
+            <img class='exploreimg' src="./assets/images/article2.jpeg" alt="">
+            <p class='epara'>Agate and It’s Importance</p>
+        </div>
+        <div style='flex:1'>
+            <img class='exploreimg' src="./assets/images/article3.jpeg" alt="">
+            <p class='epara'>Agate and It’s Importance</p>
+        </div>
+      </div>
+
+
+      <div class="flex8" id="ContactUs">
+        <div id='flex_con' style=''>
+         <div id='top_con'>
+           <h1 id='head_con'>VBCRC</h1>
+           <h1 id='head_con'>Newsletter</h1>
+         </div>
+         <div id='sign_con'>
+           <p id='con_p'>Sign up and get </p>
+           <ul id='ul_con'>
+             <li>Information about all our Discounts</li>
+             <li>Articles from our Research Centre</li>
+             <li>Season/Festive and Referral Codes</li>
+           </ul>
+         </div>
+         <div id='action_con'>
+           <input placeholder='Email' id='con_input'>
+           <button id='con_button'>Subcribe</button>
+         </div>
+        </div>
+       </div>
+       
+       <br>
+         <div class='flex10'>
+           <div class='card10'>
+             <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
+             <img src="./assets/images/image 26.png" alt="">
+             <br>
+             <br>
+             <p style='font-size:16px !important;'>Vb Ceramic Consultants,
+               207, 3rd Link Street, Kottivakkam,
+               Chennai - 600 041</p>
+           </div>
+           <div class='card10'>
+             <p style="font-weight:500; margin-bottom: 10px;">SITEMAP</p>
+             <ul style="display: flex; flex-direction: column; gap: 8px;">
+               <li>Home</li>
+               <li>About Us</li>
+               <li>Services</li>
+               <li>Gallery</li>
+               <li>Contact Us</li>
+             </ul>
+           </div>
+           <div class='card10'>
+             <div>
+               <p style="font-weight:500; margin-bottom: 10px;">SERVICES</p>
+               <ul style="display: flex; flex-direction: column; gap: 8px;">
+                 <li>Raw Materials</li>
+                 <li>Material Processing</li>
+                 <li>Characterization</li>
+                 <li>Heat Treatment Facility</li>
+       
+               </ul>
+             </div>
+             <div style="margin-top: 20px;">
+               <p style="font-weight:500; margin-bottom: 10px;">SOCIALS</p>
+               <div style='display: flex;flex-direction:row;gap:20px'>
+                 <img src="./assets/images/mdi_linkedin (1).svg" alt="">
+                 <img src="./assets/images/YouTube svg.svg" alt="">
+                 <img src="./assets/images/Facebook svg.svg" alt="">
+               </div>
+             </div>
+           </div>
+           <div class='card10'>
+             <div>
+               <p style="font-weight:500; margin-bottom: 10px;">SUPPORT</p>
+               <ul style="display: flex; flex-direction: column; gap: 8px;">
+                 <li>Contact Us</li>
+                 <li>Help centre</li>
+               </ul>
+             </div>
+             <div style="margin-top: 20px;">
+               <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
+               <div style="display: flex; gap: 20px">
+                 <img src="./assets/images/image 26.png" alt="">
+                 <img src="../../assets//gallery-page-img/hi-tech.png" alt="">
+               </div>
+             </div>
+           </div>
+         </div>
+      </div>
+</body>
+<footer>
+    <div class='footer'>
+      <p  id='footer_p' style='padding: 20px 30px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
+      <div class='cardfooter'>
+        <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p><div class="separator"></div>
+        <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p><div class="separator"></div>
+        <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
+      </div>
+    </div>
+  </footer>
+</html>

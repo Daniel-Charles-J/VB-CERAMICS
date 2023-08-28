@@ -26,24 +26,25 @@ export class LibraryComponent implements OnInit{
 
   library = [
     {
-      library_id: 1,
-      name: 'Max'
+      img1: './assets/images/article1.jpeg',
+      content: 'Quartz - Interesting Facts',
+      library_id:1,
     },
     {
-      library_id: 2,
-      name: 'Anna'
+      img1: './assets/images/article2.jpeg',
+      content: 'Quartz - Interesting Facts',
+      library_id:2,
     },
     {
-      library_id: 3,
-      name: 'Chris'
+      img1: './assets/images/article3.jpeg',
+      content: 'Quartz - Interesting Facts',
+      library_id:3,
     },
     {
-      library_id: 4,
-      name: 'Chris'
+      img1: './assets/images/article4.jpeg',
+      content: 'Quartz - Interesting Facts',
+      library_id:4,
     },
-    {
-      library_id: 5,
-      name: 'Chris'
-    },
+
   ];
 }

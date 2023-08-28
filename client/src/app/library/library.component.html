@@ -43,10 +43,8 @@
     </div>
     </div>
   
-  
-  
-  
-     <div class="main-section"> 
+
+    <div class="main-section"> 
       <div class="flex1">
         <div class="flex_of_1">
           <h1 id="header_article" class="flex-items1">LIBRARY</h1>
@@ -56,28 +54,63 @@
      </div>
      <div class='container'>
        <a id='head1'>
-         <img class="image1" src="./assets/images/library_head_1.jpeg" alt="">
-         <p class="text">Agate and It’s Importance</p>
+         <img class="image1" src="./assets/images/article1.jpeg" alt="">
+         <span class="text-bottom">Agate</span>
+         <p class="textl">Agate and It’s Importance</p>
        </a>
        <a id='head2' class='big'>
-        <img class="image1" src="./assets/images/library_head_1.jpeg" alt="">
-        <p class="text">Agate and It’s Importance</p>
+        <img class="image1" src="./assets/images/article2.jpeg" alt="">
+        <span class="text-bottom text-big">Agate</span>
+        <p class="textl">Agate and It’s Importance</p>
       </a>
       <a id='head3'>
-        <img class="image1" src="./assets/images/library_head_1.jpeg" alt="">
-        <p class="text">Graphite and It’s Importance</p>
+        <img class="image1" src="./assets/images/article3.jpeg" alt="">
+        <span class="text-bottom">Agate</span>
+        <p class="textl">Graphite and It’s Importance</p>
       </a>
      </div>
-
-     <div class="containers-section">
-      <div class="container_1 "  
-       [routerLink] ='["/library",library.library_id]'
-       *ngFor="let library of library">
-       {{ library.library_id }}
+    <br>
+  <div class="main-section2"> 
+    <div class="flex3">
+      <div class="flex_of_1">
+        <h1 id="header_article2" class="flex-items3">ARTICLE</h1>
+        <p class="flex-items3" id="article_para2">Welcome to our world of mind-blowing research findings. Be prepared to embark on an exhilarating adventure through the realm of our Research!</p>
       </div>
-  </div>
-
-
+    </div>
+   </div>
+  <div class='flex2' [routerLink] ='["/library",library.library_id]'
+  *ngFor="let library of library">
+    <div class='flex-items2'>
+      <div id='top_of_lib'>
+        <img class='articleimg' src={{library.img1}} alt="">
+        <span class="bottom-left">Agate</span>
+        <p id='library_para'>{{library.content}}</p>
+      </div>
+      
+    </div>
+   </div>
+   <div class="flex8" id="ContactUs">
+    <div id='flex_con' style=''>
+     <div id='top_con'>
+       <h1 id='head_con'>VBCRC</h1>
+       <h1 id='head_con'>Newsletter</h1>
+     </div>
+     <div id='sign_con'>
+       <p id='con_p'>Sign up and get </p>
+       <ul id='ul_con'>
+         <li>Information about all our Discounts</li>
+         <li>Articles from our Research Centre</li>
+         <li>Season/Festive and Referral Codes</li>
+       </ul>
+     </div>
+     <div id='action_con'>
+       <input placeholder='Email' id='con_input'>
+       <button id='con_button'>Subcribe</button>
+     </div>
+    </div>
+   </div>
+   
+   <br>
     <div class='flex10'>
       <div class='card10'>
         <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
@@ -138,6 +171,7 @@
   </div>
   </div>
 </body>
+
 <router-outlet></router-outlet>
 <footer>
   <div class='footer'>
