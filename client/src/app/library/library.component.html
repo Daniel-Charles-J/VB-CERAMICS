@@ -1,61 +1,190 @@
-<!-- *ngIf="!childActive" -->
-<div>
-  <h2>Parent Component</h2>
-  <div style="overflow: hidden">
-    <div class="container-fluid1">
-     <div class="row">
-       <div class="col-md-12 ">
-         <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-           <img src="./assets/images/image 26.png" alt="VBCRC">
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             <ul class="navbar-nav ms-auto">
-               <li class="nav-item">
-                 <a class="nav-link" [routerLink]='["/"]'>Home</a>
-               </li>
-               <li class="nav-item active">
-                 <a class="nav-link" [routerLink]='["/about"]'>About Us </a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" [routerLink]='["/library"]'>Library</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" [routerLink]='["/service"]'>Services</a>
-               </li>
-               <li class="nav-item contact_us_li">
-                 <a class="nav-link" class="contact_us" [routerLink]='["/contact"]'>Contact Us</a>
-               </li>
-             </ul>
-           </div>
-         </nav>
-       </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <div id='form-section' style='overflow: hidden;'>
+      <div class="container-fluid1">
+        <div class="row">
+        <div  class="col-md-12 ">
+        <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
+        <img id='head_img' style='margin-left:35px;padding:5px 0px;width:85px;height:57px' src="./assets/images/vb_logo.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" [routerLink] ='["/about"]'>About Us </a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink] ='["/library"]'>Library</a>
+              </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" [routerLink] ='["/gallery"]'>Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
+            </li>
+            <li class="nav-item nav-item-contact">
+              <a class="nav-link" style='background-color:white !important; color:#132249 !important;    border-radius: 50px;
+              padding: 6px;
+              margin-top: 15px;
+              margin-left: 5px;' [routerLink]='["/contact"]'>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </div>
+    </div>
+  
+
+    <div class="main-section"> 
+      <div class="flex1">
+        <div class="flex_of_1">
+          <h1 id="header_article" class="flex-items1">LIBRARY</h1>
+          <p class="flex-items1" id="article_para">Welcome to our world of mind-blowing research findings. Be prepared to embark on an exhilarating adventure through the realm of our Research!</p>
+        </div>
+      </div>
      </div>
-   </div>
-
-
-
-   <div class="main-section"> 
-     <div class="hero">
-       <h1 class="gallery-text">LIBRARY</h1>
-       <div class="gall-para">
-         <p>Our services are transparently priced for optimal customer satisfaction. Check out our selection of
-           high-quality services at affordable rates.</p>
-       </div>
+     <div class='container'>
+       <a id='head1'>
+         <img class="image1" src="./assets/images/article1.jpeg" alt="">
+         <span class="text-bottom">Agate</span>
+         <p class="textl">Agate and It’s Importance</p>
+       </a>
+       <a id='head2' class='big'>
+        <img class="image1" src="./assets/images/article2.jpeg" alt="">
+        <span class="text-bottom text-big">Agate</span>
+        <p class="textl">Agate and It’s Importance</p>
+      </a>
+      <a id='head3'>
+        <img class="image1" src="./assets/images/article3.jpeg" alt="">
+        <span class="text-bottom">Agate</span>
+        <p class="textl">Graphite and It’s Importance</p>
+      </a>
      </div>
+    <br>
+  <div class="main-section2"> 
+    <div class="flex3">
+      <div class="flex_of_1">
+        <h1 id="header_article2" class="flex-items3">ARTICLE</h1>
+        <p class="flex-items3" id="article_para2">Welcome to our world of mind-blowing research findings. Be prepared to embark on an exhilarating adventure through the realm of our Research!</p>
+      </div>
+    </div>
    </div>
-
-   <div class="containers-section">
-       <div class="container_1 container"  
-        [routerLink] ='["/library",library.library_id]'
-        *ngFor="let library of library">
-        {{ library.library_id }}
-       </div>
+  <div class='flex2' [routerLink] ='["/library",library.library_id]'
+  *ngFor="let library of library">
+    <div class='flex-items2'>
+      <div id='top_of_lib'>
+        <img class='articleimg' src={{library.img1}} alt="">
+        <span class="bottom-left">Agate</span>
+        <p id='library_para'>{{library.content}}</p>
+      </div>
+      
+    </div>
    </div>
-</div>
-</div>
+   <div class="flex8" id="ContactUs">
+    <div id='flex_con' style=''>
+     <div id='top_con'>
+       <h1 id='head_con'>VBCRC</h1>
+       <h1 id='head_con'>Newsletter</h1>
+     </div>
+     <div id='sign_con'>
+       <p id='con_p'>Sign up and get </p>
+       <ul id='ul_con'>
+         <li>Information about all our Discounts</li>
+         <li>Articles from our Research Centre</li>
+         <li>Season/Festive and Referral Codes</li>
+       </ul>
+     </div>
+     <div id='action_con'>
+       <input placeholder='Email' id='con_input'>
+       <button id='con_button'>Subcribe</button>
+     </div>
+    </div>
+   </div>
+   
+   <br>
+    <div class='flex10'>
+      <div class='card10'>
+        <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
+        <img src="./assets/images/image 26.png" alt="">
+        <br>
+        <br>
+        <p style='font-size:16px !important;'>Vb Ceramic Consultants,
+          207, 3rd Link Street, Kottivakkam,
+          Chennai - 600 041</p>
+    </div>
+      <div class='card10'>
+        <p style="font-weight:500; margin-bottom: 10px;">SITEMAP</p>
+        <ul style="display: flex; flex-direction: column; gap: 8px;">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Gallery</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class='card10'>
+        <div>
+          <p style="font-weight:500; margin-bottom: 10px;">SERVICES</p>
+          <ul style="display: flex; flex-direction: column; gap: 8px;">
+            <li>Raw Materials</li>
+            <li>Material Processing</li>
+            <li>Characterization</li>
+            <li>Heat Treatment Facility</li>
+  
+          </ul>
+        </div>
+        <div style="margin-top: 20px;">
+          <p style="font-weight:500; margin-bottom: 10px;">SOCIALS</p>
+          <div style='display: flex;flex-direction:row;gap:20px'>
+            <img src="./assets/images/mdi_linkedin (1).svg" alt="">
+            <img src="./assets/images/YouTube svg.svg" alt="">
+            <img src="./assets/images/Facebook svg.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class='card10'>
+        <div>
+          <p style="font-weight:500; margin-bottom: 10px;">SUPPORT</p>
+          <ul style="display: flex; flex-direction: column; gap: 8px;">
+            <li>Contact Us</li>
+            <li>Help centre</li>
+          </ul>
+        </div>
+        <div style="margin-top: 20px;">
+          <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
+          <div style="display: flex; gap: 20px">
+            <img src="./assets/images/image 26.png" alt="">
+            <img src="../../assets//gallery-page-img/hi-tech.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
 
 <router-outlet></router-outlet>
+<footer>
+  <div class='footer'>
+    <p  id='footer_p' style='padding: 20px 30px 0px 20px;'>©VB Ceramic Research Centre. All Rights Reserved.</p>
+    <div class='cardfooter'>
+      <p>English <span><img src="./assets/images/mdi_web.svg" alt=""></span></p><div class="separator"></div>
+      <p>INR <span><img src="./assets/images/material-symbols_currency-rupee.svg" alt=""></span></p><div class="separator"></div>
+      <p>Asia (India) <span><img src="./assets/images/mdi_clock.svg" alt=""></span></p>
+    </div>
+  </div>
+</footer>
+
+</html>
+<!-- *ngIf="!childActive" -->
+
 
