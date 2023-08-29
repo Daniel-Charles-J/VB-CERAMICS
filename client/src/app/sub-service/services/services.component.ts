@@ -40,9 +40,9 @@ export class ServicesComponent {
   content = [
     {
       id : 1,
-      image_1 : 'IMAGE-1',
-      image_2 : 'IMAGE-2',
-      header : 'Physical properties',
+      image_1 : '../../../assets/service13-sec-1.png',
+      image_2 : '../../../assets/service13-sec-2.jpg',
+      header : 'Heat treatment facility',
       heading: 'Cold / Fired (MOR) Modulus of Rupture(max 3 samples), Flexural Strength',
       title : 'Modulus of rupture (MOR) is like a three-point bend test. MOR measures the bond strength of the test specimen.',
       title_heading : '₹ - Enquire for Estimate',

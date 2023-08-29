@@ -46,10 +46,6 @@
     <div class="section1">
       <div class="sec1_container">
         <p class="sec1_p">What are you looking for?</p>
-        <div class="search-container">
-          <input type="text" placeholder="Search.." name="search" (keyup)="onKeyUp($event)">
-          <button style="display: inline;" type="submit"><i class="fa fa-search"></i></button>
-        </div>
         <input type="text" id="myInput" (keyup)="onKeyUp($event)" autocomplete="off" placeholder="Search.." title="Type in a name">
         <div class="filter_div">
           <div class="filter_icon">
@@ -58,19 +54,50 @@
               </svg>              
             <input type="text" id="myFilter" placeholder="Filter items" title="Type in a name">
           </div>
-          <div class="filter_dropown">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M5.89844 8.90039L11.8984 14.9004" stroke="#666666" stroke-linecap="round"/>
-              <path d="M12 15L17.9994 8.9994" stroke="#666666" stroke-linecap="round"/>
-              </svg>
+          <div class="filter_dropdown" (click)="changeImage()">
+            <img [src]="images[currentImageIndex]" class="svgFilter"/>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div id="filter_items">
+        <div class="filter_items_div">
+          <div class="filter_items_p">All Services</div>
+        </div>
+        <div class="filter_items_div">
+          <div class="filter_items_p">Raw Materials</div>
+        </div>
+        <div class="filter_items_div">
+          <div class="filter_items_p">Sophisticated Instruments</div>
+        </div>
+        <div class="filter_items_div">
+          <div class="filter_items_p">Physical Properties</div>
+        </div>
+        <div class="filter_items_div">
+          <div class="filter_items_p">Thermal Testing</div>
+        </div>
+        <div class="filter_items_div">
+          <div class="filter_items_p">Heat Treatment Facility</div>
+        </div>
+        <div class="filter_items_div">
+          <div class="filter_items_p">Shaping</div>
+        </div>
+        <div class="filter_items_div">
+          <div class="filter_items_p">Nano Coating Techniques</div>
+        </div>
+        <div class="filter_items_div">
+          <div class="filter_items_p">Casting</div>
+        </div>
+        <div class="filter_items_div">
+          <div class="filter_items_p">All Services</div>
         </div>
       </div>
     </div>
     <div class="containers-section">
       <div class="container_1 container" [routerLink] ='["/service",service.service_id]' *ngFor="let service of filteredList.filteredData">
         <div class="service_img">
-          <img src={{service.img}}/>
+          <img src={{service.img}} />
         </div>
         <div class="service_container">
           <div class="service_top">

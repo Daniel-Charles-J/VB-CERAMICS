@@ -483,4 +483,24 @@ export class ServiceComponent {
     console.log(this.filteredList.filteredData);
 
   }
+
+  currentImageIndex = 0;
+  images = [
+    '../../assets/dropdown.svg',
+    '../../assets/cancel.svg',
+  ];
+  showMenu: boolean = false;
+  changeImage() {
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+    let menu = document.querySelector(".menu");
+    if (!this.showMenu) {
+      menu.classList.add("show");
+      // Reset the menu state
+      this.showMenu = true;
+    } else {
+      menu.classList.remove("show");
+      // Reset the menu state
+      this.showMenu = false;
+    }
+  }
 }
