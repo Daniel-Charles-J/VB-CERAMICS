@@ -13,7 +13,18 @@ export class LibraryOneComponent {
   heading : any
   img : any
   subHeading : any
+  subHeading2 : any
+  subHeading3 : any
+  subHeading4 : any
+  subHeading5 : any
+  subHeading6 : any
+  desc : any
   desc1 : any
+  desc2 : any
+  desc3 : any
+  desc4 : any
+  desc5 : any
+  desc6 : any
   summary:any
   point1:any
   point2:any
@@ -25,6 +36,9 @@ export class LibraryOneComponent {
   point8:any
   point9:any
   point11:any
+  point12:any
+  point13:any
+  point14:any
 
   ngOnInit(): void {
     this.id = this.activatedRoute.snapshot.params['libraryOne']
@@ -32,17 +46,30 @@ export class LibraryOneComponent {
     this.heading = filteredData[0].heading;
     this.img = filteredData[0].img;
     this.subHeading = filteredData[0].subHeading;
+    this.subHeading2 = filteredData[0].subHeading2;
+    this.subHeading3 = filteredData[0].subHeading3;
+    this.subHeading4 = filteredData[0].subHeading4;
+    this.subHeading5 = filteredData[0].subHeading5;
+    this.subHeading6 = filteredData[0].subHeading6;
     this.desc1 = filteredData[0].desc1;
+    this.desc2 = filteredData[0].desc2;
+    this.desc3 = filteredData[0].desc3;
+    this.desc4 = filteredData[0].desc4;
+    this.desc5 = filteredData[0].desc5;
+    this.desc6 = filteredData[0].desc6;
     this.point1 = filteredData[0].point1;
-    this.point2 = filteredData[0].point1;
-    this.point3 = filteredData[0].point1;
-    this.point4 = filteredData[0].point1;
-    this.point5 = filteredData[0].point1;
-    this.point6 = filteredData[0].point1;
-    this.point7 = filteredData[0].point1;
-    this.point8 = filteredData[0].point1;
-    this.point9 = filteredData[0].point1;
-    this.point11 = filteredData[0].point1;
+    this.point2 = filteredData[0].point2;
+    this.point3 = filteredData[0].point3;
+    this.point4 = filteredData[0].point4;
+    this.point5 = filteredData[0].point5;
+    this.point6 = filteredData[0].point6;
+    this.point7 = filteredData[0].point7;
+    this.point8 = filteredData[0].point8;
+    this.point9 = filteredData[0].point9;
+    this.point11 = filteredData[0].point11;
+    this.point12 = filteredData[0].point12;
+    this.point13 = filteredData[0].point13;
+    this.point14 = filteredData[0].point14;
     this.summary = filteredData[0].summary;
   }
 
@@ -65,7 +92,7 @@ export class LibraryOneComponent {
       point11:"Architectural Elements : Agate's entrancing appearance extends to architectural contexts. It is harnessed in premium interior and exterior designs, introducing an element of opulence to spaces through applications like wall panels, countertops, and decorative accents.",
       summary:"In summary, agate's flexibility and innate allure position it as an indispensable asset across diverse industries. From adorning jewelry to enriching interior aesthetics, agate's presence infuses elegance, individuality, and a connection to the natural world. Its significance in industrial contexts not only highlights its aesthetic magnetism but also underscores its pragmatic value as a substance that augments functionality, beauty, and ingenuity."
     },
-    {
+    { 
       id : 2,
       heading: 'Quartz - Interesting Facts',
       img: './assets/images/article2.jpeg',
@@ -101,12 +128,28 @@ export class LibraryOneComponent {
       point11:"Emerging Frontiers of Innovation : Graphene, a single layer of carbon atoms arranged in a hexagonal framework, originates from graphite and harbours substantial potential across domains such as electronics, materials science, and medical applications. Its remarkable attributes, encompassing elevated electrical conductivity and mechanical robustness, unveil portals to ground breaking innovations that remain largely untapped.",
       summary:"In conclusion, graphite's adaptability and remarkable attributes have propelled it across a multifaceted tapestry of industries, functioning as a catalyst for advancement and innovation. From powering electric vehicles to augmenting aerospace technologies and empowering efficient manufacturing, graphite's imprint continues to shape contemporary society, while its latent potential extends further into territories ripe for exploration and discovery."
     },
-    {
-      id : 4,
-      heading: '',
+    { id : 4,
+      heading: 'Thermal Dynamics with Precision (Dilatometer)',
       img: './assets/images/article4.jpeg',
-      subHeading : "",
-      desc:""
+      subHeading : "Dilatometer : Thermal Dynamics with Exquisite Precision",
+      desc1:"Within the complex realm of material science and thermal investigation, the dilatometer assumes a paramount role, serving as a conduit to comprehend how substances respond to alterations in temperature. This intricately designed instrument stands as a cornerstone of research, affording scientists and engineers a unique vantage point to explore the thermal properties and conduct of materials. Let's embark on an enlightening journey, unravelling the significance, operational mechanics, and diverse applications of the dilatometer.",
+      subHeading2 :"Deciphering Thermal Expansion :",
+      desc2:"Central to its purpose, the dilatometer orchestrates the measurement of a material's thermal expansion or contraction amidst shifts in temperature. This phenomenon, recognized as thermal expansion, constitutes the reason behind phenomena like the elongation and contraction of bridges with temperature fluctuations or the discernible warmth felt when holding a sun-exposed metal ruler. The dilatometer deftly captures and quantifies these nuanced dimensional adjustments, rendering an invaluable comprehension of how materials react to thermal stimuli.",
+      subHeading3 :"Essential Components and Operational Symphony :",
+      desc3:"The anatomy of a conventional dilatometer comprises a receptacle for the sample material and a reference entity that remains steadfast amid temperature oscillations. As the thermal landscape transforms, the dilatometer meticulously gauges alterations in the length or volume of both the sample and reference components. This meticulously amassed data subsequently undergoes meticulous analysis, unearthing details like the coefficient of thermal expansion, phase transitions, and other thermal attributes inherent to the material under scrutiny.",
+      subHeading4 :"Vast Canvas of Application:",
+      desc4:"The domain of dilatometers traverses a panoramic spectrum of industries and research domains :",
+      subHeading5 :"Progressive Pinnacle and Innovation",
+      desc5:"Dilatometers continue their evolutionary journey, spurred by technological strides that usher in augmented precision, heightened accuracy, and the capability to scrutinize an expanded array of materials. Automated data compilation and advanced analytical tools further refine the insights harvested from dilatometry endeavours.",
+      point1:"Materials Science : Dilatometers constitute an invaluable tool in materials exploration, fostering the formulation of innovative materials boasting specific thermal traits. They serve as custodians of data concerning the comportment of diverse materials, orchestrating informed judgments concerning material choice in engineering endeavours.",
+      point2:"Metallurgy : In the metallurgical arena, dilatometers bestow a nuanced understanding of how metals respond to processes of heat treatment. This insight is pivotal in tailoring the characteristics of metals utilized in manufacturing, ensuring the coveted attributes of hardness and dimensional stability.",
+      point3:"Ceramics and Glass : The comportment of ceramics and glass materials within the ambit of fluctuating temperatures holds significant sway. Dilatometers yield pivotal data regarding their coefficients of thermal expansion, a facet influencing their deployment in a spectrum spanning from culinary utensils to aerospace constituents.",
+      point4:"Pharmaceutical Domain : Dilatometry finds a foothold in pharmaceutical research, casting light upon the thermal attributes of drug compounds and formulations. This intelligence can influence the stability and potency of medications.",
+      point5:"Geological Expedition : The geologic vista witnesses the utilization of dilatometry to fathom the expansiveness and contraction of rocks and minerals under diverse temperature circumstances. This comprehension sheds light on geological phenomena and the comportment of substances within Earth's lithic envelope.",
+      point6:"Infrastructure and Construction : Dilatometers play a pivotal role in comprehending the behaviour of construction materials such as concrete and asphalt under varying temperature conditions. This knowledge underpins design considerations and assures the longevity of infrastructural edifices.",
+      point7:"Realm of Research and Development : Within the precincts of research and development, dilatometers guide the characterization of novel materials, ushering in the creation of products boasting targeted thermal attributes tailored for assorted industries.",
+      summary:"In summation, the dilatometer stands as a testament to the intricate choreography between temperature and matter. Its meticulous measurements and exhaustive comprehension of thermal expansion empower industries, researchers, and engineers to traverse the expanse of informed decision-making, innovate with finesse, and unlock the latent potential of materials in a milieu punctuated by the fluctuations of temperature.",
+
     },
     {
       id : 5,
@@ -114,13 +157,51 @@ export class LibraryOneComponent {
       img: './assets/images/article5.jpeg',
       subHeading :"Glove Box : Creating Controlled Environments for Scientific Advancement",
       desc1:"A crucial tool stands at the forefront of scientific exploration - the glove box. This innovative device empowers researchers to conduct experiments and handle materials in controlled environments, shielded from external contaminants. Let's delve into the world of glove boxes, understanding their significance, operation, and their indispensable role in various research endeavours.",
+      subHeading2:"The Essence of Controlled Environments :",
+      desc2:"Glove boxes, also known as controlled atmosphere or isolation chambers, are sealed enclosures designed to maintain specific conditions such as humidity, temperature, and gas composition. These controlled environments are essential when dealing with materials sensitive to air, moisture, or contaminants. In scientific research, maintaining the integrity of experiments and samples is paramount, and glove boxes offer the ideal solution.",
+      subHeading3:"Components and Functionality :",
+      desc3:"A typical glove box comprises a transparent chamber, often made of acrylic or glass, fitted with gloves that allow researchers to manipulate objects within the enclosure without compromising its controlled environment. The glove box is equipped with gas purification systems, airlocks, and various monitoring instruments to regulate and monitor conditions. Inert gases, such as nitrogen or argon, are often used to displace oxygen and moisture, creating an environment suitable for delicate processes.",
+      subHeading4:"Applications Across Research Domains :",
+      desc4:"Glove boxes find their applications in a wide range of research disciplines:",
+      subHeading5:"Precision and Security in Exploration ",
+      desc5:"Beyond conferring controlled environments, glove boxes assume the role of sentinels, ensuring not only the precision but also the safety of researchers. Especially when contending with perilous or toxic materials, these sealed habitats act as barriers, insulating researchers from potential health hazards. Moreover, these orchestrated surroundings amplify the precision and reproducibility of experiments, thereby contributing to the reliability of research outcomes.",
+      subHeading6:"Upcoming Frontiers of Innovation ",
+      desc6:" A vista of glove box technology encompasses automated frameworks, facilitating remote operation and real-time monitoring. These strides in innovation streamline research protocols and widen the spectrum of plausible applications of glove boxes within avant-garde research pursuits.In summation, glove boxes unfurl as custodians of precision and authenticity within research centers. These constructs craft sanctuaries where sensitive materials are manipulated, guaranteeing the exactitude of experiments and the security of researchers. With their irreplaceable status in multifarious research arenas, glove boxes continue to form the bedrock of scientific progression, presenting a poised stage for breakthroughs and revelations.",
+      point1:"Chemistry and Material Science : In the study of air-sensitive compounds, catalysts, and delicate materials, glove boxes prevent reactions with oxygen and moisture. Researchers can perform synthesis, purification, and characterization processes with precision.",
+      point2:"Nanotechnology : Glove boxes play a vital role in nanomaterial research, where even slight contamination can alter results. They provide an environment free from airborne particles, ensuring accurate manipulation and analysis of nanoparticles.",
+      point3:"Pharmaceutical Research : When working with sensitive drug compounds or sterile preparations, glove boxes prevent contamination and maintain a sterile environment, ensuring the accuracy of pharmaceutical research.",
+      point4:"Battery and Energy Research : Glove boxes are used in the development and testing of energy storage devices like batteries and fuel cells. They prevent interactions with moisture and oxygen, allowing researchers to analyze electrochemical processes accurately.",
+      point5:"Biotechnology : In cell culture work, where sterility is crucial, glove boxes help maintain a contaminant-free environment. They enable researchers to handle biological samples, tissues, and cell cultures without risking contamination.",
+      point6:"Advanced Materials Development : Glove boxes aid in the production and manipulation of advanced materials like superconductors, semiconductors, and optoelectronic devices, where the presence of contaminants can hinder performance.",
+      summary:"In summation, glove boxes unfurl as custodians of precision and authenticity within research centers. These constructs craft sanctuaries where sensitive materials are manipulated, guaranteeing the exactitude of experiments and the security of researchers. With their irreplaceable status in multifarious research arenas, glove boxes continue to form the bedrock of scientific progression, presenting a poised stage for breakthroughs and revelations.",
     },
     {
       id : 6,
-      heading: '',
+      heading: 'Working Principle of Hot Air Oven',
       img: './assets/images/article4.jpeg',
-      subHeading : "",
-      desc:""
+      desc1:"The hot air oven, an essential apparatus in laboratories, industries, and research facilities, operates on a fundamental principle that facilitates uniform heating and sterilization of various materials. This versatile tool finds applications in diverse fields, including microbiology, material testing, and food industries. Let's delve into the core of its working principle, exploring how it achieves precise temperature control and its significance in modern-day applications.",
+      subHeading2:"The Essence of Hot Air Oven :",
+      desc2:"At its core, a hot air oven is designed to provide controlled heating through the circulation of hot air within an enclosed chamber. This uniform distribution of heat ensures that the items placed within the oven experience consistent temperature conditions. The oven's mechanism is based on the principles of convection, making it a reliable tool for drying, curing, and sterilizing purposes.",
+      subHeading3:"Components and Mechanism :",
+      desc3:"A hot air oven consists of several key components that work in harmony to achieve its functioning :",
+      subHeading4:"Working Principle :",
+      desc4:"The hot air oven operates on the principle of convection, where heat is transferred through the movement of air. The process can be summarized as follows:",
+      subHeading5:"Applications in Various Sectors :",
+      desc5:"The hot air oven's working principle finds applications in a wide range of industries :",
+      point1:"Heating Element : The oven is equipped with a heating element, usually electric coils or a heating coil, that generates heat when electrical energy is supplied.",
+      point2:"Temperature Control System : An integrated temperature control system, often equipped with a thermostat or digital controller, monitors and regulates the oven's internal temperature.",
+      point3:"Fan : The presence of a fan ensures efficient circulation of hot air throughout the chamber, promoting even heating.",
+      point4:"Insulated Chamber : The chamber is insulated to prevent heat loss and maintain a stable temperature.",
+      point5:"Heating : The heating element is activated, generating heat within the oven. The temperature control system maintains the desired set temperature.",
+      point6:"Circulation : The fan inside the oven begins to circulate the hot air throughout the chamber. As the air moves, it carries heat energy, creating a consistent temperature environment.",
+      point7:"Uniform Heating : Items placed within the oven are surrounded by the circulating hot air, resulting in uniform and thorough heating. This ensures that all parts of the materials or samples experience the same temperature conditions.",
+      point8:"Precision : The temperature control system continuously monitors the internal temperature and adjusts the heating element's output to maintain the set temperature accurately.",
+      point9:"Microbiology and Research : In laboratories, the hot air oven is used to sterilize equipment, glassware, and lab instruments. The uniform heating ensures the destruction of microorganisms.",
+      point11:"Food Industry : Hot air ovens are utilized for drying and dehydrating food products, preserving their quality, flavor, and nutritional value.",
+      point12:"Material Testing : Industries employ hot air ovens to determine the effects of heat on different materials, measuring properties like expansion, strength, and thermal stability.",
+      point13:"Pharmaceuticals : The oven is used for the drying and sterilization of pharmaceutical products, ensuring their safety and efficacy.",
+      point14:"Electronics : Hot air ovens aid in the drying and curing of electronic components, coatings, and adhesives.",
+      summary:"In conclusion, the working principle of the hot air oven revolves around convection-based heating, which guarantees uniform temperature distribution for a variety of applications. Its role in laboratories, industries, and research centers underscores its significance in achieving precise, controlled heating and sterilization, contributing to advancements in science, technology, and various sectors.",
     },
   ];
 }

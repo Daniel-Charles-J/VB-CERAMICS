@@ -11,7 +11,7 @@
         <div class="row">
         <div  class="col-md-12 ">
         <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-        <img id='head_img' style='margin-left:35px;padding:5px 0px;width:85px;height:57px' src="./assets/images/vb_logo.png" alt="">
+        <img id='head_img' style='margin-left:22px;padding:5px 0px;width:85px;height:57px' src="./assets/images/VBCC_Logo_White.svg" alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,10 +31,7 @@
               <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
             </li>
             <li class="nav-item nav-item-contact">
-              <a class="nav-link" style='background-color:white !important; color:#132249 !important;    border-radius: 50px;
-              padding: 6px;
-              margin-top: 15px;
-              margin-left: 5px;' [routerLink]='["/contact"]'>Contact Us</a>
+              <a class="nav-link" style='background-color:white !important; color:#132249 !important;border-radius: 50px;' [routerLink]='["/contact"]'>Contact Us</a>
             </li>
           </ul>
         </div>
@@ -55,8 +52,8 @@
      <div class='container'>
        <a id='head1'>
          <img class="image1" src="./assets/images/article1.jpeg" alt="">
-         <span class="text-bottom">Agate</span>
-         <p class="textl">Agate and It’s Importance</p>
+         <span class="text-bottom">Quartz</span>
+         <p class="textl">Quartz - Interesting Facts </p>
        </a>
        <a id='head2' class='big'>
         <img class="image1" src="./assets/images/article2.jpeg" alt="">
@@ -65,8 +62,9 @@
       </a>
       <a id='head3'>
         <img class="image1" src="./assets/images/article3.jpeg" alt="">
-        <span class="text-bottom">Agate</span>
-        <p class="textl">Graphite and It’s Importance</p>
+        <span class="text-bottom">Graphite</span>
+        <p class="textl">Graphite
+          Graphite's Impact in Industries</p>
       </a>
      </div>
     <br>
@@ -78,17 +76,18 @@
       </div>
     </div>
    </div>
+  <div id='main-section'>
   <div class='flex2' [routerLink] ='["/library",library.library_id]'
   *ngFor="let library of library">
     <div class='flex-items2'>
       <div id='top_of_lib'>
         <img class='articleimg' src={{library.img1}} alt="">
-        <span class="bottom-left">Agate</span>
+        <span class="bottom-left">{{library.topic}}</span>
         <p id='library_para'>{{library.content}}</p>
       </div>
-      
     </div>
    </div>
+  </div>
    <div class="flex8" id="ContactUs">
     <div id='flex_con' style=''>
      <div id='top_con'>
@@ -114,7 +113,7 @@
     <div class='flex10'>
       <div class='card10'>
         <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
-        <img src="./assets/images/image 26.png" alt="">
+        <img src="./assets/images/VBCC_Logo_White.svg" alt="">
         <br>
         <br>
         <p style='font-size:16px !important;'>Vb Ceramic Consultants,
@@ -162,7 +161,7 @@
         <div style="margin-top: 20px;">
           <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
           <div style="display: flex; gap: 20px">
-            <img src="./assets/images/image 26.png" alt="">
+            <img src="./assets/images/VBCC_Logo_White.svg" alt="">
             <img src="../../assets//gallery-page-img/hi-tech.png" alt="">
           </div>
         </div>
