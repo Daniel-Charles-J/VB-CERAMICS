@@ -10,7 +10,7 @@
 <p *ngFor="let list of lists">{{list}}</p>
 <h5>{{description}}</h5> -->
 
-<div>
+<div class="service_page">
   <div class="container-fluid1">
     <div class="row">
       <div class="col-md-12 ">
@@ -64,7 +64,71 @@
       </div>
     </div>
     <div class="sec-2">
-
+      <div class="sec2_left">
+        <div class="service_container">
+          <div class="service_top">
+            <div class="service_header">
+              {{header}}
+            </div> 
+            <div class="service_heading">
+              {{heading}}
+            </div>
+            <div class="service_description">
+              {{description}}
+            </div>
+          </div>
+          <div class="service_bottom">
+            <div class="service_bottom_cnt">
+              <div class="service_students">
+                {{students}}
+              </div>
+              <div class="service_cnt_btn">
+                <div class="service_industries">
+                  {{industries}}
+                </div>
+                <div>
+                  <button class="btn2" [routerLink]='["/contact"]'><span class="btn-contact">Contact Us</span></button>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="sec2_right">
+        <div class="sec2_top_sec">
+          <div class="top_para">
+            {{top_para}}
+          </div>
+          <div>
+            <div *ngFor="let list of lists"><li class="list">{{list}}</li></div>
+          </div>
+          <div class="bottom_para">{{bottom_para}}</div>
+        </div>
+        <div class="table1_div">
+          <table class="table1">
+            <tr>
+              <td class="th_background">{{table1_th}}</td>
+              <td>{{table1_th2}}</td>
+            </tr>
+            <tr>
+              <td class="th_background">{{table1_td}}</td>
+              <td>{{table1_td2}}</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table2_div">
+          <table class="table2">
+            <tr>
+              <td class="th_background">{{table2_th}}</td>
+              <td class="th_background">{{table2_th2}}</td>
+            </tr>
+            <tr>
+              <td>{{table2_td}}</td>
+              <td>{{table2_td2}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </div>
