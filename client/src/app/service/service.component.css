@@ -504,6 +504,12 @@ color: white;
   }
 }
 
+@media (max-width: 700px) {
+  .btn1, .btn2 {
+    padding: 0px;
+  }
+}
+
 @media (max-width: 650px) {
 
   .gallery-text {
@@ -526,6 +532,9 @@ color: white;
     width: 100%;
     grid-template-columns: minmax(100px, 500px);
   }
+  .btn1, .btn2{
+  padding: 12px 16px;
+  }
 }
 
 @media (max-width: 499px) {
@@ -537,5 +546,17 @@ color: white;
 
   .gall-para {
     font-size: 15px;
+  }
+
+  .service_img {
+    height: 200px;
+  }
+
+  .service_header {
+    font-size: 15px;
+  }
+
+  .btn1, .btn2 {
+    padding: 0px;
   }
 }
