@@ -47,8 +47,8 @@ export class ServicesComponent {
     this.industries = filteredData[0].industries;
     this.lists = filteredData[0].lists;
     this.description = filteredData[0].description;
-    this.top_para = filteredData[0].top_para;
-    this.bottom_para = filteredData[0].bottom_para
+    // this.top_para = filteredData[0].top_para;
+    // this.bottom_para = filteredData[0].bottom_para
     this.table1_th = filteredData[0].table1_th;
     this.table1_th2 = filteredData[0].table1_th2;
     this.table1_td = filteredData[0].table1_td;
@@ -135,6 +135,27 @@ export class ServicesComponent {
       para3 : "Typically, Laser Diffraction analysers cover a particle size range of 10 nm to 4 mm. This corresponds to a factor of 400,000 between the smallest and the largest measurable particles. In most applications, Laser Diffraction is typically used for particle size distributions between 30 nm – 1 mm.",
     },
     {
+      id : 6,
+      title : 'Thermal Testing',
+      image_1 : '../../../assets/service6-sec-1.png',
+      image_2 : '../../../assets/service6-sec-2.png',
+      header : 'Thermal testing',
+      heading: 'Thermal Expansion (Dilatometer up to 1000°C)',
+      description : 'A dilatometer is a precision instrument for the measurement of dimensional changes in material as a function of temperature.',
+      students : '₹1500 - Students',
+      industries : '₹2000 - Industries',
+      para1 : "Dilatometer, a thermo analytical instrument which is used to measure the thermal expansion or contraction of a given sample under specific controlled temperature-time program is available . The thermal expansion and contraction are measured digitally with the high-resolution (1-micrometer) linear variable differential transformer (LVDT) measuring system. Then the measurements are made employing an LVDT connected through a proper cable to Computer .Using Labview software Online Graph is plotted between Temperature Vs % of Total Expansion.",
+      para2 : "Dilatometry is used to test a wide range of materials such as traditional and advanced ceramics, glasses, metals, and polymers.",
+      table1_th : 'Maximum Temperature',
+      table1_th2 : '1400°C',
+      table1_td : 'Sample Size',
+      table1_td2 : 'OD or Width: 5 to 10mm, Length: 25 to 50mm',
+      table2_th : 'Equipment',
+      table2_th2 : 'Quantity / Time',
+      table2_td : 'Thermal Expansion (Dilatometer up to 1000°C)',
+      table2_td2 : 'Sample Size: , Width:5-10mm, Length: 25-50 mm',
+    },
+    {
       id : 7,
       title : 'Sophisticated Instruments',
       image_1 : '../../../assets/service7-sec-1.png',
@@ -171,8 +192,8 @@ export class ServicesComponent {
       description : "A Box Furnace features a vertical lift or swing out door allowing the various sized product(s) to be placed in the furnace.",
       students : '₹3500 - Students',
       industries : '₹5000 - Industries',
-      top_para : 'A Box Furnace features a vertical lift or swing out door allowing the various sized product(s) to be placed in the furnace. Box Furnaces are utilized for heat-treating, calcining, curing, annealing, stress relieving, preheating, tempering, and other high temperature thermal processes.',
-      bottom_para : 'This Furnaces are operated under normal atmosphere are used to subject oxides and clay materials for heat treatment , Sintering etc. ,Its operating features are : ',
+      para1 : 'A Box Furnace features a vertical lift or swing out door allowing the various sized product(s) to be placed in the furnace. Box Furnaces are utilized for heat-treating, calcining, curing, annealing, stress relieving, preheating, tempering, and other high temperature thermal processes.',
+      para2 : 'This Furnaces are operated under normal atmosphere are used to subject oxides and clay materials for heat treatment , Sintering etc. ,Its operating features are : ',
       table1_th : 'Available Space',
       table1_th2 : '150 x 150 x 200 mm',
       table1_td : 'Rate of Heating',
