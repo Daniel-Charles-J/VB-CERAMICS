@@ -29,7 +29,7 @@ export class ServiceComponent {
   service = [
     {
       service_id: 1,
-      img: '../../assets/service1.png',
+      img: '../../assets/service1.jpg',
       header : 'Sophisticated Instruments',
       heading : 'X-Ray Diffraction (XRD)',
       description : 'It is a non-destructive method for analysing matters ranging from liquids to crystals.',
