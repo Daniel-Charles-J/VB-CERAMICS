@@ -573,26 +573,33 @@ export class ServiceComponent {
   }
 
   async filter(event){
-    const allFiltered = this.service.filter((e: any) => {
-			return (e.header.toLowerCase().includes(event.toLowerCase()));
-		});
-    const boolValue = allFiltered.some((x)=>x.isShown ===false);
-    
-    if(boolValue){
-      await this.mainArray.push(allFiltered);
-      await allFiltered.forEach((x)=>x.isShown = true);
-
-      console.log(this.mainArray);
-
-    } else {
-      for (let i = this.mainArray.length - 1; i >= 0; i--) {
-        let childArray = this.mainArray[i];
-        if (allFiltered.every(value => childArray.includes(value))) {
-          this.mainArray.splice(i, 1);
+    if(event !=="All"){
+      this.mainArray = [];
+      const allFiltered = this.service.filter((e: any) => {
+        return (e.header.toLowerCase().includes(event.toLowerCase()));
+      });
+      const boolValue = allFiltered.some((x)=>x.isShown ===false);
+      
+      if(boolValue){
+        await this.mainArray.push(allFiltered);
+        await allFiltered.forEach((x)=>x.isShown = true);
+  
+        console.log(this.mainArray);
+  
+      } else {
+        for (let i = this.mainArray.length - 1; i >= 0; i--) {
+          let childArray = this.mainArray[i];
+          if (allFiltered.every(value => childArray.includes(value))) {
+            this.mainArray.splice(i, 1);
+          }
         }
+        console.log(this.mainArray);
+        await allFiltered.forEach((x)=>x.isShown = false);
       }
+    } else{
+      this.mainArray = [];
+      this.mainArray.push(this.service);
       console.log(this.mainArray);
-      await allFiltered.forEach((x)=>x.isShown = false);
     }
   }
 }
