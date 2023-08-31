@@ -94,7 +94,18 @@
           </div>
         </div>
       </div>
-      <div class="sec2_right">
+      <div class="sec2_right" *ngIf="title=='Sophisticated Instruments'">
+        <div class="instruments_div">
+          <p>{{para1}}</p>
+          <p>{{para2}}</p>
+          <p>{{para3}}</p>
+          <p>{{para4}}</p>
+          <div>
+            <div *ngFor="let list of lists"><li class="list">{{list}}</li></div>
+          </div>
+        </div>
+      </div>
+      <div class="sec2_right" *ngIf="title=='Heat Treatment Facility'">
         <div class="sec2_top_sec">
           <div class="top_para">
             {{top_para}}
