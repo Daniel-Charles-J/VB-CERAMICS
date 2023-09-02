@@ -252,7 +252,7 @@
 
 
   .flex8{   
-    background-image: linear-gradient( rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 76, 0.60) 0%), url(/assets/images/bg_con.jpeg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 115, 0.60) 0%), url(/assets/images/bg_con.jpeg);
     background-color:#99ABD8;
     background-size: cover;
     background-repeat: no-repeat, no-repeat;
@@ -296,10 +296,17 @@
     width: 90%;
     margin: auto;
     color: white;
-    border: 1px solid white;
+    border: 0.5px solid white;
     text-align: center;
   }
 
+  #hr_tag2{
+    width: 96%;
+    margin: auto;
+    color: black;
+    border: 0.9px solid black;
+    text-align: center;
+  }
 
 .text-bottom {
     display: table;
@@ -312,7 +319,7 @@
     padding: 5px;
   }
   .text-bottom {
-    bottom: 7%;
+    bottom: 6.5%;
     left: 0%;
 }
 .text-big {
