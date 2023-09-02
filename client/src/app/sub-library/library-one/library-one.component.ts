@@ -9,6 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 export class LibraryOneComponent {
   constructor(private router: Router,private activatedRoute: ActivatedRoute) {}
+  contentParams : any;
   id : any;
   heading : any
   img : any
@@ -41,8 +42,13 @@ export class LibraryOneComponent {
   point14:any
 
   ngOnInit(): void {
-    this.id = this.activatedRoute.snapshot.params['libraryOne']
-    const filteredData = this.content.filter((x)=>x.id == this.id);
+
+    this.contentParams = this.activatedRoute.snapshot.params['content'];
+    console.log(this.contentParams)
+
+    //this.id = this.activatedRoute.snapshot.params['libraryOne']
+    const filteredData = this.content.filter((x)=>x.heading == this.contentParams);
+    this.id = filteredData[0].id;
     this.heading = filteredData[0].heading;
     this.img = filteredData[0].img;
     this.subHeading = filteredData[0].subHeading;
@@ -71,6 +77,7 @@ export class LibraryOneComponent {
     this.point13 = filteredData[0].point13;
     this.point14 = filteredData[0].point14;
     this.summary = filteredData[0].summary;
+    console.log(this.id)
   }
 
   content = [

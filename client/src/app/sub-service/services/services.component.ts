@@ -9,6 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ServicesComponent {
 
   constructor(private router: Router,private activatedRoute: ActivatedRoute) {}
+  headingParams : any;
   id : any;
   image_1 : any;
   image_2 : any;
@@ -36,8 +37,9 @@ export class ServicesComponent {
   para4: any;
 
   ngOnInit(): void {
-    this.id = this.activatedRoute.snapshot.params['service-id'];
-    const filteredData = this.content.filter((x)=>x.id == this.id);
+    this.headingParams = this.activatedRoute.snapshot.params['heading'];
+    console.log(this.headingParams);
+    const filteredData = this.content.filter((x)=>x.heading == this.headingParams);
     this.image_1 = filteredData[0].image_1;
     this.image_2 = filteredData[0].image_2;
     this.header = filteredData[0].header;

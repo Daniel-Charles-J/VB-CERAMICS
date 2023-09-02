@@ -13,13 +13,13 @@ const appRoutes : Routes = [
   {path : '', component : HomeComponent },
   {path : 'about', component : AboutComponent},
   {path : 'library', component : LibraryComponent},
-  { path : 'library/:libraryOne', component : LibraryOneComponent},
+  { path : 'library/:content', component : LibraryOneComponent},
   // {path : 'library', component : LibraryComponent,children :[{
   //   path : ':libraryOne', component : LibraryOneComponent
   // }]},
   {path : 'gallery', component : GalleryComponent},
   {path : 'service', component : ServiceComponent},
-  {path : 'service/:service-id', component : ServicesComponent},
+  {path : 'service/:heading', component : ServicesComponent},
   {path : 'contact', component : ContactComponent},
 ];
 
