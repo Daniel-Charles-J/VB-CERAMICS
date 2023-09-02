@@ -20,6 +20,7 @@ export class ServiceComponent {
   isShaping = false;
   isNanoCoating = false;
   isCasting = false;
+  isFilter = false;
 
   ngOnInit(){
     this.filteredList =new MatTableDataSource(this.service);
@@ -559,6 +560,7 @@ export class ServiceComponent {
   ];
   showMenu: boolean = false;
   changeImage() {
+    this.isFilter = !this.isFilter;
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
     let menu = document.querySelector(".menu");
     if (!this.showMenu) {
@@ -574,18 +576,15 @@ export class ServiceComponent {
 
   async filter(event){
     if(event !=="All"){
-      this.mainArray = [];
       const allFiltered = this.service.filter((e: any) => {
         return (e.header.toLowerCase().includes(event.toLowerCase()));
       });
+
       const boolValue = allFiltered.some((x)=>x.isShown ===false);
-      
       if(boolValue){
         await this.mainArray.push(allFiltered);
         await allFiltered.forEach((x)=>x.isShown = true);
-  
-        console.log(this.mainArray);
-  
+
       } else {
         for (let i = this.mainArray.length - 1; i >= 0; i--) {
           let childArray = this.mainArray[i];
@@ -593,13 +592,11 @@ export class ServiceComponent {
             this.mainArray.splice(i, 1);
           }
         }
-        console.log(this.mainArray);
         await allFiltered.forEach((x)=>x.isShown = false);
       }
     } else{
       this.mainArray = [];
-      this.mainArray.push(this.service);
-      console.log(this.mainArray);
+      this.service.forEach((x)=>x.isShown = false);
     }
   }
 }
