@@ -94,17 +94,26 @@
           </div>
         </div>
       </div>
-      <div class="sec2_right">
-        <div class="sec2_top_sec">
-          <div class="top_para">
-            {{top_para}}
-          </div>
+      <div class="sec2_right" *ngIf="title=='Sophisticated Instruments'">
+        <div class="instruments_div">
+          <p>{{para1}}</p>
+          <p>{{para2}}</p>
+          <p>{{para3}}</p>
+          <p>{{para4}}</p>
           <div>
             <div *ngFor="let list of lists"><li class="list">{{list}}</li></div>
           </div>
-          <div class="bottom_para">{{bottom_para}}</div>
         </div>
-        <div class="table1_div">
+      </div>
+      <div class="sec2_right" *ngIf="title=='Heat Treatment Facility' || title=='Thermal Testing'">
+        <div class="sec2_top_sec">
+          <div class="para1">{{para1}}</div>
+          <div>
+            <div *ngFor="let list of lists"><li class="list">{{list}}</li></div>
+          </div>
+          <div class="para2">{{para2}}</div>
+        </div>
+        <div class="table1_div" *ngIf="table1_th2 !== undefined">
           <table class="table1">
             <tr>
               <td class="th_background">{{table1_th}}</td>
@@ -116,7 +125,7 @@
             </tr>
           </table>
         </div>
-        <div class="table2_div">
+        <div class="table2_div" *ngIf="table2_th2 !== undefined">
           <table class="table2">
             <tr>
               <td class="th_background">{{table2_th}}</td>
