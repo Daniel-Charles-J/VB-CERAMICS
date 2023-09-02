@@ -131,8 +131,8 @@
       </div>
       <div *ngIf="isFilter" >
         <div>
-          <div class="container_1 container" [routerLink] ='["/service",service.service_id]' *ngFor="let service of mainArray">
-            <div *ngFor="let service of service" class="containers-section">
+          <div class="containers-section" [routerLink] ='["/service",service.service_id]' *ngFor="let service of mainArray">
+            <div *ngFor="let service of service" class="container_1 container">
               <div class="service_img">
                 <img src={{service.img}} />
               </div>
