@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12 ">
         <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-          <img src="./assets/images/image 26.png" alt="VBCRC">
+          <img src="./assets/images/image 26.png" alt="VBCRC" [routerLink]='["/"]'>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -128,8 +128,8 @@
       </div>
       <div *ngIf="isFilter" >
         <div>
-          <div class="container_1 container" [routerLink] ='["/service",service.service_id]' *ngFor="let service of mainArray">
-            <div *ngFor="let service of service" class="containers-section">
+          <div class="containers-section" [routerLink] ='["/service",service.service_id]' *ngFor="let service of mainArray">
+            <div *ngFor="let service of service" class="container_1 container">
               <div class="service_img">
                 <img src={{service.img}} />
               </div>
