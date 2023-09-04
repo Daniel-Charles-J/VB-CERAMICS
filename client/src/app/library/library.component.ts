@@ -34,13 +34,13 @@ export class LibraryComponent implements OnInit{
     {
       img1: './assets/images/article2.jpeg',
       topic:'Raw Material',
-      content: 'Agate and It’s Importance ',
+      content: 'Agate and It’s Importance',
       library_id:2,
     },
     {
       img1: './assets/images/article3.jpeg',
       topic:'Raw Material',
-      content: "Graphite's Impact in Industries",
+      content: "Graphite’s Impact in Industries",
       library_id:3,
     },
     {

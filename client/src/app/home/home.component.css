@@ -319,7 +319,7 @@ height:60%
   .flex8{
     /* background: url(/assets/images/bg_con.jpeg) center no-repeat,linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%),#99ABD8; */
    
-    background-image: linear-gradient( rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 76, 0.60) 0%), url(/assets/images/bg_con.jpeg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 115, 0.60) 0%), url(/assets/images/bg_con.jpeg);
     background-color:#99ABD8;
     background-size: cover;
     background-repeat: no-repeat, no-repeat;
@@ -748,3 +748,4 @@ margin-left:15px;
   grid-auto-rows: 120px;
   grid-auto-flow: dense;
 }
+

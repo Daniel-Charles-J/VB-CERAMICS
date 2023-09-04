@@ -52,6 +52,13 @@
 @media only screen and (max-width: 500px){
 #customer{padding-left: 60px !important;}
 }
+
+@media only screen and (max-width: 480px){
+  .owl-carousel, .owl-carousel.owl-loaded {
+    margin-left: 25%;
+  }
+}
+
 @media only screen and (max-width: 425px){
   #customer{padding-left: 35px !important;}
   }
