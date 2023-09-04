@@ -414,6 +414,7 @@
   }
 }
 
+
 @media (max-width: 992px) {
   .contact_us_li {  
     width: 30%;
@@ -434,16 +435,6 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .cardfooter{
-    display: none;
-  }
-  .footer{
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-}
-
 @media only screen and (max-width: 900px) {
 .container{
   grid-template-columns: 1fr;
@@ -460,6 +451,42 @@
   bottom: 8%;
   left: 0%;
 }
+
+@media only screen and (max-width: 800px) {
+  .cardfooter{
+    display: none;
+  }
+  .footer{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+  .flex_of_1{
+    justify-content: center;
+    gap: 0px;
+  }
+  #header_article,#header_article2{
+    font-size: 40px ;
+  }
+  #article_para,#article_para2{
+    font-size: 15px ;
+  }
+}
+@media only screen and (max-width:590px) {
+  #con_button{
+    margin:10px 0px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .text-big{
+    
+  }
+}
+
 #main-section{
   width: 100%;
   display: grid;

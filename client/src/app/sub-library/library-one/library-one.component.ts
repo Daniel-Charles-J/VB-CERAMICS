@@ -84,7 +84,7 @@ export class LibraryOneComponent {
     {
       id : 1,
       heading: 'Agate and It’s Importance',
-      img: './assets/images/article1.jpeg',
+      img: './assets/images/article2.jpeg',
       subHeading : 'Agate: Unveiling Its Industrial Significance and Versatile Applications',
       desc1:"Agate, a captivating gemstone valued for its colorful bands and distinct patterns, goes beyond just its visual charm to play a vital part in numerous industries. With its exceptional traits and adaptable features, agate has secured its place in various industrial applications, contributing to innovation and practicality in a range of sectors. Let's dive into the intriguing realm of agate and explore its significance in diverse industries.",
       point1:"Jewellery and Accessories : The captivating patterns and vibrant shades of agate have led to its desirability in the world of jewellery. When shaped into beads, cabochons, and pendants, agate takes on a central role in creating exquisite necklaces, earrings, and bracelets. The inherent beauty and versatile color palette provide endless design opportunities to cater to the preferences of discerning customers.",
@@ -102,7 +102,7 @@ export class LibraryOneComponent {
     { 
       id : 2,
       heading: 'Quartz - Interesting Facts',
-      img: './assets/images/article2.jpeg',
+      img: './assets/images/article1.jpeg',
       subHeading : "Unveiling the Enigmatic Beauty : Exploring Fascinating Facts about Quartz",
       desc1:"Quartz, a gem of the Earth's treasury, is a mineral that has captivated humans for centuries with its mesmerizing appearance, diverse forms, and intriguing properties. Let's embark on a journey to discover some lesser-known and enthralling facts about this extraordinary mineral.",
       point1:"Abundance in Diversity : Quartz reigns as one of the most abundant minerals on the planet, composing a significant portion of the Earth's crust. Its diverse forms and breath taking colours, ranging from the transparent purity of rock crystal to the soothing lavender shades of amethyst, showcase nature's artistic flair.",
@@ -119,7 +119,7 @@ export class LibraryOneComponent {
     },
     {
       id : 3,
-      heading: "Graphite's Impact in Industries",
+      heading: "Graphite’s Impact in Industries",
       img: './assets/images/article3.jpeg',
       subHeading : "Graphite : A Catalyst for Transformation Across Varied Industries",
       desc1:"Graphite, an unassuming yet highly potent form of carbon, emerges as a mineral that has dynamically reformed multiple industries through its remarkable attributes and diverse applications. From its pivotal contributions to technological advancements to its role in energy storage and beyond, graphite wields a profound and pervasive influence. Let's embark on a journey into the realm of graphite, uncovering how it shapes and propels innovation across a spectrum of sectors.",
