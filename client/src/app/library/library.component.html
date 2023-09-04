@@ -11,7 +11,7 @@
         <div class="row">
         <div  class="col-md-12 ">
         <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-        <img id='head_img' style='margin-left:22px;padding:5px 0px;width:85px;height:57px' src="./assets/images/VBCC_Logo_White.svg" alt="">
+        <img id='head_img' style='margin-left:22px;padding:5px 0px;' src="./assets/images/VBCC_Logo_White.svg" alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,19 +49,21 @@
         </div>
       </div>
      </div>
+     <hr id="hr_tag2">
+     <br>
      <div class='container'>
        <a id='head1'>
-         <img class="image1" src="./assets/images/article1.jpeg" alt="">
+         <img class="image1" [routerLink] ='["Quartz - Interesting Facts"]' src="./assets/images/article1.jpeg" alt="">
          <span class="text-bottom">Quartz</span>
          <p class="textl">Quartz - Interesting Facts </p>
        </a>
        <a id='head2' class='big'>
-        <img class="image1" src="./assets/images/article2.jpeg" alt="">
+        <img class="image1" [routerLink] ='["Agate and It’s Importance"]' src="./assets/images/article2.jpeg" alt="">
         <span class="text-bottom text-big">Agate</span>
         <p class="textl">Agate and It’s Importance</p>
       </a>
       <a id='head3'>
-        <img class="image1" src="./assets/images/article3.jpeg" alt="">
+        <img class="image1" [routerLink] ='["Graphite’s Impact in Industries"]' src="./assets/images/article3.jpeg" alt="">
         <span class="text-bottom">Graphite</span>
         <p class="textl">Graphite
           Graphite's Impact in Industries</p>
@@ -76,6 +78,7 @@
       </div>
     </div>
    </div>
+  
   <div id='main-section'>
   <div class='flex2' [routerLink] ='["/library",library.content]'
   *ngFor="let library of library">

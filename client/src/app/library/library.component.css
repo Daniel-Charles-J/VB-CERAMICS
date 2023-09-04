@@ -252,7 +252,7 @@
 
 
   .flex8{   
-    background-image: linear-gradient( rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 76, 0.60) 0%), url(/assets/images/bg_con.jpeg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 115, 0.60) 0%), url(/assets/images/bg_con.jpeg);
     background-color:#99ABD8;
     background-size: cover;
     background-repeat: no-repeat, no-repeat;
@@ -296,10 +296,17 @@
     width: 90%;
     margin: auto;
     color: white;
-    border: 1px solid white;
+    border: 0.5px solid white;
     text-align: center;
   }
 
+  #hr_tag2{
+    width: 96%;
+    margin: auto;
+    color: black;
+    border: 0.9px solid black;
+    text-align: center;
+  }
 
 .text-bottom {
     display: table;
@@ -312,7 +319,7 @@
     padding: 5px;
   }
   .text-bottom {
-    bottom: 7%;
+    bottom: 6.5%;
     left: 0%;
 }
 .text-big {
@@ -407,6 +414,7 @@
   }
 }
 
+
 @media (max-width: 992px) {
   .contact_us_li {  
     width: 30%;
@@ -427,16 +435,6 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .cardfooter{
-    display: none;
-  }
-  .footer{
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-}
-
 @media only screen and (max-width: 900px) {
 .container{
   grid-template-columns: 1fr;
@@ -453,6 +451,42 @@
   bottom: 8%;
   left: 0%;
 }
+
+@media only screen and (max-width: 800px) {
+  .cardfooter{
+    display: none;
+  }
+  .footer{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+  .flex_of_1{
+    justify-content: center;
+    gap: 0px;
+  }
+  #header_article,#header_article2{
+    font-size: 40px ;
+  }
+  #article_para,#article_para2{
+    font-size: 15px ;
+  }
+}
+@media only screen and (max-width:590px) {
+  #con_button{
+    margin:10px 0px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .text-big{
+    
+  }
+}
+
 #main-section{
   width: 100%;
   display: grid;

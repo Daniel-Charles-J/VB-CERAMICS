@@ -11,7 +11,7 @@
           <div class="row">
           <div  class="col-md-12 ">
           <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-          <img id='head_img' style='margin-left:35px;padding:5px 0px;width:85px;height:57px' src="./assets/images/VBCC_Logo_White.svg" alt="">
+          <img id='head_img' style='margin-left:35px;padding:5px 0px;' src="./assets/images/VBCC_Logo_White.svg" alt="">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -159,16 +159,16 @@
       </div>
       <div class='flex_explore'>
         <div style='flex:1'>
-            <img  class='exploreimg' src="./assets/images/article1.jpeg" alt="">
-            <p class='epara'>  Agate and It’s Importance</p>
+            <img [routerLink]='["Quartz - Interesting Facts"]' class='exploreimg' src="./assets/images/article1.jpeg" alt="">
+            <p class='epara'> Quartz - Interesting Facts </p>
         </div>
         <div style='flex:1'> 
-            <img class='exploreimg' src="./assets/images/article2.jpeg" alt="">
+            <img class='exploreimg' [routerLink] ='["Agate and It’s Importance"]' src="./assets/images/article2.jpeg" alt="">
             <p class='epara'>Agate and It’s Importance</p>
         </div>
         <div style='flex:1'>
-            <img class='exploreimg' src="./assets/images/article3.jpeg" alt="">
-            <p class='epara'>Agate and It’s Importance</p>
+            <img class='exploreimg' [routerLink] ='["Graphite’s Impact in Industries"]' src="./assets/images/article3.jpeg" alt="">
+            <p class='epara'>Graphite’s Impact in Industries</p>
         </div>
       </div>
 
