@@ -333,3 +333,30 @@
       text-align: center;
     }
   }
+  @media only screen and (max-width: 650px) {
+    .flex_of_1{
+      justify-content: center;
+      gap: 0px;
+    }
+    #header_article,#header_article2{
+      font-size: 20px ;
+    }
+    #article_para,#article_para2{
+      font-size: 15px ;
+    }
+
+  .top_heading_1,.top_heading_2{
+    font-size: 20px;
+  }
+  .exploreimg {
+    width: 310px;
+    height: 250px;
+    border-radius: 12px;
+  }
+  }
+
+  @media only screen and (max-width:590px) {
+    #con_button{
+      margin:10px 0px;
+    }
+  }
