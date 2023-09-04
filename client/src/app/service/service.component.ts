@@ -11,6 +11,7 @@ export class ServiceComponent {
   filteredSelector = new MatTableDataSource([]);
 
   mainArray = [];
+  isAll = false;
   isAllServices = false;
   isRawMaterials = false;
   isSophisticated = false;
@@ -37,7 +38,6 @@ export class ServiceComponent {
       students : '₹750 - Students',
       industries : '₹1500 - Industries',
       isShown : this.isSophisticated,
-      //tags : 'first',
     },
     {
       service_id: 2,
@@ -599,4 +599,97 @@ export class ServiceComponent {
       this.service.forEach((x)=>x.isShown = false);
     }
   }
+
+  
+  all() {
+    this.isAllServices = !this.isAllServices ? true: false;
+    if(this.isAllServices) {
+      document.getElementById('all').classList.add('green');
+      document.getElementById('allText').classList.add('white');
+    } else {
+      document.getElementById('all').classList.remove('green');
+      document.getElementById('allText').classList.remove('white');
+    }
+  }
+  material() {
+    this.isRawMaterials = !this.isRawMaterials ? true: false;
+    if(this.isRawMaterials) {
+      document.getElementById('material').classList.add('green');
+      document.getElementById('materialText').classList.add('white');
+    } else {
+      document.getElementById('material').classList.remove('green');
+      document.getElementById('materialText').classList.remove('white');
+    }
+  }
+  Sophisticated() {
+    this.isSophisticated = !this.isSophisticated ? true: false;
+    if(this.isSophisticated) {
+      document.getElementById('Sophisticated').classList.add('green');
+      document.getElementById('SophisticatedText').classList.add('white');
+    } else {
+      document.getElementById('Sophisticated').classList.remove('green');
+      document.getElementById('SophisticatedText').classList.remove('white');
+    }
+  }
+  physical() {
+    this.isPhysicalProperties = !this.isPhysicalProperties ? true: false;
+    if(this.isPhysicalProperties) {
+      document.getElementById('physical').classList.add('green');
+      document.getElementById('physicalText').classList.add('white');
+    } else {
+      document.getElementById('physical').classList.remove('green');
+      document.getElementById('physicalText').classList.remove('white');
+    }
+  }
+  thermal() {
+    this.isThermalTesting = !this.isThermalTesting ? true: false;
+    if(this.isThermalTesting) {
+      document.getElementById('thermal').classList.add('green');
+      document.getElementById('thermalText').classList.add('white');
+    } else {
+      document.getElementById('thermal').classList.remove('green');
+      document.getElementById('thermalText').classList.remove('white');
+    }
+  }
+  heat() {
+    this.isHeatTreatment = !this.isHeatTreatment ? true: false;
+    if(this.isHeatTreatment) {
+      document.getElementById('heat').classList.add('green');
+      document.getElementById('heatText').classList.add('white');
+    } else {
+      document.getElementById('heat').classList.remove('green');
+      document.getElementById('heatText').classList.remove('white');
+    }
+  }
+  shaping() {
+    this.isShaping = !this.isShaping ? true: false;
+    if(this.isShaping) {
+      document.getElementById('shaping').classList.add('green');
+      document.getElementById('shapingText').classList.add('white');
+    } else {
+      document.getElementById('shaping').classList.remove('green');
+      document.getElementById('shapingText').classList.remove('white');
+    }
+  }
+  nano() {
+    this.isNanoCoating = !this.isNanoCoating ? true: false;
+    if(this.isNanoCoating) {
+      document.getElementById('nano').classList.add('green');
+      document.getElementById('nanoText').classList.add('white'); 
+    } else {
+      document.getElementById('nano').classList.remove('green');
+      document.getElementById('nanoText').classList.remove('white');
+    }
+  }
+  casting() {
+    this.isCasting = !this.isCasting ? true: false;
+    if(this.isCasting) {
+      document.getElementById('casting').classList.add('green');
+      document.getElementById('castingText').classList.add('white');
+    } else {
+      document.getElementById('casting').classList.remove('green');
+      document.getElementById('castingText').classList.remove('white');
+    }
+  }
+  
 }

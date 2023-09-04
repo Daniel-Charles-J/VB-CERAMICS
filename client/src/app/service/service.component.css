@@ -246,6 +246,16 @@ line-height: 150%; /* 24px */
   grid-row-gap: 20px;
   grid-column-gap: 1.5%;
 }
+
+.green {
+  background-color: #132249;
+}
+
+.white {
+  color: white !important;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
 /* min-width: 350px;
