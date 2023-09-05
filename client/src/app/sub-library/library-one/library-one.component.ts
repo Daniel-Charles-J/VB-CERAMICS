@@ -43,7 +43,7 @@ export class LibraryOneComponent {
 
   ngOnInit(): void {
 
-    this.contentParams = this.activatedRoute.snapshot.params['content'];
+    this.contentParams = this.activatedRoute.snapshot.params['routing'];
     console.log(this.contentParams)
 
     //this.id = this.activatedRoute.snapshot.params['libraryOne']
@@ -83,6 +83,7 @@ export class LibraryOneComponent {
   content = [
     {
       id : 1,
+      routing : "quartz-interesting-facts",
       heading: 'Agate and It’s Importance',
       img: './assets/images/article2.jpeg',
       subHeading : 'Agate: Unveiling Its Industrial Significance and Versatile Applications',
@@ -101,6 +102,7 @@ export class LibraryOneComponent {
     },
     { 
       id : 2,
+      routing : "agate-importance",
       heading: 'Quartz - Interesting Facts',
       img: './assets/images/article1.jpeg',
       subHeading : "Unveiling the Enigmatic Beauty : Exploring Fascinating Facts about Quartz",
@@ -119,6 +121,7 @@ export class LibraryOneComponent {
     },
     {
       id : 3,
+      routing : 'graphite-impact-in-industries',
       heading: "Graphite’s Impact in Industries",
       img: './assets/images/article3.jpeg',
       subHeading : "Graphite : A Catalyst for Transformation Across Varied Industries",
@@ -136,6 +139,7 @@ export class LibraryOneComponent {
       summary:"In conclusion, graphite's adaptability and remarkable attributes have propelled it across a multifaceted tapestry of industries, functioning as a catalyst for advancement and innovation. From powering electric vehicles to augmenting aerospace technologies and empowering efficient manufacturing, graphite's imprint continues to shape contemporary society, while its latent potential extends further into territories ripe for exploration and discovery."
     },
     { id : 4,
+      routing : "thermal-dynamic-with-precision",
       heading: 'Thermal Dynamics with Precision (Dilatometer)',
       img: './assets/images/article4.jpeg',
       subHeading : "Dilatometer : Thermal Dynamics with Exquisite Precision",
@@ -160,6 +164,7 @@ export class LibraryOneComponent {
     },
     {
       id : 5,
+      routing : 'glove-boxes-for-scientific-advancement',
       heading: 'Glove Boxes for Scientific Advancement',
       img: './assets/images/article5.jpeg',
       subHeading :"Glove Box : Creating Controlled Environments for Scientific Advancement",
@@ -184,6 +189,7 @@ export class LibraryOneComponent {
     },
     {
       id : 6,
+      routing : "working-principle-of-hot-air-oven",
       heading: 'Working Principle of Hot Air Oven',
       img: './assets/images/article4.jpeg',
       desc1:"The hot air oven, an essential apparatus in laboratories, industries, and research facilities, operates on a fundamental principle that facilitates uniform heating and sterilization of various materials. This versatile tool finds applications in diverse fields, including microbiology, material testing, and food industries. Let's delve into the core of its working principle, exploring how it achieves precise temperature control and its significance in modern-day applications.",

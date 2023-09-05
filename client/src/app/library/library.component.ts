@@ -30,36 +30,42 @@ export class LibraryComponent implements OnInit{
       content: 'Quartz - Interesting Facts',
       topic:'Raw Material',
       library_id:1,
+      routing : "quartz-interesting-facts"
     },
     {
       img1: './assets/images/article2.jpeg',
       topic:'Raw Material',
       content: 'Agate and It’s Importance',
       library_id:2,
+      routing : "agate-importance"
     },
     {
       img1: './assets/images/article3.jpeg',
       topic:'Raw Material',
       content: "Graphite’s Impact in Industries",
       library_id:3,
+      routing : 'graphite-impact-in-industries'
     },
     {
       img1: './assets/images/article4.jpeg',
       topic:'Thermal Testing ',
       content: 'Thermal Dynamics with Precision (Dilatometer)',
       library_id:4,
+      routing : "thermal-dynamic-with-precision"
     },
     {
       img1: './assets/images/article5.jpeg',
       topic:'Material Preparation',
       content: 'Glove Boxes for Scientific Advancement',
       library_id:5,
+      routing : 'glove-boxes-for-scientific-advancement'
     },
     {
       img1: './assets/images/article6.jpeg',
       topic:'Heat treatment facility',
       content: 'Working Principle of Hot Air Oven',
       library_id:6,
+      routing : "working-principle-of-hot-air-oven"
     },
    
   ];
