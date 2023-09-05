@@ -47,7 +47,7 @@ export class LibraryOneComponent {
     console.log(this.contentParams)
 
     //this.id = this.activatedRoute.snapshot.params['libraryOne']
-    const filteredData = this.content.filter((x)=>x.heading == this.contentParams);
+    const filteredData = this.content.filter((x)=>x.routing == this.contentParams);
     this.id = filteredData[0].id;
     this.heading = filteredData[0].heading;
     this.img = filteredData[0].img;
