@@ -94,7 +94,7 @@
           </div>
         </div>
       </div>
-      <div class="sec2_right" *ngIf="title=='Sophisticated Instruments'">
+      <div class="sec2_right" *ngIf="title=='Sophisticated Instruments' || (title=='Material Preparation' && heading=='Sol Gel Route')">
         <div class="instruments_div">
           <p>{{para1}}</p>
           <p>{{para2}}</p>
@@ -105,7 +105,7 @@
           </div>
         </div>
       </div>
-      <div class="sec2_right" *ngIf="title=='Heat Treatment Facility' || title=='Thermal Testing'">
+      <div class="sec2_right" *ngIf="title=='Heat Treatment Facility' || title=='Thermal Testing' || (title=='Material Preparation' && heading!=='Sol Gel Route')">
         <div class="sec2_top_sec">
           <div class="para1">{{para1}}</div>
           <div>
@@ -113,7 +113,7 @@
           </div>
           <div class="para2">{{para2}}</div>
         </div>
-        <div class="table1_div" *ngIf="table1_th2 !== undefined">
+        <div class="table1_div" *ngIf="table1_th !== undefined">
           <table class="table1">
             <tr>
               <td class="th_background">{{table1_th}}</td>
@@ -123,9 +123,21 @@
               <td class="th_background">{{table1_td}}</td>
               <td>{{table1_td2}}</td>
             </tr>
+            <tr *ngIf="table1_td3 !== undefined">
+              <td class="th_background">{{table1_td3}}</td>
+              <td>{{table1_td4}}</td>
+            </tr>
+            <tr *ngIf="table1_td5 !== undefined">
+              <td class="th_background">{{table1_td5}}</td>
+              <td>{{table1_td6}}</td>
+            </tr>
+            <tr *ngIf="table1_td7 !== undefined">
+              <td class="th_background">{{table1_td7}}</td>
+              <td>{{table1_td8}}</td>
+            </tr>
           </table>
         </div>
-        <div class="table2_div" *ngIf="table2_th2 !== undefined">
+        <div class="table2_div" *ngIf="table2_th !== undefined">
           <table class="table2">
             <tr>
               <td class="th_background">{{table2_th}}</td>
