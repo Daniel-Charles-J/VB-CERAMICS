@@ -14,9 +14,6 @@ const appRoutes : Routes = [
   {path : 'about', component : AboutComponent},
   {path : 'library', component : LibraryComponent},
   { path : 'library/:routing', component : LibraryOneComponent},
-  // {path : 'library', component : LibraryComponent,children :[{
-  //   path : ':libraryOne', component : LibraryOneComponent
-  // }]},
   {path : 'gallery', component : GalleryComponent},
   {path : 'service', component : ServiceComponent},
   {path : 'service/:routing', component : ServicesComponent},

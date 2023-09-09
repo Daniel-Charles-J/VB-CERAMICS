@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+//import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { Component, Renderer2, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-service',
@@ -7,6 +8,8 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./service.component.css']
 })
 export class ServiceComponent {
+
+  constructor(private renderer: Renderer2, private el: ElementRef) {}
   filteredList = new MatTableDataSource([]);
   filteredSelector = new MatTableDataSource([]);
 
@@ -615,6 +618,10 @@ export class ServiceComponent {
   showMenu: boolean = false;
   changeImage() {
     this.isFilter = !this.isFilter;
+    console.log(this.isFilter);
+    if(this.isFilter){
+      this.mainArray = [this.service];
+    }
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
     let menu = document.querySelector(".menu");
     if (!this.showMenu) {
@@ -628,34 +635,67 @@ export class ServiceComponent {
     }
   }
 
-  async filter(event){
+  async filter(event,e){
     if(event !=="All"){
+      const x = this.mainArray.length ? this.mainArray[0].length:this.mainArray.length;
+      if(x==54){
+        this.mainArray=[];
+      }
       const allFiltered = this.service.filter((e: any) => {
         return (e.header.toLowerCase().includes(event.toLowerCase()));
       });
-
       const boolValue = allFiltered.some((x)=>x.isShown ===false);
       if(boolValue){
+        // const clickedElement = e.target.id;
+        // const button = document.getElementById(clickedElement);
+        // button.style.backgroundColor = "green";
         await this.mainArray.push(allFiltered);
+        console.log(this.mainArray)
         await allFiltered.forEach((x)=>x.isShown = true);
 
       } else {
+        // const clickedElement = e.target.id;
+        // const button = document.getElementById(clickedElement);
+        // button.style.backgroundColor = "white";
+
         for (let i = this.mainArray.length - 1; i >= 0; i--) {
           let childArray = this.mainArray[i];
           if (allFiltered.every(value => childArray.includes(value))) {
             this.mainArray.splice(i, 1);
           }
         }
+        console.log(this.mainArray)
         await allFiltered.forEach((x)=>x.isShown = false);
       }
     } else{
-      this.mainArray = [];
+      this.mainArray = [this.service];
+      // const clickedElement = e.target.id;
+      // const button = document.getElementById(clickedElement);
+      //  button.style.backgroundColor = "green";
+      console.log(this.mainArray);
       this.service.forEach((x)=>x.isShown = false);
     }
   }
 
+  // ngAfterViewInit() {
+  //   const clickedElement = this.el.nativeElement.querySelector('#myElement');
   
+  //   if (clickedElement) {
+  //     // Element exists, safe to manipulate
+  //     this.renderer.setStyle(clickedElement, 'background-color', 'lightblue');
+  //   } else {
+  //     console.warn('Element not found.');
+  //   }
+  // }
+  style(event,e){
+    // console.log(event.target.id);
+    // console.log(e);
+    // const clickedElement = event.target.id;
+    // const button = document.getElementById(clickedElement);
+    // button.style.backgroundColor = "green";   
+  }
   all() {
+    
     this.isAllServices = !this.isAllServices ? true: false;
     if(this.isAllServices) {
       document.getElementById('all').classList.add('green');
