@@ -1,15 +1,3 @@
-<!-- <button class="btn btn-danger" [routerLink]='["/service"]'>Back</button>
-<h2>{{image_1}}</h2>
-<h2>{{image_2}}</h2>
-<p>{{header}}</p>
-<h1>{{heading}}</h1>
-<h2>{{title}}</h2>
-<h4>{{title_heading}}</h4>
-<p>{{students}}</p>
-<p>{{industries}}</p>
-<p *ngFor="let list of lists">{{list}}</p>
-<h5>{{description}}</h5> -->
-
 <div class="service_page">
   <div class="container-fluid1">
     <div class="row">
@@ -94,24 +82,45 @@
           </div>
         </div>
       </div>
-      <div class="sec2_right" *ngIf="title=='Sophisticated Instruments' || (title=='Material Preparation' && heading=='Sol Gel Route')">
+      <div class="sec2_right" *ngIf="header=='Sophisticated Instruments' || (header=='Material Preparation' && heading=='Sol Gel Route')
+      || (header=='Nano coating techniques' && heading=='Chemical Vapour Deposition (CVD)') || header=='Raw Materials'
+      || (header=='Physical properties' && heading!=='Bulk Density, Porosity, Water Absorption, Fired Shrinkage')">
         <div class="instruments_div">
           <p>{{para1}}</p>
-          <p>{{para2}}</p>
-          <p>{{para3}}</p>
-          <p>{{para4}}</p>
-          <div>
+          <p *ngIf="para2 !== undefined">{{para2}}</p>
+          <p *ngIf="para3 !== undefined">{{para3}}</p>
+          <p *ngIf="para4 !== undefined">{{para4}}</p>
+          <div *ngIf="lists !== undefined">
             <div *ngFor="let list of lists"><li class="list">{{list}}</li></div>
+          </div>
+          <div class="table2_div" *ngIf="table2_th !== undefined" style="margin-top: 15px;">
+            <table class="table2">
+              <tr>
+                <td class="th_background">{{table2_th}}</td>
+                <td class="th_background">{{table2_th2}}</td>
+              </tr>
+              <tr *ngIf="table2_td !== undefined">
+                <td>{{table2_td}}</td>
+                <td>{{table2_td2}}</td>
+              </tr>
+              <tr *ngIf="table1_td !== undefined">
+                <td>{{table1_td}}</td>
+                <td>{{table1_td2}}</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
-      <div class="sec2_right" *ngIf="title=='Heat Treatment Facility' || title=='Thermal Testing' || (title=='Material Preparation' && heading!=='Sol Gel Route')">
+      <div class="sec2_right" *ngIf="header=='Heat Treatment Facility' || header=='Thermal Testing' || (header=='Material Preparation' && heading!=='Sol Gel Route') || header=='Shaping'
+        || (header=='Nano coating techniques' && heading!=='Chemical Vapour Deposition (CVD)') || header=='Casting'">
         <div class="sec2_top_sec">
           <div class="para1">{{para1}}</div>
-          <div>
+          <div *ngIf="lists !== undefined">
             <div *ngFor="let list of lists"><li class="list">{{list}}</li></div>
           </div>
-          <div class="para2">{{para2}}</div>
+          <div class="para2" *ngIf="para2 !== undefined">{{para2}}</div>
+          <div class="para3" *ngIf="para3 !== undefined">{{para3}}</div>
+          <div class="para4" *ngIf="para4 !== undefined">{{para4}}</div>
         </div>
         <div class="table1_div" *ngIf="table1_th !== undefined">
           <table class="table1">
@@ -135,6 +144,10 @@
               <td class="th_background">{{table1_td7}}</td>
               <td>{{table1_td8}}</td>
             </tr>
+            <tr *ngIf="table1_td9 !== undefined">
+              <td class="th_background">{{table1_td9}}</td>
+              <td>{{table1_td10}}</td>
+            </tr>
           </table>
         </div>
         <div class="table2_div" *ngIf="table2_th !== undefined">
@@ -148,6 +161,15 @@
               <td>{{table2_td2}}</td>
             </tr>
           </table>
+        </div>
+      </div>
+
+      <div class="sec2_right" *ngIf="(header=='Physical properties' && heading=='Bulk Density, Porosity, Water Absorption, Fired Shrinkage')">
+        <div class="instruments_div">
+          <p>{{para1}}<span style="display: block; font-style: italic;">Bulk Density = Sintered Weight / (Soaked Wt - Suspended Wt) g/cc</span></p>
+          <p>{{para2}}<span style="display: block; font-style: italic;">Porosity = (Soaked Wt - Sintered Wt) / (Soaked Wt - Suspended Wt) x 100%</span></p>
+          <p>{{para3}}<span style="display: block; font-style: italic;">Water Absorption = (Soaked Wt - Sintered Wt) / Sintered Weight x 100%</span></p>
+          <p>{{para4}}<span style="display: block; font-style: italic;">Fired Shrinkage = (Dia of After Drying - Dia of After Firing) / Dia of After Drying</span></p>
         </div>
       </div>
     </div>
