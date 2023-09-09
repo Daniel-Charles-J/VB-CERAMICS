@@ -486,11 +486,12 @@ justify-content: center;
   border-radius: 40px;
   border: 1px solid #FFF;
   background-color: #132249;
-  width:25%;
-  padding:0px 5px;
+  width:35%;
+  height: auto;
+  padding:5px 5px;
   position: absolute;
-right: 120px;
-bottom: 39.667px;
+  right: 100px;
+  bottom: 39.667px;
 }
 
 .carousel-control-next-icon {
@@ -498,11 +499,12 @@ bottom: 39.667px;
   border-radius: 40px;
   border: 1px solid #FFF;
   background-color: #132249;
-  width:25%;
-  padding:0px 5px;
+  width:35%;
+  height: auto;
+  padding:5px 5px;
   position: absolute;
-right: 120px;
-bottom: 39.667px;
+  right: 120px;
+  bottom: 39.667px;
 }
 
 .carousel-control-prev {
@@ -567,12 +569,13 @@ margin-left:15px;
 }
 .carousel-control-next, .carousel-control-prev{
   bottom:70px;
+  
 }
 .carousel-control-next-icon{
   right:94px;
 }
 .carousel-control-prev-icon{
-  right:110px;
+  right:86px;
 }
 .carousel-control-prev-icon,.carousel-control-next-icon{
   width: 35%;
@@ -607,6 +610,17 @@ margin-left:15px;
   #header_facility{
     text-align: center;
   }
+  .fixed-top > h4{
+    font-size: 30px !important;
+  }
+  
+  .fixed-top > #paraoneofcaro{
+  font-size: 30px !important;
+  }
+
+  .fixed-top > p{
+  font-size: 14px !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -638,10 +652,21 @@ margin-left:15px;
     right:140px;
   }
   .carousel-control-prev-icon{
-    right:110px;
+    right:96px;
   }
   .carousel-control-prev-icon,.carousel-control-next-icon{
     width: 45%;
+  }
+  .fixed-top > h4{
+    font-size: 20px !important;
+  }
+  
+  .fixed-top > #paraoneofcaro{
+  font-size: 20px !important;
+  }
+
+  .fixed-top > p{
+  font-size: 12px !important;
   }
 }
 
@@ -650,6 +675,9 @@ margin-left:15px;
     display: none !important;
   }
   .carousel-control-prev-icon,.carousel-control-next-icon{
+    display: none !important;
+  }
+  #car_button_2{
     display: none !important;
   }
   #top_header{
@@ -692,9 +720,48 @@ margin-left:15px;
   #head_img{
     margin-left: 15px !important;
   }
+
+  .carousel-item > #caroimg {
+    height: 400px !important;
 }
+.carousel-inner {
+  height: 400px;
+}
+
+.carousel .carousel-item {
+  height: 400px;
+}
+
+.carousel-caption{
+  right: 0%;
+  bottom: 13.75rem;
+}
+
+}
+
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .fixed-top{
+    top: 55px !important;
+    left: 6% !important;
+    width: 89% !important;
+}
+  .fixed-top > h4{
+    font-size: 15px !important;
+  }
+  
+  .fixed-top > #paraoneofcaro{
+  font-size: 15px !important;
+  }
+
+  .fixed-top > p{
+  font-size: 12px !important;
+  }
 }
 
 /* media queries for contact */
@@ -708,6 +775,18 @@ margin-left:15px;
   }
   #footer_p{
     font-size: 13px;
+  }
+  #car_button_1 {
+    font-size: 9px;
+    padding: 7px;
+}
+
+}
+
+/* media queries for contact */
+@media only screen and (max-width: 400px) {
+  .card9{
+    width: 295px;
   }
   
 }
@@ -749,3 +828,88 @@ margin-left:15px;
   grid-auto-flow: dense;
 }
 
+.carousel .carousel-item {
+  height: 600px;
+  border-radius: 40px;
+}
+
+.carousel-item > #caroimg {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    /* min-height: 500px; */
+    border-radius: 40px;
+    height: 600px;
+}
+
+.fixed-top{
+  position: fixed;
+    top: 55px;
+    left: 60%;
+    width: 35%;
+    z-index: 1030;
+}
+.fixed-top > h4{
+  color: #FFF;
+  text-align: right;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Unbounded;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.fixed-top > #paraoneofcaro{
+  background: linear-gradient(120deg, #D2DEFF 24.77%, #3ADCAF 70.07%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-variant-numeric: lining-nums tabular-nums;
+font-family: Unbounded;
+font-size: 40px;
+font-style: normal;
+text-align: right;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.fixed-top > p{
+color: #FFF;
+text-align: right;
+font-variant-numeric: lining-nums tabular-nums;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+#car_button_1:hover,#car_button_2:hover{
+  box-shadow: inset 0 100px 0 0 white;
+  color: black;
+}
+
+#car_button_1,#car_button_2,.carousel-control-next-icon,.carousel-control-prev-icon{
+  color: #FFF;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 white;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.carousel-control-prev-icon:hover{
+  box-shadow: inset 0 100px 0 100px white;
+}
+.carousel-control-next-icon:hover{
+  box-shadow: inset 100px 0 0 0 white;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  width: 13%;
+}

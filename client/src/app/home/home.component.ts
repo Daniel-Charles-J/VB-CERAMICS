@@ -140,5 +140,31 @@ public customOptions2: OwlOptions = {
   changeImage6() {
     this.currentImageIndex6 = (this.currentImageIndex6 + 1) % this.images.length;
   }
+
+  arrowimages = [
+    './assets/images/arrow_cc.svg',
+    './assets/images/Vectorb.svg',
+  ];
+
+  currentImageIndex7 = 0;
+  changeImage7() {
+    this.currentImageIndex7 = (this.currentImageIndex7 + 1) % this.arrowimages.length;
+  }
+  changeImage7b() {
+    this.currentImageIndex7 = (this.currentImageIndex7 - 1) % this.arrowimages.length;
+  }
+
+  arrowimages2 = [
+    './assets/images/arrow_c.svg',
+    './assets/images/Vectorbr.svg',
+  ];
+
+  currentImageIndex8 = 0;
+  changeImage8() {
+    this.currentImageIndex8 = (this.currentImageIndex8 + 1) % this.arrowimages2.length;
+  }
+  changeImage8b() {
+    this.currentImageIndex8 = (this.currentImageIndex8 -1) % this.arrowimages2.length;
+  }
   
 }
