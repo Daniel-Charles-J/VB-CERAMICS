@@ -620,6 +620,9 @@ export class ServiceComponent {
     this.isFilter = !this.isFilter;
     console.log(this.isFilter);
     if(this.isFilter){
+      document.getElementById('all').classList.add('green');
+      document.getElementById('allText').classList.add('white');
+      this.removeClasses();
       this.mainArray = [this.service];
     }
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
@@ -641,6 +644,9 @@ export class ServiceComponent {
       if(x==54){
         this.mainArray=[];
       }
+      document.getElementById('all').classList.remove('green');
+      document.getElementById('allText').classList.remove('white');
+
       const allFiltered = this.service.filter((e: any) => {
         return (e.header.toLowerCase().includes(event.toLowerCase()));
       });
@@ -649,6 +655,7 @@ export class ServiceComponent {
         // const clickedElement = e.target.id;
         // const button = document.getElementById(clickedElement);
         // button.style.backgroundColor = "green";
+
         await this.mainArray.push(allFiltered);
         console.log(this.mainArray)
         await allFiltered.forEach((x)=>x.isShown = true);
@@ -668,6 +675,19 @@ export class ServiceComponent {
         await allFiltered.forEach((x)=>x.isShown = false);
       }
     } else{
+      // document.getElementById('all').classList.add('green');
+      // document.getElementById('allText').classList.add('white');
+
+      this.isAllServices = false;
+      this.isRawMaterials = false;
+      this.isSophisticated = false;
+      this.isPhysicalProperties = false;
+      this.isThermalTesting = false;
+      this.isHeatTreatment = false;
+      this.isShaping = false;
+      this.isNanoCoating = false;
+      this.isCasting = false;
+      this.removeClasses();
       this.mainArray = [this.service];
       // const clickedElement = e.target.id;
       // const button = document.getElementById(clickedElement);
@@ -676,24 +696,26 @@ export class ServiceComponent {
       this.service.forEach((x)=>x.isShown = false);
     }
   }
-
-  // ngAfterViewInit() {
-  //   const clickedElement = this.el.nativeElement.querySelector('#myElement');
-  
-  //   if (clickedElement) {
-  //     // Element exists, safe to manipulate
-  //     this.renderer.setStyle(clickedElement, 'background-color', 'lightblue');
-  //   } else {
-  //     console.warn('Element not found.');
-  //   }
-  // }
-  style(event,e){
-    // console.log(event.target.id);
-    // console.log(e);
-    // const clickedElement = event.target.id;
-    // const button = document.getElementById(clickedElement);
-    // button.style.backgroundColor = "green";   
+  removeClasses(){
+    document.getElementById('material').classList.remove('green');
+      document.getElementById('materialText').classList.remove('white');
+      document.getElementById('Sophisticated').classList.remove('green');
+      document.getElementById('SophisticatedText').classList.remove('white');
+      document.getElementById('physical').classList.remove('green');
+      document.getElementById('physicalText').classList.remove('white');
+      document.getElementById('thermal').classList.remove('green');
+      document.getElementById('thermalText').classList.remove('white');
+      document.getElementById('heat').classList.remove('green');
+      document.getElementById('heatText').classList.remove('white');
+      document.getElementById('shaping').classList.remove('green');
+      document.getElementById('shapingText').classList.remove('white');
+      document.getElementById('nano').classList.remove('green');
+      document.getElementById('nanoText').classList.remove('white');
+      document.getElementById('casting').classList.remove('green');
+      document.getElementById('castingText').classList.remove('white');
   }
+
+ 
   all() {
     
     this.isAllServices = !this.isAllServices ? true: false;
