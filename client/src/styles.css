@@ -49,13 +49,22 @@
 }
 }
 
+@media only screen and (max-width: 450px){
+  .owl-carousel .owl-nav .owl-next {
+    text-align: right;
+    position: absolute;
+    bottom: 43%;
+    left: 82%;
+}
+}
+
 @media only screen and (max-width: 500px){
 #customer{padding-left: 60px !important;}
 }
 
 @media only screen and (max-width: 480px){
-  .owl-carousel, .owl-carousel.owl-loaded {
-    margin-left: 25%;
+  .slide {
+   margin-left: 25%;
   }
 }
 
