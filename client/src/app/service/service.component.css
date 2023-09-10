@@ -546,6 +546,10 @@ color: white;
   .btn1, .btn2{
   padding: 12px 16px;
   }
+  .main-section {
+    padding: 20px;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 499px) {
@@ -569,5 +573,9 @@ color: white;
 
   .btn1, .btn2 {
     padding: 0px;
+  }
+
+  .sec1_container {
+  min-width: 280px;
   }
 }

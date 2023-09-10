@@ -62,32 +62,35 @@
     </div>
     <div class="menu">
       <div id="filter_items">
-        <div class="filter_items_div" id="all">
-          <div class="filter_items_p" id="allText" (click)="filter('All',$event)" (click)="all()">All Services</div>
+        <div class="filter_items_div" id="all" (click)="filter('All',$event)" (click)="all()">
+          <div class="filter_items_p" id="allText">All Services</div>
         </div>
-        <div class="filter_items_div" id="material">
-          <div class="filter_items_p" id="materialText" (click)="filter('Material preparation',$event)" (click)="material()">Raw Materials</div>
+        <div class="filter_items_div" id="rawMaterial" (click)="filter('Raw materials',$event)" (click)="rawMaterial()">
+          <div class="filter_items_p" id="rawMaterialText">Raw Materials</div>
         </div>
-        <div class="filter_items_div" id="Sophisticated">
-          <div class="filter_items_p" id="SophisticatedText" (click)="filter('Sophisticated Instruments',$event)"(click)="Sophisticated()">Sophisticated Instruments</div>
+        <div class="filter_items_div" id="Sophisticated" (click)="filter('Sophisticated Instruments',$event)"(click)="Sophisticated()">
+          <div class="filter_items_p" id="SophisticatedText">Sophisticated Instruments</div>
         </div>
-        <div class="filter_items_div" id="physical">
-          <div class="filter_items_p" id="physicalText" (click)="filter('Physical properties',$event)" (click)="physical()">Physical Properties</div>
+        <div class="filter_items_div" id="physical" (click)="filter('Physical properties',$event)" (click)="physical()">
+          <div class="filter_items_p" id="physicalText">Physical Properties</div>
         </div>
-        <div class="filter_items_div" id="thermal">
-          <div class="filter_items_p" id="thermalText" (click)="filter('Thermal testing',$event)" (click)="thermal()">Thermal Testing</div>
+        <div class="filter_items_div" id="thermal" (click)="filter('Thermal testing',$event)" (click)="thermal()">
+          <div class="filter_items_p" id="thermalText">Thermal Testing</div>
         </div>
-        <div class="filter_items_div" id="heat">
-          <div class="filter_items_p" id="heatText" (click)="filter('heat treatment facility',$event)" (click)="heat()">Heat Treatment Facility</div>
+        <div class="filter_items_div" id="heat" (click)="filter('heat treatment facility',$event)" (click)="heat()">
+          <div class="filter_items_p" id="heatText">Heat Treatment Facility</div>
         </div>
-        <div class="filter_items_div" id="shaping">
-          <div class="filter_items_p" id="shapingText" (click)="filter('Shaping',$event)"(click)="shaping()">Shaping</div>
+        <div class="filter_items_div" id="material" (click)="filter('Material preparation',$event)"(click)="material()">
+          <div class="filter_items_p" id="materialText">Material Preparation</div>
         </div>
-        <div class="filter_items_div" id="nano">
-          <div class="filter_items_p" id="nanoText"(click)="filter('Nano coating techniques',$event)" (click)="nano()">Nano Coating Techniques</div>
+        <div class="filter_items_div" id="shaping" (click)="filter('Shaping',$event)"(click)="shaping()">
+          <div class="filter_items_p" id="shapingText">Shaping</div>
         </div>
-        <div class="filter_items_div" id="casting">
-          <div class="filter_items_p" id="castingText" (click)="filter('Casting',$event)"(click)="casting()">Casting</div>
+        <div class="filter_items_div" id="nano" (click)="filter('Nano coating techniques',$event)" (click)="nano()">
+          <div class="filter_items_p" id="nanoText">Nano Coating Techniques</div>
+        </div>
+        <div class="filter_items_div" id="casting" (click)="filter('Casting',$event)"(click)="casting()">
+          <div class="filter_items_p" id="castingText">Casting</div>
         </div>
       </div>
     </div>
