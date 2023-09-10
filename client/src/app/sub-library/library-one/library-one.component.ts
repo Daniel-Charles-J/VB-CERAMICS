@@ -83,7 +83,7 @@ export class LibraryOneComponent {
   content = [
     {
       id : 1,
-      routing : "quartz-interesting-facts",
+      routing : "agate-importance",
       heading: 'Agate and It’s Importance',
       img: './assets/images/article2.jpeg',
       subHeading : 'Agate: Unveiling Its Industrial Significance and Versatile Applications',
@@ -102,7 +102,7 @@ export class LibraryOneComponent {
     },
     { 
       id : 2,
-      routing : "agate-importance",
+      routing : "quartz-interesting-facts",
       heading: 'Quartz - Interesting Facts',
       img: './assets/images/article1.jpeg',
       subHeading : "Unveiling the Enigmatic Beauty : Exploring Fascinating Facts about Quartz",
