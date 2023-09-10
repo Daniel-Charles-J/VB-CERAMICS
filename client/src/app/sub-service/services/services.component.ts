@@ -81,6 +81,11 @@ export class ServicesComponent {
     this.para4 = filteredData[0].para4;
   }
 
+
+  ngAfterViewChecked() {
+    window.scrollTo(0, 0);
+    }
+
   content = [
     {
       id : 1,
