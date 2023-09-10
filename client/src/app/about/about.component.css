@@ -192,6 +192,7 @@
   align-items: flex-start;
   gap: 12px;
   margin-left: 28%;
+  overflow: hidden;
 }
 
 .fixed {

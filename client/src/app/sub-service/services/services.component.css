@@ -513,6 +513,10 @@ align-self: stretch;
   .service_students, .service_industries {
     font-size: 21px;
   }
+
+  .sec-1 .sec-1-img1 img, .sec-1 .sec-1-img2 img {
+    border-radius: 7px;
+  }
 }
 
 @media (max-width: 600px) {

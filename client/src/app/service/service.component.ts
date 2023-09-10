@@ -26,11 +26,15 @@ export class ServiceComponent {
   isNanoCoating = false;
   isCasting = false;
   isFilter = false;
-
+   
   ngOnInit(){
     this.filteredList =new MatTableDataSource(this.service);
     this.filteredSelector =new MatTableDataSource(this.service);
   }
+
+  ngAfterViewChecked() {
+    window.scrollTo(0, 0);
+    }
   
   service = [
     {
@@ -826,5 +830,5 @@ export class ServiceComponent {
       document.getElementById('castingText').classList.remove('white');
     }
   }
-  
+
 }
