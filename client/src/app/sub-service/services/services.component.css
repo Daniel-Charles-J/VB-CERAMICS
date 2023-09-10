@@ -79,8 +79,6 @@ h2 {
   text-decoration: none;
 }
 
-.main-section {}
-
 .hero {
   padding: 20px 10px 20px 20px;
   display: flex;
@@ -285,6 +283,72 @@ font-weight: 400;
 line-height: 170%; /* 34px */
 align-self: stretch;
 }
+
+.flex10 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px 20px 0px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card10 {
+  min-width: 320px;
+  max-width: 340px;
+  padding: 5px 40px;
+}
+
+.card10 p {
+  font-size: 20px;
+}
+
+.card10 ul {
+  padding-left: 0px;
+}
+
+.card10 li {
+  font-size: 16px;
+  background: url(/assets/images/arrowright.svg) left no-repeat;
+  list-style-type: none;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+.card10 li:hover {
+  padding-left: 30px;
+  transition: 0.2s; 
+}
+
+.footer_img {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.footer_img:hover {
+  transform: scale(1.1);
+ }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #132249;
+  color: white;
+}
+
+.cardfooter {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-left: auto;
+  padding: 20px 20px 0px 20px;
+}
+
+.separator {
+  background: #FFF;
+  width: 1px;
+  height: 26px;
+}
 @media (max-width: 1320px) {
   .gallery-text {
     font-size: 66px;
@@ -407,6 +471,13 @@ align-self: stretch;
 
   .service_students, .service_industries {
     font-size: 26px;
+  }
+
+  .cardfooter {
+    display: none;
+  }
+  .footer {
+    justify-content: center;
   }
 }
 
