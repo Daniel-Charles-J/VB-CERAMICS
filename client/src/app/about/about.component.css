@@ -622,7 +622,8 @@ background: #cdd9fa;
 }
 
 .card10 li:hover {
- font-size: 18px;
+  padding-left: 30px;
+  transition: 0.2s;
 }
 
 .footer_img {
