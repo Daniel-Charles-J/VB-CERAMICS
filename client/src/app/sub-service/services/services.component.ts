@@ -81,6 +81,11 @@ export class ServicesComponent {
     this.para4 = filteredData[0].para4;
   }
 
+
+  ngAfterViewChecked() {
+    window.scrollTo(0, 0);
+    }
+
   content = [
     {
       id : 1,
@@ -109,7 +114,7 @@ export class ServicesComponent {
       para1 : "XRF (X-ray fluorescence) is a non-destructive analytical technique used to determine the elemental composition of materials. XRF analysers determine the chemistry of a sample by measuring the fluorescent (or secondary) X-ray emitted from a sample when it is excited by a primary X-ray source.",
       para2 : "The phenomenon is widely used for elemental analysis and chemical analysis, particularly in the investigation of metals, glass, ceramics and building materials, and for research in geochemistry, forensic science, archaeology and art objects such as paintings.",
       para3 : "The Key Principles of XRF : The technique used by XRF spectrometers is possible because of the behaviour of the atoms when they interact with radiation. If material is excited via high-energy, short-wavelength radiation it may become ionized. If the energy is high enough it will have the capacity to dislodge an inner electron that has been tightly held. After this, the atom becomes unstable causing an outer electron to take the place of the missing inner electron, releasing energy.",
-      para4 : "There are many techniques of sample preparation for analysis by an XRF spectrometer, including:",
+      para4 : "The benefit of using XRF analysers such as spectrometers is that they register this energy bloom in real-time. There are many techniques of sample preparation for analysis by an XRF spectrometer, including:",
       lists : ['Liquids', 'Solid', 'sample preparation Powders', 'Fused beads', 'Pellets'],
       routing : "x-ray-fluorescence-xrf"
     },
@@ -404,7 +409,7 @@ export class ServicesComponent {
       table2_td : 'Microwave Furnace up to 1500°C',
       table2_td2 : '30min / Working Zone: 25x25x50 mm',
       lists : ['Working Temperature up to RT to 1500°C','Up to 10 KW with 2.45 GHz of magnetron', '1°C accuracy at dwell temp', 'Rapid heating rate(100°C/min) programmable', 'Suitable for nanotechnology applications', 'Indigenously developed susceptor for reliable heat generation', 'Imported Insulation (portable susceptor) * Indigenous VBCC Make phase control thyristor controller', 'Eurotherm PID programmable digital temperature indicator cum controller', 'Computer Control (Optional)', 'Data logging (optional)'],  
-      routing : "microwavse-furnace-up-to-1500degc"
+      routing : "microwave-furnace-up-to-1500degc"
     },
     {
       id : 17, 

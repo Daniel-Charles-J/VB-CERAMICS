@@ -17,6 +17,11 @@
   z-index: 0.5 !important;
 }
 
+.contactBtn:hover {
+  border: 2px solid #132249;
+  background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
+}
+
 .navbar {
   padding: 20px 0px;
   width: 25%;
@@ -79,9 +84,9 @@
 
 /* Styling the hamburger lines */
 .menu-btn .btn-line {
-  width: 28px;
-  height: 3px;
-  margin: 0 0 5px 0;
+  width: 20px;
+  height: 2.2px;
+  margin: 0 0 6px 0;
   background: black;
   transition: all 0.5s ease-out;
 }
@@ -192,6 +197,7 @@
   align-items: flex-start;
   gap: 12px;
   margin-left: 28%;
+  overflow: hidden;
 }
 
 .fixed {
@@ -225,7 +231,6 @@
   border-radius: 20px;
 border: 1px solid rgba(24, 25, 119, 0.10);
 background: #cdd9fa;
-  padding: 4px 8px;
 }
 .main_section1_header,
 .main_section2_header,
@@ -313,14 +318,14 @@ background: #cdd9fa;
   justify-content: space-around;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 20px;
+  gap: 40px;
   align-self: stretch;
   flex-wrap: wrap;
 }
 
 .main_section3_cnt,
 .main_section4_cnt {
-  width: 190px;
+  width: 200px;
 }
 
 .main_section3_cnt img,
@@ -685,6 +690,10 @@ background: #cdd9fa;
 .modal_img1, .modal_img2, .modal_img3 {
   height: 400px;
 }
+
+.active {
+  border-radius: 50%;
+}
 @media (max-width: 1420px) {
   .navbar_about_text {
     font-size: 40px;
@@ -770,11 +779,7 @@ background: #cdd9fa;
   .navbar_li a svg {
     display: none;
   }
-  .menu-btn .btn-line {
-    width: 20px;
-    height: 2.5px;
-    margin: 0 0 5.5px 0;
-  }
+
   .menu_nav-link{
     font-size: 17px !important;
   }
@@ -798,11 +803,6 @@ background: #cdd9fa;
     width: 70%;
   }
 
-  .menu-btn .btn-line {
-    width: 18px;
-    height: 1.5px;
-    margin: 0px 0px 6.5px 0;
-  }
   .menu_nav-link{
     font-size: 17px !important;
   }

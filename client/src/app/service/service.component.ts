@@ -21,15 +21,20 @@ export class ServiceComponent {
   isPhysicalProperties = false;
   isThermalTesting = false;
   isHeatTreatment = false;
+  isMaterialPreparation = false;
   isShaping = false;
   isNanoCoating = false;
   isCasting = false;
   isFilter = false;
-
+   
   ngOnInit(){
     this.filteredList =new MatTableDataSource(this.service);
     this.filteredSelector =new MatTableDataSource(this.service);
   }
+
+  ngAfterViewChecked() {
+    window.scrollTo(0, 0);
+    }
   
   service = [
     {
@@ -60,7 +65,7 @@ export class ServiceComponent {
       header : 'Sophisticated Instruments',
       heading : 'Scanning Electron Microscope (SEM)(3 Images)',
       description : 'It is an instrument that produces a largely magnified image by using electrons instead of light to form an image',
-      students : '₹1000 - Students',
+      students : '₹1000 - Students', 
       industries : '₹2000 - Industries',
       isShown : this.isSophisticated,
       routing : "scanning-electron-microscope-sem"
@@ -128,7 +133,7 @@ export class ServiceComponent {
       description : 'Planetary ball mills are mainly used in laboratories for grinding sample material down to very small sizes.',
       students : '₹300 - Students',
       industries : '₹600 - Industries',
-      isShown : this.isRawMaterials,
+      isShown : this.isMaterialPreparation,
       routing : "planetary-mill-with-tungsten-carbide-balls",
     },
     {
@@ -139,7 +144,7 @@ export class ServiceComponent {
       description : 'It is a kind of machine that is used for producing pellets from powdered biomass material.',
       students : '₹200 - Students',
       industries : '₹500 - Industries',
-      isShown : this.isSophisticated,
+      isShown : this.isShaping,
       routing : "pellet-press-10-tone",
     },
     {
@@ -150,7 +155,7 @@ export class ServiceComponent {
       description : 'A Box Furnace features a vertical lift or swing out door allowing the various sized product(s) to be placed in the furnace.',
       students : '₹2000 - Students',
       industries : '₹3000 - Industries',
-      isShown : this.isSophisticated,
+      isShown : this.isHeatTreatment,
       routing : "box-furnace-up-to-1200degc"
     },
     {
@@ -161,7 +166,7 @@ export class ServiceComponent {
       description : 'A Box Furnace features a vertical lift or swing out door allowing the various sized product(s) to be placed in the furnace.',
       students : '₹3500 - Students',
       industries : '₹5000 - Industries',
-      isShown : this.isRawMaterials,
+      isShown : this.isHeatTreatment,
       routing : "box-furnace-up-to-1400degc",
     },
     {
@@ -311,7 +316,7 @@ export class ServiceComponent {
       heading : 'Sol Gel Route',
       description : 'A method for producing solid materials from small molecules.',
       industries : '₹ - Enquire for Estimate',
-      isShown : this.isRawMaterials,
+      isShown : this.isMaterialPreparation,
       routing : "sol-gel-route"
     },
     {
@@ -321,7 +326,7 @@ export class ServiceComponent {
       heading : 'Planetary Ball Mill with Alumina Jar(500ml)',
       description : 'Planetary ball mills are mainly used in laboratories for grinding sample material down to very small sizes.',
       industries : '₹ - Enquire for Estimate',
-      isShown : this.isRawMaterials,
+      isShown : this.isMaterialPreparation,
       routing : "planetary-ball-mill-with-alumina-jar-500ml"
     },
     {
@@ -331,7 +336,7 @@ export class ServiceComponent {
       heading : 'Jar Mill (5 litre)',
       description : 'Jar Mills are used for wet or dry grinding, mixing and blending for a wide variety of materials like ores, chemicals, paints, ceramics, glass, etc.',
       industries : '₹ - Enquire for Estimate',
-      isShown : this.isRawMaterials,
+      isShown : this.isMaterialPreparation,
       routing : "jar-mill",
     },
     {
@@ -341,7 +346,7 @@ export class ServiceComponent {
       heading : 'Glove Box',
       description : 'A glovebox is a sealed container that is designed to allow one to manipulate objects where a separate atmosphere is desired.',
       industries : '₹ - Enquire for Estimate',
-      isShown : this.isRawMaterials,
+      isShown : this.isMaterialPreparation,
       routing : "glove-box",
     },
     {
@@ -351,7 +356,7 @@ export class ServiceComponent {
       heading : 'Planetary Ball Mill with Porcelain Jar(500ml)',
       description : 'Planetary ball mills are mainly used in laboratories for grinding sample material down to very small sizes.',
       industries : '₹ - Enquire for Estimate',
-      isShown : this.isRawMaterials,
+      isShown : this.isMaterialPreparation,
       routing : "planetary-ball-mill-with-porcelain-jar-500ml",
     },
     {
@@ -644,8 +649,10 @@ export class ServiceComponent {
       if(x==54){
         this.mainArray=[];
       }
-      document.getElementById('all').classList.remove('green');
+      if(document.getElementById('all').classList.contains('green')) {
+        document.getElementById('all').classList.remove('green');
       document.getElementById('allText').classList.remove('white');
+      }
 
       const allFiltered = this.service.filter((e: any) => {
         return (e.header.toLowerCase().includes(event.toLowerCase()));
@@ -658,6 +665,7 @@ export class ServiceComponent {
 
         await this.mainArray.push(allFiltered);
         console.log(this.mainArray)
+
         await allFiltered.forEach((x)=>x.isShown = true);
 
       } else {
@@ -671,7 +679,11 @@ export class ServiceComponent {
             this.mainArray.splice(i, 1);
           }
         }
-        console.log(this.mainArray)
+        console.log(this.mainArray);
+        if(!document.getElementById('all').classList.contains('green') && this.mainArray.length==0) {
+          document.getElementById('all').classList.add('green');
+      document.getElementById('allText').classList.add('white');
+        }
         await allFiltered.forEach((x)=>x.isShown = false);
       }
     } else{
@@ -680,6 +692,7 @@ export class ServiceComponent {
 
       this.isAllServices = false;
       this.isRawMaterials = false;
+      this.isMaterialPreparation = false;
       this.isSophisticated = false;
       this.isPhysicalProperties = false;
       this.isThermalTesting = false;
@@ -717,7 +730,6 @@ export class ServiceComponent {
 
  
   all() {
-    
     this.isAllServices = !this.isAllServices ? true: false;
     if(this.isAllServices) {
       document.getElementById('all').classList.add('green');
@@ -727,9 +739,20 @@ export class ServiceComponent {
       document.getElementById('allText').classList.remove('white');
     }
   }
-  material() {
+  rawMaterial() {
     this.isRawMaterials = !this.isRawMaterials ? true: false;
     if(this.isRawMaterials) {
+      document.getElementById('rawMaterial').classList.add('green');
+      document.getElementById('rawMaterialText').classList.add('white');
+    } else {
+      document.getElementById('rawMaterial').classList.remove('green');
+      document.getElementById('rawMaterialText').classList.remove('white');
+    }
+  }
+
+  material() {
+    this.isMaterialPreparation = !this.isMaterialPreparation ? true: false;
+    if(this.isMaterialPreparation) {
       document.getElementById('material').classList.add('green');
       document.getElementById('materialText').classList.add('white');
     } else {
@@ -807,5 +830,5 @@ export class ServiceComponent {
       document.getElementById('castingText').classList.remove('white');
     }
   }
-  
+
 }

@@ -20,7 +20,7 @@ export class GalleryComponent {
     loop:true,
     autoplay:true,
     margin: 20,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 3000,
     dots: false,
     autoplayHoverPause:true,
     responsive: {
