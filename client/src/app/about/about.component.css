@@ -225,9 +225,12 @@
 
 .menu_nav-link{
   font-size: 20px;
-}
 
-.li-hover:hover{
+}
+.menu_nav-item {
+  padding: 0px 12px;
+}
+.menu_nav-item:hover{
   border-radius: 20px;
 border: 1px solid rgba(24, 25, 119, 0.10);
 background: #cdd9fa;
@@ -691,7 +694,7 @@ background: #cdd9fa;
   height: 400px;
 }
 
-.active {
+.btn {
   border-radius: 50%;
 }
 @media (max-width: 1420px) {
