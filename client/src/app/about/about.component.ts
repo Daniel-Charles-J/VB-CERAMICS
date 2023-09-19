@@ -35,6 +35,7 @@ export class AboutComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    // element.style.paddingTop = '80px';
   }
 
   toggleMenu(): void {
