@@ -20,7 +20,7 @@ export class GalleryComponent {
     loop:true,
     autoplay:true,
     margin: 20,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 4000,
     dots: false,
     autoplayHoverPause:true,
     responsive: {
@@ -34,24 +34,24 @@ export class GalleryComponent {
   };
 
   public customOptions1: OwlOptions = {
-    items: 1.1,
+    items: 1,
     loop:true,
     autoplay:true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 2500,
     dots: false,
     autoplayHoverPause:true,
   };
   public customOptions1_left: OwlOptions = {
-    items: 1.1,
+    items: 1,
     loop:true,
     autoplay:true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 2500,
     dots: false,
     autoplayHoverPause:true,
     rtl: true,
   };
   public customOptions: OwlOptions = {
-    items: 4.5,
+    items: 5,
     loop:true,
     autoplay:true,
     autoplayTimeout: 400,
@@ -60,25 +60,29 @@ export class GalleryComponent {
     margin: 20,
     responsive: {
       0:{
-        items: 2.2
+        items: 2
       },
       400:{
-        items: 2.2
+        items: 2
       },
       600: {
-        items: 3.1
+        items: 3
       },
       800:{
-        items: 3.5
+        items: 3
+      },
+      1000:{
+        items: 4
       },
       1200:{
-        items: 4.5
-      }
+        items: 5
+      },
+    
     }
   };
 
   public customOptions_left: OwlOptions = {
-    items: 4.5,
+    items: 5,
     loop:true,
     rtl: true,
     autoplay:true,
@@ -91,16 +95,19 @@ export class GalleryComponent {
         items: 2
       },
       400:{
-        items: 2.2
+        items: 2
       },
       600: {
-        items: 3.1
+        items: 3
       },
       800:{
-        items: 3.5
+        items: 3
       },
       1000:{
-        items: 4.5
+        items: 4
+      },
+      1200:{
+        items: 5
       }
     }
   };
