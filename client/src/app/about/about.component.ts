@@ -9,6 +9,8 @@ import { Component, HostListener, Inject } from '@angular/core';
 export class AboutComponent {
   // Set the initial state of the menu
   public showMenu: boolean = false;
+  public lastSectionID: string;
+  public isScrolled: boolean = false;
   
   windowScrolled: boolean;
   constructor(@Inject(DOCUMENT) private document: Document) {}
@@ -20,6 +22,11 @@ export class AboutComponent {
      else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
           this.windowScrolled = false;
       }
+      // if(this.lastSectionID!==undefined &&this.isScrolled){
+      //   const ele = document.getElementById(this.lastSectionID);
+      //   ele.style.position = 'unset';
+      //   ele.style.top = '0px';
+      // }
   }
   scrollToTop() {
       (function smoothscroll() {
@@ -28,14 +35,33 @@ export class AboutComponent {
               window.scrollTo(0, 0);
           }
       })();
+      if(this.lastSectionID!==undefined){
+        const ele = document.getElementById(this.lastSectionID);
+        ele.style.position = 'unset';
+        ele.style.top = '0px';
+      }
     }
   
   scrollToSection(sectionId: string): void {
+    // this.isScrolled = false; 
     const element = document.getElementById(sectionId);
+    const main = document.getElementById('main');
+    if(this.lastSectionID!==undefined && this.lastSectionID !== sectionId){
+      const ele = document.getElementById(this.lastSectionID);
+      ele.style.position = 'unset';
+      ele.style.top = '0px';
+    }
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    // element.style.paddingTop = '80px';
+    let sectionElement = ['Profile', 'Vision', 'Team', 'Expert_Panel', 'VBCC_Fellowship', 'Research_Papers','Research_Projects',
+      'Academic_Activity'];
+    // if(!this.isScrolled) {
+      element.style.position = 'relative';
+      element.style.top = '20px';
+    //   this.isScrolled = true;
+    // }
+    this.lastSectionID = sectionId;
   }
 
   toggleMenu(): void {

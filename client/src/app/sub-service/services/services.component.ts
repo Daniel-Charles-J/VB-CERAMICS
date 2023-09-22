@@ -82,9 +82,9 @@ export class ServicesComponent {
   }
 
 
-  ngAfterViewChecked() {
-    window.scrollTo(0, 0);
-    }
+  // ngAfterViewChecked() {
+  //   window.scrollTo(0, 0);
+  //   }
 
   content = [
     {
