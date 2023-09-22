@@ -195,9 +195,10 @@
   padding: 20px 12px 0px 0px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 20px;
   margin-left: 28%;
   overflow: hidden;
+  
 }
 
 .fixed {

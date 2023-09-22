@@ -32,9 +32,9 @@ export class ServiceComponent {
     this.filteredSelector =new MatTableDataSource(this.service);
   }
 
-  ngAfterViewChecked() {
-    window.scrollTo(0, 0);
-    }
+  // ngAfterViewChecked() {
+  //   window.scrollTo(0, 0);
+  //   }
   
   service = [
     {
