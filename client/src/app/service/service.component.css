@@ -5,14 +5,13 @@
 .nav-link {
   color: white !important;
   display: flex;
-  padding: 20px;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 20px;
 }
 
 .nav-link:hover {
-  color: grey !important
+  background: #cdd9fa; color:#132249 !important;border-radius: 50px;
 }
 
 #navbarSupportedContent {
@@ -64,8 +63,13 @@ h2 {
 }
 
 .contact_us_li {
-  margin-top: 20px;
-  margin-left: 25px;
+  margin-left: 10px;
+
+}
+.contact_us:hover{
+  border-radius: 20px;
+border: 1px solid #132249;
+background: #F0F0F0;
 }
 
 .contact_us {
@@ -493,6 +497,7 @@ color: white;
     width: 100%;
     justify-content: center;
     margin-left: 0px;
+    margin-top: 10px;
   }
 
   .gallery-text {
