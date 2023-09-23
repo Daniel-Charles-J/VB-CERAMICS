@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  styleUrls: ['./home.component.scss'],
   animations: [
     trigger('fadeIn', [
       transition(':enter', [
@@ -61,10 +61,12 @@ public customOptions2: OwlOptions = {
   items:3,
   loop:true,
   autoplay:true,
-  autoplayTimeout:1000,
+  autoplayTimeout:2000,
   dots: false,
+  margin:0,
   autoplayHoverPause:true,
   nav: true,
+  stagePadding: 0,
   navText: ["<img src='./assets/images/arrow_cc.svg'>","<img src='./assets/images/arrow_c.svg'>"],
 
   responsive: {
@@ -167,4 +169,6 @@ public customOptions2: OwlOptions = {
     this.currentImageIndex8 = (this.currentImageIndex8 -1) % this.arrowimages2.length;
   }
   
+  
+
 }
