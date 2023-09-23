@@ -697,6 +697,7 @@ background: #cdd9fa;
 
 .btn {
   border-radius: 50%;
+  background-color: #EDF1FD;
 }
 @media (max-width: 1420px) {
   .navbar_about_text {
