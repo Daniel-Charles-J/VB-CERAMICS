@@ -10,12 +10,12 @@
   </script>
   <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
   </script>
-  <script src="./assets/carousel_slide.js">
-  </script>
+
   <script src="../resources/assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
   <script src="../resources/assets/js/smoothproducts.min.js"></script>
-  <script src="../resources/assets/js/theme.js"></script>
+  <script src="../resources/assets/js/theme.js"></script> -->
 </head>
 
 <body>
@@ -44,7 +44,7 @@
           <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
         </li>
         <li class="nav-item nav-item-contact">
-          <a class="nav-link" style='background-color:white !important; color:#132249 !important;border-radius: 50px;' [routerLink]='["/contact"]'>Contact Us</a>
+          <a id='nav_contact' class="" style='background-color:white !important; color:#132249 ;border-radius: 50px;' [routerLink]='["/contact"]'>Contact Us</a>
         </li>
       </ul>
     </div>
@@ -54,21 +54,22 @@
 </div>
 <br>
 
+
+
 <div class="container-fluid" (scroll)="onViewportScroll($event)">
     <div class="flex1">
       <h1 id="top_header">DR.VB’s ceramic research Centre </h1>
       <p id="para" >Where Knowledge and Innovation Converge, We Illuminate Pathways to Discovery. Pushing Boundaries, Sparking Curiosity – Welcome to the Core of Exploration.</p>
-      <br>
     </div>
-       
+    <br>
         <div class="flex2" style="text-align:center">
 
-          <div id="carouselExampleIndicators" class="carousel vertical" data-ride="carousel" style='margin: 0px 40px;'>
-            <ol class="carousel-indicators">
+          <div id="carouselExampleIndicators" class="carousel " data-bs-ride="carousel" data-interval="false" style='margin: 0px 40px;'>
+            <!-- <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
+            </ol> -->
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img id='caroimg' class="d-block w-100" src="./assets/images/caro1.png" alt="First slide">
@@ -76,7 +77,7 @@
                 <div class="carousel-caption  d-md-block" style=''>
                   <div class="fixed-top">
                     <h4>Pure research</h4>
-                    <h3 id="paraoneofcaro">Excellence</h3>
+                    <h3 id="paraoneofcaro1">Excellence</h3>
                     <p >At VBCRC, Research Excellence is our guiding principle, fuelling innovation and driving impactful discoveries.</p>
                   </div>
                     <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
@@ -88,7 +89,7 @@
                 <div class="carousel-caption  d-md-block" style=''>
                   <div class="fixed-top">
                     <h4>Empowering</h4>
-                    <h3 id="paraoneofcaro">Discoveries</h3>
+                    <h3 id="paraoneofcaro2">Discoveries</h3>
                     <p >Through relentless inquiry, ground breaking investigations, and collaborative spirit, we strive to push the boundaries of human understanding and shape a brighter future for all</p>
                   </div>
                     <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
@@ -99,8 +100,8 @@
                 <img id='caroimg' class="d-block w-100" src="./assets/images/caro3.png" alt="Third slide">
                 <div class="carousel-caption  d-md-block" style=''>
                   <div class="fixed-top">
-                    <h4>Exploring Frontiers </h4>
-                    <h3 id="paraoneofcaro">of Knowledge</h3>
+                    <h4>Exploring Frontiers of</h4>
+                    <h3 id="paraoneofcaro3">Knowledge</h3>
                     <p >Our unwavering commitment to rigorous inquiry and pioneering methodologies ensures that we consistently deliver research of the highest calibre.</p>
                   </div>
                     <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
@@ -111,8 +112,7 @@
                 <img id='caroimg' class="d-block w-100" src="./assets/images/caro4.png" alt="Fourth slide">
                 <div class="carousel-caption  d-md-block" style=''>
                   <div class="fixed-top">
-                    <h4>Innovating Minds, </h4>
-                    <h3 id="paraoneofcaro">Inspiring Tomorrow</h3>
+                    <h4>Innovating <span id="paraoneofcaro4">Minds,</span> Inspiring <span id="paraoneofcaro4">Tomorrow</span> </h4>
                     <p >We are more than just researchers, We are Trailblazers, pushing the boundaries of knowledge to sculpt a future where every question answered opens the door to new opportunities.</p>
                   </div>
                     <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
@@ -138,61 +138,69 @@
             <hr>
              <p id="para_two">Trusted by Reputed Institutions</p>
              <br>
-             <owl-carousel-o  [options]="customOptions">
-              <ng-template  carouselSlide>
-                <div class="slide" style='display:flex;flex-direction:row;'>
-                    <img class='flex-items' src="./assets/images/IIT-Madras-01 2.svg" alt=""><span class='college' style="margin-left:10px">IIT Madras</span>
-                </div>
-              </ng-template>
-              <ng-template carouselSlide>
+             <div  class="slider">
+              <div class="slide-track">
                 <div class="slide">
-                  <img class='flex-items'  src="./assets/images/AnnaUniv.svg" alt=""><span class='college' style="margin-left:10px">Anna University</span>
+                  <img src="./assets/images/IIT-Madras-01 2.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">IIT Madras</span>
                 </div>
-              </ng-template>
-              <ng-template carouselSlide>
                 <div class="slide">
-                  <img class='flex-items'  src="./assets/images/kanpur.svg" alt=""><span class='college' style="margin-left:10px">IIT Kanpur</span>
+                  <img src="./assets/images/AnnaUniv.svg" height="50" width="50" alt="" /> <span class='college' style="margin-left:10px">Anna University</span>
                 </div>
-              </ng-template>
-              <ng-template carouselSlide>
+                <div class="slider">
+                  <img src="./assets/images/kanpur.svg" height="50" width="50" alt="" /> <span class='college' style="margin-left:10px">IIT Kanpur</span>
+                </div>
+                <div class="slider">
+                  <img src="./assets/images/IIT Bombay.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">IIT Bombay</span>
+                </div>
+                <div class="slider">
+                  <img src="/assets/images/IIT Kharagpur.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">IIT Kharagpur</span>
+                </div>
+                <div class="slider">
+                  <img src="./assets/images/SRM.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">SRM University</span>
+                </div>
+                <div class="slider">
+                  <img src="./assets/images/St.Josephs.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">St.Joseph’s Inst.</span>
+                </div>
                 <div class="slide">
-                  <img class='flex-items'  src="./assets/images/IIT Bombay.svg" alt=""><span class='college' style="margin-left:10px">IIT Bombay</span>
+                  <img src="./assets/images/IIT-Madras-01 2.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">IIT Madras</span>
                 </div>
-              </ng-template>
-              <ng-template carouselSlide>
                 <div class="slide">
-                  <img class='flex-items'  src="./assets/images/IIT Kharagpur.svg" alt=""><span class='college' style="margin-left:10px">IIT Kharagpur</span>
+                  <img src="./assets/images/AnnaUniv.svg" height="50" width="50" alt="" /> <span class='college' style="margin-left:10px">Anna University</span>
                 </div>
-              </ng-template>
-              <ng-template carouselSlide>
-                <div class="slide">
-                  <img class='flex-items'  src="./assets/images/SRM.svg" alt=""><span class='college' style="margin-left:10px">SRM University</span>
+                <div class="slider">
+                  <img src="./assets/images/kanpur.svg" height="50" width="50" alt="" /> <span class='college' style="margin-left:10px">IIT Kanpur</span>
                 </div>
-              </ng-template>
-              <ng-template carouselSlide>
-                <div class="slide">
-                  <img class='flex-items'  src="./assets/images/St.Josephs.svg" alt=""><span class='college' style="margin-left:10px">St.Joseph’s Inst.</span>
+                <div class="slider">
+                  <img src="./assets/images/IIT Bombay.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">IIT Bombay</span>
                 </div>
-              </ng-template>
-            </owl-carousel-o>  
-            <br>     
+                <div class="slider">
+                  <img src="/assets/images/IIT Kharagpur.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">IIT Kharagpur</span>
+                </div>
+                <div class="slider">
+                  <img src="./assets/images/SRM.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">SRM University</span>
+                </div>
+                <div class="slider">
+                  <img src="./assets/images/St.Josephs.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">St.Joseph’s Inst.</span>
+                </div>
+              </div>
+            </div>
             <hr id="hr_tag" style='color:white'>     
-            
           </div>
           
           <div class="flex4" >
-            <div class="card numbers">
+            <div class="card numbers" style='width: 32%;'>
             <img class='flex-items4' style="border-radius:20px" src="./assets/images/Frame 110 (1).png" alt="">
             <div>
               <div class="numbers">
                 <span class="numbers__window">
                     <span data-aos="new-animation" #boxElement class="numbers__window__digit numbers__window__digit--1" data-fake="8642519073">9</span>
                 </span>
+                
                 <span class="numbers__window">
                     <span data-aos="new-animation" #boxElement class="numbers__window__digit numbers__window__digit--3" data-fake="8395216407">7</span>
                 </span>
                 <span class="">
-                  <span class="" data-fake="5207186394">%</span>
+                  <span style="font-family: Unbounded;" class="" data-fake="5207186394">%</span>
               </span>
             </div>
             </div>
@@ -200,21 +208,21 @@
               Accuracy Rate
             </p>
             </div>
-            <div class="card numbers" >
+            <div class="card numbers" style='width: 32%;' >
               <img class='flex-items4 ' style="border-radius:20px" src="./assets/images/Frame 110 (2).png" alt="">
               <div>
                 <div class="numbers">
                   <span class="numbers__window " >
-                      <span  #boxElement data-aos-mirror="true" class="numbers__window__digit numbers__window__digit--2" data-fake="8642519073">1</span>
+                      <span  #boxElement data-aos-mirror="true" class="numbers__window__digit numbers__window__digit--2" data-fake="8642519073">1.</span>
                   </span>
-                  <span class="numbers__window">
-                    <span  #boxElement  data-aos-mirror="true" class="numbers__window__digit numbers__window__digit--2" data-fake="8642519.73">.</span>
+                  <span class="dot_num">
+                    <span  #boxElement  data-aos-mirror="true" class="" data-fake="8642519.73">.</span>
                 </span>        
                   <span class="numbers__window">
                       <span   #boxElement data-aos-mirror="true" class="numbers__window__digit numbers__window__digit--2" data-fake="8395216407">0</span>
                   </span>
                   <span class="">
-                    <span class="" data-fake="5207186394">X</span>
+                    <span style="font-family: Unbounded;" data-fake="5207186394">X</span>
                 </span>
               </div>
               </div>
@@ -222,7 +230,7 @@
                 Faster Results
               </p>
               </div>
-              <div class="card numbers">
+              <div class="card numbers" style='width: 32%;'>
                 <img class='flex-items4' style="border-radius:20px" src="./assets/images/Frame 110 (3).png" alt="">
                 <div>
                   <div class="numbers">
@@ -233,7 +241,7 @@
                         <span  #boxElement  class="numbers__window__digit numbers__window__digit--3" data-fake="8395216407">0</span>
                     </span>
                     <span class="">
-                      <span  class="" data-fake="5207186394">+</span>
+                      <span  style="font-family: Unbounded;" data-fake="5207186394">+</span>
                   </span>
                 </div>
                 </div>
@@ -255,86 +263,117 @@
           </div>
 
           <div  class="flex6">
-            <div class="column">
-              <div class="cell one">Equipment</div>
-              <div class="cell">X-Ray Diffraction</div>
-              <div class="cell1">X-Ray Fluorescence</div>
-              <div class="cell">Scanning Electron Microscope (3 images)</div>
-              <div class="cell1">Laser Particle Size Analyser (PSA)</div>
-              <div class="cell">Thermal Expansion (Dilatometer up to 1000°C)</div>
-              <div class="cell1">BET Analysis</div>
-              <div class="cell">Pin On Disc Tribometer (Wear)</div>
-              <div class="cell1">Pellet Press (10 tons)</div>
-              <div class="cell">Planetary Mill TC Balls & Vial per hour</div>
-              <div class="cell1">Box Furnace - up to 1200°C (5°C ramp and 3 hrs dwell)</div>
-              <div class="cell">Box Furnace - up to 1400°C (5°C ramp and 3 hrs dwell)</div>
-              <div class="cell1">Box Furnace - up to 1600°C (5°C ramp and 3 hrs dwell)</div>
-              <div class="cell">Tubular Furnace with Cont. atm. 1200°C with Cold Vacuum & Argon Purging</div>
-              <div class="cell1">Tubular Furnace with Cont. atm. 1400°C with Cold Vacuum & Argon Purging</div>
-              <div class="cell">Tubular Furnace with Cont. atm. 1400°C with Cold Vacuum & Argon Purging</div>
-              <div class="cell1">Microwave Furnace up to 1600°C (20°C ramp & 30 min dwell)</div>
-              <div class="cell">Spin Coater</div>
-              <div class="cell1">Spray Pyrolysis</div>
-              <div class="cell">Dip Coater</div>
-              <div class="cell1">Cold / Fired MOR (max three samples)</div>
-              <div class="cell">Aluminium Stir Casting</div>
-              <div class="cell1">Magnesium Stir Casting</div>
-              <div class="cell last"></div>
-            </div>
-          
-            <div class="column ">
-              <div style='text-align:right' class="cell one industry">Industry</div>
-              <div style='text-align:right' class="cell">1500</div>
-              <div style='text-align:right' class="cell2">2000</div>
-              <div style='text-align:right' class="cell">2000</div>
-              <div style='text-align:right' class="cell2">2500</div>
-              <div style='text-align:right' class="cell">2000</div>
-              <div style='text-align:right' class="cell2">2000</div>
-              <div style='text-align:right' class="cell">4000</div>
-              <div style='text-align:right' class="cell2">1500</div>
-              <div style='text-align:right' class="cell">500</div>
-              <div style='text-align:right' class="cell2">600</div>
-              <div style='text-align:right' class="cell">3000</div>
-              <div style='text-align:right' class="cell2">5000</div>
-              <div style='text-align:right' class="cell">7500</div>
-              <div style='text-align:right' class="cell2">5000</div>
-              <div style='text-align:right' class="cell">7500</div>
-              <div style='text-align:right' class="cell2">5000</div>
-              <div style='text-align:right' class="cell">800</div>
-              <div style='text-align:right' class="cell2">3000</div>
-              <div style='text-align:right' class="cell">500</div>
-              <div style='text-align:right' class="cell2">3000</div>
-              <div style='text-align:right' class="cell">5000</div>
-              <div style='text-align:right' class="cell2">6000</div>
-              <div  class="cell last" [routerLink] ='["/service"]'>View All <span><img src="./assets/images/Vector.svg" alt=""></span></div>
-            </div>
-          
-            <div class="column">
-              <div style='text-align:right' class="cell one students">Students</div>
-              <div style='text-align:right' class="cell">750</div>
-              <div style='text-align:right' class="cell3">1500</div>
-              <div style='text-align:right' class="cell">1000</div>
-              <div style='text-align:right' class="cell3">1250</div>
-              <div style='text-align:right' class="cell">1500</div>
-              <div style='text-align:right' class="cell3">1500</div>
-              <div style='text-align:right' class="cell">2500</div>
-              <div style='text-align:right' class="cell3">1000</div>
-              <div style='text-align:right' class="cell">200</div>
-              <div style='text-align:right' class="cell3">300</div>
-              <div style='text-align:right' class="cell">2000</div>
-              <div style='text-align:right' class="cell3">3500</div>
-              <div style='text-align:right' class="cell">5000</div>
-              <div style='text-align:right' class="cell3">3500</div>
-              <div style='text-align:right' class="cell">5000</div>
-              <div style='text-align:right' class="cell3">3500</div>
-              <div style='text-align:right' class="cell">400</div>
-              <div style='text-align:right' class="cell3">1000</div>
-              <div style='text-align:right' class="cell3">250</div>
-              <div style='text-align:right' class="cell">1500</div>
-              <div style='text-align:right' class="cell3">2500</div>
-              <div style='text-align:right' class="cell">4000</div>
-              <div  class="cell last"></div>
-            </div>
+            <table>
+              <tbody>
+              <tr>
+                <th>Equipment</th>
+                <th>Industry</th>
+                <th>Students</th>
+              </tr>
+              <tr>
+                <td>X-Ray Diffraction</td>
+                <td>₹1500</td>
+                <td>₹750</td>
+              </tr>
+              <tr>
+                <td>X-Ray Fluorescence</td>
+                <td>₹2000</td>
+                <td>₹1500</td>
+              </tr>
+              <tr>
+                <td>Scanning Electron Microscope (3 images)</td>
+                <td>₹2000</td>
+                <td>₹1000</td>
+              </tr>
+              <tr>
+                <td>Scanning Electron Microscope with Gold Sputtering (3 images)</td>
+                <td>₹2500</td>
+                <td>₹1250</td>
+              </tr>
+              <tr>
+                <td>Laser Particle Size Analyser (PSA)</td>
+                <td>₹2000</td>
+                <td>₹1500</td>
+              </tr>
+              <tr>
+                <td>Thermal Expansion (Dilatometer up to 1000°C)</td>
+                <td>₹2000</td>
+                <td>₹1500</td>
+              </tr>
+              <tr>
+                <td>BET Analysis</td>
+                <td>₹4000</td>
+                <td>₹2500</td>
+              </tr>
+              <tr>
+                <td>Pin On Disc Tribometer (Wear)</td>
+                <td>₹1500</td>
+                <td>₹1000</td>
+              </tr>
+              <tr>
+                <td>Pellet Press (10 tons)</td>
+                <td>₹500</td>
+                <td>₹200</td>
+              </tr>
+              <tr>
+                <td>Planetary Mill TC Balls & Vial per hour</td>
+                <td>₹600</td>
+                <td>₹300</td>
+              </tr>
+              <tr>
+                <td>Box Furnace from 1200-1600°C (5°C ramp and 3 hrs dwell)</td>
+                <td>₹3000-7500</td>
+                <td>₹2000-5000</td>
+              </tr>
+              <tr>
+                <td>Tubular Furnace with Cont. atm. 1200-1400°C with Cold Vacuum & Argon Purging</td>
+                <td>₹5000-7500</td>
+                <td>₹3500-5000</td>
+              </tr>
+              <tr>
+                <td>Microwave Furnace up to 1600°C (20°C ramp & 30 min dwell)</td>
+                <td>₹5000</td>
+                <td>₹3500</td>
+              </tr>
+              <tr>
+                <td>Spin Coater</td>
+                <td>₹800</td>
+                <td>₹400</td>
+              </tr>
+              <tr>
+                <td>Spray Pyrolysis</td>
+                <td>₹3000</td>
+                <td>₹1000</td>
+              </tr>
+              <tr>
+                <td>Dip Coater</td>
+                <td>₹500</td>
+                <td>₹250</td>
+              </tr>
+              <tr>
+                <td>Cold / Fired MOR (max three samples)</td>
+                <td>₹3000</td>
+                <td>₹1500</td>
+              </tr>
+              <tr>
+                <td>Aluminium Stir Casting</td>
+                <td>₹5000</td>
+                <td>₹2500</td>
+              </tr>
+              <tr>
+                <td>Magnesium Stir Casting</td>
+                <td>₹6000</td>
+                <td>₹4000</td>
+              </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>View All <span><img src="./assets/images/Vector.svg" alt=""></span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tfoot>
+            </table>
           </div>
           <br>
     <div class="flex7">
@@ -346,7 +385,7 @@
   <div id="accordion">
   <div class="card" style="margin-bottom: 20px;">
     <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
+      <h5 (click)="changeImage()" style="align-items: center;"  class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
         <img src="./assets/images/Frame 132.png" alt="">
         <div>
           <h2>Advanced Material Synthesis</h2>
@@ -366,7 +405,7 @@
 
   <div class="card" style="margin-bottom: 20px;">
     <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
+      <h5 style="align-items: center;" (click)="changeImage2()"  class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         <img src="./assets/images/Frame 132 (1).png" alt="">
         <div>
           <h2>Nano Materials</h2>
@@ -386,7 +425,7 @@
 
   <div class="card" style="margin-bottom: 20px;">
     <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
+      <h5 style="align-items: center;" (click)="changeImage3()"  class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         <img src="./assets/images/Frame 132 (2).png" alt="">
         <div>
           <h2>Sanitaryware as per IS</h2>
@@ -406,7 +445,7 @@
 
   <div class="card" style="margin-bottom: 20px;">
     <div class="card-header" id="headingFour">
-      <h5 class="mb-0">
+      <h5 style="align-items: center;" (click)="changeImage4()"  class="mb-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         <img src="./assets/images/Frame 132 (3).png" alt="">
         <div>
           <h2>Refractories as per IS</h2>
@@ -426,7 +465,7 @@
 
   <div class="card" style="margin-bottom: 20px;">
     <div class="card-header" id="headingFive">
-      <h5 class="mb-0">
+      <h5 style="align-items: center;" (click)="changeImage5()"  class="mb-0" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
         <img src="./assets/images/Frame 132 (4).png" alt="">
         <div>
           <h2>Ceramic Tiles as per IS</h2>
@@ -446,7 +485,7 @@
 
   <div class="card" style="margin-bottom: 20px;">
     <div class="card-header" id="headingSix">
-      <h5 class="mb-0">
+      <h5 style="align-items: center;" (click)="changeImage6()"  class="mb-0" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
         <img src="./assets/images/Frame 132 (5).png" alt="">
         <div>
           <h2>Advanced Characterization</h2>
@@ -470,7 +509,10 @@
   <h1 style='text-align: center;margin-top:20px;font-size:32px'>Trusted by Students and Scientists over India</h1>
   <p style='text-align: center;'>Some of the few reviews that were publicly shared</p>
 </div>
-<div id='customer' style='margin-bottom: -11px;padding-left:100px'>
+
+
+
+<div id='customer' style='margin-bottom: -11px;padding-left:40px'>
    <owl-carousel-o [ngClass]="{ item: true }" [options]="customOptions2" >
     <ng-template  carouselSlide>
       <div class="card9">

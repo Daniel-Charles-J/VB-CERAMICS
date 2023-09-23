@@ -12,12 +12,12 @@
   color: #FFF !important;
   font-size: 14px !important;
   margin: 5px !important;
-  padding: 6px 7px !important;
+  padding: 16px!important;
   background: #132249 !important;
   display: inline-block !important;
   cursor: pointer !important;
   border-radius: 40px !important;
-  border: 1px solid #FFF !important;
+  border: 1px solid #FFF ;
 }
 
 .owl-carousel .owl-nav .owl-prev {
@@ -30,7 +30,7 @@
 .owl-carousel .owl-nav .owl-next{
   text-align: left;
   position: absolute;
-  bottom: 41%;
+  bottom: 37%;
   left: -3%;
 }
 
@@ -70,4 +70,49 @@
 
 @media only screen and (max-width: 425px){
   #customer{padding-left: 35px !important;}
+  }
+
+
+  .owl-prev{
+    color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 white;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    padding: 16px;
+  }
+  .owl-next{
+    color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 white;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    padding: 16px;
+  }
+  .owl-prev:hover{
+    box-shadow: inset 0 0 100px 0px white;
+    content: url(/assets/images/Vectorb.svg) !important;
+
+  }
+  .owl-next:hover{
+    box-shadow: inset 100px 0 0 0 white;
+    content: url(/assets/images/Vectorbr.svg) !important;
+  }
+  .owl-theme .owl-nav [class*=owl-]:hover{
+    border: 1px solid #132249 ;
+  }
+  .owl-prev > img:hover{
+    /* box-shadow: inset 0 0 100px 0px white; */
+    content: url(/assets/images/Vectorb.svg) !important;
+  }
+  .owl-next> img:hover{
+    /* box-shadow: inset 100px 0 0 0 white; */
+    content: url(/assets/images/Vectorbr.svg) !important;
+  }
+  .owl-item{
+    width: 400px !important;
   }
