@@ -16,28 +16,20 @@ export class GalleryComponent {
   box_4_content : string[] = ['Contact Us','Help centre'];
 
   public customOptions_main: OwlOptions = {
-    items: 1.1,
+    items: 1,
     loop:true,
     autoplay:true,
     margin: 20,
     autoplayTimeout: 4000,
     dots: false,
     autoplayHoverPause:true,
-    responsive: {
-      0:{
-        items: 1
-      },
-      750:{
-        items: 1.1
-      }
-    }
   };
 
   public customOptions1: OwlOptions = {
     items: 1,
     loop:true,
     autoplay:true,
-    autoplayTimeout: 2500,
+    autoplayTimeout: 3000,
     dots: false,
     autoplayHoverPause:true,
   };
@@ -45,7 +37,7 @@ export class GalleryComponent {
     items: 1,
     loop:true,
     autoplay:true,
-    autoplayTimeout: 2500,
+    autoplayTimeout: 3000,
     dots: false,
     autoplayHoverPause:true,
     rtl: true,
@@ -54,7 +46,7 @@ export class GalleryComponent {
     items: 5,
     loop:true,
     autoplay:true,
-    autoplayTimeout: 400,
+    autoplayTimeout: 2000,
     dots: false,
     autoplayHoverPause:true,
     margin: 20,
@@ -86,7 +78,7 @@ export class GalleryComponent {
     loop:true,
     rtl: true,
     autoplay:true,
-    autoplayTimeout: 400,
+    autoplayTimeout: 2000,
     dots: false,
     autoplayHoverPause:true,
     margin: 20,

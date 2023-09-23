@@ -50,6 +50,7 @@ export class AboutComponent {
       const ele = document.getElementById(this.lastSectionID);
       ele.style.position = 'unset';
       ele.style.top = '0px';
+      ele.style.marginBottom = '0px';
     }
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -59,6 +60,7 @@ export class AboutComponent {
     // if(!this.isScrolled) {
       element.style.position = 'relative';
       element.style.top = '20px';
+      element.style.marginBottom = '20px';
     //   this.isScrolled = true;
     // }
     this.lastSectionID = sectionId;
@@ -69,9 +71,10 @@ export class AboutComponent {
       document.querySelector(".menu-btn");
     let menu =
       document.querySelector(".menu");
-    if (!this.showMenu) {
+    if (!this.showMenu) { 
       menuBtn.classList.add("close");
       menu.classList.add("show");
+      window.scrollTo(0, 0);
       // Reset the menu state
       this.showMenu = true;
     } else {
