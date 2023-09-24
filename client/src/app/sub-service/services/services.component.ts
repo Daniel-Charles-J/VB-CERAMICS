@@ -43,6 +43,7 @@ export class ServicesComponent {
   para2:any;
   para3: any;
   para4: any;
+  showMenu1: boolean = false;
 
   ngOnInit(): void {
     this.headingParams = this.activatedRoute.snapshot.params['routing'];
@@ -656,7 +657,7 @@ export class ServicesComponent {
     {
       id : 29, 
       title : 'Material Preparation',
-      image_1 : '../../../assets/service29-sec-1.jpg',
+      image_1 : '../../../assets/gloveBox.png',
       image_2 : '../../../assets/service29-sec-2.jpg',
       header : 'Material Preparation',
       heading: 'Glove Box',
@@ -1050,5 +1051,19 @@ export class ServicesComponent {
       table1_td4 : '250°C',
       routing : "hot-air-oven"
     }
-  ]
+  ];
+
+  toggleMenu(): void {
+    let menuBtn =
+      document.querySelector(".menu-btn");
+    if (!this.showMenu1) { 
+      menuBtn.classList.add("close");
+      // Reset the menu state
+      this.showMenu1 = true;
+    } else {
+      menuBtn.classList.remove("close");
+      // Reset the menu state
+      this.showMenu1 = false;
+    }
+  }
 }

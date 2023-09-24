@@ -229,7 +229,7 @@
 
 }
 .menu_nav-item {
-  padding: 0px 12px;
+  padding: 10px 12px;
 }
 .menu_nav-item:hover{
   border-radius: 20px;
@@ -389,13 +389,38 @@ background: #cdd9fa;
   border-radius: 20px;
 }
 
-.section5_images1 .fellowship_img1,
+.section5_images1 .fellowship_img1 {
+  width: 180px;
+  height: 200px;
+}
+
 .section5_images2 .fellowship_img2,
 .section5_images3 .fellowship_img3 {
   align-self: stretch;
   border-radius: 14px;
   width: 250px;
-  height: auto;
+  height: 200px;
+}
+
+#section5_images1 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+}
+
+#section5_image{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#section5_image img{
+  width: 60%;
 }
 
 .section5_images1 .fellowship_img1,
@@ -559,6 +584,8 @@ background: #cdd9fa;
   left: 25%;
   width: 50%;
 }
+
+
 .modal-content1 {
   padding: 20px;
   border: 1px solid #888;
@@ -605,6 +632,12 @@ background: #cdd9fa;
   border-radius: 20px;
   padding: 20px 10%;
   border: 1px solid rgba(24, 25, 119, 0.10);
+  color: #000;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
 }
 
 .card10 {
@@ -642,6 +675,10 @@ background: #cdd9fa;
 .footer_img:hover {
   transform: scale(1.1);
  }
+
+ .hitech{
+  height: 50px;
+ }
 .footer {
   display: flex;
   width: 100%;
@@ -652,6 +689,11 @@ background: #cdd9fa;
   align-items: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
 }
 
 .cardfooter {
