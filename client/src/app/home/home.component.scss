@@ -19,15 +19,15 @@ h2{
 font-family: Unbounded;
 font-size: 20px;
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
 line-height: 30px; /* 150% */
 text-transform: uppercase;
 }
 #header_services{
 width: 50%;
 color: #132249;
-font-family: Unbounded;
-font-size: 110px;
+font-family: 'Unbounded', sans-serif;
+font-size: 100px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -35,7 +35,7 @@ line-height: normal;
 #header_facility{
   color:white;
   font-family: Unbounded;
-  font-size: 100px;
+  font-size: 90px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -55,6 +55,7 @@ line-height: normal;
   flex:1;
   width: 50%;
   place-self:center;
+  padding: 15px;
 }
 #facility_para{
   color: white;
@@ -66,6 +67,7 @@ line-height: normal;
   place-self:center;
   flex:1;
   width: 50%;
+  padding: 15px;
 }
 #contact_para{
   color: black;
@@ -168,6 +170,8 @@ gap: 50px;
 }
 
 .card9{
+  height: 450px; /* Set your desired fixed height here */
+  overflow: hidden; /* Hide overflow content if needed */
   border-radius:20px;
   // min-width: 320px;
   // max-width: 340px;
@@ -250,7 +254,14 @@ padding:0px 0px 15px 0px;
 }
 
 .info9{
-height:60%
+height:54%;
+display:flex;
+flex:1 0 0;
+margin-top: 40px;
+}
+.info91{
+  display:flex;
+flex:1 0 0;
 }
 
 .mb-0{
@@ -340,10 +351,9 @@ height:60%
     color:white;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1500px) {
     #top_header {
-      font-size: 3.3rem;
-      letter-spacing: 4.5px;
+      transform: scale(1.3, 1);
     }
   }
   
@@ -381,7 +391,7 @@ height:60%
   .numbers {
     font-family: 'Arial', sans-serif;
     line-height: 1em;
-    font-size: 30px;
+    font-size: 48px;
     text-align: center;
     margin: 15px 0px 0px 0px;
     overflow: hidden;
@@ -515,15 +525,15 @@ line-height: 16px; /* 100% */
 
 .carousel-control-prev-icon {
   background-image: none !important;
-  border-radius: 40px;
-  border: 1px solid #FFF;
-  background-color: #132249;
-  width:35%;
-  height: auto;
-  padding:5px 5px;
-  position: absolute;
-  right: 100px;
-  bottom: 39.667px;
+  // border-radius: 40px;
+  // border: 1px solid #FFF;
+  // background-color: #132249;
+  // width:35%;
+  // height: auto;
+  // padding:5px 5px;
+  // position: absolute;
+  // right: 100px;
+  // bottom: 39.667px;
 }
 
 .carousel-control-next-icon {
@@ -531,16 +541,16 @@ line-height: 16px; /* 100% */
   border-radius: 40px;
   border: 1px solid #FFF;
   background-color: #132249;
-  width:35%;
+  width: auto;
   height: auto;
   padding:5px 5px;
   position: absolute;
-  right: 100px;
-  bottom: 39.667px;
+  // right: 161px;
+  // bottom: 22%;
 }
 
 .carousel-control-prev {
-  left: 80%;
+  left: 91%;
   opacity:unset !important;
 }
 
@@ -549,8 +559,7 @@ line-height: 16px; /* 100% */
 }
 
 .carousel-caption {
-  right: 64% ;
-  left: -9% ;
+  left: 4% ;
 
 }
 #car_button_1{
@@ -578,7 +587,7 @@ margin-left:15px;
 
 #flex_con{
   display: flex;
-  padding: 40px 60px;
+  padding: 40px;
   align-items: center;
   align-content: center;
   gap: 20px 40px;
@@ -588,240 +597,167 @@ margin-left:15px;
 #top_con,#sign_con,#action_con{
   flex:auto !important;
 }
-@media only screen and (max-width: 1150px) {
-  .carousel-caption {
-    position: absolute;
-    right: 0%;
-    bottom: 1.75rem;
-    left: 62%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
-}
-.carousel-control-next, .carousel-control-prev{
-  bottom:70px;
+
+
+// @media only screen and (max-width: 1003px){
+//   #top_con,#sign_con,#action_con{
+//     flex:1 0 0 !important;
+//   }
+// }
+// @media only screen and (max-width:1003px) and (min-width: 601px)  {
+//   #con_input {
+//   width:70%;
+//   }
+//   #top_con,#sign_con,#action_con{
+//     flex:auto !important;
+//   }
+//   #action_con{
+//     width:100%;
+//   }
+// }
+
+
+// @media only screen and (max-width: 900px) {
+//   // #facility_para,#service_para{
+//   //   flex:auto;
+//   // }
+//   // #header_facility{
+//   //   text-align: center;
+//   // }
+//   .fixed-top > h4{
+//     font-size: 30px !important;
+//   }
   
-}
-.carousel-control-next-icon{
-  right:94px;
-}
-.carousel-control-prev-icon{
-  right:86px;
-}
-.carousel-control-prev-icon,.carousel-control-next-icon{
-  width: 35%;
-}
-#car_button_1,#car_button_2{
-  font-size: 13px;
-}
-}
+//   .fixed-top > #paraoneofcaro{
+//   font-size: 30px !important;
+//   }
 
-@media only screen and (max-width: 1003px){
-  #top_con,#sign_con,#action_con{
-    flex:1 0 0 !important;
-  }
-}
-@media only screen and (max-width:1003px) and (min-width: 601px)  {
-  #con_input {
-  width:70%;
-  }
-  #top_con,#sign_con,#action_con{
-    flex:auto !important;
-  }
-  #action_con{
-    width:100%;
-  }
-}
+//   .fixed-top > p{
+//   font-size: 14px !important;
+//   }
+// }
 
 
-@media only screen and (max-width: 900px) {
-  #facility_para,#service_para{
-    flex:auto;
-  }
-  #header_facility{
-    text-align: center;
-  }
-  .fixed-top > h4{
-    font-size: 30px !important;
-  }
+// @media only screen and (max-width: 750px) {
+//   .carousel-control-next, .carousel-control-prev{
+//     // bottom:0px;
+//   }
+//   .carousel-control-prev-icon{
+//     right:140px;
+//   }
+//   .carousel-control-prev-icon{
+//     right:96px;
+//   }
+//   .carousel-control-prev-icon,.carousel-control-next-icon{
+//     // width: 45%;
+//   }
+//   .fixed-top > h4{
+//     font-size: 20px !important;
+//   }
   
-  .fixed-top > #paraoneofcaro{
-  font-size: 30px !important;
-  }
+//   .fixed-top > #paraoneofcaro{
+//   font-size: 20px !important;
+//   }
 
-  .fixed-top > p{
-  font-size: 14px !important;
-  }
-}
+//   .fixed-top > p{
+//   font-size: 12px !important;
+//   }
+// }
 
-@media (max-width: 992px) {
-  .contact_us_li {  
-    width: 30%;
-  }
-  .nav-item-contact{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-  }
-}
+// @media only screen and (max-width: 650px) {
+//   .carousel-control-next, .carousel-control-prev{
+//     display: none !important;
+//   }
+//   .carousel-control-prev-icon,.carousel-control-next-icon{
+//     display: none !important;
+//   }
+//   #car_button_2{
+//     display: none !important;
+//   }
+//   #top_header{
+//     font-size: 18px;
+//   }
+//   #para{
+//     font-size: 14px;
+//   }
+//   .flex_of_5{
+//     flex-direction: column;
+//     gap:0px;
+//   }
+//   #header_services{
+//     font-size:40px;
+//     text-align: center;
+//   }
+//   #header_facility {
+//     font-size:40px;
+//     text-align: center;
+// }
+//   .flex_of_7{
+//   flex-direction: column;
+//     gap:5px;
+// }
+// #facility_para, #service_para {
+//   flex: auto;
+//   text-align: center;
+// }
+// .last{
+//   padding-top: 49px;
+// }
+// }
 
-@media only screen and (max-width: 800px) {
-  .cardfooter{
-    display: none;
-  }
-  .footer{
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-}
+// /* media queries for contact */
+// @media only screen and (max-width: 600px) {
+//   #flex_con {
+//   flex-direction: column;
+//   align-items: unset;
+//   }
+//   #head_img{
+//     margin-left: 15px !important;
+//   }
 
-@media only screen and (max-width: 750px) {
-  .carousel-control-next, .carousel-control-prev{
-    bottom:0px;
-  }
-  .carousel-control-prev-icon{
-    right:140px;
-  }
-  .carousel-control-prev-icon{
-    right:96px;
-  }
-  .carousel-control-prev-icon,.carousel-control-next-icon{
-    width: 45%;
-  }
-  .fixed-top > h4{
-    font-size: 20px !important;
-  }
+//   .carousel-item > #caroimg {
+//     height: 400px !important;
+// }
+// .carousel-inner {
+//   height: 400px;
+// }
+
+// .carousel .carousel-item {
+//   height: 400px;
+// }
+
+// .carousel-caption{
+//   right: 0%;
+//   bottom: 13.75rem;
+// }
+
+// }
+
+
+// .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+//   height: 100%;
+// }
+
+// @media only screen and (max-width: 500px) {
+
+//   .fixed-top{
+//     top: 55px !important;
+//     left: 6% !important;
+//     width: 89% !important;
+// }
+//   .fixed-top > h4{
+//     font-size: 15px !important;
+//   }
   
-  .fixed-top > #paraoneofcaro{
-  font-size: 20px !important;
-  }
+//   .fixed-top > #paraoneofcaro{
+//   font-size: 15px !important;
+//   }
 
-  .fixed-top > p{
-  font-size: 12px !important;
-  }
-}
+//   .fixed-top > p{
+//   font-size: 12px !important;
+//   }
+// }
 
-@media only screen and (max-width: 650px) {
-  .carousel-control-next, .carousel-control-prev{
-    display: none !important;
-  }
-  .carousel-control-prev-icon,.carousel-control-next-icon{
-    display: none !important;
-  }
-  #car_button_2{
-    display: none !important;
-  }
-  #top_header{
-    font-size: 18px;
-  }
-  #para{
-    font-size: 14px;
-  }
-  .flex_of_5{
-    flex-direction: column;
-    gap:0px;
-  }
-  #header_services{
-    font-size:40px;
-    text-align: center;
-  }
-  #header_facility {
-    font-size:40px;
-    text-align: center;
-}
-  .flex_of_7{
-  flex-direction: column;
-    gap:5px;
-}
-#facility_para, #service_para {
-  flex: auto;
-  text-align: center;
-}
-.last{
-  padding-top: 49px;
-}
-}
-
-/* media queries for contact */
-@media only screen and (max-width: 600px) {
-  #flex_con {
-  flex-direction: column;
-  align-items: unset;
-  }
-  #head_img{
-    margin-left: 15px !important;
-  }
-
-  .carousel-item > #caroimg {
-    height: 400px !important;
-}
-.carousel-inner {
-  height: 400px;
-}
-
-.carousel .carousel-item {
-  height: 400px;
-}
-
-.carousel-caption{
-  right: 0%;
-  bottom: 13.75rem;
-}
-
-}
-
-
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  height: 100%;
-}
-
-@media only screen and (max-width: 500px) {
-
-  .fixed-top{
-    top: 55px !important;
-    left: 6% !important;
-    width: 89% !important;
-}
-  .fixed-top > h4{
-    font-size: 15px !important;
-  }
-  
-  .fixed-top > #paraoneofcaro{
-  font-size: 15px !important;
-  }
-
-  .fixed-top > p{
-  font-size: 12px !important;
-  }
-}
-
-/* media queries for contact */
-@media only screen and (max-width: 450px) {
-  #con_button{
-    margin-left: 5px;
-
-  }
-  #con_input{
-    width: 10% ;
-  }
-  #footer_p{
-    font-size: 13px;
-  }
-  #car_button_1 {
-    font-size: 9px;
-    padding: 7px;
-}
-.flex-items {margin-left: 25%;}
-}
-
-/* media queries for contact */
-@media only screen and (max-width: 400px) {
-  .card9{
-    width: 295px;
-  }
-  
-}
 
 .card10  > ul > li {
   display: inline-block;
@@ -994,29 +930,96 @@ text-align: right;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
-  padding: 16px;
+  padding: 13px 18px;
 }
-.carousel-control-prev-icon{
-  color: #FFF;
-  display: inline-block;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 white;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-  padding: 16px;
+// .carousel-control-prev-icon{
+//   color: #FFF;
+//   display: inline-block;
+//   cursor: pointer;
+//   box-shadow: inset 0 0 0 0 white;
+//   -webkit-transition: ease-out 0.4s;
+//   -moz-transition: ease-out 0.4s;
+//   transition: ease-out 0.4s;
+//   padding: 16px;
+// }
+// .carousel-control-prev-icon:hover{
+//   box-shadow: inset 0 0 100px 0px white;
+// }
+
+
+
+* {
+  box-sizing: border-box;
 }
-.carousel-control-prev-icon:hover{
-  box-shadow: inset 0 0 100px 0px white;
+
+
+
+/***********************************
+Left Slide Button
+***********************************/
+.right-slide{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  letter-spacing: 0.15em;
+  background-image: none !important;
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  background-color: #132249;
+  width: 100%;
+  height: auto;
+  padding: 10px 24px;
+  right: 100px;
+  
 }
+
+.right-slide:hover {
+  /* Generic Hover style for a button */
+  color: #fff;
+}
+
+.right-slide::after {
+  /* Adds the overlay for creating slide effect */
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  z-index: -1;
+  padding: 0.25em 0.5em;
+  display: block;
+  border-radius: 40px;
+  transition: all 0.35s;
+}
+
+.right-slide:hover::after {
+  /* Hover effect for the overlay slide effect */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.35s;
+  
+}
+
+.right-slide::after {
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: -100%;
+}
+
+
+
 .carousel-control-next-icon:hover{
   box-shadow: inset 100px 0 0 0 white;
 }
 
 .carousel-control-next, .carousel-control-prev{
-  width: 14%;
+  width: auto;
+  top:80%;
 }
-
+.carousel-control-next {
+  right: 7% !important;
+}
 #nav_contact:hover{
   /* border-radius: 20px; */
 /* border: 2px solid #132249; */
@@ -1155,7 +1158,7 @@ tfoot > tr > td{
   font-family: Unbounded;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   text-align: right !important;
   padding: 16px 105px !important;
@@ -1178,4 +1181,295 @@ tfoot > tr > td{
   background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
   color: white !important;
   border: 2px solid white;
+}
+.buttonFlex{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  // width: 60%;
+}
+
+
+// Media Queries
+@media only screen and (max-width: 1400px){
+  #top_header {
+    transform: scale(1.2, 1);
+  }
+}
+@media only screen and (max-width: 1300px){
+  #top_header {
+    transform: scale(1.1, 1);
+  }
+}
+@media only screen and (max-width: 1200px){
+  #top_header {
+    transform: scale(1, 1);
+  }
+}
+
+@media only screen and (max-width: 1030px){
+  #top_header {
+    font-size: 35px;
+  }
+}
+
+
+@media only screen and (max-width: 1003px){
+  #top_con,#sign_con,#action_con{
+    flex:1 0 0 !important;
+  }
+}
+@media only screen and (max-width:1003px)  {
+  #con_input {
+  width:70%;
+  }
+  #top_con,#sign_con,#action_con{
+    flex:auto !important;
+  }
+  #action_con{
+    width:100%;
+  }
+  #top_header {
+    font-size: 33px;
+    transform: scale(1.1, 1.2);
+  }
+    .carousel-control-next, .carousel-control-prev {
+      width: auto;
+      top: 45%;
+    }
+    .carousel-caption {
+      position: absolute;
+      right: 5%;
+      bottom: 0.75rem;
+      left: 62%;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      color: #fff;
+      text-align: center;
+  }
+  .buttonFlex{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 62%;
+  }
+  .carousel-control-next {
+    right: 11% !important;
+  }
+  .carousel-control-prev {
+    left: 85%;
+    opacity: unset !important;
+}
+  #car_button_1,#car_button_2{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact_us_li {  
+    width: 30%;
+  }
+  .nav-item-contact{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 930px){
+  #top_header {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 850px){
+  #top_header {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 830px){
+  #car_button_1{
+    padding:9px;
+  }
+  .buttonFlex{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 85%;
+  }
+  .fixed-top > p {
+
+    width: auto;
+
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cardfooter{
+    display: none;
+  }
+  .footer{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 780px){
+  #top_header {
+    font-size: 25px;
+  }
+  #car_button_1{
+    padding:9px;
+  }
+  .buttonFlex{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 85%;
+  }
+  #paraoneofcaro4,.fixed-top >  #paraoneofcaro3,.fixed-top >  #paraoneofcaro2,.fixed-top > #paraoneofcaro1{
+    font-size: 25px;
+    }
+    .fixed-top > h4{
+      font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+  #top_header {
+    font-size: 21px;
+  }
+  #car_button_1{
+    padding:9px;
+  }
+  .buttonFlex{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 85%;
+  }
+
+}
+
+@media only screen and (max-width: 650px){
+  .carousel-control-prev {
+    left: 84%;
+    opacity: unset !important;
+}
+
+}
+
+@media only screen and (max-width: 600px){
+  #top_header {
+    font-size: 20px;
+  }
+  .carousel-control-prev {
+    left: 83%;
+    opacity: unset !important;
+}
+.buttonFlex{
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+}
+}
+
+@media only screen and (max-width: 500px){
+  #paraoneofcaro4,.fixed-top >  #paraoneofcaro3,.fixed-top >  #paraoneofcaro2,.fixed-top > #paraoneofcaro1{
+    font-size: 16px;
+    }
+    .fixed-top > h4{
+      font-size: 16px;
+    }
+}
+
+
+
+@media only screen and (max-width: 490px){
+#car_button_1 {
+  padding:7px 5px;
+}
+.carousel-caption {
+  position: absolute;
+  right: 5%;
+  bottom: 0.75rem;
+  left: 39%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+.carousel-control-next {
+  right: 17% !important;
+}
+.carousel-control-prev {
+  left: 73%;
+  opacity: unset !important;
+}
+.fixed-top > p {
+  color: #FFF;
+  text-align: right;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: auto;
+  float: right;
+  text-align: right;
+}
+
+.fixed-top{
+  position: fixed;
+  top: 55px;
+  left: -2%;
+  width: 100%;
+  z-index: 1030;
+  
+}
+.carousel-item > #caroimg {
+    height: 400px;
+  }
+.carousel .carousel-item {
+  height: 400px;
+  border-radius: 40px;
+}
+#car_button_1 {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 400px) {
+  .card9{
+    width: 295px;
+  }
+  
+}
+/* media queries for contact */
+@media only screen and (max-width: 450px) {
+  #con_button{
+    margin-left: 3px;
+    margin-top: 10px;
+
+  }
+  #con_input{
+    width: 10% ;
+  }
+  #footer_p{
+    font-size: 13px;
+  }
+  #car_button_1 {
+    font-size: 9px;
+    padding: 7px;
+}
+.flex-items {margin-left: 25%;}
 }
