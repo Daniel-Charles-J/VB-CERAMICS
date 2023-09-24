@@ -31,7 +31,7 @@
                 <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
               </li>
               <li class="nav-item nav-item-contact">
-                <a class="nav-link" style='background-color:white !important; color:#132249 !important;border-radius: 50px;' [routerLink]='["/contact"]'>Contact Us</a>
+                <a id='nav_contact'  class="" style='background-color:white !important; color:#132249 ;border-radius: 50px;' [routerLink]='["/contact"]'>Contact Us</a>
               </li>
             </ul>
           </div>
@@ -50,7 +50,10 @@
       
         <div>
           <div *ngIf="id==1 || id==2 || id==3" class='flex_article'>
-            <h1 class='top_heading_1'>{{heading}}</h1>
+            <div class='dateflex'>
+              <h1 class='top_heading_1'>{{heading}}</h1>
+              <p class='datetext'>Dec 15,2022</p>
+            </div>
             <img class='articleimg' src={{img}} alt="">
             <h1 class='top_heading_2'>{{subHeading}}</h1>
             <p class='top_para'>{{desc1}}</p>
@@ -70,7 +73,10 @@
         </div>
 
             <div *ngIf="id==4" class='flex_article' >
+              <div class='dateflex'>
                 <h1 class='top_heading_1'>{{heading}}</h1>
+                <p class='datetext'>Dec 15,2022</p>
+              </div>
                 <img class='articleimg' src={{img}} alt="">
                 <h1 class='top_heading_2'>{{subHeading}}</h1>
                 <p class='top_para'>{{desc1}}</p>
@@ -94,7 +100,10 @@
             </div>
 
             <div *ngIf="id==5" class='flex_article' >
+              <div class='dateflex'>
                 <h1 class='top_heading_1'>{{heading}}</h1>
+                <p class='datetext'>Dec 15,2022</p>
+              </div>
                 <img class='articleimg' src={{img}} alt="">
                 <h1 class='top_heading_2'>{{subHeading}}</h1>
                 <p class='top_para'>{{desc1}}</p>
@@ -118,7 +127,10 @@
             </div>
 
             <div *ngIf="id==6" class='flex_article' >
+              <div class='dateflex'>
                 <h1 class='top_heading_1'>{{heading}}</h1>
+                <p class='datetext'>Dec 15,2022</p>
+              </div>
                 <img class='articleimg' src={{img}} alt="">
                 <p class='top_para'>{{desc1}}</p>
                 <h1 class='top_heading_3'>{{subHeading2}}</h1>
@@ -158,15 +170,15 @@
         </div>
       </div>
       <div class='flex_explore'>
-        <div style='flex:1'>
+        <div style='flex:0;margin-right: 20px;'>
             <img [routerLink]='["Quartz - Interesting Facts"]' class='exploreimg' src="./assets/images/article1.jpeg" alt="">
             <p class='epara'> Quartz - Interesting Facts </p>
         </div>
-        <div style='flex:1'> 
+        <div style='flex:0;margin-right: 20px;'> 
             <img class='exploreimg' [routerLink] ='["Agate and It’s Importance"]' src="./assets/images/article2.jpeg" alt="">
             <p class='epara'>Agate and It’s Importance</p>
         </div>
-        <div style='flex:1'>
+        <div style='flex:0'>
             <img class='exploreimg' [routerLink] ='["Graphite’s Impact in Industries"]' src="./assets/images/article3.jpeg" alt="">
             <p class='epara'>Graphite’s Impact in Industries</p>
         </div>
@@ -198,7 +210,7 @@
          <div class='flex10'>
            <div class='card10'>
              <p style="font-weight:500; margin-bottom: 10px;">COMPANY</p>
-             <img src="./assets/images/VBCC_Logo_White.svg" alt="">
+             <img src="./assets/images/foot1.png" alt="">
              <br>
              <br>
              <p style='font-size:16px !important;'>Vb Ceramic Consultants,
@@ -245,7 +257,7 @@
              <div style="margin-top: 20px;">
                <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
                <div style="display: flex; gap: 20px">
-                 <img src="./assets/images/VBCC_Logo_White.svg" alt="">
+                 <img src="./assets/images/foot2.png" alt="">
                  <img src="../../assets//gallery-page-img/hi-tech.png" alt="">
                </div>
              </div>
