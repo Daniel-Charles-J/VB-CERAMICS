@@ -39,6 +39,7 @@ export class AboutComponent {
         const ele = document.getElementById(this.lastSectionID);
         ele.style.position = 'unset';
         ele.style.top = '0px';
+        ele.style.marginBottom = '0px';
       }
     }
   
@@ -46,7 +47,7 @@ export class AboutComponent {
     // this.isScrolled = false; 
     const element = document.getElementById(sectionId);
     const main = document.getElementById('main');
-    if(this.lastSectionID!==undefined && this.lastSectionID !== sectionId){
+    if(this.lastSectionID!==undefined) {
       const ele = document.getElementById(this.lastSectionID);
       ele.style.position = 'unset';
       ele.style.top = '0px';

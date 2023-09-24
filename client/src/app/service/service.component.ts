@@ -12,6 +12,7 @@ export class ServiceComponent {
   constructor(private renderer: Renderer2, private el: ElementRef) {}
   filteredList = new MatTableDataSource([]);
   filteredSelector = new MatTableDataSource([]);
+  showMenu1: boolean = false;
 
   mainArray = [];
   isAll = false;
@@ -341,7 +342,7 @@ export class ServiceComponent {
     },
     {
       service_id: 29,
-      img: '../../assets/service29.jpg',
+      img: '../../assets/gloveBox.png',
       header : 'Material preparation',
       heading : 'Glove Box',
       description : 'A glovebox is a sealed container that is designed to allow one to manipulate objects where a separate atmosphere is desired.',
@@ -612,7 +613,6 @@ export class ServiceComponent {
 		});
 		this.filteredList.filteredData = allFiltered;
     console.log(this.filteredList.filteredData);
-
   }
 
   currentImageIndex = 0;
@@ -620,6 +620,7 @@ export class ServiceComponent {
     '../../assets/dropdown.svg',
     '../../assets/cancel.svg',
   ];
+
   showMenu: boolean = false;
   changeImage() {
     this.isFilter = !this.isFilter;
@@ -831,4 +832,17 @@ export class ServiceComponent {
     }
   }
 
+  toggleMenu(): void {
+    let menuBtn =
+      document.querySelector(".menu-btn");
+    if (!this.showMenu1) { 
+      menuBtn.classList.add("close");
+      // Reset the menu state
+      this.showMenu1 = true;
+    } else {
+      menuBtn.classList.remove("close");
+      // Reset the menu state
+      this.showMenu1 = false;
+    }
+  }
 }

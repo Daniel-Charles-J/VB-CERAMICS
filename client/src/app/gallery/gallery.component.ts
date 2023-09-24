@@ -10,7 +10,7 @@ export class GalleryComponent {
 
   constructor(){
   }
-  
+  showMenu1: boolean = false;
   box_2_content : string[] = ['Home','About Us','Services','Gallery','Contact Us'];
   box_3_content : string[] = ['Raw Materials','Material Processing','Characterization','Heat Treatment Facility']
   box_4_content : string[] = ['Contact Us','Help centre'];
@@ -46,7 +46,7 @@ export class GalleryComponent {
     items: 5,
     loop:true,
     autoplay:true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 400,
     dots: false,
     autoplayHoverPause:true,
     margin: 20,
@@ -78,7 +78,7 @@ export class GalleryComponent {
     loop:true,
     rtl: true,
     autoplay:true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 400,
     dots: false,
     autoplayHoverPause:true,
     margin: 20,
@@ -103,4 +103,18 @@ export class GalleryComponent {
       }
     }
   };
+
+  toggleMenu(): void {
+    let menuBtn =
+      document.querySelector(".menu-btn");
+    if (!this.showMenu1) { 
+      menuBtn.classList.add("close");
+      // Reset the menu state
+      this.showMenu1 = true;
+    } else {
+      menuBtn.classList.remove("close");
+      // Reset the menu state
+      this.showMenu1 = false;
+    }
+  }
 }
