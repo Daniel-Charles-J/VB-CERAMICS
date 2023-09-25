@@ -9,7 +9,9 @@
 .navbar{
   padding: 20px 40px;
 }
-
+#navbarSupportedContent {
+  padding-right: 0px !important;
+}
 .navbar-light .navbar-toggler-icon {
     background: url(/assets/images/menu_own.svg) left no-repeat;
   }
@@ -408,7 +410,7 @@
 }
 
 .hero {
-  padding: 20px 40px;
+  padding: 20px 0px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -593,6 +595,9 @@
   .gallery-text {
     font-size: 60px;
   }
+  #flex_con {
+    padding: 20px;
+}
 }
 @media only screen and (max-width:1003px) and (min-width: 601px)  {
   #con_input {
@@ -636,8 +641,10 @@ padding: 0px !important;
     
   }
 }
-
-
+.navbar-light, .navbar-toggler-icon
+{
+  background-image: none !important;
+}
 #con_button:hover{
   background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
   color: white !important;
@@ -648,6 +655,7 @@ padding: 0px !important;
 /* border: 2px solid #132249; */
 background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
 color: white !important;
+border: 1px solid white;
 }
 #nav_contact {
   display: flex;
@@ -659,4 +667,46 @@ color: white !important;
 .dateflex{
   display: flex;
   flex-direction: row;
+}
+.flex10 > .card10 > p:first-child {
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 250% */
+  text-transform: uppercase;
+}
+.flex10 > .card10 > div > p:first-child {
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 250% */
+  text-transform: uppercase;
+}
+.card10 > ul{
+  color: #000;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+.card10 > div > ul{
+  color: #000;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+.flex10 > .card10 > p:last-child{
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
 }

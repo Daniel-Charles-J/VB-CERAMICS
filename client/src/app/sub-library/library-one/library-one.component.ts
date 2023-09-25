@@ -8,6 +8,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 
 export class LibraryOneComponent {
+  currentImageIndex15 = 0;
+  imagesNav=[
+    './assets/images/menu_own.svg',
+    './assets/images/icons8-close.svg',
+  ]
+  changeImage15() {
+    this.currentImageIndex15 = (this.currentImageIndex15 + 1) % this.imagesNav.length;
+  }
   constructor(private router: Router,private activatedRoute: ActivatedRoute) {}
   contentParams : any;
   id : any;
