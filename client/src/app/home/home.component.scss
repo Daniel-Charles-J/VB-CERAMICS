@@ -4,14 +4,24 @@ body{overflow-x: hidden;}
 /* Navbar */
 .navbar-brand{padding: 0px 40px 0px 40px;color:white !important;font-family: Unbounded;font-size: 16px;font-style: normal;font-weight: 600;line-height: 16px; }
 .bg-light {background-color: #132249 !important;}
-.nav-link{padding: 5px 20px;border-radius: 50px;color:white!important;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk}
+.nav-link{padding: 5px 20px;border-radius: 50px;color:white!important;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk;}
 .nav-link:hover{background: #cdd9fa; color:#132249 !important;border-radius: 50px;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk}
 #navbarSupportedContent{padding-right: 40px;}
 .navbar-nav{gap:20px;}
 #nav_contact{
   background: #cdd9fa; color:#132249 !important;border-radius: 50px;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk;text-decoration: none;
 }
-
+.nav-link {
+  border-radius: 50px;
+  color: white!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  
+}
 /* header */
 #top_header{color: #132249;text-align:center;font-variant-numeric: lining-nums tabular-nums;font-family: Unbounded;font-style: normal;font-weight: 700;line-height: normal;text-transform: uppercase;letter-spacing: 1.5px;}
 h2{
@@ -165,10 +175,19 @@ gap: 50px;
   font-family: Schibsted Grotesk;
 }
 
-.card{
+.card1,.card2,.card3{
   border-radius:20px;
+  display: flex;
+  min-width: 256px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
 }
-
+.card1 > img,.card2 > img,.card3 > img{
+  width: 100%;
+}
 .card9{
   height: 450px; /* Set your desired fixed height here */
   overflow: hidden; /* Hide overflow content if needed */
@@ -358,7 +377,7 @@ flex:1 0 0;
   }
   
   .navbar-light .navbar-toggler-icon {
-    background: url(/assets/images/menu_own.svg) left no-repeat;
+    background: none !important;
   }
  
   .slide{    
@@ -562,6 +581,7 @@ line-height: 16px; /* 100% */
   left: 4% ;
 
 }
+
 #car_button_1{
   border-radius: 17px;
   border: 1px solid #FFF;
@@ -581,9 +601,6 @@ font-size: 16px;
 margin-left:15px;
 }
 
-.flex-items4{
-  margin:20px;
-}
 
 #flex_con{
   display: flex;
@@ -1007,6 +1024,9 @@ Left Slide Button
   right: -100%;
 }
 
+#navbarSupportedContent{
+  padding: 0px !important;
+}
 
 
 .carousel-control-next-icon:hover{
@@ -1025,6 +1045,7 @@ Left Slide Button
 /* border: 2px solid #132249; */
 background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
 color: white !important;
+border: 1px solid white;
 }
 
 #nav_contact{
@@ -1277,10 +1298,26 @@ tfoot > tr > td{
   }
 }
 
-
+@media (max-width: 992px)
+{
+.nav-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
 @media only screen and (max-width: 930px){
   #top_header {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 890px){
+  .card3 > img{
+    width: auto;
+    transform: scale(1.9,1.2);
+    margin-top: 10px;
   }
 }
 @media only screen and (max-width: 850px){
@@ -1382,6 +1419,34 @@ tfoot > tr > td{
 }
 }
 
+@media only screen and (max-width: 590px){
+  .contentdiv{
+    position: absolute;
+    top: 59%;
+    right: 10%;
+    background-color: white;
+    padding: 0px 7px;
+    border-radius: 15px;
+  }
+  .card2 > .contentdiv{
+    position: absolute;
+    top: 59%;
+    right: 62%;
+    background-color: white;
+    padding: 0px 7px;
+    border-radius: 15px;
+  }
+
+  .card3 > img {
+    width: 100%;
+    transform: none;
+    margin-top: 0px;
+}
+.numbers{
+  font-size: 25px;
+}
+}
+
 @media only screen and (max-width: 500px){
   #paraoneofcaro4,.fixed-top >  #paraoneofcaro3,.fixed-top >  #paraoneofcaro2,.fixed-top > #paraoneofcaro1{
     font-size: 16px;
@@ -1456,6 +1521,22 @@ tfoot > tr > td{
 }
 /* media queries for contact */
 @media only screen and (max-width: 450px) {
+  .contentdiv{
+    position: absolute;
+    top: 47%;
+    right: 10%;
+    background-color: white;
+    padding: 0px 7px;
+    border-radius: 15px;
+  }
+  .card2 > .contentdiv{
+    position: absolute;
+    top: 47%;
+    right: 50%;
+    background-color: white;
+    padding: 0px 7px;
+    border-radius: 15px;
+  }
   #con_button{
     margin-left: 3px;
     margin-top: 10px;
