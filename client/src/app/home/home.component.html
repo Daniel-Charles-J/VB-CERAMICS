@@ -12,6 +12,8 @@
   </script>
 
   <script src="../resources/assets/bootstrap/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <!-- 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
   <script src="../resources/assets/js/smoothproducts.min.js"></script>
@@ -25,8 +27,8 @@
     <div  class="col-md-12 ">
     <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
     <img id='head_img' style='margin-left:35px;padding:5px 0px;' src="./assets/images/VBCC_Logo_White.svg" alt="">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button (click)="changeImage15()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img [src]="imagesNav[currentImageIndex15]" class="navbar-toggler-icon" alt="">
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
@@ -203,9 +205,9 @@
           </div>
           
           <div class="flex4" >
-            <div class="card numbers" style='width: 32%;'>
+            <div class="card card1 numbers" style='width: 32%;'>
             <img class='flex-items4' style="border-radius:20px" src="./assets/images/Frame 110 (1).png" alt="">
-            <div>
+            <div class="contentdiv">
               <div class="numbers">
                 <span class="numbers__window">
                     <span data-aos="new-animation" #boxElement class="numbers__window__digit numbers__window__digit--1" data-fake="8642519073">9</span>
@@ -218,14 +220,14 @@
                   <span style="font-family: Unbounded;" class="" data-fake="5207186394">%</span>
               </span>
             </div>
-            </div>
-            <p class="project1info">
+            <p style='margin-bottom: 2px !important;' class="project1info">
               Accuracy Rate
             </p>
             </div>
-            <div class="card numbers" style='width: 32%;' >
+            </div>
+            <div class="card card2 numbers" style='width: 32%;' >
               <img class='flex-items4 ' style="border-radius:20px" src="./assets/images/Frame 110 (2).png" alt="">
-              <div>
+              <div class="contentdiv">
                 <div class="numbers">
                   <span class="numbers__window " >
                       <span  #boxElement data-aos-mirror="true" class="numbers__window__digit numbers__window__digit--2" data-fake="8642519073">1.</span>
@@ -240,14 +242,15 @@
                     <span style="font-family: Unbounded;" data-fake="5207186394">X</span>
                 </span>
               </div>
-              </div>
-              <p class="project1info">
+              <p style='margin-bottom: 2px !important;' class="project1info">
                 Faster Results
               </p>
               </div>
-              <div class="card numbers" style='width: 32%;'>
+
+              </div>
+              <div class="card card3 numbers" style='width: 32%;'>
                 <img class='flex-items4' style="border-radius:20px" src="./assets/images/Frame 110 (3).png" alt="">
-                <div>
+                <div class="contentdiv">
                   <div class="numbers">
                     <span class="numbers__window">
                         <span  #boxElement  class="numbers__window__digit numbers__window__digit--2" data-fake="8642519073">8</span>
@@ -259,10 +262,10 @@
                       <span  style="font-family: Unbounded;" data-fake="5207186394">+</span>
                   </span>
                 </div>
-                </div>
-                <p class="project1info">
+                <p style='margin-bottom: 2px !important;' class="project1info">
                   Accuracy Rate
                 </p>
+                </div>
                 </div>
           </div>
           <div #boxElement [@fadeIn] class="flex5">

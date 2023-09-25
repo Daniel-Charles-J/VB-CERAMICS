@@ -125,11 +125,15 @@ public customOptions2: OwlOptions = {
   currentImageIndex12 = 0;
   currentImageIndex13 = 0;
   currentImageIndex14 = 0;
+  currentImageIndex15 = 0;
   images = [
     './assets/images/double arrow_.svg',
     './assets/images/double_arrow.svg',
   ];
-
+  imagesNav=[
+    './assets/images/menu_own.svg',
+    './assets/images/icons8-close.svg',
+  ]
   changeImage() {
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
   }
@@ -166,6 +170,10 @@ public customOptions2: OwlOptions = {
   changeImage14() {
     this.currentImageIndex14 = (this.currentImageIndex14 + 1) % this.images.length;
   }
+  changeImage15() {
+    this.currentImageIndex15 = (this.currentImageIndex15 + 1) % this.imagesNav.length;
+  }
+
 
 
   arrowimages = [
