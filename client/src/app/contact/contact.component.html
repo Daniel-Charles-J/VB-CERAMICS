@@ -6,14 +6,15 @@
   <link href='https://fonts.googleapis.com/css?family=Unbounded' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Schibsted Grotesk' rel='stylesheet'>
 </head>
+<div style="overflow: hidden;">
 <body>
   <div class="container-fluid1">
     <div class="row">
     <div  class="col-md-12 ">
     <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-    <img style='margin-left:35px;padding:5px 0px;' src="./assets/images/VBCC_Logo_White.svg" alt="" [routerLink]='["/"]'>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <img id='headimg' style='margin-left:35px;padding:5px 0px;' src="./assets/images/VBCC_Logo_White.svg" alt="" [routerLink]='["/"]'>
+    <button (click)="changeImage15()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img [src]="imagesNav[currentImageIndex15]" class="navbar-toggler-icon" alt="">
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
@@ -45,7 +46,7 @@
       <p class="flex-items5" id="contact_para">Craving a conversation about pottery? Immerse yourself in a vibrant world of hues and surfaces with our amazing ceramic offerings!</p>
     </div>
     <hr>
-    <div id='contact_flex' style='display:flex;flex-direction:row;gap:20px;flex-wrap: wrap;padding:0px 25px;'>
+    <div id='contact_flex' style='display:flex;flex-direction:row;gap:20px;flex-wrap: wrap;padding:0px 40px;'>
       <div style='flex:1 1 60%'>
         <form >
           <div class="form-row col-md-12">
@@ -82,7 +83,7 @@
     <div class='flex10'>
       <div class='card10'>
         <p>COMPANY</p>
-        <img src="./assets/images/VBCC_Logo_White.svg" alt="">
+        <img src="./assets/images/foot1.png" alt="">
         <br>
         <br>
         <p style='font-size:16px !important;'>Vb Ceramic Consultants,
@@ -123,7 +124,7 @@
         </ul>
         <p>OUR GROUPS</p>
         <div style='display: flex;flex-direction:row;gap:20px'>
-        <img style='width:60px' src="./assets/images/VBCC_Logo_White.svg" alt="">
+        <img style='width:60px' src="./assets/images/foot2.png" alt="">
         <img style='width:60px' src="./assets/gallery-page-img/hi-temp.png" alt="">
       </div>
       </div>
@@ -140,7 +141,7 @@
       </div>
     </div>
   </footer>
-
+</div>
 </html>
 
 
