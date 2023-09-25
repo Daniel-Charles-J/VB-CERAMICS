@@ -1,6 +1,7 @@
 .navbar-light .navbar-toggler-icon {
     background: url(/assets/images/menu_own.svg) left no-repeat;
   }
+
   .navbar-light, .navbar-toggler-icon
   {
     background-image: none !important;
@@ -334,7 +335,7 @@ gap: 50px;
     -webkit-transform: scale(1.4, 1.4);
     -moz-transform: scale(1.4, 1.4);
     -o-transform: scale(1.4, 1.4);
-    transform: scale(1.4, 1.4);
+    transform: scale(1.5, 1.4);
   }
   
   .gall-para {
