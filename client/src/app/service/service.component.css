@@ -530,7 +530,6 @@ line-height: 30px; /* 187.5% */
 @media (max-width: 1320px) {
   .gallery-text {
     font-size: 66px;
-    align-items: stretch;
   }
 
   .gall-para {
@@ -542,7 +541,6 @@ line-height: 30px; /* 187.5% */
 
   .gallery-text {
     font-size: 56px;
-    align-items: stretch;
   }
 
   .gall-para {
@@ -573,7 +571,6 @@ line-height: 30px; /* 187.5% */
   }
   .gallery-text {
     font-size: 46px;
-    align-items: stretch;
   }
 
   .menu-btn {

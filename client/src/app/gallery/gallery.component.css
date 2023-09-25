@@ -7,8 +7,9 @@
 }
 
 /* Navbar */
-.navbar-brand {
-  padding: 0px 40px 0px 40px;
+
+.navbar {
+  padding: 20px 40px;
   color: white !important;
   font-family: Unbounded;
   font-size: 16px;
@@ -36,10 +37,6 @@
   color: #132249 !important;
   border-radius: 50px;
   font-family: Schibsted Grotesk;
-}
-
-#navbarSupportedContent {
-  padding-right: 40px;
 }
 
 .navbar-nav {
@@ -133,7 +130,7 @@ h2 {
 }
 
 .hero {
-  padding: 20px 10px 20px 20px;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -181,12 +178,17 @@ h2 {
   /* 30px */
 }
 
+.heroImg {
+  width: 100%;
+  padding: 40px;
+  border-radius: 40px;
+}
 /* Hero image section */
 .hero-image {
   display: flex;
   width: 100%;
   height: auto;
-  padding: 10px 20px;
+  object-fit: fill;
   justify-content: center;
   align-items: center;
   border-radius: 40px;
@@ -458,6 +460,7 @@ line-height: 30px; /* 187.5% */
   width: 100%;
   height: 450px;
   padding: 20px;
+  border-radius: 40px;
 }
 
 .slide .slide_img {
@@ -613,7 +616,6 @@ line-height: 30px; /* 187.5% */
 @media (max-width: 1320px) {
   .gallery-text {
     font-size: 70px;
-    align-items: stretch;
   }
 
   .gall-para {
@@ -643,7 +645,6 @@ line-height: 30px; /* 187.5% */
 
   .gallery-text {
     font-size: 60px;
-    align-items: stretch;
   }
 
   .gall-para {
@@ -679,7 +680,6 @@ line-height: 30px; /* 187.5% */
 
   .gallery-text {
     font-size: 50px;
-    align-items: stretch;
   }
 
   .gall-para {
@@ -725,6 +725,7 @@ line-height: 30px; /* 187.5% */
     letter-spacing: 4.5px;
   }
 
+  
   .gallery-text {
     width: 100%;
     font-size: 80px;
@@ -756,12 +757,12 @@ line-height: 30px; /* 187.5% */
   }
 
   .container-left {
-    width: 90%;
+    width: 100%;
   }
 
   .left-image {
     width: 90%;
-    height: 50 0px;
+    height: 500px;
   }
 
   .container-right {
@@ -776,6 +777,7 @@ line-height: 30px; /* 187.5% */
     width: 100%;
     height: 400px !important;
     padding: 0px 20px;
+    border-radius: 40px;
   }
 
   .hero-image {
@@ -840,6 +842,21 @@ line-height: 30px; /* 187.5% */
   .slide .container_image {
     /* width: 75%; */
     height: 300px !important;
+    padding: 0px;
+    border-radius: 20px;
+  }
+  .navbar{
+    padding: 20px;
+  }
+  .hero {
+    padding: 20px;
+  }
+
+  .heroImg {
+    padding: 20px;
+  }
+  .container-right {
+    padding: 10px 0px;
   }
 
   .gallery-text {
@@ -858,6 +875,14 @@ line-height: 30px; /* 187.5% */
   .slide .slide_img {
     width: 100%;
     height: 130px;
+  }
+
+  .heroImg {
+    border-radius: 20px;
+  }
+  /* Hero image section */
+  .hero-image {
+    border-radius: 20px;
   }
 }
 

@@ -107,7 +107,7 @@ h2 {
   background: white;
   transition: all 0.5s ease-out;
 } 
-
+  
 /* Adding transform to the X */
 .menu-btn.close {
   transform: rotate(180deg);
@@ -451,7 +451,6 @@ line-height: 30px; /* 187.5% */
 @media (max-width: 1320px) {
   .gallery-text {
     font-size: 66px;
-    align-items: stretch;
   }
 
   .gall-para, .service_description, .sec2_top_sec, td, .btn-contact,.instruments_div {
@@ -474,7 +473,6 @@ line-height: 30px; /* 187.5% */
 
   .gallery-text {
     font-size: 56px;
-    align-items: stretch;
   }
 
   .gall-para, .service_description, .sec2_top_sec, td, .btn-contact, .instruments_div {
@@ -512,7 +510,6 @@ line-height: 30px; /* 187.5% */
 
   .gallery-text {
     font-size: 46px;
-    align-items: stretch;
   }
 
   .gall-para {
