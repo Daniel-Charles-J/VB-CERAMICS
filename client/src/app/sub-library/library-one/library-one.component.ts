@@ -166,7 +166,7 @@ export class LibraryOneComponent {
       id : 5,
       routing : 'glove-boxes-for-scientific-advancement',
       heading: 'Glove Boxes for Scientific Advancement',
-      img: './assets/images/article5.jpeg',
+      img: '../../assets/gloveBox.png',
       subHeading :"Glove Box : Creating Controlled Environments for Scientific Advancement",
       desc1:"A crucial tool stands at the forefront of scientific exploration - the glove box. This innovative device empowers researchers to conduct experiments and handle materials in controlled environments, shielded from external contaminants. Let's delve into the world of glove boxes, understanding their significance, operation, and their indispensable role in various research endeavours.",
       subHeading2:"The Essence of Controlled Environments :",
