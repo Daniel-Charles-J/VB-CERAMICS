@@ -54,7 +54,7 @@ export class LibraryComponent implements OnInit{
       routing : "thermal-dynamic-with-precision"
     },
     {
-      img1: './assets/images/article5.jpeg',
+      img1: '../../assets/gloveBox.png',
       topic:'Material Preparation',
       content: 'Glove Boxes for Scientific Advancement',
       library_id:5,
