@@ -128,7 +128,7 @@ line-height: normal;
 .flex10{
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 10px 0px;
   justify-content: center;
   flex-direction: row;
   
@@ -1065,7 +1065,7 @@ Left Slide Button
 }
 
 #navbarSupportedContent{
-  padding: 0px !important;
+  padding: 12px !important;
 }
 
 
@@ -1314,6 +1314,9 @@ tfoot > tr > td{
   justify-content: center;
     align-items: center;
     flex-wrap: inherit;
+}
+.serp{
+  text-align: center;
 }
 }
 
@@ -1785,6 +1788,14 @@ element.style {
 }
 
 @media only screen and (max-width: 400px){
+
+#top_header {
+    font-size: 16px;
+}
+#para{
+  width: 100%;
+  font-size: 16px;;
+}
   #header_services{
     text-align: center;
     transform: scale(0.5,1);
@@ -1792,5 +1803,8 @@ element.style {
   #header_facility {
     text-align: center;
     transform: scale(0.5,1);
+}
+#head_img{
+  margin-left: 13px !important;
 }
 }

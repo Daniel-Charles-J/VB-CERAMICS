@@ -3,28 +3,29 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap:27px;
-    padding:0px 32px;
+    padding:0px 40px;
     }
 
 #header_services{
-        color: #132249;
-        font-family: Unbounded;
-        font-size: 68px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        flex:1 0 ;
+  color: #132249;
+  font-family: Unbounded;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  flex: 1 0;
+  width: 50%;
         }
 
 #contact_para{
-            color: black;
-            font-family: Schibsted Grotesk;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 30px;
-            width: 57%;
-            place-self:center;
+  color: black;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 50%;
+  place-self: center;
           }
 
 #message{
@@ -117,6 +118,22 @@
     height: 26px;
   }
 
+  @media only screen and (max-width: 950px) {
+    #contact_para{
+      width: auto;
+      text-align: center;
+    }
+    .flex_of_5{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap:10px;
+      }
+      #header_services{
+        text-align: center;
+        width: 100%;
+      }
+  }
   @media only screen and (max-width: 800px) {
     .cardfooter{
       display: none;
@@ -132,7 +149,8 @@
       gap:0px !important;
     }
     #header_services{
-      font-size:40px;
+      margin-top: 10px;
+      font-size:55px;
       text-align: center;
     }
     #contact_para{
@@ -140,6 +158,13 @@
       text-align: center;
       width: auto;
     }
+    .flex_of_5{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap:10px;
+      padding:0px 20px;
+      }
   }
   .col-md-12{
     padding:0px;
@@ -170,5 +195,51 @@
 .card10 > div > img:hover{
   transform: scale(1.2);
 }
+.flex10 > .card10 > p:first-child {
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 250% */
+  text-transform: uppercase;
+}
+.flex10 > .card10 > div > p:first-child {
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 250% */
+  text-transform: uppercase;
+}
+.card10 > ul{
+  color: #000;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+.card10 > div > ul{
+  color: #000;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+.flex10 > .card10 > p:last-child{
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
   
-  
+@media only screen and (max-width: 400px) {
+  #headimg{
+    margin-left: 13px !important;
+  }
+}
