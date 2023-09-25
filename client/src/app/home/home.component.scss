@@ -34,7 +34,6 @@ line-height: 30px; /* 150% */
 text-transform: uppercase;
 }
 #header_services{
-width: 50%;
 color: #132249;
 font-family: 'Unbounded', sans-serif;
 font-size: 100px;
@@ -49,7 +48,6 @@ line-height: normal;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  width: 50%;
   }
 
 
@@ -89,7 +87,7 @@ line-height: normal;
   width: 57%;
   place-self:center;
 }
-#para{width: 80%;font-size: 20px;color: #000;font-family: Schibsted Grotesk;font-style: normal;font-weight: 400;text-align: center;}
+#para{width: 90%;font-size: 20px;color: #000;font-family: Schibsted Grotesk;font-style: normal;font-weight: 400;text-align: center;margin-top: 20px;}
 #para_two{color: white;text-align: center;font-family: Schibsted Grotesk;font-size: 14px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase;}
 
 /* container */
@@ -199,7 +197,10 @@ gap: 50px;
   border: 1px solid rgba(24, 25, 119, 0.10);
   background: #132249;
   color: white;
-  margin: 0px 30px;
+  margin: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card10{
@@ -280,7 +281,6 @@ margin-top: 40px;
 }
 .info91{
   display:flex;
-flex:1 0 0;
 }
 
 .mb-0{
@@ -353,9 +353,7 @@ flex:1 0 0;
   }
 
   .flex8{
-    /* background: url(/assets/images/bg_con.jpeg) center no-repeat,linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%),#99ABD8; */
-   
-    background-image: linear-gradient( rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 115, 0.60) 0%), url(/assets/images/bg_con.jpeg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 115, 0.60) 100%),url(/assets/images/bg_con.jpeg),lightgray;
     background-color:#99ABD8;
     background-size: cover;
     background-repeat: no-repeat, no-repeat;
@@ -490,6 +488,48 @@ flex:1 0 0;
 #head_con,#ul_con,#action_con,#con_p{
   color:white;
 
+}
+.flex10 > .card10 > p:first-child {
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 250% */
+  text-transform: uppercase;
+}
+.flex10 > .card10 > div > p:first-child {
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 250% */
+  text-transform: uppercase;
+}
+.card10 > ul{
+  color: #000;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+.card10 > div > ul{
+  color: #000;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+.flex10 > .card10 > p:last-child{
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
 }
 #ul_con{
   color: #FFF;
@@ -1153,7 +1193,17 @@ td, th {
   line-height: normal;
   
 }
-
+table caption {
+  caption-side: bottom;
+  text-align: center;
+  background-color: #C7D6DA;;
+  color: #000;
+    font-family: Schibsted Grotesk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 tr:nth-child(odd) {
   background-color:#FAFBFF;
 }
@@ -1182,7 +1232,7 @@ tfoot > tr > td{
   font-weight: 500;
   line-height: normal;
   text-align: right !important;
-  padding: 16px 105px !important;
+  // padding: 16px 105px !important;
 }
 
 .carousel-item{
@@ -1225,6 +1275,56 @@ tfoot > tr > td{
 @media only screen and (max-width: 1200px){
   #top_header {
     transform: scale(1, 1);
+  }
+  #header_services{
+    font-size:90px;
+    
+  }
+  #header_facility {
+    font-size:90px;
+    
+}
+}
+@media only screen and (max-width: 1100px){
+  #header_services{
+    text-align: center;
+    transform: scale(1.6,1);
+  }
+  #header_facility {
+    text-align: center;
+    transform: scale(1.6,1);
+}
+#facility_para, #service_para {
+  text-align: center;
+  flex:auto;
+  width: auto;
+}
+.flex_of_5{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+    align-items: center;
+    flex-wrap: inherit;
+}
+.flex_of_7{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+    align-items: center;
+    flex-wrap: inherit;
+}
+}
+
+@media only screen and (max-width: 1050px){
+  #facility_para,#service_para{
+    
+    flex:auto;
+    width: auto;
+  }
+  #header_facility{
+    text-align: center;
   }
 }
 
@@ -1307,16 +1407,27 @@ tfoot > tr > td{
     align-items: center;
 }
 }
+
+@media only screen and (max-width: 930px){
+  #header_services{
+    text-align: center;
+    transform: scale(1.4,1);
+  }
+  #header_facility {
+    text-align: center;
+    transform: scale(1.4,1);
+}
+}
 @media only screen and (max-width: 930px){
   #top_header {
     font-size: 30px;
   }
 }
 
-@media only screen and (max-width: 890px){
+@media only screen and (max-width: 867px){
   .card3 > img{
     width: auto;
-    transform: scale(1.9,1.2);
+    transform: scale(2.1,1.2);
     margin-top: 10px;
   }
 }
@@ -1324,11 +1435,24 @@ tfoot > tr > td{
   #top_header {
     font-size: 27px;
   }
+  #header_services{
+    text-align: center;
+    transform: scale(1.2,1);
+  }
+  #header_facility {
+    text-align: center;
+    transform: scale(1.2,1);
+}
 }
 
 @media only screen and (max-width: 830px){
   #car_button_1{
     padding:9px;
+  }
+  .card3 > img{
+    width: auto;
+    transform: scale(2,1.2);
+    margin-top: 10px;
   }
   .buttonFlex{
     margin-left: auto;
@@ -1345,6 +1469,18 @@ tfoot > tr > td{
 }
 
 @media only screen and (max-width: 800px) {
+  .flex5{
+    padding: 5px 20px;
+  }
+  .flex7{
+    padding: 5px 20px;
+  }
+  .flex_of_7{
+    padding: 0px;
+  }
+  #facility_para,#service_para{
+    padding: 0px;
+  }
   .cardfooter{
     display: none;
   }
@@ -1352,10 +1488,18 @@ tfoot > tr > td{
     flex-direction: column-reverse;
     text-align: center;
   }
+  #accordion {
+    padding: 0px 20px;
+}
 }
 
 
 @media only screen and (max-width: 780px){
+  .card3 > img{
+    width: auto;
+    transform: scale(1.8,1.2);
+    margin-top: 10px;
+  }
   #top_header {
     font-size: 25px;
   }
@@ -1379,6 +1523,23 @@ tfoot > tr > td{
 
 @media only screen and (max-width: 750px){
   #top_header {
+    font-size: 27px;
+  }
+  #header_services{
+    text-align: center;
+    transform: scale(1,1);
+  }
+  #header_facility {
+    text-align: center;
+    transform: scale(1,1);
+}
+  .acctext1{
+    font-size: 16px;
+  }
+  .acctext2{
+    font-size: 16px;
+  }
+  #top_header {
     font-size: 21px;
   }
   #car_button_1{
@@ -1391,18 +1552,78 @@ tfoot > tr > td{
     gap: 10px;
     width: 85%;
   }
-
+  .card3 > img{
+    width: auto;
+    transform: scale(1.6,1.2);
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 650px){
+  #top_header {
+    font-size: 33px;
+    transform: scale(3, 1.9);
+  }
+  .card3 > img{
+    width: auto;
+    transform: scale(1.5,1.2);
+    margin-top: 10px;
+  }
   .carousel-control-prev {
     left: 84%;
     opacity: unset !important;
 }
+.acctext1{
+  font-size: 14px;
+}
+.acctext2{
+  font-size: 14px;
+}
 
 }
 
+@media only screen and (max-width: 615px){
+  #header_services{
+    text-align: center;
+    transform: scale(0.8,1);
+  }
+  #header_facility {
+    text-align: center;
+    transform: scale(0.8,1);
+}
+  .acctext1{
+    font-size: 7px;
+    transform: scale(1, 2.5);
+  }
+  .acctext2{
+    font-size: 9px;
+    transform: scale(1,1.3);
+  }
+
+element.style {
+  align-items: center;
+}
+.mb-0 {
+  gap: 10px;
+}
+}
+
 @media only screen and (max-width: 600px){
+  .card10 {
+
+    padding: 5px 20px;
+}
+  #header_services{
+    text-align: center;
+    transform: scale(0.6,1);
+  }
+  #header_facility {
+    text-align: center;
+    transform: scale(0.6,1);
+}
+#facility_para, #service_para{
+ font-size:20px ;
+}
   #top_header {
     font-size: 20px;
   }
@@ -1416,6 +1637,9 @@ tfoot > tr > td{
   flex-direction: column;
   gap: 10px;
   width: auto;
+}
+.flex6{
+  margin: 0px 20px;
 }
 }
 
@@ -1517,10 +1741,15 @@ tfoot > tr > td{
   .card9{
     width: 295px;
   }
-  
+.flex6 {
+    margin: 0px;
+}
 }
 /* media queries for contact */
 @media only screen and (max-width: 450px) {
+  .card9{
+
+  }
   .contentdiv{
     position: absolute;
     top: 47%;
@@ -1553,4 +1782,15 @@ tfoot > tr > td{
     padding: 7px;
 }
 .flex-items {margin-left: 25%;}
+}
+
+@media only screen and (max-width: 400px){
+  #header_services{
+    text-align: center;
+    transform: scale(0.5,1);
+  }
+  #header_facility {
+    text-align: center;
+    transform: scale(0.5,1);
+}
 }
