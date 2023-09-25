@@ -60,7 +60,8 @@
 
 <div class="container-fluid" (scroll)="onViewportScroll($event)">
     <div class="flex1">
-      <h1 id="top_header">DR.VB’s ceramic research Centre </h1>
+      <h1 *ngIf="screenWidth >= 650" id="top_header">DR.VB’s ceramic research Centre </h1>
+      <h1 *ngIf="screenWidth <= 649" id="top_header">DR.VBCRC</h1>
       <p id="para" >Where Knowledge and Innovation Converge, We Illuminate Pathways to Discovery. Pushing Boundaries, Sparking Curiosity – Welcome to the Core of Exploration.</p>
     </div>
     <br>
@@ -130,8 +131,8 @@
                 </div>
               </div>
               <div>
-                <a  class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <button  class="right-slide"><img (mouseover)="changeImage7()" (mouseout)="changeImage7b()" [src]="arrowimages[currentImageIndex7]" class="carousel-control-prev-icon" aria-hidden="true" src="./assets/images/arrow_cc.svg" alt=""></button>
+                <a  (mouseover)="changeImage7()" (mouseout)="changeImage7b()" class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <button  class="right-slide"><img style='transform: scale(1.2);'  [src]="arrowimages[currentImageIndex7]" class="carousel-control-prev-icon" aria-hidden="true" src="./assets/images/arrow_cc.svg" alt=""></button>
                     <span class="sr-only">Previous</span>
                 
                 </a>
@@ -280,8 +281,9 @@
             </div>
           </div>
 
-          <div  class="flex6">
+          <div *ngIf="screenWidth >= 650"  class="flex6">
             <table>
+              <caption [routerLink]='["/contact"]'> View All <span><img src="./assets/images/Vector.svg" alt=""></span></caption>
               <tbody>
               <tr>
                 <th>Equipment</th>
@@ -384,15 +386,99 @@
                 <td>₹4000</td>
               </tr>
               </tbody>
-              <tfoot>
-                <tr>
-                  <td>View All <span><img src="./assets/images/Vector.svg" alt=""></span></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tfoot>
+            </table>
+
+          </div>
+          
+          <div *ngIf="screenWidth <= 649"  class="flex6">
+            <table>
+              <caption style='cursor: pointer;' [routerLink]='["/contact"]'>View All <span><img src="./assets/images/Vector.svg" alt=""></span></caption>
+              <tbody>
+              <tr>
+                <th>Equipment</th>
+                <th>Industry/Students</th>
+              </tr>
+              <tr>
+                <td>X-Ray Diffraction</td>
+                <td>₹1500/₹750</td>
+              </tr>
+              <tr>
+                <td>X-Ray Fluorescence</td>
+                <td>₹2000/₹1500</td>
+              </tr>
+              <tr>
+                <td>Scanning Electron Microscope (3 images)</td>
+                <td>₹2000/₹1000</td>
+              </tr>
+              <tr>
+                <td>Scanning Electron Microscope with Gold Sputtering (3 images)</td>
+                <td>₹2500/₹1250</td>
+              </tr>
+              <tr>
+                <td>Laser Particle Size Analyser (PSA)</td>
+                <td>₹2000/₹1500</td>
+              </tr>
+              <tr>
+                <td>Thermal Expansion (Dilatometer up to 1000°C)</td>
+                <td>₹2000/₹1500</td>
+              </tr>
+              <tr>
+                <td>BET Analysis</td>
+                <td>₹4000/₹2500</td>
+              </tr>
+              <tr>
+                <td>Pin On Disc Tribometer (Wear)</td>
+                <td>₹1500/₹1000</td>
+              </tr>
+              <tr>
+                <td>Pellet Press (10 tons)</td>
+                <td>₹500/₹200</td>
+              </tr>
+              <tr>
+                <td>Planetary Mill TC Balls & Vial per hour</td>
+                <td>₹600/₹300</td>
+              </tr>
+              <tr>
+                <td>Box Furnace from 1200-1600°C (5°C ramp and 3 hrs dwell)</td>
+                <td>₹3000-7500/₹2000-5000</td>
+              </tr>
+              <tr>
+                <td>Tubular Furnace with Cont. atm. 1200-1400°C with Cold Vacuum & Argon Purging</td>
+                <td>₹5000-7500/₹3500-5000</td>
+              </tr>
+              <tr>
+                <td>Microwave Furnace up to 1600°C (20°C ramp & 30 min dwell)</td>
+                <td>₹5000/₹3500</td>
+              </tr>
+              <tr>
+                <td>Spin Coater</td>
+                <td>₹800/₹400</td>
+              </tr>
+              <tr>
+                <td>Spray Pyrolysis</td>
+                <td>₹3000/₹1000</td>
+              </tr>
+              <tr>
+                <td>Dip Coater</td>
+                <td>₹500/₹250</td>
+              </tr>
+              <tr>
+                <td>Cold / Fired MOR (max three samples)</td>
+                <td>₹3000/₹1500</td>
+              </tr>
+              <tr>
+                <td>Aluminium Stir Casting</td>
+                <td>₹5000/₹2500</td>
+              </tr>
+              <tr>
+                <td>Magnesium Stir Casting</td>
+                <td>₹6000/₹4000</td>
+              </tr>
+              </tbody>
             </table>
           </div>
+
+
           <br>
     <div class="flex7">
       <div class="flex_of_7">
@@ -400,17 +486,18 @@
         <p class="flex-items5" id="facility_para">The Lab facilities available for extensive research in our Research Centre. Check out our selection of high-quality services.</p>
       </div>
       <hr style="color:white">
-  <div id="accordion">
+  
+      <div id="accordion">
   <div class="card" style="margin-bottom: 20px;">
     <div class="card-header" id="headingOne">
       <h5 (click)="changeImage()" style="align-items: center;"  class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-        <img src="./assets/images/Frame 132.png" alt="">
+        <img class='facimg' src="./assets/images/Frame 132.png" alt="">
         <div>
-          <h2>Advanced Material Synthesis</h2>
-          <p>Unleash your Creations</p>
+          <h2 class='acctext1'>Advanced Material Synthesis</h2>
+          <p class='acctext2'>Unleash your Creations</p>
         </div>
         <button (click)="changeImage9()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          <img [src]="images[currentImageIndex]"  alt="">
+          <img class='arrowimg' [src]="images[currentImageIndex]"  alt="">
         </button>
       </h5>
     </div>
@@ -426,8 +513,8 @@
       <h5 style="align-items: center;" (click)="changeImage2()"  class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         <img src="./assets/images/Frame 132 (1).png" alt="">
         <div>
-          <h2>Nano Materials</h2>
-          <p>Bring Ideas to Life</p>
+          <h2 class='acctext1'>Nano Materials</h2>
+          <p class='acctext2'>Bring Ideas to Life</p>
         </div>
         <button (click)="changeImage10()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           <img [src]="images[currentImageIndex2]"  alt="">
@@ -446,8 +533,8 @@
       <h5 style="align-items: center;" (click)="changeImage3()"  class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         <img src="./assets/images/Frame 132 (2).png" alt="">
         <div>
-          <h2>Sanitaryware as per IS</h2>
-          <p>Master Ceramic Sciences</p>
+          <h2 class='acctext1'>Sanitaryware as per IS</h2>
+          <p class='acctext2'>Master Ceramic Sciences</p>
         </div>
         <button (click)="changeImage11()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           <img [src]="images[currentImageIndex3]" alt="">
@@ -466,8 +553,8 @@
       <h5 style="align-items: center;" (click)="changeImage4()"  class="mb-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         <img src="./assets/images/Frame 132 (3).png" alt="">
         <div>
-          <h2>Refractories as per IS</h2>
-          <p>Master Ceramic Sciences</p>
+          <h2 class='acctext1'>Refractories as per IS</h2>
+          <p class='acctext2'>Master Ceramic Sciences</p>
         </div>
         <button (click)="changeImage12()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           <img [src]="images[currentImageIndex4]" alt="">
@@ -486,8 +573,8 @@
       <h5 style="align-items: center;" (click)="changeImage5()"  class="mb-0" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
         <img src="./assets/images/Frame 132 (4).png" alt="">
         <div>
-          <h2>Ceramic Tiles as per IS</h2>
-          <p>Master Ceramic Sciences</p>
+          <h2 class='acctext1'>Ceramic Tiles as per IS</h2>
+          <p class='acctext2'>Master Ceramic Sciences</p>
         </div>
         <button (click)="changeImage13()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
           <img [src]="images[currentImageIndex5]" alt="">
@@ -506,8 +593,8 @@
       <h5 style="align-items: center;" (click)="changeImage6()"  class="mb-0" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
         <img src="./assets/images/Frame 132 (5).png" alt="">
         <div>
-          <h2>Advanced Characterization</h2>
-          <p>Master Ceramic Sciences</p>
+          <h2 class='acctext1'> Advanced Characterization</h2>
+          <p class='acctext2'>Master Ceramic Sciences</p>
         </div>
         <button (click)="changeImage14()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
           <img [src]="images[currentImageIndex6]" src="./assets/images/double arrow_.svg" alt="">

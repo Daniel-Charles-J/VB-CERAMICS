@@ -5,7 +5,6 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import * as $ from 'jquery';
 
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -22,6 +21,18 @@ import * as $ from 'jquery';
 })
 
 export class HomeComponent implements AfterViewInit {
+  screenHeight: number;
+  screenWidth: number;
+    constructor() {
+      this.getScreenSize();
+  }
+
+    @HostListener('window:resize', ['$event'])
+    getScreenSize(event?) {
+          this.screenHeight = window.innerHeight;
+          this.screenWidth = window.innerWidth;
+          console.log(this.screenHeight, this.screenWidth);
+    }
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -61,24 +72,24 @@ public customOptions2: OwlOptions = {
   items:3,
   loop:true,
   autoplay:true,
-  autoplayTimeout:2000,
+  autoplayTimeout:2500,
   dots: false,
-  margin:0,
+  // margin:0,
   autoplayHoverPause:true,
   nav: true,
-  stagePadding: 0,
+  // stagePadding: 0,
   navText: ["<img src='./assets/images/arrow_cc.svg'>","<img src='./assets/images/arrow_c.svg'>"],
 
   responsive: {
     0:{
       items: 1
     },
-    750:{
+    800:{
       items: 2
     },
-    1150:{
+    1050:{
       items: 3
-    }
+    },
 }
   };
 
@@ -202,6 +213,4 @@ public customOptions2: OwlOptions = {
     this.currentImageIndex8 = (this.currentImageIndex8 -1) % this.arrowimages2.length;
   }
   
-  
-
 }
