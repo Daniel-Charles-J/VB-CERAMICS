@@ -1,7 +1,10 @@
 .navbar-light .navbar-toggler-icon {
     background: url(/assets/images/menu_own.svg) left no-repeat;
   }
-
+  .navbar-light, .navbar-toggler-icon
+  {
+    background-image: none !important;
+  }
 /* Navbar */
 .navbar-brand{padding: 0px 40px 0px 40px;color:white !important;font-family: Unbounded;font-size: 16px;font-style: normal;font-weight: 600;line-height: 16px; }
 .bg-light {background-color: #132249 !important;}
@@ -503,6 +506,18 @@ gap: 50px;
     .gallery-text {
       font-size: 60px;
     }
+    .flex_article{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+  }
+  .headul {
+    padding: 5px 20px;
+}
+#flex_con{
+  padding: 20px 20px;
+}
   }
 
   @media only screen and (max-width:590px) {

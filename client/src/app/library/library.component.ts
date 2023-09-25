@@ -9,6 +9,14 @@ import { Location } from '@angular/common';
   styleUrls: ['./library.component.css']
 })
 export class LibraryComponent implements OnInit{
+  currentImageIndex15 = 0;
+  imagesNav=[
+    './assets/images/menu_own.svg',
+    './assets/images/icons8-close.svg',
+  ]
+  changeImage15() {
+    this.currentImageIndex15 = (this.currentImageIndex15 + 1) % this.imagesNav.length;
+  }
   
   isChildRoute = false;
   constructor(private router: Router, private route: ActivatedRoute, private location: Location) {}
