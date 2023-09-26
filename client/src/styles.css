@@ -60,7 +60,7 @@
   text-align: left !important;
   position: absolute !important;
   bottom: 43% !important;
-  left: -6% !important;
+  left: -1% !important;
 }
 }
 
@@ -75,7 +75,7 @@
 } */
 
 @media only screen and (max-width: 425px){
-  #customer{padding-left: 15px !important;}
+  #customer{padding-left: 0px !important;}
   }
 
 

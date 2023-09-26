@@ -1477,13 +1477,16 @@ tfoot > tr > td{
     padding: 5px 20px;
   }
   .flex7{
-    padding: 5px 20px;
+    padding: 5px 0px;
   }
   .flex_of_7{
     padding: 0px;
   }
-  #facility_para,#service_para{
+  #service_para{
     padding: 0px;
+  }
+  #facility_para{
+    padding: 0px 20px;
   }
   .cardfooter{
     display: none;
@@ -1599,7 +1602,7 @@ tfoot > tr > td{
     transform: scale(0.8,1);
 }
   .acctext1{
-    font-size: 7px;
+    font-size: 9px;
     transform: scale(1, 1.7);
   }
   .acctext2{
@@ -1618,7 +1621,7 @@ element.style {
 @media only screen and (max-width: 600px){
   .card10 {
 
-    padding: 5px 20px;
+    padding: 5px 10px;
 }
   #header_services{
     text-align: center;
@@ -1695,6 +1698,18 @@ element.style {
 
 
 @media only screen and (max-width: 490px){
+  .info9{
+    margin-top: 0px !important;
+  }
+  table caption{
+    font-size: 16px;
+  }
+  td{
+    font-size: 14px;
+  }
+  th{
+    font-size: 16px;
+  }
 #car_button_1 {
   padding:7px 5px;
 }
@@ -1753,15 +1768,10 @@ element.style {
   .card9{
     width: 295px;
   }
-.flex6 {
-    margin: 0px;
-}
 }
 /* media queries for contact */
 @media only screen and (max-width: 450px) {
-  .card9{
 
-  }
   .contentdiv{
     position: absolute;
     top: 47%;
@@ -1801,18 +1811,18 @@ element.style {
     padding: 40px 20px;
   }
 .acctext1{
-    font-size: 4px;
-    transform: scale(1.1, 1.7);
+    font-size: 5px;
+    // transform: scale(1.1, 1.7);
     margin-bottom: 0px;
 }
 .mb-0 > img{
 width: 20%;
 }
 .mb-0 > button > .arrimg{
-  width: 70%;
+  width: 62%;
   }
   #arrimg{
-    width: 70%;
+    width: 62%;
     }
 #top_header {
     font-size: 16px;

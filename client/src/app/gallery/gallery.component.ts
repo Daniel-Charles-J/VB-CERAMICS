@@ -7,6 +7,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
+
   constructor(){
   }
   showMenu1: boolean = false;
@@ -45,9 +46,11 @@ export class GalleryComponent {
     items: 5,
     loop:true,
     autoplay:true,
-    autoplayTimeout: 400,
+    autoplayTimeout: 3000,
     dots: false,
-    autoplayHoverPause:true,
+    slideTransition: 'linear',
+    autoplaySpeed: 3000,
+    autoplayHoverPause: true,
     margin: 20,
     responsive: {
       0:{
