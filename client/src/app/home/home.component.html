@@ -150,8 +150,6 @@
           </div>
 
         </div>
-
-
           <div id='runclg' style='background-color: #132249;margin-bottom: -11px;'>
             <hr>
              <p id="para_two">Trusted by Reputed Institutions</p>
@@ -200,7 +198,6 @@
                 <div class="slider">
                   <img src="./assets/images/St.Josephs.svg" height="50" width="50" alt="" /><span class='college' style="margin-left:10px">St.Joseph’s Inst.</span>
                 </div>
-                
               </div>
             </div>
 
@@ -502,7 +499,7 @@
           <p class='acctext2'>Materials Science</p>
         </div>
         <button (click)="changeImage9()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          <img class='arrowimg' [src]="images[currentImageIndex]"  alt="">
+          <img id='arrimg' [src]="images[currentImageIndex]"  alt="">
         </button>
       </h5>
     </div>
@@ -522,7 +519,7 @@
           <p class='acctext2'>Nanotechnology</p>
         </div>
         <button (click)="changeImage10()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <img [src]="images[currentImageIndex2]"  alt="">
+          <img class='arrimg' [src]="images[currentImageIndex2]"  alt="">
         </button>
       </h5>
     </div>
@@ -542,7 +539,7 @@
           <p class='acctext2'>Manufacturing and Materials Science</p>
         </div>
         <button (click)="changeImage11()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <img [src]="images[currentImageIndex3]" alt="">
+          <img class='arrimg' [src]="images[currentImageIndex3]" alt="">
         </button>
       </h5>
     </div>
@@ -562,7 +559,7 @@
           <p class='acctext2'>Manufacturing and Industrial Processes</p>
         </div>
         <button (click)="changeImage12()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          <img [src]="images[currentImageIndex4]" alt="">
+          <img class='arrimg' [src]="images[currentImageIndex4]" alt="">
         </button>
       </h5>
     </div>
@@ -582,7 +579,7 @@
           <p class='acctext2'>Materials Science, Codes and Standards</p>
         </div>
         <button (click)="changeImage13()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          <img [src]="images[currentImageIndex5]" alt="">
+          <img class='arrimg' [src]="images[currentImageIndex5]" alt="">
         </button>
       </h5>
     </div>
@@ -602,7 +599,7 @@
           <p class='acctext2'>Spectroscopy, Surface Analysis</p>
         </div>
         <button (click)="changeImage14()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          <img [src]="images[currentImageIndex6]" src="./assets/images/double arrow_.svg" alt="">
+          <img class='arrimg' [src]="images[currentImageIndex6]" src="./assets/images/double arrow_.svg" alt="">
         </button>
       </h5>
     </div>

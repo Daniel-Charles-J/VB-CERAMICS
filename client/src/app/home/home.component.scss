@@ -27,7 +27,7 @@ body{overflow-x: hidden;}
 h2{
   color: #000;
 font-family: Unbounded;
-font-size: 20px;
+font-size: 19px;
 font-style: normal;
 font-weight: 500;
 line-height: 30px; /* 150% */
@@ -353,11 +353,11 @@ margin-top: 40px;
   }
 
   .flex8{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 115, 0.60) 100%),url(/assets/images/bg_con.jpeg),lightgray;
-    background-color:#99ABD8;
+    background-position: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 115, 0.60) 0%), url(/assets/images/bg_con.jpeg);
+    background-color: #99ABD8;
     background-size: cover;
     background-repeat: no-repeat, no-repeat;
-    background-position: center;
   }
 
   .form-group , .form-row{
@@ -1538,10 +1538,10 @@ tfoot > tr > td{
     transform: scale(1,1);
 }
   .acctext1{
-    font-size: 16px;
+    font-size: 14px;
   }
   .acctext2{
-    font-size: 16px;
+    font-size: 15px;
   }
   #top_header {
     font-size: 21px;
@@ -1564,6 +1564,9 @@ tfoot > tr > td{
 }
 
 @media only screen and (max-width: 650px){
+  .acctext2{
+    display: none !important;
+  }
   #top_header {
     font-size: 33px;
     transform: scale(3, 1.9);
@@ -1578,7 +1581,7 @@ tfoot > tr > td{
     opacity: unset !important;
 }
 .acctext1{
-  font-size: 14px;
+  font-size: 12px;
 }
 .acctext2{
   font-size: 14px;
@@ -1597,7 +1600,7 @@ tfoot > tr > td{
 }
   .acctext1{
     font-size: 7px;
-    transform: scale(1, 2.5);
+    transform: scale(1, 1.7);
   }
   .acctext2{
     font-size: 9px;
@@ -1686,6 +1689,7 @@ element.style {
     .fixed-top > h4{
       font-size: 16px;
     }
+
 }
 
 
@@ -1775,7 +1779,7 @@ element.style {
     border-radius: 15px;
   }
   #con_button{
-    margin-left: 3px;
+    margin-left: 10px;
     margin-top: 10px;
 
   }
@@ -1793,7 +1797,23 @@ element.style {
 }
 
 @media only screen and (max-width: 400px){
-
+  #flex_con{
+    padding: 40px 20px;
+  }
+.acctext1{
+    font-size: 4px;
+    transform: scale(1.1, 1.7);
+    margin-bottom: 0px;
+}
+.mb-0 > img{
+width: 20%;
+}
+.mb-0 > button > .arrimg{
+  width: 70%;
+  }
+  #arrimg{
+    width: 70%;
+    }
 #top_header {
     font-size: 16px;
 }
