@@ -12,7 +12,7 @@
     <div class="row">
     <div  class="col-md-12 ">
     <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-    <img id='headimg' style='margin-left:35px;padding:5px 0px;' src="./assets/images/VBCC_Logo_White.svg" alt="" [routerLink]='["/"]'>
+    <img id='headimg' src="./assets/images/VBCC_Logo_White.svg" alt="" [routerLink]='["/"]'>
     <button (click)="changeImage15()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <img [src]="imagesNav[currentImageIndex15]" class="navbar-toggler-icon" alt="">
     </button>
@@ -41,9 +41,16 @@
   </div>
   </div>
   
-  <div class="flex_of_5">
+  <!-- <div class="flex_of_5">
       <h1 id="header_services" class="flex-items5">CONTACT US</h1>
       <p class="flex-items5" id="contact_para">Craving a conversation about pottery? Immerse yourself in a vibrant world of hues and surfaces with our amazing ceramic offerings!</p>
+    </div> -->
+
+    <div class="hero">
+      <h1 class="gallery-text stretch">CONTACT US</h1>
+      <div class="gall-para">
+        <p id="contact_para">Craving a conversation about pottery? Immerse yourself in a vibrant world of hues and surfaces with our amazing ceramic offerings!</p>
+      </div>
     </div>
     <hr>
     <div id='contact_flex' style='display:flex;flex-direction:row;gap:40px;flex-wrap: wrap;padding:0px 40px;'>
