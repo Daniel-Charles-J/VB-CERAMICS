@@ -4,10 +4,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css']
+  styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
-
   constructor(){
   }
   showMenu1: boolean = false;

@@ -1,6 +1,7 @@
 .navbar-light .navbar-toggler-icon {
     background: url(/assets/images/menu_own.svg) left no-repeat;
   }
+
   .navbar-light, .navbar-toggler-icon
   {
     background-image: none !important;
@@ -100,11 +101,13 @@ gap: 50px;
   
   }
  
-.flex8{   
+
+  .flex8{   
     background-image: linear-gradient( rgba(0, 0, 0, 0.60) 0%, rgba(10, 41, 115, 0.60) 0%), url(/assets/images/bg_con.jpeg);
     background-color:#99ABD8;
     background-size: cover;
     background-repeat: no-repeat, no-repeat;
+    background-position: center;
   }
 
 #flex_con{
@@ -334,7 +337,7 @@ gap: 50px;
     -webkit-transform: scale(1.4, 1.4);
     -moz-transform: scale(1.4, 1.4);
     -o-transform: scale(1.4, 1.4);
-    transform: scale(1.4, 1.4);
+    transform: scale(1.5, 1.4);
   }
   
   .gall-para {

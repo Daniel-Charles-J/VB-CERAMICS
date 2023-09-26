@@ -150,8 +150,6 @@
           </div>
 
         </div>
-
-
           <div id='runclg' style='background-color: #132249;margin-bottom: -11px;'>
             <hr>
              <p id="para_two">Trusted by Reputed Institutions</p>
@@ -202,6 +200,7 @@
                 </div>
               </div>
             </div>
+
             <hr id="hr_tag" style='color:white'>     
           </div>
           
@@ -215,7 +214,7 @@
                 </span>
                 
                 <span class="numbers__window">
-                    <span data-aos="new-animation" #boxElement class="numbers__window__digit numbers__window__digit--3" data-fake="8395216407">7</span>
+                    <span data-aos="new-animation" #boxElement class="numbers__window__digit numbers__window__digit--3" data-fake="8395216407">9</span>
                 </span>
                 <span class="">
                   <span style="font-family: Unbounded;" class="" data-fake="5207186394">%</span>
@@ -231,7 +230,7 @@
               <div class="contentdiv">
                 <div class="numbers">
                   <span class="numbers__window " >
-                      <span  #boxElement data-aos-mirror="true" class="numbers__window__digit numbers__window__digit--2" data-fake="8642519073">1.</span>
+                      <span  #boxElement data-aos-mirror="true" class="numbers__window__digit numbers__window__digit--2" data-fake="8642519073">2.</span>
                   </span>
                   <span class="dot_num">
                     <span  #boxElement  data-aos-mirror="true" class="" data-fake="8642519.73">.</span>
@@ -240,7 +239,7 @@
                       <span   #boxElement data-aos-mirror="true" class="numbers__window__digit numbers__window__digit--2" data-fake="8395216407">0</span>
                   </span>
                   <span class="">
-                    <span style="font-family: Unbounded;" data-fake="5207186394">X</span>
+                    <span id='xtext' style="font-family: Unbounded;" data-fake="5207186394">X</span>
                 </span>
               </div>
               <p style='margin-bottom: 2px !important;' class="project1info">
@@ -254,17 +253,20 @@
                 <div class="contentdiv">
                   <div class="numbers">
                     <span class="numbers__window">
-                        <span  #boxElement  class="numbers__window__digit numbers__window__digit--2" data-fake="8642519073">8</span>
+                        <span  #boxElement  class="numbers__window__digit numbers__window__digit--2" data-fake="8642519073">5</span>
                     </span>
                     <span class="numbers__window">
                         <span  #boxElement  class="numbers__window__digit numbers__window__digit--3" data-fake="8395216407">0</span>
                     </span>
+                    <span class="numbers__window">
+                      <span  #boxElement  class="numbers__window__digit numbers__window__digit--3" data-fake="8395216407">0</span>
+                  </span>
                     <span class="">
                       <span  style="font-family: Unbounded;" data-fake="5207186394">+</span>
                   </span>
                 </div>
                 <p style='margin-bottom: 2px !important;' class="project1info">
-                  Accuracy Rate
+                  Satisfied Clients
                 </p>
                 </div>
                 </div>
@@ -494,10 +496,10 @@
         <img class='facimg' src="./assets/images/Frame 132.png" alt="">
         <div>
           <h2 class='acctext1'>Advanced Material Synthesis</h2>
-          <p class='acctext2'>Unleash your Creations</p>
+          <p class='acctext2'>Materials Science</p>
         </div>
         <button (click)="changeImage9()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          <img class='arrowimg' [src]="images[currentImageIndex]"  alt="">
+          <img id='arrimg' [src]="images[currentImageIndex]"  alt="">
         </button>
       </h5>
     </div>
@@ -514,10 +516,10 @@
         <img src="./assets/images/Frame 132 (1).png" alt="">
         <div>
           <h2 class='acctext1'>Nano Materials</h2>
-          <p class='acctext2'>Bring Ideas to Life</p>
+          <p class='acctext2'>Nanotechnology</p>
         </div>
         <button (click)="changeImage10()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <img [src]="images[currentImageIndex2]"  alt="">
+          <img class='arrimg' [src]="images[currentImageIndex2]"  alt="">
         </button>
       </h5>
     </div>
@@ -534,10 +536,10 @@
         <img src="./assets/images/Frame 132 (2).png" alt="">
         <div>
           <h2 class='acctext1'>Sanitaryware as per IS</h2>
-          <p class='acctext2'>Master Ceramic Sciences</p>
+          <p class='acctext2'>Manufacturing and Materials Science</p>
         </div>
         <button (click)="changeImage11()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <img [src]="images[currentImageIndex3]" alt="">
+          <img class='arrimg' [src]="images[currentImageIndex3]" alt="">
         </button>
       </h5>
     </div>
@@ -554,10 +556,10 @@
         <img src="./assets/images/Frame 132 (3).png" alt="">
         <div>
           <h2 class='acctext1'>Refractories as per IS</h2>
-          <p class='acctext2'>Master Ceramic Sciences</p>
+          <p class='acctext2'>Manufacturing and Industrial Processes</p>
         </div>
         <button (click)="changeImage12()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          <img [src]="images[currentImageIndex4]" alt="">
+          <img class='arrimg' [src]="images[currentImageIndex4]" alt="">
         </button>
       </h5>
     </div>
@@ -574,10 +576,10 @@
         <img src="./assets/images/Frame 132 (4).png" alt="">
         <div>
           <h2 class='acctext1'>Ceramic Tiles as per IS</h2>
-          <p class='acctext2'>Master Ceramic Sciences</p>
+          <p class='acctext2'>Materials Science, Codes and Standards</p>
         </div>
         <button (click)="changeImage13()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          <img [src]="images[currentImageIndex5]" alt="">
+          <img class='arrimg' [src]="images[currentImageIndex5]" alt="">
         </button>
       </h5>
     </div>
@@ -594,10 +596,10 @@
         <img src="./assets/images/Frame 132 (5).png" alt="">
         <div>
           <h2 class='acctext1'> Advanced Characterization</h2>
-          <p class='acctext2'>Master Ceramic Sciences</p>
+          <p class='acctext2'>Spectroscopy, Surface Analysis</p>
         </div>
         <button (click)="changeImage14()" style="margin-left:auto" class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          <img [src]="images[currentImageIndex6]" src="./assets/images/double arrow_.svg" alt="">
+          <img class='arrimg' [src]="images[currentImageIndex6]" src="./assets/images/double arrow_.svg" alt="">
         </button>
       </h5>
     </div>
