@@ -117,4 +117,12 @@ export class GalleryComponent {
       this.showMenu1 = false;
     }
   }
+  imagesNav=[
+    './assets/images/menu_own.svg',
+    './assets/images/icons8-close.svg',
+  ];
+  currentImageIndex15 = 0;
+  changeImage15() {
+    this.currentImageIndex15 = (this.currentImageIndex15 + 1) % this.imagesNav.length;
+  }
 }
