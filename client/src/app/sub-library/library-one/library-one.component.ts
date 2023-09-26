@@ -49,12 +49,19 @@ export class LibraryOneComponent {
   point13:any
   point14:any
 
-  ngOnInit(): void {
+  ngDoCheck(){
+    this.contentParams = this.activatedRoute.snapshot.params['routing'];
+    console.log(this.contentParams);
+    this.filterMethod();
+  }
 
+  ngOnInit(): void {
     this.contentParams = this.activatedRoute.snapshot.params['routing'];
     console.log(this.contentParams)
+    this.filterMethod(); 
+  }
 
-    //this.id = this.activatedRoute.snapshot.params['libraryOne']
+  filterMethod(){
     const filteredData = this.content.filter((x)=>x.routing == this.contentParams);
     this.id = filteredData[0].id;
     this.heading = filteredData[0].heading;
@@ -85,7 +92,16 @@ export class LibraryOneComponent {
     this.point13 = filteredData[0].point13;
     this.point14 = filteredData[0].point14;
     this.summary = filteredData[0].summary;
-    console.log(this.id)
+    this.scrollToTop()
+  }
+  
+  scrollToTop() {
+    (function smoothscroll() {
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+            window.scrollTo(0, 0);
+        }
+    })();
   }
 
   content = [
