@@ -13,7 +13,15 @@
 .nav-link:hover{background: #cdd9fa; color:#132249 !important;border-radius: 50px;}
 #navbarSupportedContent{padding-right: 40px;}
 .navbar-nav{gap:20px;}
-
+.article_p{
+  color: white;
+  font-family: Unbounded;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 10px 0 25px auto;
+}
 .flex_of_1{
   padding: 20px 20px 5px 20px;
   display: flex;
@@ -69,7 +77,15 @@ gap: 50px;
     margin-left: auto;
     padding: 20px 20px 0px 20px;
   }
-
+  .main-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(200px, 800px) minmax(200px, 800px) minmax(200px, 800px);
+    grid-row-gap: 10px;
+    grid-column-gap: 1.5%;
+    background: #132249;
+    padding: 20px 40px;
+  }
 .flex10{
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +185,7 @@ gap: 50px;
     flex-direction: column;
     gap: 10px;
     /* flex-wrap: wrap; */
-    padding: 40px;
+    padding: 10px 40px;
   }
   .articleimg{
     width:auto;
@@ -230,7 +246,7 @@ gap: 50px;
     line-height: 170%; /* 34px */
   }
 
-  .flex_explore{
+  /* .flex_explore{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -239,7 +255,7 @@ gap: 50px;
     background-color: #132249;
     padding: 10px 40px;;
   }
- 
+  */
   #header_article2{
     color:white !important;
     font-family: Unbounded;
@@ -269,7 +285,7 @@ gap: 50px;
     }
 
     .explore{
-      width: 30%;
+      /* width: 30%; */
     }
 
   .exploreimg{
@@ -362,7 +378,7 @@ gap: 50px;
   }
   @media (max-width: 1200px) {
     .explore{
-      width: 30%;
+      /* width: 30%; */
     }
   
   .exploreimg{
@@ -395,8 +411,23 @@ gap: 50px;
     #action_con{
       width:100%;
     }
+    .main-section{
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(200px, 800px) minmax(200px, 800px) ;
+      grid-row-gap: 10px;
+      grid-column-gap: 1.5%;
+      background: #132249;
+      padding: 20px 40px;
+    }
+    #thirdimg,#thirdimgf{
+      width: 200%;
+    }
   }
-  
+  .flex_explore{
+    display: flex;
+    flex-direction: row;
+  }
   @media (max-width: 992px) {
     .contact_us_li {  
       width: 30%;
@@ -424,10 +455,7 @@ gap: 50px;
       width: auto;
     }
   
-  .exploreimg{
-    width:340px;
-    height: 319px;
-  }
+
   }
   
   @media only screen and (max-width: 900px) {
@@ -456,6 +484,15 @@ gap: 50px;
   }
   
   @media only screen and (max-width: 800px) {
+    .main-section{
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(200px, 800px) ;
+      grid-row-gap: 10px;
+      grid-column-gap: 1.5%;
+      background: #132249;
+      padding: 20px 40px;
+    }
     .cardfooter{
       display: none;
     }
@@ -463,9 +500,7 @@ gap: 50px;
       flex-direction: column-reverse;
       text-align: center;
     }
-    .exploreimg {
-      width: 435px;
-    }
+
   }
   @media only screen and (max-width: 650px) {
     .flex_of_1{
@@ -479,12 +514,13 @@ gap: 50px;
       font-size: 15px ;
     }
 
-  .top_heading_1,.top_heading_2{
+  .top_heading_2{
     font-size: 20px;
   }
-  .exploreimg {
-    width: 420px;
-  }
+  /* .top_heading_1,.datetext{
+    font-size: 14px;
+  } */
+
   .gallery-text {
     font-size: 70px;
   }
@@ -495,17 +531,21 @@ gap: 50px;
     padding: 20px;
   }
   .flex_article{
-    padding: 20px;
+    padding: 10px 20px;
   }
-  .flex_explore{
-    padding: 20px;;
-  }
+
   #flex_con{
     padding: 40px 60px;
   }
   }
 
   @media (max-width: 600px) {
+    .flex_of_e{
+      padding:10px 20px;
+    }
+    .main-section{
+      padding:20px;
+    }
     .gallery-text {
       font-size: 60px;
     }
@@ -513,7 +553,7 @@ gap: 50px;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      padding: 20px;
+      padding: 10px 20px;;
   }
   .headul {
     padding: 5px 20px;
@@ -530,7 +570,12 @@ gap: 50px;
   }
 
   @media (max-width: 499px) {
-
+    #head_img{
+      margin-left: 20px !important;
+    }
+    .article_p,.epara{
+      font-size:12px ;
+    }
     .gallery-text {
       font-size: 40px;
     }
@@ -580,6 +625,7 @@ gap: 50px;
   }
   .datetext{
     margin-left: auto;
+    margin-bottom: 0px;
     color: #666;
     font-family: Schibsted Grotesk;
     font-size: 20px;
