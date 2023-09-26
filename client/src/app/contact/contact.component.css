@@ -280,13 +280,14 @@ line-height: 30px; /* 187.5% */
   }
 }
 .links > div > p{
-  padding-top: 5px;
+  padding: 11px;
   color: #000;
 font-family: Schibsted Grotesk;
 font-size: 28px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+margin-bottom: 0px;
 }
 .link1:hover .con_text1{
   /* transition: transform .2s ease-in-out; */
