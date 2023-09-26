@@ -7,14 +7,6 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
-  currentImageIndex15 = 0;
-  imagesNav=[
-    './assets/images/menu_own.svg',
-    './assets/images/icons8-close.svg',
-  ]
-  changeImage15() {
-    this.currentImageIndex15 = (this.currentImageIndex15 + 1) % this.imagesNav.length;
-  }
   constructor(){
   }
   showMenu1: boolean = false;
