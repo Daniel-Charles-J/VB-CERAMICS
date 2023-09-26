@@ -175,18 +175,28 @@
           <h1 id="header_article2"  class="flex-items1">Explore Articles</h1>
         </div>
       </div>
-      <div class='flex_explore'>
+      <div class='main-section'>
         <div class="explore">
             <img [routerLink]='["Quartz - Interesting Facts"]' class='exploreimg' src="./assets/images/article1.jpeg" alt="">
+           <div class='flex_explore'>
             <p class='epara'> Quartz - Interesting Facts </p>
+            <p class='article_p'>Dec 15,2022</p>
+           </div>
+            
         </div>
         <div class="explore"> 
             <img class='exploreimg' [routerLink] ='["Agate and It’s Importance"]' src="./assets/images/article2.jpeg" alt="">
-            <p class='epara'>Agate and It’s Importance</p>
+            <div class='flex_explore'>
+              <p class='epara'>Agate and It’s Importance</p>
+              <p class='article_p'>Dec 15,2022</p>
+             </div>
         </div>
         <div class="explore">
-            <img class='exploreimg' [routerLink] ='["Graphite’s Impact in Industries"]' src="./assets/images/article3.jpeg" alt="">
-            <p class='epara'>Graphite’s Impact in Industries</p>
+            <img id='thirdimg' class='exploreimg' [routerLink] ='["Graphite’s Impact in Industries"]' src="./assets/images/article3.jpeg" alt="">
+            <div id='thirdimgf'  class='flex_explore'>
+              <p class='epara'>Graphite’s Impact in Industries</p>
+              <p class='article_p'>Dec 15,2022</p>
+             </div>
         </div>
       </div>
 
