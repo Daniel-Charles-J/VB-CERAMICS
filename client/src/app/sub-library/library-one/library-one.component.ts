@@ -8,6 +8,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 
 export class LibraryOneComponent {
+  
+  
   currentImageIndex15 = 0;
   imagesNav=[
     './assets/images/menu_own.svg',
