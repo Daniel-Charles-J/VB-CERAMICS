@@ -616,7 +616,7 @@ font-size: 14px;
     padding: 20px;
   }
   .navbar{
-    padding: 20px;
+    padding: 10px;
   }
   #main-section{
     padding: 20px;
@@ -688,6 +688,9 @@ padding: 0px ;
 
 }
 @media only screen and (max-width:400px) {
+  #footer_p {
+    font-size: 13px;
+}
   .textb{
     margin: 139px 0px 0px 0px;
   }

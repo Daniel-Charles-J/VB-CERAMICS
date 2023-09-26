@@ -31,7 +31,7 @@ export class HomeComponent implements AfterViewInit {
     getScreenSize(event?) {
           this.screenHeight = window.innerHeight;
           this.screenWidth = window.innerWidth;
-          console.log(this.screenHeight, this.screenWidth);
+          // console.log(this.screenHeight, this.screenWidth);
     }
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);

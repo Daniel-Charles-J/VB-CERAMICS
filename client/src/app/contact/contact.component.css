@@ -173,14 +173,15 @@
     #contact_flex{
       flex-direction: column !important;
       gap:0px !important;
+      padding: 0px 20px !important;
     }
     #header_services{
       margin-top: 10px;
-      font-size:55px;
+      font-size:40px;
       text-align: center;
     }
     #contact_para{
-      font-size: 20px;
+      font-size: 18px;
       text-align: center;
       width: auto;
     }
@@ -265,6 +266,9 @@ line-height: 30px; /* 187.5% */
 }
   
 @media only screen and (max-width: 400px) {
+  #footer_p {
+    font-size: 13px;
+}
   #headimg{
     margin-left: 13px !important;
   }

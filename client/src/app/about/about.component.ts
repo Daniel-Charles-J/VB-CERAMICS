@@ -49,21 +49,21 @@ export class AboutComponent {
     const main = document.getElementById('main');
     if(this.lastSectionID!==undefined) {
       const ele = document.getElementById(this.lastSectionID);
+      const scrollOffset = 0
       ele.style.position = 'unset';
       ele.style.top = '0px';
       ele.style.marginBottom = '0px';
     }
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const scrollOffset = window.innerHeight * 0.03; 
+      const elementPosition = element.getBoundingClientRect();
+      const scrollToY = elementPosition.top - scrollOffset;
+      element.scrollIntoView({ behavior: 'smooth'});
+      window.scrollBy(0, scrollToY);
     }
     let sectionElement = ['Profile', 'Vision', 'Team', 'Expert_Panel', 'VBCC_Fellowship', 'Research_Papers','Research_Projects',
       'Academic_Activity'];
-    // if(!this.isScrolled) {
       element.style.position = 'relative';
-      element.style.top = '20px';
-      element.style.marginBottom = '20px';
-    //   this.isScrolled = true;
-    // }
     this.lastSectionID = sectionId;
   }
 
