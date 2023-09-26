@@ -28,12 +28,8 @@
       <div  class="col-md-12 ">
       <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
       <img id='head_img' src="./assets/images/VBCC_Logo_White.svg" alt="" [routerLink]='["/"]'>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="menu-btn" (click)="toggleMenu()">
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-        </div>
+      <button (click)="changeImage15()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img [src]="imagesNav[currentImageIndex15]" class="navbar-toggler-icon" alt="">
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
