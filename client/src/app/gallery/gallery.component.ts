@@ -46,11 +46,9 @@ export class GalleryComponent {
     items: 5,
     loop:true,
     autoplay:true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 400,
     dots: false,
-    slideTransition: 'linear',
-    autoplaySpeed: 3000,
-    autoplayHoverPause: true,
+    autoplayHoverPause:true,
     margin: 20,
     responsive: {
       0:{
@@ -119,6 +117,7 @@ export class GalleryComponent {
       this.showMenu1 = false;
     }
   }
+
   imagesNav=[
     './assets/images/menu_own.svg',
     './assets/images/icons8-close.svg',
