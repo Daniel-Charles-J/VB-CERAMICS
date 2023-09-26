@@ -455,7 +455,11 @@ margin-top: 40px;
 
 
   @keyframes counting {
-    100% {
+    from{
+      transform: translate3d(0, 0, 0);
+      font-family: Unbounded;
+    }
+    to{
       transform: translate3d(0, -10em, 0);
       font-family: Unbounded;
     }
@@ -1118,8 +1122,8 @@ $animationSpeed: 15s;
 
 // Animation
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+	from{ transform: translateX(0); }
+	to { transform: translateX(calc(-250px * 7))}
 }
 
 
