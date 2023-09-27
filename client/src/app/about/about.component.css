@@ -1056,7 +1056,9 @@ line-height: 30px; /* 187.5% */
   .modal_top2 {
     width: 70%; top: 3%; left: 15%;
   }
-
+  .card10{
+    min-width: 240px;
+  }
 }
 
 @media (max-width: 420px) { 
