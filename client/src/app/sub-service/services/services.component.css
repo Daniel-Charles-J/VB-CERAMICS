@@ -92,47 +92,6 @@ h2 {
   gap: 30px;
 }
 
-.menu-btn {
-  display: none;
-  position: absolute;
-  z-index: 3;
-  right: 10%;
-  cursor: pointer;
-  transition: all 0.5s ease-out;
-  right: 4%;
-  top: 35px;
-}
-
-/* Styling the hamburger lines */
-.menu-btn .btn-line {
-  width: 20px;
-  height: 2.2px;
-  margin: 0 0 6px 0;
-  background: white;
-  transition: all 0.5s ease-out;
-} 
-  
-/* Adding transform to the X */
-.menu-btn.close {
-  transform: rotate(180deg);
-}
-
-/* Styling the three lines to make it an X */
-.menu-btn.close .btn-line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-btn.close .btn-line:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-btn.close .btn-line:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
-}
-
-.navbar-toggler{
-  border: 0px;
-}
 /* Gallery text section */
 
 .gallery-text {
@@ -497,9 +456,6 @@ line-height: 30px; /* 187.5% */
 
 @media (max-width: 992px) {
 
-  .menu-btn {
-    display: block;
-  }
   .nav-item{
     width: 100%;
     display: flex;
