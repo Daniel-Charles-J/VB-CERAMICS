@@ -20,7 +20,7 @@ import * as $ from 'jquery';
   
 })
 
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent  {
   screenHeight: number;
   screenWidth: number;
     constructor() {
@@ -105,7 +105,9 @@ public customOptions2: OwlOptions = {
   @ViewChildren('boxElement') boxElements!: QueryList<ElementRef>;
   isVisible = false;
 
-  ngAfterViewInit() {
+
+  @HostListener('window:scroll', ['$event'])
+  onViewportScroll(event: any): void {
     this.boxElements.forEach((boxElement) => {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -117,13 +119,8 @@ public customOptions2: OwlOptions = {
         });
       });
       observer.observe(boxElement.nativeElement);
-    });
-    
-  }
-  @HostListener('window:scroll', ['$event'])
-  onViewportScroll(event: any): void {
-    // Handle scrolling logic here if needed
-  }
+  })
+}
   currentImageIndex = 0;
   currentImageIndex2 = 0;
   currentImageIndex3 = 0;
