@@ -614,7 +614,15 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
     grid-template-columns: minmax(200px, 500px) minmax(200px, 500px);
   }
 }
-
+@media only screen and (max-width: 900px){
+  .card10{
+    padding: 0px;
+  }
+  .flex10{
+    padding: 40px;
+    justify-content: flex-start;
+  }
+}
 @media (max-width: 850px) {
   .hero {
     display: flex;
@@ -663,9 +671,6 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
 
   .gall-para {
     font-size: 16px;
-  }
-  .flex10{
-    justify-content: flex-start;
   }
 }
 
