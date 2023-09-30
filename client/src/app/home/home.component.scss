@@ -26,7 +26,7 @@ body{overflow-x: hidden;}
 #top_header{color: #132249;text-align:center;font-variant-numeric: lining-nums tabular-nums;font-family: Unbounded;font-style: normal;font-weight: 700;line-height: normal;text-transform: uppercase;letter-spacing: 1.5px;}
 h2{
   color: #000;
-font-family: Unbounded;
+font-family: Schibsted Grotesk;;
 font-size: 19px;
 font-style: normal;
 font-weight: 500;
@@ -64,6 +64,14 @@ line-height: normal;
   width: 50%;
   place-self:center;
   padding: 15px;
+}
+.card-body{
+  color: #333;
+font-family: Schibsted Grotesk;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 #facility_para{
   color: white;
@@ -564,6 +572,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 16px; /* 100% */
+height: 45px;
 }
 
 #head_con{
@@ -626,24 +635,28 @@ line-height: 16px; /* 100% */
   left: 4% ;
 
 }
-
+.card-header{
+  padding: 10px !important;
+}
 #car_button_1{
   border-radius: 17px;
   border: 1px solid #FFF;
   background-color: #132249;
   color:white;
-  padding:10px;
+  padding:8px 24px 8px 24px !important;
   font-size: 16px;
   display: inline-block;
+  height: 50px;
 }
 #car_button_2{
 border-radius: 17px;
 border: 1px solid #FFF;
 background: #132249;
 color:white;
-padding:10px;
+padding:8px 24px 8px 24px !important;
 font-size: 16px;
 margin-left:15px;
+height: 50px;
 }
 
 
@@ -1219,7 +1232,19 @@ text-align: right !important;
 table td:nth-child(2){
   text-align: right !important;
   }
-
+  .acctext1{
+    white-space: pre-line !important;
+    // width: min-content;
+  }
+.acctext2{
+  color: #000;
+  font-family: Schibsted Grotesk;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0px;
+}
 table th:nth-child(3){
     text-align: right !important;
     }
@@ -1292,6 +1317,9 @@ tfoot > tr > td{
 }
 }
 @media only screen and (max-width: 1100px){
+  .info9{
+    margin-top: 0px;
+  }
   #header_services{
     text-align: center;
     transform: scale(1.6,1);
@@ -1370,7 +1398,7 @@ tfoot > tr > td{
     .carousel-caption {
       position: absolute;
       right: 5%;
-      bottom: 0.75rem;
+      bottom: -0.25rem;
       left: 62%;
       padding-top: 1.25rem;
       padding-bottom: 1.25rem;
@@ -1382,7 +1410,7 @@ tfoot > tr > td{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 62%;
+    width: 66%;
   }
   .carousel-control-next {
     right: 11% !important;
@@ -1415,9 +1443,29 @@ tfoot > tr > td{
     justify-content: center;
     align-items: center;
 }
+.fixed-top > p{
+  color: #FFF;
+  text-align: right;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width:80%;
+  float: right;
+  text-align: right;
+  }
 }
 
 @media only screen and (max-width: 930px){
+  .card10{
+    padding: 0px;
+  }
+  .flex10{
+    padding: 40px;
+    justify-content: flex-start;
+  }
   #header_services{
     text-align: center;
     transform: scale(1.4,1);
@@ -1426,12 +1474,12 @@ tfoot > tr > td{
     text-align: center;
     transform: scale(1.4,1);
 }
+#top_header {
+  font-size: 30px;
 }
-@media only screen and (max-width: 930px){
-  #top_header {
-    font-size: 30px;
-  }
+
 }
+
 
 @media only screen and (max-width: 867px){
   .card3 > img{
@@ -1452,6 +1500,13 @@ tfoot > tr > td{
     text-align: center;
     transform: scale(1.2,1);
 }
+.buttonFlex{
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 75%;
+}
 }
 
 @media only screen and (max-width: 830px){
@@ -1462,13 +1517,6 @@ tfoot > tr > td{
     width: auto;
     transform: scale(2,1.2);
     margin-top: 10px;
-  }
-  .buttonFlex{
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 85%;
   }
   .fixed-top > p {
 
@@ -1526,10 +1574,17 @@ tfoot > tr > td{
     width: 85%;
   }
   #paraoneofcaro4,.fixed-top >  #paraoneofcaro3,.fixed-top >  #paraoneofcaro2,.fixed-top > #paraoneofcaro1{
-    font-size: 25px;
+    font-size: 28px;
     }
     .fixed-top > h4{
-      font-size: 25px;
+      font-size: 28px;
+    }
+    .fixed_top{
+        position: fixed;
+        top: 55px;
+        left: 35%;
+        width: 61%;
+        z-index: 1030;
     }
 }
 
@@ -1562,12 +1617,19 @@ tfoot > tr > td{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 85%;
+    width: 96%;
   }
   .card3 > img{
     width: auto;
     transform: scale(1.6,1.2);
     margin-top: 10px;
+  }
+  .card9{
+    width: 87%;
+    padding: 25px;
+  }
+  .info9{
+    margin-top: 0px;
   }
 }
 
@@ -1607,12 +1669,12 @@ tfoot > tr > td{
     transform: scale(0.8,1);
 }
   .acctext1{
-    font-size: 9px;
-    transform: scale(1, 1.7);
+    font-size: 16px;
+    // transform: scale(1, 1.7);
   }
   .acctext2{
     font-size: 9px;
-    transform: scale(1,1.3);
+    // transform: scale(1,1.3);
   }
 
 element.style {
@@ -1624,6 +1686,17 @@ element.style {
 }
 
 @media only screen and (max-width: 600px){
+  .info9{
+    margin-top: 0px;
+  }
+  .acctext1{
+    font-size: 13px;
+    // transform: scale(1, 1.7);
+  }
+  .card9 {
+    width: 77%;
+    padding: 40px;
+}
   .card10 {
 
     padding: 5px 10px;
@@ -1651,7 +1724,7 @@ element.style {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: auto;
+  width: 100%;
 }
 .flex6{
   margin: 0px 20px;
@@ -1659,6 +1732,12 @@ element.style {
 }
 
 @media only screen and (max-width: 590px){
+  .card1,.card2,.card3{
+    padding: 16px;
+  }
+  #carouselExampleIndicators{
+    margin: 0px 20px !important;
+  }
   .contentdiv{
     position: absolute;
     top: 59%;
@@ -1688,15 +1767,29 @@ element.style {
   padding: 0px 1.9em 0 0;
   margin: 0px auto;
 }
+.buttonFlex{
+  margin-left: -10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 111%;
+}
 }
 
 @media only screen and (max-width: 500px){
   #paraoneofcaro4,.fixed-top >  #paraoneofcaro3,.fixed-top >  #paraoneofcaro2,.fixed-top > #paraoneofcaro1{
-    font-size: 16px;
+    font-size: 28px;
     }
     .fixed-top > h4{
-      font-size: 16px;
+      font-size: 28px;
     }
+    .fixed-top {
+      position: fixed;
+      top: 55px;
+      left: 35%;
+      width: 61%;
+      z-index: 1030;
+  }
 
 }
 
@@ -1742,17 +1835,17 @@ element.style {
   font-family: Schibsted Grotesk;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
-  width: auto;
+  width: 90%;
   float: right;
   text-align: right;
 }
 
 .fixed-top{
   position: fixed;
-  top: 55px;
-  left: -2%;
+  top: 45px;
+  left: -3%;
   width: 100%;
   z-index: 1030;
   
@@ -1770,11 +1863,6 @@ element.style {
 }
 }
 
-@media only screen and (max-width: 400px) {
-  .card9{
-    width: 295px;
-  }
-}
 /* media queries for contact */
 @media only screen and (max-width: 450px) {
 
@@ -1813,11 +1901,28 @@ element.style {
 }
 
 @media only screen and (max-width: 400px){
+  .fixed-top > p {
+    color: #FFF;
+    text-align: right;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: Schibsted Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 95%;
+    float: right;
+    text-align: right;
+  }
+  
+  .card9{
+    width: 295px;
+  }
   #flex_con{
     padding: 40px 20px;
   }
 .acctext1{
-    font-size: 5px;
+    font-size: 7px;
     // transform: scale(1.1, 1.7);
     margin-bottom: 0px;
 }

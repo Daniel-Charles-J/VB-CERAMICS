@@ -84,7 +84,7 @@ public customOptions2: OwlOptions = {
     0:{
       items: 1
     },
-    800:{
+    600:{
       items: 2
     },
     1050:{
