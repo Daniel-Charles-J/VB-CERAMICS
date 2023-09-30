@@ -73,17 +73,17 @@
         </form>
       </div>
       <div class='links' style='flex:30%'>
-        <div class='link1' style=display:flex;flex-direction:row>
+        <div class='link1' style=display:flex;flex-direction:row (click)="socials('linkedIn')">
           <p  class ='con_text1' style="font-size:26px">Linkedin</p>
           <img class ='con_p1' style="margin-left: auto;" src="./assets/images/mdi_linkedin.svg" alt="">
         </div>
         <hr style='margin: 0px;'>
-        <div class='link2' style=display:flex;flex-direction:row>
+        <div class='link2' style=display:flex;flex-direction:row (click)="socials('google')">
           <p  class ='con_text2' style="font-size:26px">Google</p>
           <img class ='con_p2' style="margin-left: auto;" src="./assets/images/ri_google-fill.svg" alt="">
         </div>
         <hr style='margin: 0px;'>
-        <div class='link3' style=display:flex;flex-direction:row>
+        <div class='link3' style=display:flex;flex-direction:row (click)="socials('whatsapp')">
           <p class ='con_text3' style="font-size:26px">Whatsapp </p>
           <img class ='con_p3' style="margin-left: auto;" src="./assets/images/ic_baseline-whatsapp.svg" alt="">
         </div>
@@ -113,7 +113,7 @@
     <div class='flex10'>
       <div class='card10'>
         <p>COMPANY</p>
-        <img src="./assets/images/foot1.png" alt="">
+        <img src="./assets/images/foot1.png" alt="" (click)="ourGroups('vbcc')">
         <br>
         <br>
         <p style='font-size:16px !important;'>Vb Ceramic Consultants,
@@ -123,11 +123,11 @@
       <div class='card10'>
         <p>SITEMAP</p>
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Gallery</li>
-          <li>Contact Us</li>
+          <li [routerLink]='["/"]'>Home</li>
+          <li  [routerLink] ='["/about"]'>About Us</li>
+          <li [routerLink] ='["/service"]'>Services</li>
+          <li [routerLink] ='["/gallery"]'>Gallery</li>
+          <li [routerLink]='["/contact"]'>Contact Us</li>
         </ul>
       </div>
       <div class='card10'>
@@ -141,21 +141,21 @@
         </ul>
         <p>SOCIALS</p>
         <div style='display: flex;flex-direction:row;gap:20px'>
-          <img src="./assets/images/mdi_linkedin (1).svg" alt="">
-          <img src="./assets/images/YouTube svg.svg" alt="">
-          <img src="./assets/images/Facebook svg.svg" alt="">
+          <img src="./assets/images/mdi_linkedin (1).svg" alt="" (click)="socials('linkedIn')">
+          <img src="./assets/images/YouTube svg.svg" alt="" (click)="socials('youtube')">
+          <img src="./assets/images/Facebook svg.svg" alt="" (click)="socials('facebook')">
         </div>
       </div>
       <div class='card10'>
         <p>SUPPORT</p>
         <ul>
-          <li>Contact Us</li>
-          <li>Help centre</li>
+          <li [routerLink]='["/contact"]'>Contact Us</li>
+          <li [routerLink]='["/contact"]'>Help centre</li>
         </ul>
         <p>OUR GROUPS</p>
         <div style='display: flex;flex-direction:row;gap:20px'>
-        <img style='width:60px' src="./assets/images/foot2.png" alt="">
-        <img style='width:60px' src="./assets/gallery-page-img/hi-temp.png" alt="">
+        <img style='width:60px' src="./assets/images/foot2.png" alt="" (click)="ourGroups('vbcc')">
+        <img style='width:60px' src="./assets/gallery-page-img/hi-temp.png" alt="" (click)="ourGroups('hiTemp')">
       </div>
       </div>
     </div>
