@@ -843,7 +843,15 @@ $animationSpeed: 15s;
     gap: 15px;
   }
 }
-
+@media only screen and (max-width: 900px){
+  .card10{
+    padding: 0px;
+  }
+  .flex10{
+    padding: 40px;
+    justify-content: flex-start;
+  }
+}
 @media (max-width: 800px) {
   .left-image {
     width: 90%;
