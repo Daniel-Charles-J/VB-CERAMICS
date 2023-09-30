@@ -84,6 +84,7 @@ export class ServicesComponent {
   }
 
 
+
   // scrollToTop() {
   //   (function smoothscroll() {
   //       var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -92,6 +93,25 @@ export class ServicesComponent {
   //       }
   //   })();
   // }
+
+  ourGroups(param : any){
+    if(param == 'vbcc'){
+      window.location.href = 'https://www.vbceramics.com/home.php'
+    } else {
+      window.location.href = 'https://www.hitechceramics.in/'
+    }
+  }
+
+  socials(param : any){
+    if(param == 'youtube'){
+      window.location.href = 'https://www.youtube.com/@drviswabaskaranvbceramics4394'
+    } else if (param == 'linkedIn'){
+      window.location.href = 'https://www.linkedin.com/company/dr.vb-ceramics-research-centre/'
+    } else {
+      window.location.href = 'paste a facebook URL here';
+    }
+  }
+
 
   content = [
     {

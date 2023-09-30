@@ -70,6 +70,24 @@ export class AboutComponent {
      
   }
 
+  ourGroups(param : any){
+    if(param == 'vbcc'){
+      window.location.href = 'https://www.vbceramics.com/home.php'
+    } else {
+      window.location.href = 'https://www.hitechceramics.in/'
+    }
+  }
+
+  socials(param : any){
+    if(param == 'youtube'){
+      window.location.href = 'https://www.youtube.com/@drviswabaskaranvbceramics4394'
+    } else if (param == 'linkedIn'){
+      window.location.href = 'https://www.linkedin.com/company/dr.vb-ceramics-research-centre/'
+    } else {
+      window.location.href = 'paste a facebook URL here';
+    }
+  }
+
   open(modalId: string): void {
     var modal = document.getElementById(modalId);
     modal.style.display = "block";
