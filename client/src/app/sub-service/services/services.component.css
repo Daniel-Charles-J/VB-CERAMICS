@@ -493,7 +493,15 @@ line-height: 30px; /* 187.5% */
     font-size: 21px;
   }
 }
-
+@media only screen and (max-width: 900px){
+  .card10{
+    padding: 0px;
+  }
+  .flex10{
+    padding: 40px;
+    justify-content: flex-start;
+  }
+}
 @media (max-width: 850px) {
   .hero {
     display: flex;
