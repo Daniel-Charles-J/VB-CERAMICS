@@ -200,26 +200,25 @@
       <ul style="display: flex; flex-direction: column; gap: 8px;">
         <li [routerLink]='["/"]'>Home</li>
         <li [routerLink] ='["/about"]'>About Us</li>
-        <li [routerLink] ='["/service"]'>Services</li>
-        <li  [routerLink] ='["/gallery"]'>Gallery</li>
-        <li  [routerLink]='["/contact"]'>Contact Us</li>
+        <li  [routerLink] ='["/service"]'>Services</li>
+        <li [routerLink] ='["/gallery"]'>Gallery</li>
+        <li [routerLink]='["/contact"]'>Contact Us</li>
       </ul>
     </div>
     <div class='card10'>
       <div>
         <p style="font-weight:500; margin-bottom: 10px;">SERVICES</p>
         <ul style="display: flex; flex-direction: column; gap: 8px;">
-          <li>Raw Materials</li>
-          <li>Material Processing</li>
-          <li>Characterization</li>
-          <li>Heat Treatment Facility</li>
-
+          <li [routerLink] ='["/service"]'>All Services</li>
+          <li [routerLink] ='["/service/x-ray-diffraction-xrd"]'>X-Ray Diffraction</li>
+          <li [routerLink] ='["/service/scanning-electron-microscope-sem"]'>SEM (3 Images)</li>
+          <li [routerLink] ='["/service/x-ray-fluorescence-xrf"]'>X-Ray Fluorescence</li>
         </ul>
       </div>
       <div style="margin-top: 20px;">
         <p style="font-weight:500; margin-bottom: 10px;">SOCIALS</p>
         <div style='display: flex;flex-direction:row;gap:20px'>
-          <img src="./assets/images/mdi_linkedin (1).svg" alt="" class="footer_img"  (click)="socials('linkedIn')">
+          <img src="./assets/images/mdi_linkedin (1).svg" alt="" class="footer_img" (click)="socials('linkedIn')">
           <img src="./assets/images/YouTube svg.svg" alt="" class="footer_img" (click)="socials('youtube')">
           <img src="./assets/images/Facebook svg.svg" alt="" class="footer_img" (click)="socials('facebook')">
         </div>
@@ -229,14 +228,14 @@
       <div>
         <p style="font-weight:500; margin-bottom: 10px;">SUPPORT</p>
         <ul style="display: flex; flex-direction: column; gap: 8px;">
-          <li  [routerLink]='["/contact"]'>Contact Us</li>
-          <li  [routerLink]='["/contact"]'>Help centre</li>
+          <li [routerLink]='["/contact"]'>Contact Us</li>
+          <li [routerLink]='["/contact"]'>Help centre</li>
         </ul>
       </div>
       <div style="margin-top: 20px;">
         <p style="font-weight:500; margin-bottom: 10px;">OUR GROUPS</p>
         <div style="display: flex; gap: 20px">
-          <svg (click)="ourGroups('vbcc')" width="100" height="70" viewBox="0 0 86 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="footer_img hitech">
+          <svg  (click)="ourGroups('vbcc')" width="100" height="70" viewBox="0 0 86 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="footer_img hitech">
             <rect x="0.5" width="84.5496" height="60" fill="url(#pattern0)"/>
             <defs>
             <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
