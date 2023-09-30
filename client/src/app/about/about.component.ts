@@ -32,11 +32,17 @@ export class AboutComponent {
     }
   
   scrollToSection(sectionId: string): void {
+    debugger;
     const element = document.getElementById(sectionId);
     if (element) {
-      const scrollOffset = window.innerHeight * 0.03; 
+      let scrollOffset = 0;
+      if (window.innerHeight > 1000) {
+        scrollOffset = window.innerHeight * 0.018;
+      } else {
+        scrollOffset = window.innerHeight * 0.028;
+      }
       const elementPosition = element.getBoundingClientRect();
-      const scrollToY = (elementPosition.top) - scrollOffset;
+      const scrollToY = elementPosition.top - scrollOffset;
       element.scrollIntoView({ behavior: 'smooth'});
       window.scrollBy(0, scrollToY);
     }
