@@ -152,6 +152,12 @@
     grid-column: span 2;
     grid-row: span 2;
   }
+  #head1,#head2,#head3{
+        position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   #header_article{
     color:#132249 ;
     font-family: Unbounded;
