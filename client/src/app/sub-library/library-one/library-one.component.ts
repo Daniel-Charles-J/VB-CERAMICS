@@ -94,18 +94,35 @@ export class LibraryOneComponent {
     this.point13 = filteredData[0].point13;
     this.point14 = filteredData[0].point14;
     this.summary = filteredData[0].summary;
-    this.scrollToTop()
+    //this.scrollToTop()
   }
   
-  scrollToTop() {
-    (function smoothscroll() {
-        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        if (currentScroll > 0) {
-            window.scrollTo(0, 0);
-        }
-    })();
+  // scrollToTop() {
+  //   // (function smoothscroll() {
+  //   //     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  //   //     if (currentScroll > 0) {
+  //   //         window.scrollTo(0, 0);
+  //   //     }
+  //   // })();
+  // }
+
+  ourGroups(param : any){
+    if(param == 'vbcc'){
+      window.location.href = 'https://www.vbceramics.com/home.php'
+    } else {
+      window.location.href = 'https://www.hitechceramics.in/'
+    }
   }
 
+  socials(param : any){
+    if(param == 'youtube'){
+      window.location.href = 'https://www.youtube.com/@drviswabaskaranvbceramics4394'
+    } else if (param == 'linkedIn'){
+      window.location.href = 'https://www.linkedin.com/company/dr.vb-ceramics-research-centre/'
+    } else {
+      window.location.href = 'paste a facebook URL here';
+    }
+  }
   content = [
     {
       id : 1,
