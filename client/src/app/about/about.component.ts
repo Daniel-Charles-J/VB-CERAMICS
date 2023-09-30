@@ -36,7 +36,7 @@ export class AboutComponent {
     if (element) {
       const scrollOffset = window.innerHeight * 0.03; 
       const elementPosition = element.getBoundingClientRect();
-      const scrollToY = elementPosition.top - scrollOffset;
+      const scrollToY = (elementPosition.top) - scrollOffset;
       element.scrollIntoView({ behavior: 'smooth'});
       window.scrollBy(0, scrollToY);
     }

@@ -7,7 +7,7 @@
     display: flex;
 } */
 .navbar{
-  padding: 20px 40px;
+  padding: 10px 40px;
 }
 .datetext2 {
   margin-top: 9px !important;
@@ -343,6 +343,13 @@
     margin: 190px 0px 0px 0px;
     padding: 5px;
     word-break: break-word;
+    color: #000;
+    font-family: Schibsted Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    text-transform: uppercase;
   }
   .texta{
     display: table;
@@ -358,6 +365,13 @@
     margin: 482px 0px 0px 0px;
     padding: 5px;
     word-break: break-word;
+    color: #000;
+    font-family: Schibsted Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    text-transform: uppercase;
   }
 
   .text-bottom {
@@ -515,6 +529,7 @@
   .gall-para {
     font-size: 16px;
     margin-top: 10px;
+    text-align: center;
   }
 
   .contact_us_li {  
@@ -534,6 +549,13 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .card10{
+    padding: 0px;
+  }
+  .flex10{
+    padding: 40px;
+    justify-content: flex-start;
+  }
   #article_para,#library_para,#article_para2{
     flex:auto;
   }
@@ -541,10 +563,10 @@
     text-align: center;
   }
   .textb{
-    margin: 144px 0px 0px 0px;
+    margin: 147px 0px 0px 0px;
   }
   .texta{
-    margin: 143px 0px 0px 0px;
+    margin: 148px 0px 0px 0px;
   }
 .container{
   grid-template-columns: 1fr;
@@ -577,6 +599,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 
 #main-section{
@@ -671,10 +694,10 @@ padding: 0px ;
     margin:10px 2px;
   }
   .textb{
-    margin: 150px 0px 0px 0px;
+    margin: 155px 0px 0px 0px;
   }
   .texta{
-    margin: 151px 0px 0px 0px;
+    margin: 153px 0px 0px 0px;
   }
 }
 

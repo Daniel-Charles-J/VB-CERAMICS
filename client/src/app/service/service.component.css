@@ -583,7 +583,6 @@ max-width: 393px; */
   }
 
 }
-
 @media (max-width: 992px) {
   /* .contact_us_li {
     display: flex;
@@ -621,7 +620,15 @@ max-width: 393px; */
     grid-template-columns: minmax(200px, 500px) minmax(200px, 500px);
   }
 }
-
+@media (max-width: 900px) {
+  .card10{
+    padding: 0px;
+  }
+  .flex10{
+    padding: 40px;
+    justify-content: flex-start;
+  }
+}
 @media (max-width: 850px) {
   .hero {
     display: flex;
