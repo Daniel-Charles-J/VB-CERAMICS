@@ -84,7 +84,7 @@ gap: 50px;
     grid-row-gap: 10px;
     grid-column-gap: 1.5%;
     background: #132249;
-    padding: 0px 40px;
+    padding: 20px 40px;
   }
 .flex10{
     display: flex;
@@ -419,7 +419,7 @@ gap: 50px;
       grid-row-gap: 10px;
       grid-column-gap: 1.5%;
       background: #132249;
-      padding: 0px 40px;
+      padding: 20px 40px;
     }
     #thirdimg,#thirdimgf{
       width: 200%;
@@ -482,15 +482,8 @@ gap: 50px;
       justify-content: center;
       align-items: center;
     }
-    .card10{
-      padding: 0px;
-    }
-    .flex10{
-      padding: 40px;
-      justify-content: flex-start;
-    }
   }
-
+  
   @media only screen and (max-width: 800px) {
     .main-section{
       width: 100%;
@@ -499,7 +492,7 @@ gap: 50px;
       grid-row-gap: 10px;
       grid-column-gap: 1.5%;
       background: #132249;
-      padding: 0px 40px;
+      padding: 20px 40px;
     }
     .cardfooter{
       display: none;
@@ -552,7 +545,7 @@ gap: 50px;
       padding:10px 20px;
     }
     .main-section{
-      padding:0px 20px;
+      padding:20px;
     }
     .gallery-text {
       font-size: 60px;

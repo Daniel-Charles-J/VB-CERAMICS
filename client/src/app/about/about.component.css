@@ -787,9 +787,6 @@ line-height: 30px; /* 187.5% */
   .menu_nav-link{
     font-size: 18px;
   }
-  .main {
-  gap: 10px;
-}
 
   .main_section1_cnt,
   .main_section2_cnt,
@@ -917,8 +914,9 @@ line-height: 30px; /* 187.5% */
 
   .main {
     width: 100%;
-    padding: 12px;
-    margin-left: 1%;
+    padding: 16px;
+    margin-left: 0px;
+    gap: 16px;
   }
 
   .section5_images {
