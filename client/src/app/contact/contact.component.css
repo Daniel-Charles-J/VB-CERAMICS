@@ -9,10 +9,13 @@
 .bg-light {background-color: #132249 !important;}
 .nav-link{padding: 5px 20px;border-radius: 50px;color:white!important;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk;}
 .nav-link:hover{background: #cdd9fa; color:#132249 !important;border-radius: 50px;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk}
-#navbarSupportedContent{padding-right: 40px;}
+
 .navbar-nav{gap:20px;}
 .navbar {
   padding: 10px 40px;
+}
+#nav_contact{
+  background: #cdd9fa; color:#132249 !important;border-radius: 50px;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk;text-decoration: none;
 }
 .nav-link {
   border-radius: 50px;
@@ -72,12 +75,26 @@
             font-weight: 500;
             line-height: normal;
           }
-        
+          #nav_contact:hover{
+            /* border-radius: 20px; */
+          /* border: 2px solid #132249; */
+          background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
+          color: white !important;
+          border: 1px solid white;
+          }
+          
+          #nav_contact{
+            display: flex;
+            padding: 6px 15px;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+          }
 #message_button{
-  padding: 5px;
+  padding: 16px;
             width: inherit;
             font-family: Schibsted Grotesk;
-            font-size: 28px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -354,10 +371,13 @@
     }
   }
   @media only screen and (max-width: 600px) {
+    .links{
+      transform: unset !important;
+    }
     #contact_flex{
       flex-direction: column !important;
       gap:0px !important;
-      padding: 0px 20px !important;
+      padding: 0px 20px 20px 20px !important;
     }
     
     .flex_of_5{
