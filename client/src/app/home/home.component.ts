@@ -183,7 +183,6 @@ public customOptions2: OwlOptions = {
   }
 
 
-
   arrowimages = [
     './assets/images/arrow_cc.svg',
     './assets/images/Vectorb.svg',
