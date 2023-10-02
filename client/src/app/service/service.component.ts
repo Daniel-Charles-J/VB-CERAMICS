@@ -27,15 +27,21 @@ export class ServiceComponent {
   isNanoCoating = false;
   isCasting = false;
   isFilter = false;
+
+  scrollToTop() {
+    (function smoothscroll() {
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+            window.scrollTo(0, 0);
+        }
+    })();
+  }
    
   ngOnInit(){
     this.filteredList =new MatTableDataSource(this.service);
     this.filteredSelector =new MatTableDataSource(this.service);
+    this.scrollToTop();
   }
-
-  // ngAfterViewChecked() {
-  //   window.scrollTo(0, 0);
-  //   }
   
   service = [
     {

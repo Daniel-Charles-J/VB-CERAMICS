@@ -153,10 +153,11 @@
     grid-row: span 2;
   }
   #head1,#head2,#head3{
-        position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    height: 100%;
   }
   #header_article{
     color:#132249 ;
@@ -328,7 +329,15 @@
     border: 0.9px solid black;
     text-align: center;
   }
-
+.one{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.image1{
+  width: 100%;
+  height: 100%;
+}
 .textb{
     display: table;
     border-radius: 0px 12px;
@@ -350,6 +359,8 @@
     font-weight: 400;
     line-height: 100%; /* 14px */
     text-transform: uppercase;
+    bottom: 0px;
+    left: 0px;
   }
   .texta{
     display: table;
@@ -372,6 +383,8 @@
     font-weight: 400;
     line-height: 100%; /* 14px */
     text-transform: uppercase;
+    bottom: 0px;
+    left: 0px;
   }
 
   .text-bottom {
@@ -495,6 +508,10 @@
   /* 30px */
 }
 
+.datetext{
+  padding: 6px;
+  }
+
 @media (max-width: 1320px) {
   .gallery-text {
     font-size: 70px;
@@ -571,7 +588,7 @@
 .container{
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  height: 100vh;
+  height: 90vh;
   padding: 0px 40px;
   max-width: 100%;
 }
@@ -610,6 +627,12 @@
   grid-column-gap: 1.5%;
   background: #132249;
   padding: 20px 40px;
+}
+#head1,#head2,#head3{
+  height: 30vh;
+}
+.text1, .datetext{
+  margin-bottom: 0px !important;
 }
 }
 
@@ -689,7 +712,7 @@ font-size: 14px;
   font-size:12px ;
 }
 .datetext{
-padding: 0px ;
+padding: 0px important;
 }
 }
 @media only screen and (max-width:590px) {

@@ -15,7 +15,7 @@ export class ContactComponent {
   imagesNav=[
     './assets/images/menu_own.svg',
     './assets/images/icons8-close.svg',
-  ]
+  ];
   changeImage15() {
     this.currentImageIndex15 = (this.currentImageIndex15 + 1) % this.imagesNav.length;
   }
@@ -65,4 +65,19 @@ export class ContactComponent {
 
     (document.getElementById('message') as any).value = "";
   }
+
+
+   scrollToTop() {
+    (function smoothscroll() {
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+            window.scrollTo(0, 0);
+        }
+    })();
+  }
+
+  ngOnInit(): void {
+    this.scrollToTop();
+  }
+
 }

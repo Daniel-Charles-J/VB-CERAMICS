@@ -173,7 +173,7 @@
     height: 26px;
   }
   .hero {
-    padding: 20px 40px;
+    padding: 20px 40px 0px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -359,7 +359,7 @@
       padding: 20px;
     }
     .hero {
-      padding: 20px;
+      padding: 20px 20px 0px;
     }
   
     .gallery-text {
