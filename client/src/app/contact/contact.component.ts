@@ -59,7 +59,8 @@ export class ContactComponent {
     let mail = 'drvbcrc@gmail.com'
     // You can construct the Gmail URL with the entered data and open it in a new tab.
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${mail}&su=${encodeURIComponent(`Message from ${name}`)}&body=${encodeURIComponent(description)}`;
-    window.open(gmailUrl, '_blank');
+    // window.open(gmailUrl, '_blank');
+    window.location.href=gmailUrl;
     (document.getElementById('name') as any).value = "";
     (document.getElementById('email') as any).value = "";
 
