@@ -144,7 +144,7 @@ h2 {
   color: #132249;
   width: 50%;
   font-family: Unbounded;
-  font-size: 78px;
+  font-size: 74px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -461,6 +461,7 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   background: #132249;
   color: white;
+  border: none;
 }
 
 
@@ -557,7 +558,7 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
 
 @media (max-width: 1320px) {
   .gallery-text {
-    font-size: 66px;
+    font-size: 62px;
   }
 
   .gall-para {
@@ -568,7 +569,7 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
 @media (max-width: 1100px) {
 
   .gallery-text {
-    font-size: 56px;
+    font-size: 52px;
   }
 
   .gall-para {
@@ -722,5 +723,12 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
 
   .main-section {
     padding: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .gallery-text {
+    font-size: 35px;
   }
 }

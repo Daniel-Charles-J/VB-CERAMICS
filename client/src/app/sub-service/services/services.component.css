@@ -230,6 +230,7 @@ flex: 1 0 0;
 border-radius: 8px;
 background: #132249;
 color: white;
+border: none;
 }
 .btn2:hover{
   border: 2px solid #132249;

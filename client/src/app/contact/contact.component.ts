@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  formData = {
+    name: '',
+    email: '',
+    message: ''
+  };
   currentImageIndex15 = 0;
   imagesNav=[
     './assets/images/menu_own.svg',
@@ -37,4 +42,27 @@ export class ContactComponent {
     }
   }
 
+  submitForm() {
+    // // Construct the Gmail URL with mailto protocol
+    // const gmailURL = `mailto:${this.recipientEmail}?subject=${encodeURIComponent(this.name)}&body=${encodeURIComponent(this.message)}`;
+
+    // // Redirect to the Gmail URL to compose the email
+    // window.location.href = gmailURL;
+
+    // const emailSubject = `Contact Form Submission from ${this.name}`;
+    // const emailBody = `Name: ${this.name}\nEmail: ${this.recipientEmail}\nMessage: ${this.message}`;
+    // const mailtoLink = `mailto:example@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
+    // window.location.href = mailtoLink;
+    const { name, email, message } = this.formData;
+    let description  = `Hi VBCC !! \nThe user details are listed below. \nName : ${name}\nEmail: ${email}\nMessage: ${message}`
+    let mail = 'drvbcrc@gmail.com'
+    // You can construct the Gmail URL with the entered data and open it in a new tab.
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${mail}&su=${encodeURIComponent(`Message from ${name}`)}&body=${encodeURIComponent(description)}`;
+    window.open(gmailUrl, '_blank');
+    (document.getElementById('name') as any).value = "";
+    (document.getElementById('email') as any).value = "";
+
+    (document.getElementById('message') as any).value = "";
+  }
 }

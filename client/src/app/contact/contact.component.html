@@ -55,17 +55,17 @@
     <hr>
     <div id='contact_flex' style='display:flex;flex-direction:row;gap:40px;flex-wrap: wrap;padding:0px 40px;'>
       <div style='flex:66%'>
-        <form >
+        <form (submit)="submitForm()">
           <div class="form-row col-md-12" style='margin-bottom: 5px;'>
             <div class="form-group col-md-6" >
-              <input id="name" type="text" class="form-control"  placeholder="Name">
+              <input id="name" type="text" class="form-control" placeholder="Name" [(ngModel)]="formData.name" name="name">
             </div>
             <div class="form-group col-md-6" >
-              <input style='margin-left:10px;' id="email" type="email" class="form-control"  placeholder="Email">
+              <input style='margin-left:10px;' id="email" type="email" [(ngModel)]="formData.email" name="email" class="form-control"  placeholder="Email">
             </div>
           </div>
           <div class="form-group col-md-12 " style='margin-bottom: 20px;'>
-            <textarea name="" id="message" placeholder="Message"></textarea>
+            <textarea name="" id="message" placeholder="Message" [(ngModel)]="formData.message" name="message"></textarea>
           </div>
           <div class="form-group col-md-12">
             <button id="message_button" type="submit" class="btn btn-primary">Contact</button>

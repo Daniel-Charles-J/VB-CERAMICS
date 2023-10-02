@@ -419,10 +419,6 @@ background: #cdd9fa;
   height: 400px;
 }
 
-#section5_image img{
-  width: 60%;
-}
-
 .section5_images1 .fellowship_img1,
 .section5_images1 .modal_img1 {
   background: url('../../assets/Fellowship_Gallery_1.jpg'), lightgray 50% / cover no-repeat, #FFF;

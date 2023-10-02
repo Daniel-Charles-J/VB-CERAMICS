@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import 'hammerjs';
 import { LibraryOneComponent } from './sub-library/library-one/library-one.component';
 import { ServicesComponent } from './sub-service/services/services.component'; 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ServicesComponent } from './sub-service/services/services.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     TooltipsModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
