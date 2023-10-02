@@ -144,4 +144,17 @@ export class GalleryComponent {
   changeImage15() {
     this.currentImageIndex15 = (this.currentImageIndex15 + 1) % this.imagesNav.length;
   }
+
+  scrollToTop() {
+    (function smoothscroll() {
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+            window.scrollTo(0, 0);
+        }
+    })();
+  }
+
+  ngOnInit(): void {
+    this.scrollToTop();
+  }
 }
