@@ -546,6 +546,18 @@ gap: 50px;
   }
 
   @media (max-width: 600px) {
+    .dateflex {
+      display: flex;
+      flex-direction: column !important;
+      font-size: 20px;
+  }
+  .datetext{
+    margin-left: unset !important;
+    font-size: 16px;
+  }
+  .top_heading_1{
+    font-size: 26px;
+  }
     #sign_con{
       padding-left: 10px;
     }   
@@ -579,6 +591,9 @@ gap: 50px;
   }
 
   @media (max-width: 499px) {
+    .top_heading_1{
+      font-size: 20px;
+    }
     #head_img{
       margin-left: 20px !important;
     }
@@ -637,7 +652,7 @@ gap: 50px;
     margin-bottom: 0px;
     color: #666;
     font-family: Schibsted Grotesk;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 30px */

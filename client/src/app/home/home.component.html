@@ -26,7 +26,7 @@
     <div class="row">
     <div  class="col-md-12 ">
     <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-    <img id='head_img' style='margin-left:35px;padding:5px 0px;' src="./assets/images/VBCC_Logo_White.svg" alt="">
+    <img id='head_img' style='padding:5px 40px;' src="./assets/images/VBCC_Logo_White.svg" alt="">
     <button (click)="changeImage15()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <img [src]="imagesNav[currentImageIndex15]" class="navbar-toggler-icon" alt="">
     </button>
@@ -283,194 +283,193 @@
 
           <div *ngIf="screenWidth >= 650"  class="flex6">
             <table>
-              <caption [routerLink]='["/service"]'> View All <span><img src="./assets/images/Vector.svg" alt=""></span></caption>
+              <caption [routerLink]='["/contact"]'> View All <span><img src="./assets/images/Vector.svg" alt=""></span></caption>
               <tbody>
               <tr>
                 <th>Equipment</th>
                 <th>Industry</th>
                 <th>Students</th>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/x-ray-diffraction-xrd"]'>
                 <td>X-Ray Diffraction</td>
                 <td>₹1500</td>
                 <td>₹750</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/x-ray-fluorescence-xrf"]'>
                 <td>X-Ray Fluorescence</td>
                 <td>₹2000</td>
                 <td>₹1500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/scanning-electron-microscope-sem"]'>
                 <td>Scanning Electron Microscope (3 images)</td>
                 <td>₹2000</td>
                 <td>₹1000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/scanning-electron-microscope-sem-gold-sputtering"]'>
                 <td>Scanning Electron Microscope with Gold Sputtering (3 images)</td>
                 <td>₹2500</td>
                 <td>₹1250</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/laser-particle-size-analyzer-psa"]'>
                 <td>Laser Particle Size Analyser (PSA)</td>
                 <td>₹2000</td>
                 <td>₹1500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/thermal-expansion-dilatometer-up-to-1000degc"]'>
                 <td>Thermal Expansion (Dilatometer up to 1000°C)</td>
                 <td>₹2000</td>
                 <td>₹1500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/bet-analysis"]'>
                 <td>BET Analysis</td>
                 <td>₹4000</td>
                 <td>₹2500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/pin-on-disc-tribometer-wear"]'>
                 <td>Pin On Disc Tribometer (Wear)</td>
                 <td>₹1500</td>
                 <td>₹1000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/pellet-press-10-tone"]'>
                 <td>Pellet Press (10 tons)</td>
                 <td>₹500</td>
                 <td>₹200</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/planetary-mill-with-tungsten-carbide-balls"]'>
                 <td>Planetary Mill TC Balls & Vial per hour</td>
                 <td>₹600</td>
                 <td>₹300</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/box-furnace-up-to-1600degc"]'>
                 <td>Box Furnace from 1200-1600°C (5°C ramp and 3 hrs dwell)</td>
                 <td>₹3000-7500</td>
                 <td>₹2000-5000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/tubular-furnace-with-controlled-atmosphere-1600degc"]'>
                 <td>Tubular Furnace with Cont. atm. 1200-1400°C with Cold Vacuum & Argon Purging</td>
                 <td>₹5000-7500</td>
                 <td>₹3500-5000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/microwave-furnace-up-to-1500degc"]'>
                 <td>Microwave Furnace up to 1600°C (20°C ramp & 30 min dwell)</td>
                 <td>₹5000</td>
                 <td>₹3500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/spin-coating"]'>
                 <td>Spin Coater</td>
                 <td>₹800</td>
                 <td>₹400</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/spray-pyrolysis"]'>
                 <td>Spray Pyrolysis</td>
                 <td>₹3000</td>
                 <td>₹1000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/dip-coating"]'>
                 <td>Dip Coater</td>
                 <td>₹500</td>
                 <td>₹250</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/hot-modulus-of-rupture-hmor"]'>
                 <td>Cold / Fired MOR (max three samples)</td>
                 <td>₹3000</td>
                 <td>₹1500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/aluminium-stir-casting"]'>
                 <td>Aluminium Stir Casting</td>
                 <td>₹5000</td>
                 <td>₹2500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/magnesium-stir-casting"]'>
                 <td>Magnesium Stir Casting</td>
                 <td>₹6000</td>
                 <td>₹4000</td>
               </tr>
               </tbody>
             </table>
-
           </div>
           
           <div *ngIf="screenWidth <= 649"  class="flex6">
             <table>
-              <caption style='cursor: pointer;' [routerLink]='["/service"]'>View All <span><img src="./assets/images/Vector.svg" alt=""></span></caption>
+              <caption style='cursor: pointer;' [routerLink]='["/contact"]'>View All <span><img src="./assets/images/Vector.svg" alt=""></span></caption>
               <tbody>
               <tr>
                 <th>Equipment</th>
                 <th>Industry/Students</th>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/x-ray-diffraction-xrd"]'>
                 <td>X-Ray Diffraction</td>
                 <td>₹1500/₹750</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/x-ray-fluorescence-xrf"]'>
                 <td>X-Ray Fluorescence</td>
                 <td>₹2000/₹1500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/scanning-electron-microscope-sem"]'>
                 <td>Scanning Electron Microscope (3 images)</td>
                 <td>₹2000/₹1000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/scanning-electron-microscope-sem-gold-sputtering"]'>
                 <td>Scanning Electron Microscope with Gold Sputtering (3 images)</td>
                 <td>₹2500/₹1250</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/laser-particle-size-analyzer-psa"]'>
                 <td>Laser Particle Size Analyser (PSA)</td>
                 <td>₹2000/₹1500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/thermal-expansion-dilatometer-up-to-1000degc"]'>
                 <td>Thermal Expansion (Dilatometer up to 1000°C)</td>
                 <td>₹2000/₹1500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/bet-analysis"]'>
                 <td>BET Analysis</td>
                 <td>₹4000/₹2500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/pin-on-disc-tribometer-wear"]'>
                 <td>Pin On Disc Tribometer (Wear)</td>
                 <td>₹1500/₹1000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/pellet-press-10-tone"]'>
                 <td>Pellet Press (10 tons)</td>
                 <td>₹500/₹200</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/planetary-mill-with-tungsten-carbide-balls"]'>
                 <td>Planetary Mill TC Balls & Vial per hour</td>
                 <td>₹600/₹300</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/box-furnace-up-to-1600degc"]'>
                 <td>Box Furnace from 1200-1600°C (5°C ramp and 3 hrs dwell)</td>
                 <td>₹3000-7500/₹2000-5000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/tubular-furnace-with-controlled-atmosphere-1600degc"]'>
                 <td>Tubular Furnace with Cont. atm. 1200-1400°C with Cold Vacuum & Argon Purging</td>
                 <td>₹5000-7500/₹3500-5000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/microwave-furnace-up-to-1500degc"]'>
                 <td>Microwave Furnace up to 1600°C (20°C ramp & 30 min dwell)</td>
                 <td>₹5000/₹3500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/spin-coating"]'>
                 <td>Spin Coater</td>
                 <td>₹800/₹400</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/spray-pyrolysis"]'>
                 <td>Spray Pyrolysis</td>
                 <td>₹3000/₹1000</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/dip-coating"]'>
                 <td>Dip Coater</td>
                 <td>₹500/₹250</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/hot-modulus-of-rupture-hmor"]'>
                 <td>Cold / Fired MOR (max three samples)</td>
                 <td>₹3000/₹1500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/aluminium-stir-casting"]'>
                 <td>Aluminium Stir Casting</td>
                 <td>₹5000/₹2500</td>
               </tr>
-              <tr>
+              <tr [routerLink] ='["/service/magnesium-stir-casting"]'>
                 <td>Magnesium Stir Casting</td>
                 <td>₹6000/₹4000</td>
               </tr>

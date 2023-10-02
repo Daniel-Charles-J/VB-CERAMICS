@@ -11,6 +11,9 @@ body{overflow-x: hidden;}
 #nav_contact{
   background: #cdd9fa; color:#132249 !important;border-radius: 50px;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk;text-decoration: none;
 }
+.card{
+  border-radius: 20px;
+}
 .nav-link {
   border-radius: 50px;
   color: white!important;
@@ -1083,11 +1086,6 @@ Left Slide Button
   right: -100%;
 }
 
-#navbarSupportedContent{
-  padding: 12px !important;
-}
-
-
 .carousel-control-next-icon:hover{
   box-shadow: inset 100px 0 0 0 white;
 }
@@ -1485,7 +1483,7 @@ tfoot > tr > td{
   .card3 > img{
     width: auto;
     transform: scale(2.1,1.2);
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 850px){
@@ -1651,7 +1649,9 @@ tfoot > tr > td{
     opacity: unset !important;
 }
 .acctext1{
-  font-size: 12px;
+  font-size: 16px;
+  width: 200px;
+  // transform: scale(1, 1.7);
 }
 .acctext2{
   font-size: 14px;
@@ -1668,10 +1668,11 @@ tfoot > tr > td{
     text-align: center;
     transform: scale(0.8,1);
 }
-  .acctext1{
-    font-size: 16px;
-    // transform: scale(1, 1.7);
-  }
+.acctext1{
+  font-size: 16px;
+  width: 200px;
+  // transform: scale(1, 1.7);
+}
   .acctext2{
     font-size: 9px;
     // transform: scale(1,1.3);
@@ -1690,7 +1691,8 @@ element.style {
     margin-top: 0px;
   }
   .acctext1{
-    font-size: 13px;
+    font-size: 16px;
+    width: 200px;
     // transform: scale(1, 1.7);
   }
   .card9 {
@@ -1772,7 +1774,7 @@ element.style {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 111%;
+  
 }
 }
 
@@ -1814,8 +1816,8 @@ element.style {
 .carousel-caption {
   position: absolute;
   right: 5%;
-  bottom: 0.75rem;
-  left: 39%;
+  bottom: -0.25rem;
+  left: 42%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
@@ -1865,6 +1867,10 @@ element.style {
 
 /* media queries for contact */
 @media only screen and (max-width: 450px) {
+  .acctext1{
+    font-size: 12px;
+    width: 120px;
+}
 
   .contentdiv{
     position: absolute;
@@ -1901,6 +1907,10 @@ element.style {
 }
 
 @media only screen and (max-width: 400px){
+  .acctext1{
+    font-size: 10px;
+    width: 120px;
+}
   .fixed-top > p {
     color: #FFF;
     text-align: right;
@@ -1921,11 +1931,6 @@ element.style {
   #flex_con{
     padding: 40px 20px;
   }
-.acctext1{
-    font-size: 7px;
-    // transform: scale(1.1, 1.7);
-    margin-bottom: 0px;
-}
 .mb-0 > img{
 width: 20%;
 }
