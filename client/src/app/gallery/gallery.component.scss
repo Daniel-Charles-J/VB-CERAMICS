@@ -47,6 +47,7 @@
   border-radius: 50px;
   font-family: Schibsted Grotesk;
   text-decoration: none;
+  border: 1px solid #132249;
 }
 
 #nav_contact:hover {
@@ -850,6 +851,7 @@ $animationSpeed: 15s;
   }
   .flex10{
     padding: 40px;
+    gap: 50px;
     justify-content: flex-start;
   }
 }

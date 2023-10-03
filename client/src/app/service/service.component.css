@@ -1,11 +1,5 @@
-.navbar-brand {
-  padding: 0px 40px 0px 40px;
-  color: white !important;
-  font-family: Unbounded;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 16px;
+.navbar {
+  padding: 20px 40px;
 }
 
 .bg-light {
@@ -29,15 +23,12 @@
   font-family: Schibsted Grotesk;
 }
 
-#navbarSupportedContent {
-  padding-right: 40px;
-}
-
 .navbar-nav {
   gap: 20px;
 }
-.navbar {
-  padding: 20px 40px;
+
+.navbar-light .navbar-toggler-icon {
+  background-image: none !important;
 }
 
 #nav_contact {
@@ -46,6 +37,7 @@
   border-radius: 50px;
   font-family: Schibsted Grotesk;
   text-decoration: none;
+  border: 1px solid #132249;
 }
 
 #nav_contact:hover {
@@ -63,24 +55,8 @@
   align-items: center;
   align-self: stretch;
 }
-
-.nav-link {
-  border-radius: 50px;
-  color: white !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  font-family: Schibsted Grotesk;
-  font-size: 16px;
-
-}
-#navbarSupportedContent {
-  padding: 0px !important;
-}
-
 .navbar-light .navbar-toggler-icon {
-  background-image: none !important;
+  background: url(/assets/images/menu_own.svg) left no-repeat;
 }
 /* header */
 #top_header {
@@ -122,9 +98,6 @@ h2 {
   font-size: 10px !important;
 }
 
-.navbar-light .navbar-toggler-icon {
-  background: url(/assets/images/menu_own.svg) left no-repeat;
-}
 
 
 .main-section {}
@@ -579,27 +552,17 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 992px) {
-  /* .contact_us_li {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 0px;
-    margin-top: 10px;
-  } */
-
-  .nav-item {
+  .nav-item{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .nav-item-contact {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-
   .gallery-text {
     font-size: 46px;
   }
@@ -622,6 +585,7 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
   .flex10{
     padding: 40px;
     justify-content: flex-start;
+    gap: 50px;
   }
 }
 @media (max-width: 850px) {
@@ -672,6 +636,9 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
 
   .gall-para {
     font-size: 16px;
+  }
+  .navbar{
+    padding: 20px;
   }
 }
 

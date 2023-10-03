@@ -11,7 +11,7 @@
 .owl-theme .owl-nav [class*=owl-] {
   color: #FFF !important;
   font-size: 14px !important;
-  margin: 5px !important;
+  margin: 5px 5px 5px 25px !important;
   padding: 16px!important;
   background: #132249 !important;
   display: inline-block !important;
@@ -34,6 +34,14 @@
   left: -2%;
 }
 
+@media only screen and (max-width: 1250px){
+  
+  .owl-theme .owl-nav [class*=owl-] {
+    
+    margin: 5px 5px 5px 10px !important;
+  }
+  }
+
 @media only screen and (max-width: 575px){
   .owl-carousel .owl-nav .owl-next {
     text-align: right;
@@ -54,13 +62,16 @@
     text-align: right;
     position: absolute;
     bottom: 43%;
-    left: 78%;
+    left: 84%;
 }
 .owl-carousel .owl-nav .owl-prev {
   text-align: left !important;
   position: absolute !important;
   bottom: 43% !important;
   left: -1% !important;
+}
+.owl-carousel .owl-nav .owl-prev img, .owl-carousel .owl-nav .owl-next img{
+  width: 30px;
 }
 }
 
@@ -76,6 +87,10 @@
 
 @media only screen and (max-width: 425px){
   #customer{padding-left: 0px !important;}
+  .owl-theme .owl-nav [class*=owl-] {
+    
+    margin: 5px 5px 5px 5px !important;
+  }
   }
 
 

@@ -1,8 +1,14 @@
 .service_page {
   overflow: hidden;
 }
-.navbar-brand{padding: 0px 40px 0px 40px;color:white !important;font-family: Unbounded;font-size: 16px;font-style: normal;font-weight: 600;line-height: 16px; }
-.bg-light {background-color: #132249 !important;}
+.navbar {
+  padding: 20px 40px;
+}
+
+.bg-light {
+  background-color: #132249 !important;
+}
+
 .nav-link {
   display: flex;
   justify-content: center;
@@ -12,22 +18,40 @@
   color: white !important;
   font-family: Schibsted Grotesk;
 }
-.nav-link:hover{background: #cdd9fa; color:#132249 !important;border-radius: 50px;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk}
-#navbarSupportedContent{padding-right: 40px;}
-.navbar-nav{gap:20px;}
-#nav_contact{
-  background: #cdd9fa; color:#132249 !important;border-radius: 50px;font-family: Schibsted Grotesk;font-family: Schibsted Grotesk;text-decoration: none;
+
+.nav-link:hover {
+  background: #cdd9fa;
+  color: #132249 !important;
+  border-radius: 50px;
+  font-family: Schibsted Grotesk;
 }
 
-#nav_contact:hover{
+.navbar-nav {
+  gap: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: none !important;
+}
+
+#nav_contact {
+  background: #cdd9fa;
+  color: #132249 !important;
+  border-radius: 50px;
+  font-family: Schibsted Grotesk;
+  text-decoration: none;
+  border: 1px solid #132249;
+}
+
+#nav_contact:hover {
   /* border-radius: 20px; */
-/* border: 2px solid #132249; */
-border: 1px solid #FFF;
-background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
-color: white !important;
+  /* border: 2px solid #132249; */
+  border: 1px solid #FFF;
+  background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
+  color: white !important;
 }
 
-#nav_contact{
+#nav_contact {
   display: flex;
   padding: 6px 15px;
   justify-content: space-between;
@@ -35,10 +59,7 @@ color: white !important;
   align-self: stretch;
 }
 .navbar-light .navbar-toggler-icon {
-  background-image: none !important;
-}
-.navbar {
-  padding: 20px 40px;
+  background: url(/assets/images/menu_own.svg) left no-repeat;
 }
 /* header */
 #top_header {
@@ -80,9 +101,6 @@ h2 {
   font-size: 10px !important;
 }
 
-.navbar-light .navbar-toggler-icon {
-  background: url(/assets/images/menu_own.svg) left no-repeat;
-}
 
 .hero {
   padding: 20px 10px 20px 20px;
@@ -468,7 +486,6 @@ line-height: 30px; /* 187.5% */
     justify-content: center;
     width: 100%;
   }
-
   .gallery-text {
     font-size: 46px;
   }
@@ -499,6 +516,7 @@ line-height: 30px; /* 187.5% */
     padding: 0px;
   }
   .flex10{
+    gap: 50px;
     padding: 40px;
     justify-content: flex-start;
   }
