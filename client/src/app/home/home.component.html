@@ -22,38 +22,38 @@
 
 <body>
   <div id='form-section' style='overflow: hidden;'>
-  <div class="container-fluid1">
-    <div class="row">
-    <div  class="col-md-12 ">
-    <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-    <img id='head_img' style='padding:5px 40px;' src="./assets/images/VBCC_Logo_White.svg" alt="">
-    <button (click)="changeImage15()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <img [src]="imagesNav[currentImageIndex15]" class="navbar-toggler-icon" alt="">
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item active">
-          <a class="nav-link" [routerLink] ='["/about"]'>About Us </a>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink] ='["/library"]'>Library</a>
+    <div class="container-fluid1">
+      <div class="row">
+      <div  class="col-md-12 ">
+      <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
+      <img id='head_img' src="./assets/images/VBCC_Logo_White.svg" alt="" [routerLink]='["/"]'>
+      <button (click)="changeImage15()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img [src]="imagesNav[currentImageIndex15]" class="navbar-toggler-icon" alt="">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink] ='["/about"]'>About Us </a>
           </li>
-       
-        <li class="nav-item">
-          <a class="nav-link" [routerLink] ='["/gallery"]'>Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
-        </li>
-        <li class="nav-item nav-item-contact">
-          <a id='nav_contact' class="" style='background-color:white !important; color:#132249 ;border-radius: 50px;' [routerLink]='["/contact"]'>Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-</div>
-</div>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink] ='["/library"]'>Library</a>
+            </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" [routerLink] ='["/gallery"]'>Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
+          </li>
+          <li class="nav-item nav-item-contact">
+            <a id='nav_contact' class="" style='background-color:white !important; color:#132249 ;border-radius: 50px;' [routerLink]='["/contact"]'>Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </div>
+  </div>
 <br>
 
 
@@ -67,7 +67,7 @@
     <br>
         <div class="flex2" style="text-align:center">
 
-          <div id="carouselExampleIndicators" class="carousel " data-bs-ride="carousel" data-interval="false" style='margin: 0px 40px;'>
+          <div id="carouselExampleIndicators" class="carousel " data-bs-ride="carousel" data-interval="false">
             <!-- <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -84,7 +84,7 @@
                     <p >At VBCRC, Research Excellence is our guiding principle, fuelling innovation and driving impactful discoveries.</p>
                   </div>
                   <div class='buttonFlex'>
-                    <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
+                    <button id='car_button_1' (click)="scrollToSection('exploreService')"><span>Explore Services</span> <span class="btnExplore"><img src="./assets/images/down_vector.svg" alt=""></span></button>
                     <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
                   </div>
                 </div>
@@ -98,7 +98,7 @@
                     <p >Through relentless inquiry, ground breaking investigations, and collaborative spirit, we strive to push the boundaries of human understanding and shape a brighter future for all</p>
                   </div>
                   <div class='buttonFlex'>
-                    <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
+                   <button id='car_button_1' (click)="scrollToSection('exploreService')"><span>Explore Services</span> <span class="btnExplore"><img src="./assets/images/down_vector.svg" alt=""></span></button>
                     <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
                   </div>
                 </div>
@@ -112,7 +112,7 @@
                     <p >Our unwavering commitment to rigorous inquiry and pioneering methodologies ensures that we consistently deliver research of the highest calibre.</p>
                   </div>
                   <div class='buttonFlex'>
-                    <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
+                   <button id='car_button_1' (click)="scrollToSection('exploreService')"><span>Explore Services</span> <span class="btnExplore"><img src="./assets/images/down_vector.svg" alt=""></span></button>
                     <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
                   </div>
                 </div>
@@ -125,7 +125,7 @@
                     <p >We are more than just researchers, We are Trailblazers, pushing the boundaries of knowledge to sculpt a future where every question answered opens the door to new opportunities.</p>
                   </div>
                   <div class='buttonFlex'>
-                    <button id='car_button_1' (click)="scrollToSection('exploreService')">Explore Services <span><img src="./assets/images/down_vector.svg" alt=""></span></button>
+                   <button id='car_button_1' (click)="scrollToSection('exploreService')"><span>Explore Services</span> <span class="btnExplore"><img src="./assets/images/down_vector.svg" alt=""></span></button>
                     <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
                   </div>
                 </div>
@@ -276,8 +276,8 @@
             </div>
             <hr>
             <div class="">
-              <h2 class="flex-items5 serp">Service Listings with Pricing</h2>
-              <p class="flex-items5 serp" id="">Our services are transparently priced for optimal customer satisfaction. Check out our selection of high-quality services at affordable rates.</p>
+              <h2 class="flex-items5 serp serviceHead">Service Listings with Pricing</h2>
+              <p class="flex-items5 serp servicePara" id="">Our services are transparently priced for optimal customer satisfaction. Check out our selection of high-quality services at affordable rates.</p>
             </div>
           </div>
 
@@ -484,7 +484,7 @@
         <h1 id="header_facility" class="flex-items5">FACILITIES</h1>
         <p class="flex-items5" id="facility_para">The Lab facilities available for extensive research in our Research Centre. Check out our selection of high-quality services.</p>
       </div>
-      <hr style="color:white">
+      <hr style="color:white; margin: 0px;">
   
       <div id="accordion">
   <div class="card" style="margin-bottom: 20px;">
@@ -616,7 +616,7 @@
 
 
 
-<div id='customer' style='margin-bottom: -11px;padding-left:40px'>
+<div id='customer' style='margin-bottom: -11px;'>
    <owl-carousel-o [ngClass]="{ item: true }" [options]="customOptions2" >
     <ng-template  carouselSlide>
       <div>
@@ -681,7 +681,6 @@
   <hr id="hr_tag" style='color:white'>      
 </div>
 
-<br>
 
 <div class="flex8" id="ContactUs">
  <div id='flex_con' style=''>

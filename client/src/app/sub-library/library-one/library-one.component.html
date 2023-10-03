@@ -7,38 +7,38 @@
 <body>
     <div id='form-section' style='overflow: hidden;'>
         
-        <div class="container-fluid1">
-          <div class="row">
-          <div  class="col-md-12 ">
-          <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
-          <img id='head_img' style='margin-left:35px;padding:5px 0px;' src="./assets/images/VBCC_Logo_White.svg" alt="" [routerLink]='["/"]'>
-          <button (click)="changeImage15()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <img [src]="imagesNav[currentImageIndex15]" class="navbar-toggler-icon" alt="">
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                <a class="nav-link" [routerLink] ='["/about"]'>About Us </a>
-              </li>
-                <li class="nav-item">
-                  <a class="nav-link" [routerLink] ='["/library"]'>Library</a>
-                </li>
-             
+      <div class="container-fluid1">
+        <div class="row">
+        <div  class="col-md-12 ">
+        <nav id="head_nav" class="navbar navbar-expand-lg navbar-light bg-light">
+        <img id='head_img' src="./assets/images/VBCC_Logo_White.svg" alt="" [routerLink]='["/"]'>
+        <button (click)="changeImage15()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img [src]="imagesNav[currentImageIndex15]" class="navbar-toggler-icon" alt="">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" [routerLink] ='["/about"]'>About Us </a>
+            </li>
               <li class="nav-item">
-                <a class="nav-link" [routerLink] ='["/gallery"]'>Gallery</a>
+                <a class="nav-link" [routerLink] ='["/library"]'>Library</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
-              </li>
-              <li class="nav-item nav-item-contact">
-                <a id='nav_contact'  class="" style='background-color:white !important; color:#132249 ;border-radius: 50px;' [routerLink]='["/contact"]'>Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      </div>
-      </div>
+           
+            <li class="nav-item">
+              <a class="nav-link" [routerLink] ='["/gallery"]'>Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink] ='["/service"]'>Services</a>
+            </li>
+            <li class="nav-item nav-item-contact">
+              <a id='nav_contact' class="" style='background-color:white !important; color:#132249 ;border-radius: 50px;' [routerLink]='["/contact"]'>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </div>
+    </div>
 
       <!-- <div class="flex1">
         <div class="flex_of_1">
