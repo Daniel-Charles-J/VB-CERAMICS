@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 20px;
+  padding: 6px 15px !important;
   border-radius: 50px;
   color: white !important;
   font-family: Schibsted Grotesk;
@@ -228,7 +228,7 @@ gap: 50px;
     flex-direction: column;
     gap: 10px;
     /* flex-wrap: wrap; */
-    padding: 10px 40px;
+    padding: 40px;
   }
   .articleimg{
     width:auto;
@@ -590,14 +590,18 @@ gap: 50px;
   .navbar {
     padding: 20px;
   }
+  .flex_article{
+    padding: 20px;
+  }
+  .dateflex {
+    display: flex;
+    flex-direction: column !important;
+    font-size: 20px;
+  }
   }
 
   @media (max-width: 600px) {
-    .dateflex {
-      display: flex;
-      flex-direction: column !important;
-      font-size: 20px;
-  }
+    
   .datetext{
     margin-left: unset !important;
     font-size: 16px;
