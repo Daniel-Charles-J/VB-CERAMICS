@@ -1,9 +1,9 @@
 
 #map{
-  margin: 0px -40px;
+  padding: 40px;
 }
 .mapIframe{
-  margin: 50px 0px
+  width: 100%;
 }
 .navbar {
   padding: 20px 40px;
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 20px;
+  padding: 6px 15px !important;
   border-radius: 50px;
   color: white !important;
   font-family: Schibsted Grotesk;
@@ -455,11 +455,11 @@ h2 {
   @media only screen and (max-width: 600px) {
 
     #map{
-      margin: 0px -20px;
+      padding: 20px;
     }
-    .mapIframe{
+    /* .mapIframe{
       margin: 30px 0px
-    }
+    } */
     
     .links{
       transform: unset !important;
@@ -663,9 +663,7 @@ background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
 color: white !important;
 border: 2px solid black;
 }
-#map{
-  position: relative;
-}
+/*   */
 #loc{
 position:absolute;
 top:380px;

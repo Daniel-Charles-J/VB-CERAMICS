@@ -14,7 +14,7 @@ body{overflow-x: hidden;}
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 20px;
+  padding: 6px 15px !important;
   border-radius: 50px;
   color: white !important;
   font-family: Schibsted Grotesk;
@@ -332,9 +332,21 @@ height:auto;
 display:flex;
 flex:1 0 0;
 margin-top: 40px;
+color: #FFF;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
 }
 .info91{
   display:flex;
+  color: #FFF;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 21px */
 }
 
 .mb-0{
@@ -561,6 +573,23 @@ line-height: 150%; /* 30px */
 #head_con,#ul_con,#action_con,#con_p{
   color:white;
 
+}
+#con_p{
+  color: #FFF;
+text-align: center;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 24px */
+}
+#con_input::placeholder{
+  color: rgba(255, 255, 255, 0.60);
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .flex10 > .card10 > p:first-child {
   color: #000;
@@ -1250,7 +1279,7 @@ td, th {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  
+  cursor: pointer;
 }
 table caption {
   caption-side: bottom;
@@ -1678,6 +1707,13 @@ tfoot > tr > td{
    .serviceHead, .servicePara{
     font-size: 16px;
    }
+   .acctext1{
+    font-size: 16px;
+   } 
+   .card-body{
+    
+    font-size: 16px;
+    }
  #top_header{
   transform: scale(1,1.5);
  }
@@ -1703,7 +1739,6 @@ tfoot > tr > td{
     opacity: unset !important;
 }
 .acctext1{
-  font-size: 16px;
   width: 200px;
   // transform: scale(1, 1.7);
 }
@@ -1958,6 +1993,7 @@ element.style {
   .card2 > .contentdiv{
     position: absolute;
     top: 47%;
+
     right: 50%;
     background-color: white;
     padding: 0px 7px;
@@ -2029,6 +2065,19 @@ width: 20%;
  td, th {
   font-size: 14px;
 }
+.info9, .info91{
+  font-size: 14px;
+  }
+  .card-body{
+    
+  font-size: 14px;
+  }
+  #con_p{
+  font-size: 14px;
+  }
+  #con_input::placeholder{
+    font-size: 14px;
+  }
   #header_services{
     text-align: center;
     transform: scale(0.5,1);
@@ -2056,3 +2105,20 @@ width: 20%;
 //     transform: rotate(360deg);
 //   }
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

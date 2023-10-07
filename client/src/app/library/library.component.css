@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 20px;
+  padding: 6px 15px !important;
   border-radius: 50px;
   color: white !important;
   font-family: Schibsted Grotesk;
@@ -556,6 +556,12 @@
 
 .datetext{
   padding: 6px;
+  color: #666;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
   }
   .text1, .datetext{
     margin-bottom: 0px !important;
