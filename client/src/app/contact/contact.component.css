@@ -34,8 +34,9 @@
   gap: 20px;
 }
 
-.navbar-light .navbar-toggler-icon {
-  background-image: none !important;
+.navbar-toggler-icon {
+  background-image: url(/assets/images/arrowright.svg) !important;
+  background-size: cover;
 }
 
 #nav_contact {
