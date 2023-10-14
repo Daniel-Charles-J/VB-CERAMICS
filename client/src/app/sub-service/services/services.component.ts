@@ -10,6 +10,7 @@ export class ServicesComponent {
 
   constructor(private router: Router,private activatedRoute: ActivatedRoute) {}
   headingParams : any;
+  contentParams : any;
   id : any;
   image_1 : any;
   image_2 : any;
@@ -46,8 +47,16 @@ export class ServicesComponent {
   showMenu1: boolean = false;
 
   ngOnInit(): void {
+    this.filterMethod();
+  }
+
+  ngDoCheck(){
+    this.contentParams = this.activatedRoute.snapshot.params['routing'];
+    this.filterMethod();
+  }
+
+  filterMethod() {
     this.headingParams = this.activatedRoute.snapshot.params['routing'];
-    console.log(this.headingParams);
     const filteredData = this.content.filter((x)=>x.routing == this.headingParams);
     this.image_1 = filteredData[0].image_1;
     this.image_2 = filteredData[0].image_2;
@@ -82,8 +91,6 @@ export class ServicesComponent {
     this.para4 = filteredData[0].para4;
     this.scrollToTop();
   }
-
-
 
   scrollToTop() {
     (function smoothscroll() {
