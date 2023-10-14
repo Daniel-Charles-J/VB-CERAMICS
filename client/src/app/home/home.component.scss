@@ -2105,20 +2105,9 @@ width: 20%;
 //     transform: rotate(360deg);
 //   }
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+  .carousel-control {
+      bottom: 10px; /* Adjust this value for smaller screens */
+      right: 10px; /* Adjust this value for smaller screens */
+  }
+}
