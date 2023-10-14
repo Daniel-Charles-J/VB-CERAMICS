@@ -32,7 +32,6 @@ export class AboutComponent {
     }
   
   scrollToSection(sectionId: string): void {
-    debugger;
     const element = document.getElementById(sectionId);
     if (element) {
       let scrollOffset = 0;

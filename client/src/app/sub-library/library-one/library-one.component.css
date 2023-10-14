@@ -62,7 +62,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin: 10px 0 25px auto;
+  margin: 0px;
 }
 .flex_of_1{
   padding: 20px 20px 5px 20px;
@@ -126,7 +126,7 @@ gap: 50px;
     grid-row-gap: 10px;
     grid-column-gap: 1.5%;
     background: #132249;
-    padding: 20px 40px;
+    padding: 40px;
   }
 .flex10{
     display: flex;
@@ -178,8 +178,16 @@ gap: 50px;
     flex-wrap: wrap;
   }
 
-#top_con,#sign_con,#action_con{
+#top_con,#sign_con, #action_con{
     flex:auto !important;
+  }
+
+#action_con{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
   }
   
   #head_con{
@@ -191,33 +199,50 @@ gap: 50px;
     font-weight: 500;
     line-height: normal;
   }
-  
-#head_con,#ul_con,#action_con,#con_p{
-    color:white;
+
+  #con_p{
+    color: #FFF;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 24px */
   }
-  
 #con_input{
     border-radius: 8px;
     border: 1px solid #FFF;
-    min-width: 160px;
+    min-width: 300px;
     padding: 8px 16px;
     background:transparent;
   }
   
+  #con_input::placeholder{
+    color: rgba(255, 255, 255, 0.60);
+font-family: Schibsted Grotesk !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+
 #con_button{
-  margin-left:15px;
   border-radius: 8px;
   background: #FFF;
-  padding: 8px 16px;
+  padding: 12px 16px;
   justify-content: center;
+  color: var(--Primary-2, #132249);
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 100% */
   }
 
   #hr_tag{
-    width: 96%;
-    margin: auto;
-    color: black;
-    border: 0.9px solid black;
+    margin: 0px 40px;
+    border: 1px solid #000;
     text-align: center;
+    opacity: 1;
   }
   #top_section{
     padding:40px;
@@ -225,13 +250,14 @@ gap: 50px;
 
   .flex_article{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* flex-wrap: wrap; */
-    padding: 40px;
+padding: 40px;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+align-self: stretch;
   }
   .articleimg{
-    width:auto;
+    width:100%;
     height:415px;
     object-fit:cover;
     border-radius:12px ;
@@ -239,19 +265,20 @@ gap: 50px;
 
   .top_heading_1{
     color: #132249;
-    font-family: Unbounded;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 100%; /* 32px */
+font-family: Unbounded;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 32px */
+margin: 0px;
   }
   .top_heading_2{
     color: #333;
-    font-family: Schibsted Grotesk;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 170%; /* 47.6px */
+font-family: Schibsted Grotesk;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 170%; /* 47.6px */
   }
   .top_heading_3{
     color: #333;
@@ -263,11 +290,23 @@ gap: 50px;
   }
   .top_para{
     color: #333;
-    font-family: Schibsted Grotesk;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 170%; /* 34px */
+font-family: Schibsted Grotesk;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /* 34px */
+  }
+  .indent {
+    text-indent: 50px;
+  }
+.summary{
+color: #333;
+font-family: Schibsted Grotesk;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /* 34px */
+margin: 0px;
   }
   .headul {
     padding:5px 40px;
@@ -280,14 +319,7 @@ gap: 50px;
     font-weight: 500;
     line-height: 200%; /* 34px */
   }
-  .summary{
-    color: #333;
-    font-family: Schibsted Grotesk;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 170%; /* 34px */
-  }
+
 
   /* .flex_explore{
     display: flex;
@@ -306,7 +338,6 @@ gap: 50px;
     font-style: normal;
     font-weight: 600;
     line-height: 100%; /* 32px */
-    margin: 15px 0px 0px 0px;
   }
   .epara{
     color: #FFF;
@@ -315,16 +346,18 @@ gap: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
-    margin: 10px 0px 25px 0px;
+    margin: 0px;
   }
 
+  .flex_e {
+    background-color: #132249;
+  }
   .flex_of_e{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap:27px;
-    padding: 10px 40px;
-    background-color: #132249;
+    padding: 40px 40px 20px 40px;
     }
 
     .explore{
@@ -383,7 +416,7 @@ gap: 50px;
     color: #132249;
     width: 50%;
     font-family: Unbounded;
-    font-size: 80px;
+    font-size: clamp(1rem, 8vw, 8rem);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -408,12 +441,53 @@ gap: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* 30px */
   }
+  #hr_tag1{
+    margin: 0px 40px;
+    border: 1px solid #FFF;;
+    text-align: center;
+    opacity: 1;
+  }
+  #con_button:hover{
+    background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
+    color: white !important;
+    border: 2px solid white;
+  }
+  #ul_con{
+    color: #FFF;
+  font-family: Schibsted Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  padding-left: 30px;
+  }
+  
+  .dateflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 15px;
+    column-gap: 40px;
+    align-self: stretch;
+    flex-wrap: wrap;
+  }
+  .datetext{
+    color: #666;
+font-family: Schibsted Grotesk;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+margin: 0px;
+  }
   @media (max-width: 1320px) {
-    .gallery-text {
-      font-size: 70px;
-    }
+    
   
     .gall-para {
       font-size: 18px;
@@ -431,28 +505,26 @@ gap: 50px;
   }
   @media (max-width: 1100px) {
   
-    .gallery-text {
-      font-size: 60px;
-    }
-  
     .gall-para {
       font-size: 17px;
     }
   }
+  @media only screen and (max-width: 1150px){
+  #action_con{
+    width: 100%;
+  }
+  #con_input{
+    width: 100%;
+  }
+}
   @media only screen and (max-width: 1003px){
     #top_con,#sign_con,#action_con{
       flex:1 0 0 !important;
     }
   }
   @media only screen and (max-width:1003px) and (min-width: 601px)  {
-    #con_input {
-    width:70%;
-    }
     #top_con,#sign_con,#action_con{
       flex:auto !important;
-    }
-    #action_con{
-      width:100%;
     }
     .main-section{
       width: 100%;
@@ -461,7 +533,7 @@ gap: 50px;
       grid-row-gap: 10px;
       grid-column-gap: 1.5%;
       background: #132249;
-      padding: 20px 40px;
+      padding: 40px;
     }
     #thirdimg,#thirdimgf{
       width: 200%;
@@ -470,6 +542,9 @@ gap: 50px;
   .flex_explore{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0px;
   }
   @media (max-width: 992px) {
     .nav-item{
@@ -483,13 +558,9 @@ gap: 50px;
       justify-content: center;
       width: 100%;
     }
-    .gallery-text {
-      font-size: 50px;
-    }
   
     .gall-para {
       font-size: 16px;
-      margin-top: 10px;
     }
     .explore{
       width: auto;
@@ -507,7 +578,8 @@ gap: 50px;
     }
     .gallery-text {
       width: 100%;
-      font-size: 78px;
+      text-align: center;
+      font-size: clamp(1rem, 14vw, 10rem) !important;
     }
     
     .gall-para {
@@ -550,8 +622,28 @@ gap: 50px;
       flex-direction: column-reverse;
       text-align: center;
     }
-
+    .top_heading_1{
+      font-size: 28px;
+    }
+    .datetext{
+      font-size: 17px;
+    }
   }
+  @media only screen and (max-width: 700px) {
+    .top_heading_1{
+      font-size: 26px;
+    }
+    .datetext{
+      font-size: 15px;
+    }
+    .top_para, .summary, .headul >li{
+      font-size: 18px;
+    }
+    .article_p,.epara{
+      font-size: 14px ;
+    }
+  }
+
   @media only screen and (max-width: 650px) {
     .flex_of_1{
       justify-content: center;
@@ -565,15 +657,11 @@ gap: 50px;
     }
 
   .top_heading_2{
-    font-size: 20px;
+    font-size: 24px;
   }
   /* .top_heading_1,.datetext{
     font-size: 14px;
   } */
-
-  .gallery-text {
-    font-size: 70px;
-  }
   .gall-para {
     font-size: 16px;
   }
@@ -581,7 +669,8 @@ gap: 50px;
     padding: 20px;
   }
   .flex_article{
-    padding: 10px 20px;
+padding: 20px;
+gap: 20px;
   }
 
   #flex_con{
@@ -590,24 +679,21 @@ gap: 50px;
   .navbar {
     padding: 20px;
   }
-  .flex_article{
-    padding: 20px;
+  
+  #hr_tag, #hr_tag1{
+    margin: 0px 20px;
   }
-  .dateflex {
-    display: flex;
-    flex-direction: column !important;
-    font-size: 20px;
+  .articleimg{
+    height: 350px;
   }
   }
 
   @media (max-width: 600px) {
-    
-  .datetext{
-    margin-left: unset !important;
-    font-size: 16px;
-  }
   .top_heading_1{
     font-size: 26px;
+  }
+  .datetext{
+    font-size: 18px;
   }
     #sign_con{
       padding-left: 10px;
@@ -618,15 +704,10 @@ gap: 50px;
     .main-section{
       padding:20px;
     }
-    .gallery-text {
-      font-size: 60px;
-    }
-    .flex_article{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      padding: 10px 20px;;
-  }
+    .flex_of_e{
+      padding: 20px;
+      }
+    
   .headul {
     padding: 5px 20px;
 }
@@ -645,18 +726,30 @@ gap: 50px;
     .top_heading_1{
       font-size: 20px;
     }
+    .datetext {
+      font-size: 16px;
+    }
     #head_img{
       margin-left: 20px !important;
     }
     .article_p,.epara{
       font-size:12px ;
     }
-    .gallery-text {
-      font-size: 40px;
-    }
-  
+   
     .gall-para {
       font-size: 15px;
+    }
+    .articleimg{
+      height: 240px;
+    }
+    .top_heading_2{
+      font-size: 20px;
+    }
+    .top_para, .summary, .headul >li{
+      font-size: 16px;
+    }
+    #con_input{
+      min-width: 160px;
     }
   }
   @media (max-width: 450px){
@@ -665,31 +758,4 @@ gap: 50px;
   }
   }
 
-  #con_button:hover{
-    background: linear-gradient(97deg, #42047E -13.15%, #07F49E 129.06%);
-    color: white !important;
-    border: 2px solid white;
-  }
-  #ul_con{
-    color: #FFF;
-  font-family: Schibsted Grotesk;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 24px */
-  }
   
-  .dateflex{
-  display: flex;
-  flex-direction: row;
-  }
-  .datetext{
-    margin-left: auto;
-    margin-bottom: 0px;
-    color: #666;
-    font-family: Schibsted Grotesk;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 30px */
-  }

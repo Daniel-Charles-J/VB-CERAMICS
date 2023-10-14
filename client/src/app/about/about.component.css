@@ -335,6 +335,10 @@ background: #cdd9fa;
   width: 200px;
 }
 
+.main_section4_cnt{
+  cursor: pointer;
+}
+
 .main_section3_cnt img,
 .main_section4_cnt img {
   width: 100%;
@@ -582,6 +586,7 @@ background: #cdd9fa;
   top: 25%;
   left: 25%;
   width: 50%;
+  cursor: pointer;
 }
 
 
@@ -591,15 +596,19 @@ background: #cdd9fa;
   top: 20%;
   left: 25%;
   width: 50%;
+  position: relative;
 }
 
 /* The Close Button */
 .close {
+  position: absolute;
   color: #132249;
-  float: right;
   font-size: 28px;
   font-weight: bold;
   padding-bottom: 10px;
+  opacity: 1;
+  top: 10%;
+  right: 7%;
 }
 
 .close:hover,
@@ -741,6 +750,11 @@ line-height: 30px; /* 187.5% */
   border-radius: 50%;
   background-color: #EDF1FD;
 }
+.section5_images1,
+  .section5_images2,
+  .section5_images3 {
+    cursor: pointer;
+  }
 @media (max-width: 1420px) {
   .navbar_about_text {
     font-size: 40px;

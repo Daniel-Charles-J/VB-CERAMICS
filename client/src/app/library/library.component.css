@@ -249,9 +249,6 @@
       align-items: center;
       
     }
-    .flex3{
-      background:#132249 ;
-    }
 
 
     .image1{
@@ -316,6 +313,22 @@
   #top_con,#sign_con,#action_con{
     flex:auto !important;
   }
+  #action_con{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+  }
+
+  #con_p{
+    color: #FFF;
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 24px */
+  }
   #head_con{
     font-size: 40px;
     color: #FFF;
@@ -325,17 +338,14 @@
     font-weight: 500;
     line-height: normal;
   }
-  #head_con,#ul_con,#action_con,#con_p{
-    color:white;
-  
-  }
   #ul_con{
-  color: #FFF;
+    color: #FFF;
   font-family: Schibsted Grotesk;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+  padding-left: 30px;
   }
   #con_input{
     border-radius: 8px;
@@ -344,36 +354,39 @@
     padding: 8px 16px;
     background:transparent;
   }
-  
-  #con_button{
-  margin-left:15px;
+  #con_input::placeholder{
+    color: rgba(255, 255, 255, 0.60);
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+
+#con_button{
   border-radius: 8px;
   background: #FFF;
-  padding: 8px 16px;
+  padding: 12px 16px;
   justify-content: center;
-  }
-  
-  #hr_tag{
-    width: 90%;
-    margin: auto;
-    color: white;
-    border: 0.5px solid white;
-    text-align: center;
+  color: var(--Primary-2, #132249);
+font-family: Schibsted Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 100% */
   }
 
   #hr_tag2{
-    width: 96%;
-    margin: auto;
-    color: black;
-    border: 0.9px solid black;
+    margin: 0px 40px;
+    border: 1px solid #000;
     text-align: center;
+    opacity: 1;
   }
   #hr_tag1{
-    width: 96%;
-    margin: auto;
-    color: black;
+    margin: 0px 40px;
     border: 1px solid #FFF;;
     text-align: center;
+    opacity: 1;
   }
 .one{
   position: relative;
@@ -526,7 +539,7 @@
   color: #132249;
   width: 50%;
   font-family: Unbounded;
-  font-size: 80px;
+  font-size: clamp(1rem, 8vw, 8rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -551,6 +564,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* 30px */
 }
 
@@ -569,20 +585,24 @@ line-height: 150%; /* 24px */
   .dateflex p{
     margin-bottom: 0px !important;
   }
-@media (max-width: 1320px) {
-  .gallery-text {
-    font-size: 70px;
+  .main-section2 {
+    background: #132249;
   }
+@media (max-width: 1320px) {
 
   .gall-para {
     font-size: 18px;
   }
 }
-@media (max-width: 1100px) {
-
-  .gallery-text {
-    font-size: 60px;
+@media only screen and (max-width: 1150px){
+  #action_con{
+    width: 100%;
   }
+  #con_input{
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
 
   .gall-para {
     font-size: 17px;
@@ -607,14 +627,9 @@ line-height: 150%; /* 24px */
     justify-content: center;
     width: 100%;
   }
-  .gallery-text {
-    font-size: 50px;
-  }
 
   .gall-para {
     font-size: 16px;
-    margin-top: 10px;
-    text-align: center;
   }
 
   .contact_us_li {  
@@ -662,7 +677,8 @@ line-height: 150%; /* 24px */
 
 .gallery-text {
   width: 100%;
-  font-size: 78px;
+  text-align: center;
+  font-size: clamp(1rem, 14vw, 10rem) !important;
 }
 
 .gall-para {
@@ -722,9 +738,7 @@ font-size: 14px;
     justify-content: center;
     gap: 0px;
   }
-  .gallery-text {
-    font-size: 70px;
-  }
+
   .gall-para {
     font-size: 16px;
   }
@@ -746,28 +760,24 @@ font-size: 14px;
 .main-section2{
   padding-top: 20px;
 }
+#hr_tag1, #hr_tag2{
+  margin: 0px 20px;
+}
+
 }
 
 @media (max-width: 600px) {
   #sign_con{
     padding-left: 10px;
   }  
-  .gallery-text {
-    font-size: 52px;
-  }
+ 
   #flex_con {
     padding: 20px;
 }
 }
 @media only screen and (max-width:1003px) and (min-width: 601px)  {
-  #con_input {
-   width:70%;
-  }
   #top_con,#sign_con,#action_con{
     flex:auto !important;
-  }
-  #action_con{
-    width:100%;
   }
 }
 
@@ -800,14 +810,13 @@ padding: 0px important;
         font-size: 12px;
         margin-top: 9px !important;
         }
-  .gallery-text {
-    font-size: 40px;
-  }
 
   .gall-para {
     font-size: 15px;
   }
-
+  #con_input{
+    min-width: 160px;
+  }
 }
 
 @media only screen and (max-width: 450px)

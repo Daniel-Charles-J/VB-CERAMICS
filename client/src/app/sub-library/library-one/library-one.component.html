@@ -39,15 +39,8 @@
     </div>
     </div>
     </div>
-
-      <!-- <div class="flex1">
-        <div class="flex_of_1">
-          <h1 id="header_article" class="flex-items1">ARTICLES</h1>
-          <p class="flex-items1" id="article_para">Welcome to our world of mind-blowing research findings. Be prepared to embark on an exhilarating adventure through the realm of our Research!</p>
-        </div>
-      </div> -->
       <div class="hero">
-        <h1 class="gallery-text stretch">LIBRARY</h1>
+        <h1 class="gallery-text">LIBRARY</h1>
         <div class="gall-para">
           <p>Welcome to our world of mind-blowing research findings. Be prepared to embark on an exhilarating adventure through the realm of our Research!</p>
         </div>
@@ -55,14 +48,15 @@
       <hr id='hr_tag'>
       
         <div>
-          <div *ngIf="id==1 || id==2 || id==3" class='flex_article'>
+          <div *ngIf="id==1 || id==2 || id==3" class="flex_article">
             <div class='dateflex'>
               <h1 class='top_heading_1'>{{heading}}</h1>
               <p class='datetext'>Dec 15,2022</p>
             </div>
             <img class='articleimg' src={{img}} alt="">
-            <h1 class='top_heading_2'>{{subHeading}}</h1>
-            <p class='top_para'>{{desc1}}</p>
+            <div>
+              <h1 class='top_heading_2'>{{subHeading}}</h1>
+            <p class='top_para indent'>{{desc1}}</p>
             <ul class='headul'>
                 <li>{{point1}}</li>
                 <li>{{point2}}</li>
@@ -76,15 +70,17 @@
                 <li>{{point11}}</li>
             </ul>
             <p class='summary'>{{summary}}</p>
+            </div>
         </div>
 
-            <div *ngIf="id==4" class='flex_article' >
+            <div *ngIf="id==4" class="flex_article">
               <div class='dateflex'>
                 <h1 class='top_heading_1'>{{heading}}</h1>
                 <p class='datetext'>Dec 15,2022</p>
               </div>
                 <img class='articleimg' src={{img}} alt="">
-                <h1 class='top_heading_2'>{{subHeading}}</h1>
+                <div>
+                  <h1 class='top_heading_2'>{{subHeading}}</h1>
                 <p class='top_para'>{{desc1}}</p>
                 <h1 class='top_heading_3'>{{subHeading2}}</h1>
                 <p class='top_para'>{{desc2}}</p>
@@ -103,16 +99,18 @@
                 </ul>
                 <p class='top_para'>{{subHeading5}} : {{desc5}}</p>
                 <p class='summary'>{{summary}}</p>
+                </div>
             </div>
 
-            <div *ngIf="id==5" class='flex_article' >
+            <div *ngIf="id==5" class="flex_article">
               <div class='dateflex'>
                 <h1 class='top_heading_1'>{{heading}}</h1>
                 <p class='datetext'>Dec 15,2022</p>
               </div>
                 <img class='articleimg' src={{img}} alt="">
-                <h1 class='top_heading_2'>{{subHeading}}</h1>
-                <p class='top_para'>{{desc1}}</p>
+                <div>
+                  <h1 class='top_heading_2'>{{subHeading}}</h1>
+                <p class='top_para indent'>{{desc1}}</p>
                 <h1 class='top_heading_3'>{{subHeading2}}</h1>
                 <p class='top_para'>{{desc2}}</p>
                 <h1 class='top_heading_3'>{{subHeading3}}</h1>
@@ -130,15 +128,17 @@
                 <p class='top_para'>{{subHeading5}} : {{desc5}}</p>
                 <p class='top_para'>{{subHeading6}} : {{desc6}}</p>
                 <p class='summary'>{{summary}}</p>
+                </div>
             </div>
 
-            <div *ngIf="id==6" class='flex_article' >
+            <div *ngIf="id==6" class="flex_article">
               <div class='dateflex'>
                 <h1 class='top_heading_1'>{{heading}}</h1>
                 <p class='datetext'>Dec 15,2022</p>
               </div>
                 <img class='articleimg' src={{img}} alt="">
-                <p class='top_para'>{{desc1}}</p>
+                <div>
+                  <p class='top_para'>{{desc1}}</p>
                 <h1 class='top_heading_3'>{{subHeading2}}</h1>
                 <p class='top_para'>{{desc2}}</p>
                 <h1 class='top_heading_3'>{{subHeading3}}</h1>
@@ -167,6 +167,8 @@
                     <li>{{point14}}</li>
                 </ul>
                 <p class='summary'>{{summary}}</p>
+                </div>
+                
             </div>
         </div>
 
@@ -174,6 +176,7 @@
         <div class="flex_of_e">
           <h1 id="header_article2"  class="flex-items1">Explore Articles</h1>
         </div>
+        <hr id="hr_tag1">
       </div>
       <div class='main-section'>
         <div class="explore">
