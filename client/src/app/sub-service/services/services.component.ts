@@ -89,7 +89,7 @@ export class ServicesComponent {
     this.para2 = filteredData[0].para2;
     this.para3 = filteredData[0].para3;
     this.para4 = filteredData[0].para4;
-    this.scrollToTop();
+    // this.scrollToTop();
   }
 
   scrollToTop() {
