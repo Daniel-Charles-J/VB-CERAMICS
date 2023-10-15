@@ -453,7 +453,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 30px */
   }
-
+  .facilities_7{
+    padding: 20px 40px;
+  }
   @media screen and (max-width: 1500px) {
   }
   
@@ -577,7 +579,6 @@ line-height: 150%; /* 30px */
 }
 #con_p{
   color: #FFF;
-text-align: center;
 font-family: Schibsted Grotesk;
 font-size: 16px;
 font-style: normal;
@@ -592,6 +593,14 @@ line-height: 150%; /* 24px */
   font-weight: 500;
   line-height: normal;
 }
+#action_con{
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+}
+
 .flex10 > .card10 > p:first-child {
   color: #000;
   font-family: Schibsted Grotesk;
@@ -651,19 +660,17 @@ line-height: 150%; /* 24px */
 }
 
 #con_button{
-margin-left:15px;
-border-radius: 8px;
-background: #FFF;
-padding: 8px 16px;
-justify-content: center;
-color: var(--Primary-2, #132249);
+  border-radius: 8px;
+  background: #FFF;
+  padding: 12px 16px;
+  justify-content: center;
+  color: var(--Primary-2, #132249);
 font-family: Schibsted Grotesk;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 16px; /* 100% */
-height: 45px;
-}
+  }
 
 #head_con{
   font-size: 40px;
@@ -688,6 +695,8 @@ height: 45px;
 
 .carousel-control-prev-icon {
   background-image: none !important;
+  width: 40px;
+  height: 24px;
   // border-radius: 40px;
   // border: 1px solid #FFF;
   // background-color: #132249;
@@ -702,12 +711,8 @@ height: 45px;
 .carousel-control-next-icon {
   background-image: none !important;
   border-radius: 40px;
-  border: 1px solid #FFF;
-  background-color: #132249;
-  width: auto;
-  height: auto;
-  padding:5px 5px;
-  position: absolute;
+  width: 40px;
+  height: 24px;
   // right: 161px;
   // bottom: 22%;
 }
@@ -729,24 +734,37 @@ height: 45px;
   padding: 10px !important;
 }
 #car_button_1{
-  border-radius: 17px;
+  border-radius: 20px;
   border: 1px solid #FFF;
   background-color: #132249;
   color:white;
-  padding:8px 24px 8px 24px !important;
+  padding: 8px 24px 8px 24px !important;
   font-size: 16px;
-  display: inline-block;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+line-height: 150%;
+  gap: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-image: none !important;
 }
 #car_button_2{
-border-radius: 17px;
+border-radius: 20px;
 border: 1px solid #FFF;
 background: #132249;
 color:white;
-padding:8px 24px 8px 24px !important;
+padding: 16px !important;
 font-size: 16px;
-margin-left:15px;
-height: 50px;
+font-weight: 600;
+line-height: 150%;
+width: fit-content;
+position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-image: none !important;
 }
 
 
@@ -763,7 +781,49 @@ height: 50px;
   flex:auto !important;
 }
 
-
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+.gallery-text {
+  color: #132249;
+  width: 50%;
+  font-family: Unbounded;
+  font-size: clamp(1rem, 7vw, 8rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 82px */
+}
+.gallery-text1 {
+  width: 50%;
+  font-family: Unbounded;
+  font-size: clamp(1rem, 6vw, 8rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 82px */
+}
+.gall-para {
+  color: #000;
+  width: 50%;
+  margin-top: 15px;
+  font-family: Schibsted Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.gall-para p{
+  margin: 0px;
+}
+.hr_tag{
+  margin: 0px 40px;
+}
 // @media only screen and (max-width: 1003px){
 //   #top_con,#sign_con,#action_con{
 //     flex:1 0 0 !important;
@@ -979,7 +1039,9 @@ height: 50px;
     border-radius: 40px;
     height: 600px;
 }
-
+.item_p{
+  margin-top: 20px;
+}
 .fixed-top{
   position: fixed;
     top: 55px;
@@ -998,7 +1060,9 @@ height: 50px;
   line-height: normal;
   text-transform: uppercase;
 }
-
+.fixed-top h3, .fixed-top h4 {
+  margin: 0px;
+}
 .fixed-top > #paraoneofcaro1{
   background: linear-gradient(120deg, #D2DEFF 24.77%, #3ADCAF 70.07%);
 background-clip: text;
@@ -1074,29 +1138,29 @@ text-align: right;
 }
 
 #car_button_1:hover,#car_button_2:hover{
-  box-shadow: inset 0px 100px 0px 0px white;
-  color: black;
+  // box-shadow: inset 0px 100px 0px 0px white;
+  // color: black;
 }
-
+#car_button_1:hover svg path{
+  stroke: black;
+ }
 #car_button_1,#car_button_2{
   color: #FFF;
-  display: inline-block;
   cursor: pointer;
   box-shadow: inset 0 100 0 0 white;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
-.carousel-control-next-icon{
-  color: #FFF;
-  display: inline-block;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 white;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-  padding: 13px 18px;
-}
+// .carousel-control-next-icon{
+//   color: #FFF;
+//   display: inline-block;
+//   cursor: pointer;
+//   box-shadow: inset 0 0 0 0 white;
+//   -webkit-transition: ease-out 0.4s;
+//   -moz-transition: ease-out 0.4s;
+//   transition: ease-out 0.4s;
+// }
 // .carousel-control-prev-icon{
 //   color: #FFF;
 //   display: inline-block;
@@ -1134,9 +1198,23 @@ Left Slide Button
   background-color: #132249;
   width: 100%;
   height: auto;
-  padding: 10px 24px;
+  padding: 16px;
   right: 100px;
   
+}
+.left-slide{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  letter-spacing: 0.15em;
+  background-image: none !important;
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  background-color: #132249;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  left: 35px;
 }
 
 .right-slide:hover {
@@ -1144,6 +1222,14 @@ Left Slide Button
   color: #fff;
 }
 
+.left-slide:hover {
+  /* Generic Hover style for a button */
+  color: #fff;
+}
+
+#car_button_1:hover,#car_button_2:hover{
+  color: #000;
+}
 .right-slide::after {
   /* Adds the overlay for creating slide effect */
   content: '';
@@ -1156,6 +1242,29 @@ Left Slide Button
   transition: all 0.35s;
 }
 
+.left-slide::after {
+  /* Adds the overlay for creating slide effect */
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  z-index: -1;
+  padding: 0.25em 0.5em;
+  display: block;
+  border-radius: 40px;
+  transition: all 0.35s;
+}
+#car_button_1::after,#car_button_2::after  {
+  /* Adds the overlay for creating slide effect */
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  z-index: -1;
+  display: block;
+  border-radius: 20px;
+  transition: all 0.35s;
+}
+
+
 .right-slide:hover::after {
   /* Hover effect for the overlay slide effect */
   top: 0;
@@ -1166,6 +1275,24 @@ Left Slide Button
   
 }
 
+.left-slide:hover::after {
+  /* Hover effect for the overlay slide effect */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+
+#car_button_1:hover::after, #car_button_2:hover::after {
+  /* Hover effect for the overlay slide effect */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+
 .right-slide::after {
   top: 0;
   bottom: 0;
@@ -1173,9 +1300,21 @@ Left Slide Button
   right: -100%;
 }
 
-.carousel-control-next-icon:hover{
-  box-shadow: inset 100px 0 0 0 white;
+.left-slide::after {
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
 }
+#car_button_1::after, #car_button_2::after {
+  left: 0;
+  right: 0;
+  top: -100%;
+  bottom: 100%;
+}
+// .carousel-control-next-icon:hover{
+//   box-shadow: inset 100px 0 0 0 white;
+// }
 
 .carousel-control-next, .carousel-control-prev{
   width: auto;
@@ -1359,22 +1498,22 @@ tfoot > tr > td{
 .buttonFlex{
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 8px;
   // width: 60%;
 }
 .flex2{
   padding: 20px 40px 30px;
 }
 
-.btnExplore{
-  padding: 10px;
-}
 
 // Media Queries
 @media only screen and (max-width: 1400px){
   
 }
 @media only screen and (max-width: 1300px){
+  .gall-para {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 1200px){
   
@@ -1412,6 +1551,7 @@ tfoot > tr > td{
     align-items: center;
     flex-wrap: inherit;
 }
+
 .flex_of_7{
   display: flex;
   flex-direction: column;
@@ -1422,6 +1562,15 @@ tfoot > tr > td{
 }
 .serp{
   text-align: center;
+}
+.gall-para {
+  font-size: 17px;
+}
+#action_con{
+  width: 100%;
+}
+#con_input{
+  width: 100%;
 }
 }
 
@@ -1447,15 +1596,11 @@ tfoot > tr > td{
   }
 }
 @media only screen and (max-width:1003px)  {
-  #con_input {
-  width:70%;
-  }
+  
   #top_con,#sign_con,#action_con{
     flex:auto !important;
   }
-  #action_con{
-    width:100%;
-  }
+  
   
     .carousel-control-next, .carousel-control-prev {
       width: auto;
@@ -1474,10 +1619,14 @@ tfoot > tr > td{
   .buttonFlex{
     margin-left: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: flex-end;
     gap: 10px;
-    width: 66%;
   }
+  #car_button_1, #car_button_2{
+    padding:8px 24px 8px 24px !important;
+    width: max-content;
+    }
   .carousel-control-next {
     right: 11% !important;
   }
@@ -1485,9 +1634,23 @@ tfoot > tr > td{
     left: 85%;
     opacity: unset !important;
 }
-  #car_button_1,#car_button_2{
-    font-size: 13px;
-  }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 28px;
+  height: 16px;
+}
+.right-slide{
+  right: 55px;
+  
+}
+.right-slide{
+  padding: 12px 16px;
+}
+.left-slide{
+  padding: 12px 16px;
+  left: 50px;
+}
+
 }
 
 @media (max-width: 992px) {
@@ -1507,6 +1670,29 @@ tfoot > tr > td{
   }
   #top_header{
     transform: scale(1.1,1.5);}
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+    .gallery-text {
+      width: 100%;
+      text-align: center;
+      font-size: clamp(1rem, 12vw, 10rem) !important;
+    }
+    .gallery-text1 {
+      width: 100%;
+      text-align: center;
+      font-size: clamp(1rem, 10vw, 10rem) !important;
+    }
+    .gall-para {
+      width: 100%;
+      font-size: 18px;
+      text-align: center;
+    }
+
   }
 
 @media (max-width: 992px)
@@ -1539,7 +1725,7 @@ tfoot > tr > td{
   .flex10{
     padding: 40px;
     justify-content: flex-start;
-    gap: 50px;
+    gap: 10px 50px;
   }
   #header_services{
     text-align: center;
@@ -1570,20 +1756,19 @@ tfoot > tr > td{
     text-align: center;
     transform: scale(1.2,1);
 }
-.buttonFlex{
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 75%;
+
+.right-slide{
+  right: 70px;
+  
+}
+
+.left-slide{
+  left: 35px;
 }
 
 }
 
 @media only screen and (max-width: 830px){
-  #car_button_1{
-    padding:9px;
-  }
   .card3 > img{
     width: auto;
     transform: scale(2,1.2);
@@ -1597,9 +1782,6 @@ tfoot > tr > td{
 }
 
 @media only screen and (max-width: 800px) {
-  .flex5{
-    padding: 5px 20px;
-  }
   .flex7{
     padding: 5px 0px;
   }
@@ -1630,16 +1812,6 @@ tfoot > tr > td{
     margin-top: 10px;
   }
   
-  #car_button_1{
-    padding:9px;
-  }
-  .buttonFlex{
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 85%;
-  }
   #paraoneofcaro4,.fixed-top >  #paraoneofcaro3,.fixed-top >  #paraoneofcaro2,.fixed-top > #paraoneofcaro1{
     font-size: 28px;
     }
@@ -1672,16 +1844,7 @@ tfoot > tr > td{
     font-size: 15px;
   }
 
-  #car_button_1{
-    padding:9px;
-  }
-  .buttonFlex{
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 96%;
-  }
+  
   .card3 > img{
     width: auto;
     transform: scale(1.6,1.2);
@@ -1750,6 +1913,13 @@ tfoot > tr > td{
   font-size: clamp(1rem, 10vw, 5rem);
     transform: scale(1.2, 1.5);  
  }
+ .gall-para {
+  font-size: 16px;
+}
+.btnExplore svg {
+  width: 20px;
+  height: 20px;
+}
 }
 
 @media only screen and (max-width: 615px){
@@ -1815,13 +1985,7 @@ element.style {
     left: 83%;
     opacity: unset !important;
 }
-.buttonFlex{
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-}
+
 .flex6{
   margin: 0px 20px;
 }
@@ -1844,6 +2008,23 @@ element.style {
 }
 .navbar{
   padding: 20px;
+}
+.flex5{
+  padding: 0px 20px;
+}
+.hr_tag{
+  margin: 0px 20px;
+}
+.facilities_7{
+  padding: 20px;
+}
+.right-slide{
+  right: 80px;
+  
+}
+
+.left-slide{
+  left: 25px;
 }
 }
 
@@ -1880,13 +2061,7 @@ element.style {
   padding: 0px 1.9em 0 0;
   margin: 0px auto;
 }
-.buttonFlex{
-  margin-left: -10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  
-}
+
 }
 
 @media only screen and (max-width: 500px){
@@ -1908,7 +2083,7 @@ element.style {
 
 
 
-@media only screen and (max-width: 490px){
+@media only screen and (max-width: 499px){
   .info9{
     margin-top: 0px !important;
   }
@@ -1921,12 +2096,10 @@ element.style {
   th{
     font-size: 16px;
   }
-#car_button_1 {
-  padding:7px 5px;
-}
+
 .carousel-caption {
   position: absolute;
-  right: 5%;
+  right: 12%;
   bottom: -0.25rem;
   left: 42%;
   padding-top: 1.25rem;
@@ -1964,25 +2137,66 @@ element.style {
   
 }
 .carousel-item > #caroimg {
-    height: 400px;
+    height: 480px;
   }
 .carousel .carousel-item {
-  height: 400px;
+  height: 480px;
   border-radius: 40px;
 }
 #car_button_1 {
   display: none;
   
 }
+.acctext1{
+  font-size: 14px;
+  width: 160px;
+}
+.facimg{
+  width: 60px;
+  height: 60px;
+}
+#arrimg{
+  width: 50%;
+  }
+
+#para{
+width: 100%;
+font-size: 14px;
+}
+#facility_para, #service_para{
+font-size:14px ;
+}
+.serviceHead, .servicePara{
+font-size: 14px;
+}
+td {
+font-size: 14px;
+}
+.info9, .info91{
+font-size: 14px;
+}
+.card-body{
+  
+font-size: 14px;
+}
+#con_p{
+font-size: 14px;
+}
+#con_input::placeholder{
+  font-size: 14px;
+}
+.right-slide{
+  right: 65px;
+  
+}
 }
 
 /* media queries for contact */
 @media only screen and (max-width: 450px) {
+ 
   .acctext1{
-    font-size: 12px;
-    width: 120px;
-}
-
+    width: 130px;
+  }
   .contentdiv{
     position: absolute;
     top: 47%;
@@ -2011,10 +2225,6 @@ element.style {
   #footer_p{
     font-size: 13px;
   }
-  #car_button_1 {
-    font-size: 9px;
-    padding: 7px;
-}
 .flex-items {margin-left: 25%;}
 }
 
@@ -2049,36 +2259,7 @@ width: 20%;
 .mb-0 > button > .arrimg{
   width: 50%;
   }
-  #arrimg{
-    width: 50%;
-    }
-
-#para{
-  width: 100%;
-  font-size: 14px;
-}
-#facility_para, #service_para{
-  font-size:14px ;
- }
- .serviceHead, .servicePara{
-  font-size: 14px;
- }
- td, th {
-  font-size: 14px;
-}
-.info9, .info91{
-  font-size: 14px;
-  }
-  .card-body{
-    
-  font-size: 14px;
-  }
-  #con_p{
-  font-size: 14px;
-  }
-  #con_input::placeholder{
-    font-size: 14px;
-  }
+ 
   #header_services{
     text-align: center;
     transform: scale(0.5,1);
@@ -2089,6 +2270,9 @@ width: 20%;
 }
 #head_img{
   margin-left: 13px !important;
+}
+.carousel-caption {
+  right: 10%;
 }
 }
 

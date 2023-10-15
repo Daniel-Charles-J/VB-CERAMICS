@@ -104,7 +104,7 @@ h2 {
 
 
 .hero {
-  padding: 20px 10px 20px 20px;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -117,7 +117,7 @@ h2 {
   color: #132249;
   width: 50%;
   font-family: Unbounded;
-  font-size: 78px;
+  font-size: clamp(1rem, 7vw, 8rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -141,6 +141,10 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
 }
 
 .service-section hr {
@@ -432,9 +436,6 @@ line-height: 30px; /* 187.5% */
   height: 26px;
 }
 @media (max-width: 1320px) {
-  .gallery-text {
-    font-size: 66px;
-  }
 
   .gall-para, .service_description, .sec2_top_sec, td, .btn-contact,.instruments_div {
     font-size: 18px;
@@ -453,10 +454,6 @@ line-height: 30px; /* 187.5% */
   }
 }  
 @media (max-width: 1100px) {
-
-  .gallery-text {
-    font-size: 56px;
-  }
 
   .gall-para, .service_description, .sec2_top_sec, td, .btn-contact, .instruments_div {
     font-size: 17px;
@@ -487,9 +484,6 @@ line-height: 30px; /* 187.5% */
     justify-content: center;
     width: 100%;
   }
-  .gallery-text {
-    font-size: 46px;
-  }
 
   .gall-para {
     font-size: 16px;
@@ -517,7 +511,7 @@ line-height: 30px; /* 187.5% */
     padding: 0px;
   }
   .flex10{
-    gap: 50px;
+    gap: 10px 50px;
     padding: 40px;
     justify-content: flex-start;
   }
@@ -528,16 +522,19 @@ line-height: 30px; /* 187.5% */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+    padding: 20px 20px 0px 20px;
   }
 
   .gallery-text {
     width: 100%;
-    font-size: 76px;
+    text-align: center;
+    font-size: clamp(1rem, 12vw, 10rem) !important;
   }
-
   .gall-para {
     width: 100%;
     font-size: 18px;
+    text-align: center;
   }
 
   .sec-1, .sec-2 {
@@ -581,10 +578,6 @@ line-height: 30px; /* 187.5% */
 
 @media (max-width: 650px) {
 
-  .gallery-text {
-    font-size: 66px;
-  }
-
   .gall-para {
     font-size: 16px;
   }
@@ -614,17 +607,10 @@ line-height: 30px; /* 187.5% */
 }
 
 @media (max-width: 600px) {
-  .gallery-text {
-    font-size: 60px;
-  }
 
 }
 
 @media (max-width: 499px) {
-
-  .gallery-text {
-    font-size: 36px;
-  }
 
   .gall-para {
     font-size: 15px;

@@ -11,6 +11,7 @@ export class ContactComponent {
     email: '',
     message: ''
   };
+  
   currentImageIndex15 = 0;
   imagesNav=[
     './assets/images/menu_own.svg',

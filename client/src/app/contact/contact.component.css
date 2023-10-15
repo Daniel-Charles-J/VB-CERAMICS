@@ -333,6 +333,7 @@ h2 {
     .gall-para {
       width: 100%;
       font-size: 18px; 
+      text-align: center;
     }
   
     .hero {
@@ -360,7 +361,7 @@ h2 {
     .flex10{
       padding: 40px;
       justify-content: flex-start;
-      gap: 50px;
+      gap: 10px 50px;
     }
 }
 
