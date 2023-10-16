@@ -511,7 +511,7 @@ line-height: 30px; /* 187.5% */
     padding: 0px;
   }
   .flex10{
-    gap: 10px 50px;
+    gap: 20px 50px;
     padding: 40px;
     justify-content: flex-start;
   }
@@ -574,6 +574,10 @@ line-height: 30px; /* 187.5% */
   .navbar {
     padding: 20px;
   }
+  .flex10{
+    padding: 20px;
+  }
+
 }
 
 @media (max-width: 650px) {

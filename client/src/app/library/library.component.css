@@ -647,7 +647,7 @@ line-height: 150%; /* 24px */
   .flex10{
     padding: 40px;
     justify-content: flex-start;
-    gap: 10px 50px;
+    gap: 20px 50px;
   }
   #article_para,#library_para,#article_para2{
     flex:auto;
@@ -760,6 +760,9 @@ font-size: 14px;
 
 #hr_tag1, #hr_tag2{
   margin: 0px 20px;
+}
+.flex10{
+  padding: 20px;
 }
 
 }

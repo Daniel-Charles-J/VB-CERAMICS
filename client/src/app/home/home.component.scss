@@ -1730,7 +1730,7 @@ tfoot > tr > td{
   .flex10{
     padding: 40px;
     justify-content: flex-start;
-    gap: 10px 50px;
+    gap: 20px 50px;
   }
   #header_services{
     text-align: center;
@@ -2031,6 +2031,10 @@ element.style {
 .left-slide{
   left: 25px;
 }
+.flex10{
+  padding: 20px;
+}
+
 }
 
 @media only screen and (max-width: 590px){

@@ -601,7 +601,10 @@ margin: 0px;
     .flex10{
       padding: 40px;
       justify-content: flex-start;
-      gap: 10px 50px;
+      gap: 20px 50px;
+    }
+    .card10{
+      padding: 0px;
     }
   }
   
@@ -690,6 +693,10 @@ gap: 20px;
   .articleimg{
     height: 350px;
   }
+  .flex10{
+    padding: 20px;
+  }
+
   }
 
   @media (max-width: 600px) {

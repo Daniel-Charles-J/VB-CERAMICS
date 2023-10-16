@@ -578,7 +578,7 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
   .flex10{
     padding: 40px;
     justify-content: flex-start;
-    gap: 10px 50px;
+    gap: 20px 50px;
   }
 }
 @media (max-width: 850px) {
@@ -631,6 +631,10 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
   .navbar{
     padding: 20px;
   }
+  .flex10{
+    padding: 20px;
+  }
+
 }
 
 @media (max-width: 600px) {
