@@ -235,5 +235,4 @@ public customOptions2: OwlOptions = {
   changeImage8b() {
     this.currentImageIndex8 = (this.currentImageIndex8 -1) % this.arrowimages2.length;
   }
-  
 }
