@@ -147,11 +147,11 @@ h2 {
   margin: 0px;
 }
 
-.service-section hr {
+.service-section .hr_tag {
   border-bottom: 1px solid #000;
-  width: 100%;
-  display: flex;
-  margin-top: 0px;
+  margin: 0px 40px;
+  text-align: center;
+  opacity: 1;
 }
 .main {
   display: flex;
@@ -511,7 +511,7 @@ line-height: 30px; /* 187.5% */
     padding: 0px;
   }
   .flex10{
-    gap: 10px 50px;
+    gap: 20px 50px;
     padding: 40px;
     justify-content: flex-start;
   }
@@ -573,6 +573,12 @@ line-height: 30px; /* 187.5% */
   }
   .navbar {
     padding: 20px;
+  }
+  .flex10{
+    padding: 20px;
+  }
+  .service-section .hr_tag {
+    margin: 0px 20px;
   }
 }
 

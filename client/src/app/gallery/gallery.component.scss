@@ -847,7 +847,7 @@ $animationSpeed: 15s;
   }
   .flex10{
     padding: 40px;
-    gap: 10px 50px;
+    gap: 20px 50px;
     justify-content: flex-start;
   }
 }
@@ -921,6 +921,10 @@ $animationSpeed: 15s;
   .heroImg {
     border-radius: 20px;
   }
+  .flex10{
+    padding: 20px;
+  }
+
   /* Hero image section */
   // .hero-image {
   //   border-radius: 20px;
