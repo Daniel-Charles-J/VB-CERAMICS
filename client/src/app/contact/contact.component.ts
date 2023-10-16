@@ -67,18 +67,8 @@ export class ContactComponent {
     (document.getElementById('message') as any).value = "";
   }
 
-
-   scrollToTop() {
-    (function smoothscroll() {
-        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        if (currentScroll > 0) {
-            window.scrollTo(0, 0);
-        }
-    })();
-  }
-
   ngOnInit(): void {
-    this.scrollToTop();
+   
   }
 
 }

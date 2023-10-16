@@ -92,14 +92,6 @@ public customOptions2: OwlOptions = {
     },
 }
   };
-  scrollToTop() {
-    (function smoothscroll() {
-        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        if (currentScroll > 0) {
-            window.scrollTo(0, 0);
-        }
-    })();
-  }
 
   ngOnInit(): void
   {
@@ -109,7 +101,6 @@ public customOptions2: OwlOptions = {
     mirror: true, // whether elements should animate out while scrolling past them
   
   });
-  this.scrollToTop();
   }
   @ViewChildren('boxElement') boxElements!: QueryList<ElementRef>;
   isVisible = false;

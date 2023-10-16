@@ -22,15 +22,6 @@ export class LibraryComponent implements OnInit{
   constructor(private router: Router, private route: ActivatedRoute, private location: Location) {}
   public childActive : any;
 
-  scrollToTop() {
-    (function smoothscroll() {
-        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        if (currentScroll > 0) {
-            window.scrollTo(0, 0);
-        }
-    })();
-  }
-
   ngOnInit() {
     //this.router.navigate(['library'])
     // this.router.events.pipe(
@@ -39,7 +30,6 @@ export class LibraryComponent implements OnInit{
     //   this.childActive = !!this.route.firstChild;
     //   console.log(this.childActive);
     // });
-    this.scrollToTop();
   }
   ourGroups(param : any){
     if(param == 'vbcc'){
