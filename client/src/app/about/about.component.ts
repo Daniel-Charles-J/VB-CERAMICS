@@ -147,7 +147,6 @@ export class AboutComponent {
   public academic_activity_li3: string = `VBCC jointly organized a Three Day International Conference on Advances in Materials, Manufacturing and Applications (AMMA 2015) during April 9th-11th April 2015 at the Department of Metallurgical and Materials Engineering, National Institute of Technology, Tiruchirappalli.`;
  
   ngOnInit(): void {
-    this.scrollToTop();
   }
 
 }
