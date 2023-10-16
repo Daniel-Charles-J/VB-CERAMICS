@@ -1421,6 +1421,8 @@ td, th {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+td{
   cursor: pointer;
 }
 table caption {
@@ -1447,6 +1449,7 @@ table td:nth-child(2){
     white-space: pre-line !important;
     text-transform: none !important;
     line-height: normal;
+    font-size: 20px;
     // width: min-content;
   }
 .acctext2{
@@ -1840,7 +1843,7 @@ tfoot > tr > td{
     transform: scale(1,1);
 }
   .acctext1{
-    font-size: 14px;
+    font-size: 16px;
   }
   .acctext2{
     font-size: 15px;
@@ -2195,6 +2198,9 @@ font-size: 14px;
   right: 65px;
   
 }
+.card9{
+  width: 87%;
+}
 }
 
 /* media queries for contact */
@@ -2235,7 +2241,7 @@ font-size: 14px;
 
 @media only screen and (max-width: 400px){
   .acctext1{
-    font-size: 10px;
+    font-size: 14px;
     min-width: 60px;
 }
   .fixed-top > p {
@@ -2254,9 +2260,7 @@ font-size: 14px;
   .card-header button {
     padding: 0px;
   }
-  .card9{
-    width: 295px;
-  }
+  
   #flex_con{
     padding: 40px 20px;
   }
