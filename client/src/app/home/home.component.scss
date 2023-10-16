@@ -501,7 +501,6 @@ line-height: 150%; /* 30px */
     font-size: 48px; */
     font-style: normal;
     font-weight: 600;
-    
   }
 
   .numbers__window {
@@ -1041,6 +1040,7 @@ position: relative;
 }
 .item_p{
   margin-top: 20px;
+  padding-left: 20px;
 }
 .fixed-top{
   position: fixed;
@@ -1328,7 +1328,9 @@ Left Slide Button
   overflow: visible; 
 }
 
-
+.fixed-top-head{
+  padding-left: 20px;
+}
 body {
 	align-items: center;
 	// background: #E3E3E3;
@@ -2037,7 +2039,7 @@ element.style {
     top: 59%;
     right: 10%;
     background-color: white;
-    padding: 0px 7px;
+    padding: 5px 10px;
     border-radius: 15px;
   }
   .card2 > .contentdiv{
@@ -2045,7 +2047,7 @@ element.style {
     top: 59%;
     right: 62%;
     background-color: white;
-    padding: 0px 7px;
+    padding: 5px 10px;
     border-radius: 15px;
   }
 
@@ -2061,7 +2063,11 @@ element.style {
   padding: 0px 1.9em 0 0;
   margin: 0px auto;
 }
-
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 @media only screen and (max-width: 500px){
@@ -2195,14 +2201,14 @@ font-size: 14px;
 @media only screen and (max-width: 450px) {
  
   .acctext1{
-    width: 130px;
+    width: 100px;
   }
   .contentdiv{
     position: absolute;
     top: 47%;
     right: 10%;
     background-color: white;
-    padding: 0px 7px;
+    padding: 5px 10px;
     border-radius: 15px;
   }
   .card2 > .contentdiv{
@@ -2211,12 +2217,11 @@ font-size: 14px;
 
     right: 50%;
     background-color: white;
-    padding: 0px 7px;
+    padding: 5px 10px;
     border-radius: 15px;
   }
   #con_button{
     margin-left: 10px;
-    margin-top: 10px;
 
   }
   #con_input{
@@ -2246,7 +2251,9 @@ font-size: 14px;
     float: right;
     text-align: right;
   }
-  
+  .card-header button {
+    padding: 0px;
+  }
   .card9{
     width: 295px;
   }
@@ -2257,7 +2264,7 @@ font-size: 14px;
 width: 20%;
 }
 .mb-0 > button > .arrimg{
-  width: 50%;
+  width: 40%;
   }
  
   #header_services{
@@ -2273,6 +2280,13 @@ width: 20%;
 }
 .carousel-caption {
   right: 10%;
+}
+.right-slide{
+  right: 75px;
+  margin-top: 50px;
+}
+.left-slide{
+  margin-top: 50px;
 }
 }
 
