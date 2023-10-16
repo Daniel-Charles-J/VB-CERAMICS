@@ -149,11 +149,11 @@ h2 {
   align-items: center;
 }
 
-.service-section hr {
+.service-section .hr_tag {
   border-bottom: 1px solid #000;
-  width: 100%;
-  display: flex;
-  margin-top: 0px;
+  margin: 0px 40px;
+  text-align: center;
+  opacity: 1;
 }
 
 .main-section {
@@ -634,7 +634,9 @@ box-shadow: 1px 7px 20px 0px rgba(0, 0, 0, 0.15);
   .flex10{
     padding: 20px;
   }
-
+  .service-section .hr_tag {
+    margin: 0px 20px;
+  }
 }
 
 @media (max-width: 600px) {

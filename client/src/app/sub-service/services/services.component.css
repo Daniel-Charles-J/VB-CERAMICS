@@ -147,11 +147,11 @@ h2 {
   margin: 0px;
 }
 
-.service-section hr {
+.service-section .hr_tag {
   border-bottom: 1px solid #000;
-  width: 100%;
-  display: flex;
-  margin-top: 0px;
+  margin: 0px 40px;
+  text-align: center;
+  opacity: 1;
 }
 .main {
   display: flex;
@@ -577,7 +577,9 @@ line-height: 30px; /* 187.5% */
   .flex10{
     padding: 20px;
   }
-
+  .service-section .hr_tag {
+    margin: 0px 20px;
+  }
 }
 
 @media (max-width: 650px) {
