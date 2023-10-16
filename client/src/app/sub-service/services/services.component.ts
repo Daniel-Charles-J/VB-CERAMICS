@@ -48,11 +48,13 @@ export class ServicesComponent {
 
   ngOnInit(): void {
     this.filterMethod();
+    this.scrollToTop();
   }
 
   ngDoCheck(){
     this.contentParams = this.activatedRoute.snapshot.params['routing'];
     this.filterMethod();
+    this.scrollToTop();
   }
 
   filterMethod() {
@@ -93,12 +95,7 @@ export class ServicesComponent {
   }
 
   scrollToTop() {
-    (function smoothscroll() {
-        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        if (currentScroll > 0) {
-            window.scrollTo(0, 0);
-        }
-    })();
+    window.scroll(0, 0);
   }
 
   ourGroups(param : any){

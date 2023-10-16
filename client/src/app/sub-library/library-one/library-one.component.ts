@@ -94,17 +94,17 @@ export class LibraryOneComponent {
     this.point13 = filteredData[0].point13;
     this.point14 = filteredData[0].point14;
     this.summary = filteredData[0].summary;
-    //this.scrollToTop()
+    this.scrollToTop();
   }
   
-  // scrollToTop() {
-  //   // (function smoothscroll() {
-  //   //     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  //   //     if (currentScroll > 0) {
-  //   //         window.scrollTo(0, 0);
-  //   //     }
-  //   // })();
-  // }
+  scrollToTop() {
+    (function smoothscroll() {
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+            window.scroll(0, 0);
+        }
+    })();
+  }
 
   ourGroups(param : any){
     if(param == 'vbcc'){

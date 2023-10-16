@@ -32,7 +32,11 @@ export class ServiceComponent {
     (function smoothscroll() {
         var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
         if (currentScroll > 0) {
-            window.scrollTo(0, 0);
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+           });
         }
     })();
   }

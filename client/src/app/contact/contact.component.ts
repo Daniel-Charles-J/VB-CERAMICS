@@ -11,7 +11,6 @@ export class ContactComponent {
     email: '',
     message: ''
   };
-  
   currentImageIndex15 = 0;
   imagesNav=[
     './assets/images/menu_own.svg',
@@ -72,7 +71,7 @@ export class ContactComponent {
     (function smoothscroll() {
         var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
         if (currentScroll > 0) {
-            window.scrollTo(0, 0);
+            window.scroll(0, 0);
         }
     })();
   }
