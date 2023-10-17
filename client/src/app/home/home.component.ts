@@ -139,8 +139,8 @@ public customOptions2: OwlOptions = {
     './assets/images/double_arrow.svg',
   ];
   imagesNav=[
-    './assets/images/menu_own.svg',
-    './assets/images/icons8-close.svg',
+    '../assets/MenuIcon.png',
+    '../assets/MenuCancel.png',
   ]
   changeImage() {
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;

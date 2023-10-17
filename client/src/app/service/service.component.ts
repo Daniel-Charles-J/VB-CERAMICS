@@ -860,8 +860,8 @@ export class ServiceComponent {
     }
   }
   imagesNav=[
-    './assets/images/menu_own.svg',
-    './assets/images/icons8-close.svg',
+    './assets/MenuIcon.png',
+    './assets/MenuCancel.png',
   ];
   currentImageIndex15 = 0;
   changeImage15() {

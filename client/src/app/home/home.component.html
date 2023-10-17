@@ -62,7 +62,7 @@
     <div class="flex1">
       <h1 *ngIf="screenWidth >= 650" id="top_header">DR.VB’s ceramic research Centre </h1>
       <h1 *ngIf="screenWidth <= 649" id="top_header">DR.VBCRC</h1>
-      <p id="para" >Where Knowledge and Innovation Converge, We Illuminate Pathways to Discovery. Pushing Boundaries, Sparking Curiosity – Welcome to the Core of Exploration.</p>
+      <p id="para">Fostering innovation through our R&D hub for students, scholars and industries while also Spearheading collaborative projects with government organisations, private industries and institutions.</p>
     </div>
     <br>
         <div class="flex2" style="text-align:center">
@@ -86,7 +86,7 @@
                     <button id='car_button_1' (click)="scrollToSection('exploreService')"><span>Explore Services</span> <span class="btnExplore"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
                       <path d="M-6.99382e-07 16C0.741999 16 1.85 16.733 2.78 17.475C3.98 18.429 5.027 19.569 5.826 20.876C6.425 21.856 7 23.044 7 24M7 24C7 23.044 7.575 21.855 8.174 20.876C8.974 19.569 10.021 18.429 11.219 17.475C12.15 16.733 13.26 16 14 16M7 24L7 3.0598e-07" stroke="white" stroke-width="2"/>
                       </svg></span></button>
-                    <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
+                    <button id='car_button_2' [routerLink]='["/contact"]'>Contact Us</button>
                   </div>
                 </div>
               </div>
@@ -102,7 +102,7 @@
                    <button id='car_button_1' (click)="scrollToSection('exploreService')"><span>Explore Services</span> <span class="btnExplore"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
                     <path d="M-6.99382e-07 16C0.741999 16 1.85 16.733 2.78 17.475C3.98 18.429 5.027 19.569 5.826 20.876C6.425 21.856 7 23.044 7 24M7 24C7 23.044 7.575 21.855 8.174 20.876C8.974 19.569 10.021 18.429 11.219 17.475C12.15 16.733 13.26 16 14 16M7 24L7 3.0598e-07" stroke="white" stroke-width="2"/>
                     </svg></span></button>
-                    <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
+                    <button id='car_button_2' [routerLink]='["/contact"]'>Contact Us</button>
                   </div>
                 </div>
               </div>
@@ -118,7 +118,7 @@
                    <button id='car_button_1' (click)="scrollToSection('exploreService')"><span>Explore Services</span> <span class="btnExplore"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
                     <path d="M-6.99382e-07 16C0.741999 16 1.85 16.733 2.78 17.475C3.98 18.429 5.027 19.569 5.826 20.876C6.425 21.856 7 23.044 7 24M7 24C7 23.044 7.575 21.855 8.174 20.876C8.974 19.569 10.021 18.429 11.219 17.475C12.15 16.733 13.26 16 14 16M7 24L7 3.0598e-07" stroke="white" stroke-width="2"/>
                     </svg></span></button>
-                    <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
+                    <button id='car_button_2' [routerLink]='["/contact"]'>Contact Us</button>
                   </div>
                 </div>
               </div>
@@ -133,12 +133,12 @@
                    <button id='car_button_1' (click)="scrollToSection('exploreService')"><span>Explore Services</span> <span class="btnExplore"><svg xmlns="http://www.w3.org/2000/svg" id="svg1" width="14" height="24" viewBox="0 0 14 24" fill="none">
                     <path d="M-6.99382e-07 16C0.741999 16 1.85 16.733 2.78 17.475C3.98 18.429 5.027 19.569 5.826 20.876C6.425 21.856 7 23.044 7 24M7 24C7 23.044 7.575 21.855 8.174 20.876C8.974 19.569 10.021 18.429 11.219 17.475C12.15 16.733 13.26 16 14 16M7 24L7 3.0598e-07" stroke="white" stroke-width="2"/>
                     </svg></span></button>
-                    <button id='car_button_2' (click)="scrollToSection('ContactUs')">Contact Us</button>
+                    <button id='car_button_2' [routerLink]='["/contact"]'>Contact Us</button>
                   </div>
                 </div>
               </div>
               <div class="car_slide">
-                <a   class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                   <button (mouseover)="changeImage7()" (mouseout)="changeImage7b()"  class="right-slide"><img [src]="arrowimages[currentImageIndex7]" class="carousel-control-prev-icon" aria-hidden="true" src="./assets/images/arrow_cc.svg" alt=""></button>
                     <span class="sr-only">Previous</span>
                 
@@ -281,7 +281,7 @@
               <h1 id="header_services" class="flex-items5">SERVICES</h1>
               <p class="flex-items5" id="service_para"></p>
             </div> -->
-            <div class="hero">
+            <div class="hero" id="exploreService">
               <h1 class="gallery-text">SERVICES</h1>
               <div class="gall-para">
                 <p>Our services are transparently priced for optimal customer satisfaction. Check out our selection of high-quality services at affordable rates.</p>
@@ -290,7 +290,7 @@
             <hr>
             <div class="">
               <h2 class="flex-items5 serp serviceHead">Service Listings with Pricing</h2>
-              <p class="flex-items5 serp servicePara" id="">Our services are transparently priced for optimal customer satisfaction. Check out our selection of high-quality services at affordable rates.</p>
+              <p class="flex-items5 serp servicePara" id="">Services displayed are for samples that utilize the Equipment depicted in the table. The prices are excluding taxes (GST 18%)</p>
             </div>
           </div>
 
@@ -631,8 +631,8 @@
 </div>
 
 <div style='padding: 0px 20px;'>
-  <h1 style='text-align: center;margin-top:20px;font-size:32px'>Trusted by Students and Scientists over India</h1>
-  <p style='text-align: center;'>Some of the few reviews that were publicly shared</p>
+  <h1 class="review_head">Trusted by Students and Scholars over India</h1>
+  <p class="review_p">Some of the few reviews that were publicly shared</p>
 </div>
 
 

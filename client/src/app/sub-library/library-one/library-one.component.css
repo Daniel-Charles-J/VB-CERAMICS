@@ -28,8 +28,7 @@
 }
 
 .navbar-toggler-icon {
-  background-image: url(/assets/images/arrowright.svg) !important;
-  background-size: cover;
+  background-image: none !important;
 }
 
 #nav_contact {
@@ -215,6 +214,7 @@ line-height: 150%; /* 24px */
     min-width: 300px;
     padding: 8px 16px;
     background:transparent;
+    color: white;
   }
   
   #con_input::placeholder{

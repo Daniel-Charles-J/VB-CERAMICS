@@ -28,8 +28,7 @@
 }
 
 .navbar-toggler-icon {
-  background-image: url(/assets/images/arrowright.svg) !important;
-  background-size: cover;
+  background-image: none !important;
 }
 
 #nav_contact {
@@ -57,7 +56,7 @@
   align-self: stretch;
 }
 .navbar-light .navbar-toggler-icon {
-  background: url(/assets/images/menu_own.svg) left no-repeat;
+  background-image: none !important;
 }
 /* header */
 #top_header {

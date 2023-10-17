@@ -32,8 +32,7 @@ body{overflow-x: hidden;}
 }
 
 .navbar-toggler-icon {
-  background-image: url(/assets/images/arrowright.svg) !important;
-  background-size: cover;
+  background-image: none !important;
 }
 
 #nav_contact {
@@ -456,6 +455,24 @@ line-height: 150%; /* 30px */
   .facilities_7{
     padding: 20px 40px;
   }
+  .review_head{
+    color: rgba(0, 0, 0, 0.80);
+text-align: center;
+font-family: Schibsted Grotesk;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 48px */
+  }
+  .review_p{
+    color: rgba(0, 0, 0, 0.50);
+text-align: center;
+font-family: Schibsted Grotesk;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 30px */
+  }
   @media screen and (max-width: 1500px) {
   }
   
@@ -656,6 +673,7 @@ line-height: 150%; /* 24px */
   min-width: 160px;
   padding: 8px 16px;
   background:transparent;
+  color: white;
 }
 
 #con_button{
@@ -691,7 +709,9 @@ line-height: 16px; /* 100% */
   cursor: pointer;
   border-radius: 3px;
 }
-
+.carousel-control-prev, .carousel-control-next {
+  height: fit-content;
+}
 .carousel-control-prev-icon {
   background-image: none !important;
   width: 40px;
@@ -1609,7 +1629,7 @@ tfoot > tr > td{
   
     .carousel-control-next, .carousel-control-prev {
       width: auto;
-      top: 45%;
+      top: 71.5%;
     }
     .carousel-caption {
       position: absolute;
@@ -1892,6 +1912,12 @@ tfoot > tr > td{
   #arrimg{
     width: 60%;
     }
+    .review_head{
+  font-size: 28px;
+    }
+    .review_p{
+  font-size: 16px;
+    }
 }
 @media only screen and (max-width: 650px){
   .acctext2{
@@ -2112,7 +2138,7 @@ element.style {
 
 .carousel-caption {
   position: absolute;
-  right: 12%;
+  right: 10%;
   bottom: -0.25rem;
   left: 42%;
   padding-top: 1.25rem;
@@ -2126,6 +2152,9 @@ element.style {
 .carousel-control-prev {
   left: 73%;
   opacity: unset !important;
+}
+.carousel-control-next, .carousel-control-prev {
+  top: 75%;
 }
 .fixed-top > p {
   color: #FFF;
@@ -2205,6 +2234,9 @@ font-size: 14px;
 .card9{
   width: 87%;
 }
+.review_head{
+  font-size: 24px;
+    }
 }
 
 /* media queries for contact */
@@ -2291,11 +2323,8 @@ width: 20%;
 }
 .right-slide{
   right: 75px;
-  margin-top: 50px;
 }
-.left-slide{
-  margin-top: 50px;
-}
+
 }
 
 // .anime{

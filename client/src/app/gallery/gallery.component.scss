@@ -38,8 +38,7 @@
 }
 
 .navbar-toggler-icon {
-  background-image: url(/assets/images/arrowright.svg) !important;
-  background-size: cover;
+  background-image: none !important;
 }
 
 #nav_contact {
@@ -119,9 +118,9 @@ h2 {
   font-size: 10px !important;
 }
 
-.navbar-light .navbar-toggler-icon {
-  background: url(/assets/images/menu_own.svg) left no-repeat;
-}
+// .navbar-light .navbar-toggler-icon {
+//   background: url(/assets/images/menu_own.svg) left no-repeat;
+// }
 
 .main-section {
   display: flex;
