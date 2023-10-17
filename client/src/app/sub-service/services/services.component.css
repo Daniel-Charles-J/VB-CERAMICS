@@ -31,8 +31,7 @@
 }
 
 .navbar-toggler-icon {
-  background-image: url(/assets/images/arrowright.svg) !important;
-  background-size: cover;
+  background-image: none !important;
 }
 
 #nav_contact {
@@ -60,7 +59,7 @@
   align-self: stretch;
 }
 .navbar-light .navbar-toggler-icon {
-  background: url(/assets/images/menu_own.svg) left no-repeat;
+  /* background: url(/assets/images/menu_own.svg) left no-repeat; */
 }
 /* header */
 #top_header {
@@ -648,8 +647,5 @@ line-height: 30px; /* 187.5% */
   .sec2_right {
     min-width: 320px;
  }
-
- .btn2{
-  padding: 0px 4px;
-  }
+  
 }

@@ -14,8 +14,8 @@ export class ContactComponent {
   
   currentImageIndex15 = 0;
   imagesNav=[
-    './assets/images/menu_own.svg',
-    './assets/images/icons8-close.svg',
+    './assets/MenuIcon.png',
+    './assets/MenuCancel.png',
   ];
   changeImage15() {
     this.currentImageIndex15 = (this.currentImageIndex15 + 1) % this.imagesNav.length;
@@ -36,7 +36,7 @@ export class ContactComponent {
     } else if( param == 'whatsapp'){
       window.location.href = 'https://wa.me/919445025461'
     } else if (param == 'google'){
-      window.location.href = 'https://www.google.com/'
+      window.location.href = 'https://www.google.com/search?q=vb+ceramic+research+centre&sca_esv=573735525&sxsrf=AM9HkKkMB_ToLqt9xuLqEZ_Ksxml-wR4JQ%3A1697446588142&ei=vPosZfSnCMel-Qb5uonABw&oq=vb+ceramic+reseac&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXZiIGNlcmFtaWMgcmVzZWFjKgIIADIHECMYsAIYJzIQEC4YDRiABBjHARivARiOBUj7E1CaBFiEDHABeAGQAQCYAZQBoAHZBaoBAzAuNrgBAcgBAPgBAcICChAAGEcY1gQYsAPCAhAQLhivARjHARiKBRiOBRgnwgICECbCAggQABiKBRiGA8ICHRAuGK8BGMcBGIoFGI4FGJcFGNwEGN4EGOAE2AEBwgIfEC4YDRiABBjHARivARiOBRiXBRjcBBjeBBjgBNgBAeIDBBgAIEGIBgGQBgi6BgYIA'
     }
     else {
       window.location.href = 'paste a facebook URL here';

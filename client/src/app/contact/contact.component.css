@@ -35,8 +35,7 @@
 }
 
 .navbar-toggler-icon {
-  background-image: url(/assets/images/arrowright.svg) !important;
-  background-size: cover;
+  background-image: none !important;
 }
 
 #nav_contact {
