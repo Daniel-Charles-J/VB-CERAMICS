@@ -34,7 +34,16 @@
 }
 
 .navbar-nav {
-  gap: 20px;
+  gap: 10px;
+  color: #fff !important;
+}
+.navbar-toggler {
+  border: unset;
+  box-shadow: unset;
+} 
+.navbar-toggler img {
+  width: 30px;
+  height: 30px;
 }
 
 .navbar-toggler-icon {
