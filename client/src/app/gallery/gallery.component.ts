@@ -137,8 +137,8 @@ export class GalleryComponent {
   }
 
   imagesNav=[
-    './assets/MenuIcon.png',
-    './assets/MenuCancel.png',
+    './assets/images/menu_own.svg',
+    './assets/images/icons8-close.svg',
   ];
   currentImageIndex15 = 0;
   changeImage15() {
