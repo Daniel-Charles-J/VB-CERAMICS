@@ -793,12 +793,10 @@ font-size: 14px;
 
 @media only screen and (max-width:590px) {
 .textl,.datetext{
-  padding: 0px;
+  padding: 6px 3px !important;
   font-size:12px ;
 }
-.datetext{
-padding: 0px important;
-}
+
 }
 @media only screen and (max-width:590px) {
   #con_button{
